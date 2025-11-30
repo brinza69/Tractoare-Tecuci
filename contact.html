@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Tractoare Tecuci</title>
+  <meta name="description" content="Contactează Tractoare Tecuci: adresă, telefon, email, program și hartă interactivă.">
+  <link rel="canonical" href="https://exemplu.ro/contact.html">
+
+  <link rel="stylesheet" href="assets/style.css?v=9">
+  <script defer src="assets/app.js?v=9"></script>
+
+  <style>
+    /* ——— contact.html (stil local) ——— */
+    :root{
+      --brand: var(--brand-500,#2e7d32);
+      --ink:#0f172a; --muted:#475569; --ring:#e6e9ee;
+      --card:#fff; --shadow:0 16px 48px rgba(15,23,42,.12);
+      --glow: 0 0 0 4px rgba(46,125,50,.10), 0 10px 30px rgba(46,125,50,.20);
+    }
+    body main{
+      background:
+        radial-gradient(1200px 260px at 50% -20px, rgba(46,125,50,.07), transparent 60%),
+        linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
+    }
+    .wrap{ max-width: 1160px; padding-inline: 18px; margin-inline: auto; }
+
+    /* — HERO — */
+    .contact-hero{ padding: clamp(40px,7vw,96px) 0 0; }
+    .panel{
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(6px);
+      border:1px solid var(--ring); border-radius: 26px;
+      box-shadow: var(--shadow);
+      padding: clamp(26px,3.4vw,40px);
+      text-align:center;
+    }
+    .contact-hero h1{ margin:0 0 6px; font-size: clamp(30px,4.6vw,50px); line-height:1.12; letter-spacing:-.3px; color:var(--ink); }
+    .contact-hero p{ color:var(--muted); margin: 8px auto 0; max-width: 60ch; font-size: clamp(15px,1.5vw,18px); }
+
+    .cta-row{
+      margin-top: 18px;
+      display: flex; flex-wrap: wrap; gap: 14px;
+      justify-content: center;
+    }
+    .btn-prime{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:.85rem 1.2rem; border-radius: 999px;
+      background: linear-gradient(135deg, #2e7d32, #3fa047);
+      color:#fff; text-decoration:none; font-weight:900;
+      box-shadow: 0 10px 24px rgba(46,125,50,.25);
+      transition: transform .08s, box-shadow .18s, filter .18s;
+      white-space: nowrap;
+    }
+    .btn-prime:hover{ transform: translateY(-1px); filter: brightness(1.02); box-shadow: 0 14px 36px rgba(46,125,50,.30); }
+    .tips{ margin-top: 12px; color:#334155; font-size:.98rem; }
+
+    /* — CARDURI CONTACT — (secțiune aerisită) */
+    .contact-section{ padding: clamp(30px,5vw,54px) 0 0; }
+    .cards-grid{
+      display:grid; gap: 22px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 900px){
+      .cards-grid{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+    }
+    /* --- CARDURI CONTACT (grid mai flexibil + chip care nu mai iese) --- */
+.cards-grid{
+  display:grid; gap:22px;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); /* auto-fit = se centrează frumos */
+  align-items: stretch;
+}
+
+.c-card{
+  background: var(--card);
+  border: 1px solid var(--ring);
+  border-radius: 20px;
+  padding: 18px 18px 20px;
+  box-shadow: var(--shadow);
+  display:flex; flex-direction:column; gap:10px; /* conținut aerisit */
+  min-height: 132px;
+}
+
+.c-card .chip{
+  /* la carduri lăsăm textul să se rupă, dar fără să iasă din cutie */
+  white-space: normal;
+  overflow-wrap: anywhere;      /* rupe emailul/url-ul oriunde e nevoie */
+  max-width: 100%;
+}
+
+/* --- HARTA: header centrat + wrap pe buton --- */
+.map-wrap header{
+  padding: 16px;
+  border-bottom: 1px dashed #e8edf3;
+  color:#334155;
+  display:flex; flex-wrap:wrap;
+  align-items:center; justify-content:center; /* centru */
+  gap:12px;
+  text-align:center;
+}
+
+    .c-card h3{ margin: 0 0 10px; font-size: 1.08rem; color:#0b3b1d; }
+    .c-card p{ margin: 0; color: var(--ink); line-height: 1.6; }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top: 12px;
+      border-radius: 999px; padding: .6rem .95rem;
+      background:#fff; border:2px solid var(--ring);
+      text-decoration:none; color:#0f172a; font-weight:800;
+      transition: transform .08s, box-shadow .18s, border-color .18s;
+      white-space: nowrap;
+    }
+    .chip:hover{ transform: translateY(-2px); border-color: rgba(46,125,50,.38); box-shadow: var(--glow); }
+
+    /* — HARTA DEDESUBT, CENTRAL — */
+    .map-section{
+      padding: clamp(34px,6vw,70px) 0 clamp(40px,8vw,90px);
+    }
+    .map-wrap{
+      max-width: 980px; margin: 0 auto;    /* — centrat — */
+      background:#fff; border:1px solid var(--ring); border-radius: 22px;
+      overflow: hidden; box-shadow: var(--shadow);
+    }
+    .map-wrap header{
+      padding: 14px 16px; border-bottom: 1px dashed #e8edf3; color:#334155;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .map-wrap iframe{ width:100%; height: 560px; display:block; border:0; filter: saturate(1.05) contrast(1.03); }
+
+    /* extra spații sub footer top */
+    .section + .section{ margin-top: 0; }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER (identic cu restul site-ului) ===== -->
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="index.html"><img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96"></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="utilaje.html" class="nav-link">Utilaje</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn primary contact-cta">Contact</a>
+        <button class="hamb" aria-label="Meniu"><span></span></button>
+      </div>
+    </div>
+    <nav class="drawer" aria-hidden="true">
+      <div class="nav-list">
+        <a href="index.html">Acasă</a>
+        <a href="utilaje.html">Utilaje</a>
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <a href="contact.html" class="btn primary wfull">Contact</a>
+    </nav>
+  </header>
+  <div class="nav-backdrop"></div>
+
+  <!-- ===== CONȚINUT ===== -->
+  <main>
+    <!-- HERO -->
+    <section class="section contact-hero">
+      <div class="wrap">
+        <div class="panel">
+          <h1>Sunteți bineveniți la Tractoare Tecuci</h1>
+          <p>Răspundem rapid la întrebări, oferte sau consultanță tehnică. Spuneți-ne ce utilaj căutați și vă ghidăm de la A la Z.</p>
+          <div class="cta-row" role="group" aria-label="Acțiuni rapide">
+            <a class="btn-prime" href="tel:+40764199074">📞 Sună +40 764 199 074</a>
+            <a class="btn-prime" href="mailto:vasilemirza84@yahoo.com">✉️ Trimite email</a>
+            <a class="btn-prime" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">🗺️ Deschide pe Google Maps</a>
+            <a class="btn-prime" href="https://waze.com/ul?ll=45.8765729%2C27.4220120&navigate=yes" target="_blank" rel="noopener">🚗 Navighează cu Waze</a>
+          </div>
+          <p class="tips">Program: Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDURI CONTACT (aerisite) -->
+    <section class="section contact-section">
+      <div class="wrap">
+        <div class="cards-grid">
+          <article class="c-card">
+            <h3>Adresă</h3>
+            <p>Strada Tecuciului Nou Nr. 25<br>Tecuci, 805300</p>
+            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">Vezi pe Google Maps</a>
+          </article>
+
+          <article class="c-card">
+            <h3>Telefon</h3>
+            <p><a class="chip" href="tel:+40764199074">+40 764 199 074</a></p>
+          </article>
+
+          <article class="c-card">
+            <h3>Email</h3>
+            <p><a class="chip" href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a></p>
+          </article>
+
+          <article class="c-card">
+            <h3>Program</h3>
+            <p>Luni–Vineri: 09:00–17:00<br>Sâmbătă: 10:00–14:00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARTA: dedesubt, central, cu spațiu generos -->
+    <section class="section map-section" aria-label="Hartă Tractoare Tecuci – Str. Tecuciului Nou 25, Tecuci">
+      <div class="wrap">
+        <div class="map-wrap">
+          <header>
+            <strong>Ne găsiți aici</strong>
+            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">Deschide în Google Maps</a>
+          </header>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.736913460712!2d27.422012000000006!3d45.876572900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b4295c7d0cba87%3A0x11b4abacc20f9033!2sTarctoare%20Tecuci!5e0!3m2!1sro!2sro!4v1758820672158!5m2!1sro!2sro"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER (identic) ===== -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <!-- Col 1: brand + scurtă descriere -->
+      <div class="f-col">
+        <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
+          <img src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
+        </a>
+        <p class="f-desc">
+          Utilaje agricole verificate, import direct din Europa. Consultanță, finanțare și transport rapid.
+        </p>
+      </div>
+  
+      <!-- Col 2: linkuri rapide -->
+      <nav class="f-col">
+        <h3 class="f-title">Linkuri</h3>
+        <ul class="f-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="utilaje.html">Categorii utilaje</a></li>
+          <li><a href="products.html">Stoc complet</a></li>
+          <li><a href="despre-noi.html">Despre noi</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Col 3: contact -->
+      <div class="f-col">
+        <h3 class="f-title">Contact</h3>
+        <ul class="f-contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <a href="tel:+40764199074">+40 764 199 074</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
+            <a
+              href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033"
+              target="_blank" rel="noopener"
+              title="Deschide pe Google Maps"
+            >
+              Str. Tecuciului Nou, nr. 25, Tecuci
+            </a>
+          </li>
+        </ul>
+        
+  
+        <div class="f-social">
+          <!-- OLX -->
+          <a
+  class="ico social olx-badge"
+  href="https://compaia.olx.ro/home/"
+  target="_blank" rel="noopener"
+  aria-label="OLX" title="Vezi profilul pe OLX"
+>
+  <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+    <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
+    <!-- „olx” alb, font independent (fallback geometric) -->
+    <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27
+      c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
+    <rect x="30.6" y="24.1" width="3.6" height="16" rx="1.8" ry="1.8" fill="#000000"/>
+    <path fill="#000000" d="M48.4,40.1l-4.9-6.1l4.7-6c0.3-0.4,0.4-0.9,0.2-1.4c-0.3-0.8-1.2-1.1-2-0.7c-0.2,0.1-0.4,0.3-0.5,0.4l-4,5.1
+      l-4-5.1c-0.4-0.5-1.1-0.7-1.8-0.5c-0.9,0.3-1.2,1.3-0.6,2.1l4.7,5.9l-4.9,6.2c-0.3,0.4-0.4,0.9-0.2,1.4c0.3,0.8,1.2,1.1,2,0.7
+      c0.2-0.1,0.4-0.3,0.5-0.4l4.2-5.3l4.1,5.2c0.4,0.5,1.1,0.7,1.8,0.5C48.7,41.9,49,41,48.4,40.1z"/>
+  </svg>
+</a>
+
+        
+          <!-- TikTok -->
+          <a
+            class="ico social tiktok"
+            href="https://www.tiktok.com/@nicoletamirza6"
+            target="_blank" rel="noopener"
+            aria-label="TikTok"
+            title="Vezi profilul pe TikTok"
+          >
+            <!-- Logo TikTok (multi-strat) -->
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <!-- fundal transparent pt. spațiere -->
+              <rect width="64" height="64" fill="none"/>
+              <!-- cyan accent -->
+              <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
+              <!-- roșu accent -->
+              <path fill="#FE2C55" d="M40 10v8.8c2.6 2 6.2 3.2 10 3.2v6c-4.9 0-9.2-1.7-12.5-4.5v13.9c0 9.8-8 17.8-17.8 17.8S2 47.2 2 37.4s8-17.8 17.8-17.8c1.2 0 2.4.1 3.6.4v7.4c-1.1-.5-2.3-.8-3.6-.8-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4 10.4-4.7 10.4-10.4V10H40z" opacity=".35"/>
+              <!-- strat principal (negru) -->
+              <path fill="#000000" d="M36.7 10v21.5c0 6.9-5.6 12.5-12.5 12.5S11.7 38.4 11.7 31.5 17.3 19 24.2 19c1.1 0 2.1.2 3.1.5v5.9c-.9-.4-1.9-.6-3-.6-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V10h5.4zm3.3 3c2.6 3.9 6.4 6.3 10.6 6.7v5.3c-4.9-.3-9.1-2.3-12-5.3V13z"/>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="f-bottom">
+      <div class="wrap f-bottom-row">
+        <p>© <span id="year"></span> Tractoare Tecuci. Toate drepturile rezervate.</p>
+        <p class="f-mini">
+          <a href="termeni.html">Termeni</a> · <a href="confidentialitate.html">Confidențialitate</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // link activ + meniu mobil + an curent
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.nav a, .drawer a').forEach(a=>{
+        if(location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
+      });
+      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+      const hamb=document.querySelector('.hamb'), drawer=document.querySelector('.drawer'), back=document.querySelector('.nav-backdrop');
+      if(hamb&&drawer&&back){
+        const toggle=()=>{ const open=drawer.getAttribute('aria-hidden')!=='false';
+          drawer.setAttribute('aria-hidden', open?'false':'true');
+          back.classList.toggle('active', open);
+          document.body.classList.toggle('no-scroll', open);
+        };
+        hamb.addEventListener('click', toggle); back.addEventListener('click', toggle);
+      }
+    });
+  </script>
+</body>
+</html>

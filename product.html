@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="pTitle">Detalii produs</title>
+  <meta id="pDesc" name="description" content="" />
+  <link id="pCanonical" rel="canonical" href="" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/app.js"></script>
+
+  <style>
+  :root{
+    --primary:      var(--brand-500, #2e7d32);
+    --primary-50:   rgba(46,125,50,.06);
+    --primary-100:  rgba(46,125,50,.12);
+    --primary-400:  rgba(46,125,50,.38);
+    --primary-600:  var(--brand-600, #1e6a23);
+    --primary-700:  var(--brand-700, #16551b);
+  }
+
+  /* fundal pagină + spacing de bază */
+  body[data-page="detail"] main{
+    --gap-page: clamp(28px, 4.6vw, 64px);
+    background:
+      radial-gradient(1200px 240px at 50% 0, rgba(46,125,50,.06), transparent 60%),
+      linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
+  }
+  body[data-page="detail"] .section{ padding-block: var(--gap-page); }
+  body[data-page="detail"] .wrap{ max-width: 1400px; padding-inline: 16px; }
+
+  /* link ÎNAPOI */
+  .back{
+    display:inline-flex; align-items:center; gap:8px;
+    font-weight:700; text-decoration:none; color:var(--primary-700);
+    border:1px solid #e6e9ee; background:#fff; border-radius:999px;
+    padding:.55rem .9rem; box-shadow:0 8px 20px rgba(15,23,42,.06);
+    transition:transform .06s, background .18s, border-color .18s;
+  }
+  .back:hover{ transform:translateY(-1px); background:var(--primary-50); border-color:#dee3ea }
+
+  /* marca + titlul (badge la jumătatea distanței față de galerie) */
+  .head-stack{ position: relative; }
+  .brand-badge{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--primary-50); border:1px solid var(--primary-100);
+    color:var(--primary-700); font-weight:800; border-radius:999px; padding:.35rem .7rem;
+    margin-right:10px;
+    margin-top: var(--gap-page); /* la mijloc între buton și galerie */
+  }
+  .head-title{
+    margin:.4rem 0 0;
+    font-size:clamp(26px, 4.2vw, 44px);
+    line-height:1.15; color:#0f172a; font-weight:900; letter-spacing:-.2px;
+  }
+
+  /* secțiunea cu GALERIA începe mai devreme (spațiu mai mic sus) */
+  main > .section.detail-sec{ padding-top: clamp(8px, 1vw, 14px); }
+
+  /* layout detalii */
+  .detail{ display:grid; gap:24px; grid-template-columns: 1fr; }
+
+  .gallery{
+    background:#fff; border:1px solid rgba(46,125,50,.08);
+    border-radius:18px; overflow:hidden; box-shadow:0 12px 40px rgba(15,23,42,.06);
+    padding:12px; width:100%; margin-inline:auto;
+  }
+  .g-main{ height: clamp(300px, 50vw, 620px); background:#eef4ef; border-radius:12px; overflow:hidden; }
+  .g-main img{ width:100%; height:100%; object-fit:contain; object-position:center; display:block; cursor:pointer; }
+  .g-thumbs{ margin-top:12px; display:grid; grid-auto-flow:column; gap:12px; overflow:auto; padding-bottom:6px; }
+  .g-thumbs img{ width:124px; height:78px; object-fit:cover; border-radius:10px; border:2px solid transparent; cursor:pointer; transition:transform .06s, border-color .18s; }
+  .g-thumbs img:hover{ transform:translateY(-1px); border-color:var(--primary-400) }
+
+  .info{
+    background:#fff; border:1px solid rgba(46,125,50,.08);
+    border-radius:18px; box-shadow:0 12px 40px rgba(15,23,42,.06);
+    padding:clamp(16px, 2vw, 24px); width:100%; margin-inline:auto;
+  }
+  .snippet{ color:#334155; margin:0 0 clamp(12px, 1.6vw, 18px); font-size:clamp(15px, 1.4vw, 18px); line-height:1.65; }
+  .meta{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:12px; margin:0 0 clamp(14px, 1.8vw, 20px); }
+  .meta .item{ background:#fafcfb; border:1px solid #edf1f4; border-radius:12px; padding:12px 14px; display:flex; align-items:center; gap:10px; color:#0f172a; font-weight:700; }
+
+  /* CTA – unic, deasupra specificațiilor */
+  .cta{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin: clamp(6px, 1vw, 10px) 0 clamp(12px, 1.8vw, 18px); }
+  .ask-offer{
+    position: relative;
+    display:inline-flex; align-items:center; justify-content:center;
+    min-width:230px; height:50px; padding:0 26px; border-radius:999px;
+    color:#fff; font-weight:900; text-decoration:none; border:0;
+    background: linear-gradient(135deg, #2e7d32, #44b35a);
+    box-shadow: 0 12px 24px rgba(46,125,50,.28), 0 0 0 0 rgba(76,175,80,.45);
+    transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+    isolation: isolate;
+  }
+  .ask-offer::before{
+    content:""; position:absolute; inset:-3px; border-radius:999px;
+    background: radial-gradient(60% 140% at 30% 30%, rgba(76,175,80,.45), transparent 60%),
+                radial-gradient(60% 140% at 70% 70%, rgba(56,142,60,.35), transparent 60%);
+    filter: blur(14px); z-index:-1; opacity:.8; pointer-events:none; animation: glowPulse 2.4s ease-in-out infinite;
+  }
+  .ask-offer:hover{ transform: translateY(-1px); filter: brightness(1.05); box-shadow: 0 16px 34px rgba(46,125,50,.34), 0 0 0 8px rgba(76,175,80,.18); }
+  @keyframes glowPulse{ 0%,100% { opacity:.75; transform: scale(1); } 50% { opacity:1; transform: scale(1.04); } }
+  .cta-note{ color:#64748b; font-size:.98rem; }
+
+  .specs{ background:#fff; border:1px solid #edf1f4; border-radius:16px; padding:16px; }
+  .specs h3{ margin:0 0 10px; font-size:clamp(18px, 2vw, 22px); }
+  .spec-grid{ display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:10px; }
+  .spec{ background:#fafcfa; border:1px solid #eef2f6; border-radius:10px; padding:12px 14px; }
+
+  @media (max-width: 760px){
+    .g-thumbs img{ width:100px; height:66px; }
+    .meta, .spec-grid{ grid-template-columns:1fr; }
+    .cta{ justify-content:flex-start; }
+  }
+
+  /* ============ Tabs bar ============ */
+  .tabs-sec{ padding-top: clamp(18px, 3vw, 26px); }
+
+  .cat-rail{
+    /* containerul alb cu colțuri rotunde (bara întreagă) */
+    background:#fff; border:1px solid #e6e9ee; border-radius:999px;
+    padding:10px 16px;
+    box-shadow:0 8px 24px rgba(15,23,42,.06);
+  }
+
+  /* — Desktop (>= 761px): item-urile sunt CENTRATE perfect în bară — */
+  .cat-tabs{
+    display:flex;
+    justify-content:center;   /* << centrarea pe orizontală */
+    align-items:center;
+    gap:clamp(24px, 5vw, 64px); /* distanță fluidă între item-uri */
+    width:100%;
+  }
+  .cat-tabs .tab{
+    display:flex; align-items:center; justify-content:center;
+    padding:12px 18px; border-radius:999px; border:2px solid transparent;
+    font-weight:800; color:#0f172a; text-decoration:none; white-space:nowrap;
+    text-align:center;
+    transition: background .18s, color .18s, border-color .18s, transform .06s;
+  }
+  .cat-tabs .tab:hover{ background:var(--primary-50); color:var(--primary-700); }
+  .cat-tabs .tab.active{
+    background:#fff; color:var(--primary-700); border-color:var(--primary-400);
+    box-shadow:0 8px 20px rgba(46,125,50,.12); transform:translateY(-1px);
+  }
+
+  /* — Mobil (<= 760px): “pastile” pe 2 rânduri, text CENTRAT — */
+  @media (max-width:760px){
+    .cat-tabs{
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:10px 12px;
+    }
+    .cat-tabs .tab{
+      flex:1 1 calc(50% - 12px);   /* două pe rând */
+      min-width: 44%;
+      padding:12px 14px;
+      background:#fff;
+      border:1px solid #dfe8e2;     /* contur discret ca în screenshot-ul preferat */
+      border-radius:28px;
+    }
+  }
+
+  /* ===== Lightbox ===== */
+  .lb { position: fixed; inset: 0; display:grid; place-items:center;
+        background: rgba(15,23,42,.72); backdrop-filter: blur(2px) saturate(1.1);
+        opacity:0; pointer-events:none; transition:opacity .22s ease; z-index:999; }
+  .lb.open { opacity:1; pointer-events:auto; }
+  .lb-img-wrap{ position:relative; max-width:min(96vw,1400px); max-height:90vh; display:grid; place-items:center; }
+  .lb-img{ max-width:100%; max-height:90vh; border-radius:12px; box-shadow:0 24px 80px rgba(0,0,0,.4);
+           transform:scale(.96); opacity:0; transition:transform .28s cubic-bezier(.2,.8,.2,1), opacity .28s; }
+  .lb.open .lb-img{ transform:scale(1); opacity:1; }
+  .lb-btn{ position:absolute; top:50%; translate:0 -50%; width:44px; height:44px; border-radius:999px;
+           background:rgba(255,255,255,.95); box-shadow:0 10px 24px rgba(0,0,0,.25); border:0; cursor:pointer; display:grid; place-items:center; }
+  .lb-prev{ left:-56px; } .lb-next{ right:-56px; } .lb-btn svg{ width:22px; height:22px; }
+  @media (max-width:720px){ .lb-prev{ left:8px; } .lb-next{ right:8px; } }
+  </style>
+</head>
+
+<body data-page="detail">
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="index.html">
+        <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96" />
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="utilaje.html" class="nav-link">Utilaje</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn primary contact-cta">Contact</a>
+        <button class="hamb" aria-label="Meniu"><span></span></button>
+      </div>
+    </div>
+
+    <nav class="drawer" aria-hidden="true">
+      <div class="nav-list">
+        <a href="index.html">Acasă</a>
+        <a href="utilaje.html">Utilaje</a>
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <a href="contact.html" class="btn primary wfull">Contact</a>
+    </nav>
+  </header>
+
+  <div class="nav-backdrop"></div>
+
+  <main>
+    <!-- back + (la jumătate) brand + titlu -->
+    <section class="section">
+      <div class="wrap">
+        <a class="back" href="products.html" aria-label="Înapoi la stoc">← Înapoi la stoc</a>
+
+        <div class="head-stack">
+          <span id="prodHeadBrand" class="brand-badge" hidden>Brand</span>
+          <h1 id="prodHeadTitle" class="head-title" hidden>Model</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE + INFO (injectate din app.js) -->
+    <section class="section detail-sec">
+      <div class="wrap detail" id="detailWrap"></div>
+    </section>
+
+    <!-- BARA DE TABURI (centrată pe desktop, “pastile” pe mobil) -->
+    <section class="section tabs-sec">
+      <div class="wrap">
+        <div class="cat-rail">
+          <div class="cat-tabs">
+            <a class="tab" href="products.html">Toate</a>
+            <a class="tab" href="products.html?category=tractor">Tractoare</a>
+            <a class="tab" href="products.html?category=telescopic">Telescopice</a>
+            <a class="tab" href="products.html?category=alte">Alte utilaje</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <!-- Col 1: brand + scurtă descriere -->
+      <div class="f-col">
+        <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
+          <img src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
+        </a>
+        <p class="f-desc">
+          Utilaje agricole verificate, import direct din Europa. Consultanță, finanțare și transport rapid.
+        </p>
+      </div>
+  
+      <!-- Col 2: linkuri rapide -->
+      <nav class="f-col">
+        <h3 class="f-title">Linkuri</h3>
+        <ul class="f-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="utilaje.html">Categorii utilaje</a></li>
+          <li><a href="products.html">Stoc complet</a></li>
+          <li><a href="despre-noi.html">Despre noi</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Col 3: contact -->
+      <div class="f-col">
+        <h3 class="f-title">Contact</h3>
+        <ul class="f-contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <a href="tel:+40764199074">+40 764 199 074</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
+            <a
+              href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033"
+              target="_blank" rel="noopener"
+              title="Deschide pe Google Maps"
+            >
+              Str. Tecuciului Nou, nr. 25, Tecuci
+            </a>
+          </li>
+        </ul>
+        
+  
+        <div class="f-social">
+          <!-- OLX -->
+          <a
+  class="ico social olx-badge"
+  href="https://compaia.olx.ro/home/"
+  target="_blank" rel="noopener"
+  aria-label="OLX" title="Vezi profilul pe OLX"
+>
+  <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+    <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
+    <!-- „olx” alb, font independent (fallback geometric) -->
+    <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27
+      c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
+    <rect x="30.6" y="24.1" width="3.6" height="16" rx="1.8" ry="1.8" fill="#000000"/>
+    <path fill="#000000" d="M48.4,40.1l-4.9-6.1l4.7-6c0.3-0.4,0.4-0.9,0.2-1.4c-0.3-0.8-1.2-1.1-2-0.7c-0.2,0.1-0.4,0.3-0.5,0.4l-4,5.1
+      l-4-5.1c-0.4-0.5-1.1-0.7-1.8-0.5c-0.9,0.3-1.2,1.3-0.6,2.1l4.7,5.9l-4.9,6.2c-0.3,0.4-0.4,0.9-0.2,1.4c0.3,0.8,1.2,1.1,2,0.7
+      c0.2-0.1,0.4-0.3,0.5-0.4l4.2-5.3l4.1,5.2c0.4,0.5,1.1,0.7,1.8,0.5C48.7,41.9,49,41,48.4,40.1z"/>
+  </svg>
+</a>
+
+        
+          <!-- TikTok -->
+          <a
+            class="ico social tiktok"
+            href="https://www.tiktok.com/@nicoletamirza6"
+            target="_blank" rel="noopener"
+            aria-label="TikTok"
+            title="Vezi profilul pe TikTok"
+          >
+            <!-- Logo TikTok (multi-strat) -->
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <!-- fundal transparent pt. spațiere -->
+              <rect width="64" height="64" fill="none"/>
+              <!-- cyan accent -->
+              <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
+              <!-- roșu accent -->
+              <path fill="#FE2C55" d="M40 10v8.8c2.6 2 6.2 3.2 10 3.2v6c-4.9 0-9.2-1.7-12.5-4.5v13.9c0 9.8-8 17.8-17.8 17.8S2 47.2 2 37.4s8-17.8 17.8-17.8c1.2 0 2.4.1 3.6.4v7.4c-1.1-.5-2.3-.8-3.6-.8-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4 10.4-4.7 10.4-10.4V10H40z" opacity=".35"/>
+              <!-- strat principal (negru) -->
+              <path fill="#000000" d="M36.7 10v21.5c0 6.9-5.6 12.5-12.5 12.5S11.7 38.4 11.7 31.5 17.3 19 24.2 19c1.1 0 2.1.2 3.1.5v5.9c-.9-.4-1.9-.6-3-.6-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V10h5.4zm3.3 3c2.6 3.9 6.4 6.3 10.6 6.7v5.3c-4.9-.3-9.1-2.3-12-5.3V13z"/>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="f-bottom">
+      <div class="wrap f-bottom-row">
+        <p>© <span id="year"></span> Tractoare Tecuci. Toate drepturile rezervate.</p>
+        <p class="f-mini">
+          <a href="termeni.html">Termeni</a> · <a href="confidentialitate.html">Confidențialitate</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX (fără X; arrows + swipe; tap în fundal închide) -->
+  <script>
+  (function(){
+    function whenGalleryReady(cb){
+      const host = document.querySelector('#detailWrap');
+      if (!host) return;
+      const ok = () => host.querySelector('.gallery .g-main img') && (cb(), true);
+      if (ok()) return;
+      new MutationObserver(function(){ if (ok()) this.disconnect(); })
+        .observe(host, {childList:true, subtree:true});
+    }
+
+    function setupLightbox(){
+      const g = document.querySelector('#detailWrap .gallery');
+      if(!g) return;
+      const main = g.querySelector('.g-main img');
+      const thumbs = [...g.querySelectorAll('.g-thumbs img')];
+      const srcOf  = el => el?.dataset?.full || el?.src || '';
+
+      let sources = thumbs.map(srcOf);
+      if (main && sources[0] !== srcOf(main)) sources.unshift(srcOf(main));
+      let index = Math.max(0, sources.indexOf(srcOf(main) || sources[0]));
+
+      // thumbs sunt offset cu 1 față de imaginea mare
+      thumbs.forEach((t,i)=> t.addEventListener('click', ()=>{ if(main){ main.src = srcOf(t); index = i + 1; } }));
+      thumbs.forEach((t,i)=> t.addEventListener('dblclick', ()=> open(i + 1)));
+      if (main) main.addEventListener('click', ()=> open(index));
+
+      const lb = document.createElement('div');
+      lb.className = 'lb';
+      lb.innerHTML = `
+        <div class="lb-img-wrap">
+          <button class="lb-btn lb-prev" aria-label="Prev">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <img class="lb-img" alt="Imagine mare">
+          <button class="lb-btn lb-next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>`;
+      document.body.appendChild(lb);
+      const lbImg  = lb.querySelector('.lb-img');
+      const prevBt = lb.querySelector('.lb-prev');
+      const nextBt = lb.querySelector('.lb-next');
+
+      function show(i){ index = (i + sources.length) % sources.length; lbImg.src = sources[index]; }
+      function open(i){ show(i); lb.classList.add('open'); document.body.style.overflow='hidden'; }
+      function close(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+
+      prevBt.addEventListener('click', ()=> show(index-1));
+      nextBt.addEventListener('click', ()=> show(index+1));
+      lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+
+      document.addEventListener('keydown', (e)=>{
+        if(!lb.classList.contains('open')) return;
+        if(e.key==='Escape') close();
+        if(e.key==='ArrowLeft')  show(index-1);
+        if(e.key==='ArrowRight') show(index+1);
+      });
+
+      // swipe mobil
+      let sx=0, dx=0;
+      lb.addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+      lb.addEventListener('touchmove',  e => dx = e.touches[0].clientX, {passive:true});
+      lb.addEventListener('touchend', () => {
+        const d = dx - sx;
+        if (Math.abs(d) > 50) (d>0 ? show(index-1) : show(index+1));
+        sx = dx = 0;
+      });
+    }
+
+    whenGalleryReady(setupLightbox);
+  })();
+  </script>
+</body>
+</html>

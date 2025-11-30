@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="bTitle">Articol – Tractoare Tecuci</title>
+  <meta id="bDesc" name="description" content="Ghiduri și sfaturi despre tractoare și utilaje agricole" />
+  <link id="bCanonical" rel="canonical" href="" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/app.js"></script>
+  <script type="application/ld+json" id="jsonld-article">{}</script>
+
+  <style>
+  :root{ --brand:var(--brand-500,#2e7d32); --brand-50:rgba(46,125,50,.06); --ink:#0f172a; --muted:#475569; --ring:#e6e9ee; --shadow:0 12px 40px rgba(15,23,42,.06); }
+  body[data-page="post"] main.section{ --gap:clamp(48px,6vw,88px); padding-block:var(--gap);
+    background: radial-gradient(1200px 240px at 50% 0,var(--brand-50),transparent 60%), linear-gradient(180deg,rgba(46,125,50,.04),transparent 40%);}
+  body[data-page="post"] .wrap{ max-width:840px; padding-inline:16px; margin-inline:auto; }
+
+  /* Post Hero */
+  .post-hero{ margin-bottom:32px; }
+  .post-title{ margin:0 0 12px; color:var(--ink); font-size:clamp(28px,4.6vw,46px); line-height:1.12; letter-spacing:-.3px; font-weight:700; }
+  .post-meta{ color:var(--muted); font-size:15px; margin:0 0 24px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+  .post-meta::before{ content:''; display:inline-block; width:4px; height:4px; background:var(--muted); border-radius:50%; }
+  .post-cover{ margin:24px 0 0; border-radius:18px; overflow:hidden; box-shadow:var(--shadow); }
+  .post-cover img{ width:100%; display:block; aspect-ratio:16/9; object-fit:cover; }
+
+  /* Post Body */
+  .post-body{ background:#fff; border-radius:22px; padding:32px 24px; box-shadow:var(--shadow); border:1px solid var(--ring); }
+  .prose{ max-width:none; }
+  .prose p{ margin:0 0 16px; line-height:1.7; color:#1e293b; font-size:17px; }
+  .prose h2{ margin:32px 0 16px; color:var(--ink); font-size:clamp(22px,3vw,28px); line-height:1.3; font-weight:700; letter-spacing:-.2px; }
+  .prose h3{ margin:24px 0 12px; color:var(--ink); font-size:clamp(18px,2.4vw,22px); font-weight:600; }
+  .prose ul, .prose ol{ margin:0 0 16px; padding-left:24px; }
+  .prose li{ margin:0 0 8px; line-height:1.6; color:#1e293b; }
+  .prose strong{ color:var(--ink); font-weight:600; }
+  .prose em{ font-style:italic; }
+  .prose a{ color:var(--brand); text-decoration:underline; transition:color .18s; }
+  .prose a:hover{ color:#1b5e20; }
+  .prose blockquote{ margin:24px 0; padding:16px 20px; background:var(--brand-50); border-left:4px solid var(--brand); border-radius:8px; color:#1e293b; font-style:italic; }
+  .prose table{ width:100%; margin:24px 0; border-collapse:collapse; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(15,23,42,.08); }
+  .prose th, .prose td{ padding:12px 16px; text-align:left; border-bottom:1px solid var(--ring); }
+  .prose th{ background:#f8fafc; color:var(--ink); font-weight:600; font-size:15px; }
+  .prose td{ color:#334155; }
+  .prose small{ font-size:14px; color:var(--muted); }
+
+  /* Share Buttons */
+  .share{ margin-top:32px; padding-top:24px; border-top:1px dashed var(--ring); display:flex; gap:12px; flex-wrap:wrap; }
+  .share .btn{ display:inline-flex; align-items:center; justify-content:center; padding:.8rem 1.2rem; background:var(--brand-50); color:var(--brand); font-weight:600; border-radius:8px; text-decoration:none; transition:all .18s; border:2px solid transparent; }
+  .share .btn:hover{ background:var(--brand); color:#fff; transform:translateY(-2px); box-shadow:0 4px 12px rgba(46,125,50,.2); }
+
+  /* Back Button */
+  .back-link{ display:inline-flex; align-items:center; gap:8px; margin-bottom:24px; color:var(--brand); text-decoration:none; font-weight:600; transition:gap .18s; }
+  .back-link:hover{ gap:12px; }
+  .back-link svg{ width:20px; height:20px; }
+
+  @media(min-width:768px){ 
+    .post-body{ padding:48px 56px; } 
+    .prose p{ font-size:18px; }
+  }
+  </style>
+</head>
+
+<body data-page="post">
+  <!-- HEADER cunoscut -->
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="index.html"><img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96" /></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="utilaje.html" class="nav-link">Utilaje</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn primary contact-cta">Contact</a>
+        <button class="hamb" aria-label="Meniu"><span></span></button>
+      </div>
+    </div>
+    <nav class="drawer" aria-hidden="true">
+      <div class="nav-list">
+        <a href="index.html">Acasă</a>
+        <a href="utilaje.html">Utilaje</a>
+        <a href="despre-noi.html">Despre noi</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <a href="contact.html" class="btn primary wfull">Contact</a>
+    </nav>
+  </header>
+  <div class="nav-backdrop"></div>
+
+  <main class="section">
+    <div class="wrap">
+      <a href="blog.html" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Înapoi la blog
+      </a>
+      
+      <div id="postWrap">
+        <!-- Conținutul se va încărca dinamic prin app.js -->
+        <div class="post-body">
+          <div class="prose">
+            <p>Se încarcă...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <!-- Col 1: brand + scurtă descriere -->
+      <div class="f-col">
+        <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
+          <img src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
+        </a>
+        <p class="f-desc">
+          Utilaje agricole verificate, import direct din Europa. Consultanță, finanțare și transport rapid.
+        </p>
+      </div>
+  
+      <!-- Col 2: linkuri rapide -->
+      <nav class="f-col">
+        <h3 class="f-title">Linkuri</h3>
+        <ul class="f-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="utilaje.html">Categorii utilaje</a></li>
+          <li><a href="products.html">Stoc complet</a></li>
+          <li><a href="despre-noi.html">Despre noi</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Col 3: contact -->
+      <div class="f-col">
+        <h3 class="f-title">Contact</h3>
+        <ul class="f-contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <a href="tel:+40764199074">+40 764 199 074</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
+            <a
+              href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033"
+              target="_blank" rel="noopener"
+              title="Deschide pe Google Maps"
+            >
+              Str. Tecuciului Nou, nr. 25, Tecuci
+            </a>
+          </li>
+        </ul>
+        
+  
+        <div class="f-social">
+          <!-- OLX -->
+          <a
+  class="ico social olx-badge"
+  href="https://compaia.olx.ro/home/"
+  target="_blank" rel="noopener"
+  aria-label="OLX" title="Vezi profilul pe OLX"
+>
+  <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+    <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
+    <!-- „olx” alb, font independent (fallback geometric) -->
+    <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27
+      c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
+    <rect x="30.6" y="24.1" width="3.6" height="16" rx="1.8" ry="1.8" fill="#000000"/>
+    <path fill="#000000" d="M48.4,40.1l-4.9-6.1l4.7-6c0.3-0.4,0.4-0.9,0.2-1.4c-0.3-0.8-1.2-1.1-2-0.7c-0.2,0.1-0.4,0.3-0.5,0.4l-4,5.1
+      l-4-5.1c-0.4-0.5-1.1-0.7-1.8-0.5c-0.9,0.3-1.2,1.3-0.6,2.1l4.7,5.9l-4.9,6.2c-0.3,0.4-0.4,0.9-0.2,1.4c0.3,0.8,1.2,1.1,2,0.7
+      c0.2-0.1,0.4-0.3,0.5-0.4l4.2-5.3l4.1,5.2c0.4,0.5,1.1,0.7,1.8,0.5C48.7,41.9,49,41,48.4,40.1z"/>
+  </svg>
+</a>
+
+        
+          <!-- TikTok -->
+          <a
+            class="ico social tiktok"
+            href="https://www.tiktok.com/@nicoletamirza6"
+            target="_blank" rel="noopener"
+            aria-label="TikTok"
+            title="Vezi profilul pe TikTok"
+          >
+            <!-- Logo TikTok (multi-strat) -->
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <!-- fundal transparent pt. spațiere -->
+              <rect width="64" height="64" fill="none"/>
+              <!-- cyan accent -->
+              <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
+              <!-- roșu accent -->
+              <path fill="#FE2C55" d="M40 10v8.8c2.6 2 6.2 3.2 10 3.2v6c-4.9 0-9.2-1.7-12.5-4.5v13.9c0 9.8-8 17.8-17.8 17.8S2 47.2 2 37.4s8-17.8 17.8-17.8c1.2 0 2.4.1 3.6.4v7.4c-1.1-.5-2.3-.8-3.6-.8-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4 10.4-4.7 10.4-10.4V10H40z" opacity=".35"/>
+              <!-- strat principal (negru) -->
+              <path fill="#000000" d="M36.7 10v21.5c0 6.9-5.6 12.5-12.5 12.5S11.7 38.4 11.7 31.5 17.3 19 24.2 19c1.1 0 2.1.2 3.1.5v5.9c-.9-.4-1.9-.6-3-.6-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V10h5.4zm3.3 3c2.6 3.9 6.4 6.3 10.6 6.7v5.3c-4.9-.3-9.1-2.3-12-5.3V13z"/>
+            </svg>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="f-bottom">
+      <div class="wrap f-bottom-row">
+        <p>© <span id="year"></span> Tractoare Tecuci. Toate drepturile rezervate.</p>
+        <p class="f-mini">
+          <a href="termeni.html">Termeni</a> · <a href="confidentialitate.html">Confidențialitate</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      if (window.Blog && Blog.renderPostPage) {
+        Blog.renderPostPage();
+      }
+    });
+  </script>
+</body>
+</html>

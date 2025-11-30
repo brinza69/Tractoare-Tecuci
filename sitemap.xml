@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://127.0.0.1:5500/index.html</loc></url>
+  <url><loc>http://127.0.0.1:5500/utilaje.html</loc></url>
+  <url><loc>http://127.0.0.1:5500/products.html</loc></url>
+  <url><loc>http://127.0.0.1:5500/blog.html</loc></url>
+  <url><loc>http://127.0.0.1:5500/product.html?slug=tractor-john-deere-6150m</loc></url>
+  <url><loc>http://127.0.0.1:5500/product.html?slug=telescopic-jcb-535-95</loc></url>
+  <url><loc>http://127.0.0.1:5500/product.html?slug=alte-disc-4m</loc></url>
+  <url><loc>http://127.0.0.1:5500/post.html?slug=cum-alegi-un-tractor-second-hand</loc></url>
+</urlset>

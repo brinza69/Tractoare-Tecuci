@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 – Pagina nu a fost găsită | Tractoare Tecuci</title>
+
+  <!-- IMPORTANT pentru SEO: o pagină 404 trebuie să fie NOINDEX -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- opțional: stil minim; dacă ai assets/style.css, lasă doar linkul de mai jos -->
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    :root{ --primary:#2e7d32; --bg:#f6faf7; --text:#101828; --shadow:0 8px 32px rgba(16,24,40,.08); }
+    body{ margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial; }
+    .wrap{ max-width:900px; margin:0 auto; padding:0 16px; }
+    .box{ min-height:80vh; display:grid; place-items:center; text-align:center; }
+    .card{ background:#fff; box-shadow:var(--shadow); border-radius:16px; padding:28px; }
+    h1{ font-size:clamp(28px,4vw,48px); margin:0 0 6px; }
+    p.muted{ color:#667085; margin:0 0 18px; }
+    .actions{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; border:2px solid var(--primary); color:var(--primary);
+          padding:10px 14px; border-radius:999px; font-weight:700; text-decoration:none; }
+    .btn.primary{ background:var(--primary); color:#fff; }
+    .search{ display:flex; gap:8px; max-width:520px; margin:14px auto 0; }
+    .search input{ flex:1; padding:12px 14px; border:1px solid #e5e7eb; border-radius:12px; }
+  </style>
+</head>
+<body>
+  <header class="site-header" style="box-shadow:var(--shadow);background:#fff">
+    <div class="wrap" style="display:flex; align-items:center; gap:16px; padding:10px 0;">
+      <a href="index.html" class="brand" style="display:flex; gap:12px; align-items:center;">
+        <img src="assets/logo.png" alt="Tractoare Tecuci" width="72" height="72">
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap box">
+    <section class="card">
+      <h1>404 – Pagina nu a fost găsită</h1>
+      <p class="muted">Linkul poate fi greșit sau pagina a fost mutată. Îți oferim câteva opțiuni:</p>
+
+      <div class="actions">
+        <a class="btn primary" href="index.html">Înapoi la acasă</a>
+        <a class="btn" href="utilaje.html">Vezi utilaje</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+
+      <form class="search" role="search" action="utilaje.html" method="get">
+        <!-- dacă ai o pagină de listă cu filtru q, păstrează numele 'q' -->
+        <input type="search" name="q" placeholder="Caută: tractor, telescopic, brand…" aria-label="Căutare">
+        <button class="btn" type="submit">Caută</button>
+      </form>
+
+      <p class="muted" id="badUrl" style="margin-top:12px;"></p>
+    </section>
+  </main>
+
+  <script>
+    // arată URL-ul greșit (ajută utilizatorii)
+    const u = decodeURI(location.pathname + location.search);
+    document.getElementById('badUrl').textContent = `Adresă accesată: ${u}`;
+  </script>
+</body>
+</html>

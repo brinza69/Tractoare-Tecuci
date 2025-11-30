@@ -1,0 +1,373 @@
+/* =============================================================================
+   THEME (global) – curat, fără glass/glow, compatibil PNG
+   ========================================================================== */
+:root{
+  /* Brand */
+  --brand-50:  #e8f4ec;
+  --brand-100: #d6ecde;
+  --brand-500: #2e7d32;
+  --brand-600: #1b5e20;
+  --brand-rgb: 46,125,50;
+
+  /* Text / neutre */
+  --text:  #0f172a;
+  --muted: #64748b;
+
+  /* Fundaluri */
+  --bg:      #f7faf7;
+  --surface: #ffffff;
+
+  /* Layout */
+  --r:16px;
+  --max:1200px;
+  --shadow:0 8px 32px rgba(15,23,42,.08);
+
+  /* Derivate RGBA */
+  --brand-08: rgba(var(--brand-rgb), .08);
+  --brand-12: rgba(var(--brand-rgb), .12);
+  --brand-20: rgba(var(--brand-rgb), .20);
+
+  /* Footer */
+  --footer-bg:   #09160e;
+  --footer-card: #0f2416;
+  --footer-text: #eaf7ec;
+  --footer-muted:#b7ccb9;
+}
+
+/* =============================================================================
+   Base / reset
+   ========================================================================== */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.55;
+}
+img{max-width:100%;display:block;height:auto}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+
+.section{padding:56px 0}
+.grid{display:grid;gap:16px}
+.grid-mini{display:grid;gap:8px;grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.card .body{padding:14px}
+.muted{color:var(--muted)}
+.badge{
+  display:inline-block;background:var(--brand-50);color:var(--brand-600);
+  border:1px solid var(--brand-100);padding:4px 8px;border-radius:999px;font-size:12px
+}
+
+/* =============================================================================
+   Buttons – fără glow/shadow agresiv
+   ========================================================================== */
+.btn{
+  display:inline-flex;gap:8px;align-items:center;
+  padding:10px 14px;border-radius:999px;font-weight:700;
+  border:2px solid var(--brand-500);color:var(--brand-500);
+  transition:transform .06s ease, background .18s ease, color .18s ease, border-color .18s ease;
+}
+.btn:hover{transform:translateY(-1px);border-color:var(--brand-600);color:var(--brand-600)}
+.btn.primary{background:var(--brand-500);color:#fff;border-color:var(--brand-500)}
+.btn.primary:hover{background:var(--brand-600);border-color:var(--brand-600)}
+.more-btn,.more-btn:visited,.more-btn:hover,.more-btn:active,.more-btn:focus{ color:#fff }
+
+/* =============================================================================
+   Form controls
+   ========================================================================== */
+input,select,textarea{
+  background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;
+  outline:none;transition:border-color .15s ease, box-shadow .15s ease;
+}
+input:focus,select:focus,textarea:focus{
+  border-color:var(--brand-600);
+  box-shadow:0 0 0 4px rgba(var(--brand-rgb), .12);
+}
+
+/* =============================================================================
+   HEADER – fără glass/backdrop; nav fără glow
+   ========================================================================== */
+.site-header{
+  position:sticky; top:0; z-index:100;
+  background:#fff;                         /* fără glass */
+  border-bottom:1px solid rgba(15,23,42,.06);
+}
+.site-header .header-bar{
+  display:grid; align-items:center; gap:16px;
+  grid-template-columns: auto 1fr auto;
+  padding:10px 0;
+}
+
+/* Brand + logo PNG (menține proporțiile) */
+.brand{display:flex; align-items:center; gap:12px; flex-shrink:0;}
+.brand .logo{width:110px; height:auto;}    /* desktop; override pe mobil mai jos */
+
+.nav{display:none; justify-self:center; gap:22px;}
+.header-cta{display:flex; align-items:center; gap:12px; justify-content:flex-end;}
+.contact-cta{display:none;} /* ascuns pe mobil */
+
+/* Linkuri navbar – fără shadow/glow */
+.nav .nav-link{
+  color:#0f172a; font-weight:600;
+  padding:10px 12px; border-radius:999px;
+  transition:background .18s ease, color .18s ease;
+}
+.nav .nav-link:hover{ background:var(--brand-50); color:var(--brand-600); }
+.nav .nav-link.active{
+  background:var(--brand-500); color:#fff;           /* fără box-shadow */
+}
+
+/* Burger */
+.hamb{ width:44px;height:44px;border:0;background:transparent;position:relative;cursor:pointer; }
+.hamb span,
+.hamb span::before,
+.hamb span::after{
+  position:absolute; left:10px; right:10px; height:2px; background:#0f172a; border-radius:2px; content:"";
+  transition:transform .2s ease, opacity .2s ease;
+}
+.hamb span{ top:50%; transform:translateY(-50%); }
+.hamb span::before{ top:50%; transform:translateY(calc(-50% - 8px)); }
+.hamb span::after { top:50%; transform:translateY(calc(-50% + 8px)); }
+.site-header.open .hamb span{ transform:translateY(-50%) rotate(45deg); }
+.site-header.open .hamb span::before{ transform:translateY(-50%) rotate(90deg); }
+.site-header.open .hamb span::after{ opacity:0; }
+
+/* Drawer (mobil) – simplu, fără efecte */
+.drawer{
+  display:none !important;position:absolute;left:0;right:0;top:100%;
+  background:#fff;border-top:1px solid #e5e7eb;
+  padding:12px 16px;z-index:120;transform:translateY(-8px);opacity:0;pointer-events:none;
+  transition:transform .18s ease, opacity .18s ease;
+}
+.drawer .nav-list{display:flex;flex-direction:column;gap:8px;margin:8px 0 12px}
+.drawer a{display:block;padding:12px 14px;border-radius:12px;color:#0f172a;font-weight:600}
+.drawer a:hover{background:var(--brand-50);color:var(--brand-600)}
+.drawer .wfull{width:100%;justify-content:center}
+.site-header.open .drawer{display:block !important;transform:translateY(0);opacity:1;pointer-events:auto}
+
+/* Backdrop când e deschis drawer-ul */
+.nav-backdrop{
+  position:fixed;inset:0;z-index:90;background:rgba(15,23,42,.32);
+  opacity:0;pointer-events:none;transition:opacity .18s ease;
+}
+.site-header.open + .nav-backdrop{opacity:1;pointer-events:auto}
+
+/* Responsive header/nav */
+@media (max-width:768px){
+  .brand .logo{ width: clamp(92px, 28vw, 120px); height:auto; }  /* logo mai mare pe mobil, fără "glass" */
+  .nav{display:none !important}
+  .contact-cta{display:none !important}
+}
+@media (min-width:769px){
+  .nav{display:flex !important}
+  .contact-cta{display:inline-flex !important}
+  .hamb{display:none !important}
+  .drawer{display:none !important}
+}
+
+/* =============================================================================
+   HERO
+   ========================================================================== */
+.hero-video{position:relative;min-height:64vh;display:grid;place-items:center;color:#fff;overflow:hidden}
+.hero-video .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.6)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,60,30,.25),rgba(10,30,15,.55))}
+.hero-inner{position:relative;text-align:center;padding:32px}
+.hero-inner h1{font-size:clamp(28px,4vw,56px);margin:0 0 8px}
+.hero-inner p{margin:0 0 16px}
+
+/* Spațiu între „Categorii utilaje" și „Vezi tot stocul" */
+.hero-inner .actions{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:8px;
+}
+@media (max-width:600px){
+  .hero-inner .actions{flex-direction:column;gap:12px}
+  .hero-inner .actions .btn{width:min(88%,360px);justify-content:center}
+}
+
+/* =============================================================================
+   PRODUSE / LISTE (comune)
+   ========================================================================== */
+
+/* 🔧 FIX #1: Imagini fără distorsiune - păstrează proporțiile originale */
+.product .media{
+  position: relative;
+  width: 100%;
+  min-height: 220px;  /* înălțime minimă pentru consistență */
+  background: #eef2f7;
+  overflow: hidden;
+}
+.product .media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* păstrează proporțiile, decupează excesul */
+  object-position: center;  /* centrează imaginea */
+  transition: transform .35s;
+}
+.product:hover .media img{transform:scale(1.04)}
+
+.price{font-weight:700}.price.big{font-size:28px}
+
+.cat-card{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.cat-bg{aspect-ratio:16/10;background-size:cover;background-position:center;filter:brightness(.85)}
+.cat-card h3{position:absolute;left:16px;bottom:16px;color:#fff;font-size:28px;text-shadow:0 6px 20px rgba(0,0,0,.5)}
+
+/* 🔧 FIX #2: Spațiu între filtre și carduri */
+.filters{
+  display:grid;
+  gap:8px;
+  margin:16px 0 24px;  /* MODIFICAT: margin-bottom crescut de la 16px la 24px */
+}
+.filters input,.filters select{padding:10px;border-radius:12px;border:1px solid #e5e7eb}
+.filters .apply{background:var(--brand-500);color:#fff;border:0;border-radius:12px;padding:10px 12px}
+.filters .apply:hover{background:var(--brand-600)}
+.filters .reset{padding:10px 12px;border:1px solid #e5e7eb;border-radius:12px}
+
+/* 🔧 FIX #3: Spațiu între tabs și carduri */
+.cat-tabs{
+  display:flex;
+  gap:8px;
+  margin:8px 0 20px;  /* MODIFICAT: margin-bottom crescut de la 16px la 20px */
+}
+.tab{padding:8px 12px;border-radius:999px;border:1px solid var(--brand-100);background:#fff;cursor:pointer;color:var(--text)}
+.tab.active,.tab:hover{background:var(--brand-50);border-color:var(--brand-500);color:var(--brand-600)}
+
+/* 🔧 FIX #4: Spațiere extra pe mobil pentru filtre și tabs */
+@media (max-width:768px){
+  .cat-tabs{
+    margin:12px 0 24px;  /* mai mult spațiu pe mobil */
+  }
+  .filters{
+    margin:16px 0 28px;  /* mai mult spațiu pe mobil */
+  }
+}
+
+.detail{display:grid;gap:18px}
+.gallery{display:grid;gap:8px}
+.gallery .cover{border-radius:12px}
+.specs{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.specs td{padding:12px;border-bottom:1px solid #e5e7eb}
+.specs .k{color:#5b6b5f;text-transform:uppercase;font-size:12px;letter-spacing:.06em}
+.cta-row{display:flex;gap:10px;margin:12px 0}
+
+/* =============================================================================
+   Contact
+   ========================================================================== */
+.contact-grid{display:grid;gap:24px}
+.contact-cards{display:grid;gap:12px}
+.c-card{background:#fff;border-radius:12px;box-shadow:var(--shadow);padding:14px}
+.c-card h3{margin:0 0 6px}
+.map{min-height:360px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow)}
+.map iframe{width:100%;height:100%;border:0}
+@media(min-width:769px){
+  .contact-grid{grid-template-columns:1fr 1.6fr;align-items:start}
+  .contact-cards{grid-template-columns:repeat(2,1fr)}
+}
+
+/* =============================================================================
+   Footer – logo PNG păstrează proporțiile (fără deformare)
+   ========================================================================== */
+.site-footer{
+  margin-top:56px;
+  background: linear-gradient(180deg, #0e1e14, var(--footer-bg));
+  color: var(--footer-text);
+  position: relative;
+  overflow: hidden;
+}
+.site-footer .footer-grid{
+  display: grid;
+  gap: 28px;
+  padding: 36px 0;
+}
+@media (min-width:900px){
+  .site-footer .footer-grid{ grid-template-columns:1.2fr 1fr 1.2fr; align-items:start; }
+}
+.f-col{
+  background: var(--footer-card);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+.f-brand{ display:flex; align-items:center; gap:12px; font-weight:800; color:var(--footer-text) }
+/* IMPORTANT: nu forța lățime fixă (era pentru SVG). Păstrează proporțiile PNG. */
+.f-brand img{ height:56px; width:auto; }       /* mobil */
+@media (min-width:900px){ .f-brand img{ height:64px; width:auto; } }  /* desktop */
+.f-brand span{ font-size:20px }
+.f-desc{ margin:12px 0 0; color:var(--footer-muted) }
+
+.f-title{
+  margin:0 0 10px; font-size:14px; letter-spacing:.08em;
+  text-transform:uppercase; color:#cfe9d3;
+}
+.f-links{ list-style:none; margin:0; padding:0; display:grid; gap:8px }
+.f-links a{
+  color:var(--footer-text); padding:8px 10px; border-radius:10px;
+  transition: background .18s ease, color .18s ease, transform .08s ease;
+}
+.f-links a:hover{ background: rgba(255,255,255,.06); color:#fff; transform: translateX(2px) }
+.f-contact{ list-style:none; margin:0; padding:0; display:grid; gap:10px }
+.f-contact li{ display:flex; align-items:center; gap:10px; color: var(--footer-muted) }
+.f-contact a{ color:var(--footer-text) }
+.f-contact svg{ width:18px; height:18px; fill:#cfe9d3; flex:0 0 auto; }
+
+.f-social{ display:flex; gap:10px; margin-top:12px }
+.ico{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:34px; height:34px; border-radius:50%;
+  font-weight:700; font-size:13px; letter-spacing:.02em;
+  color:#0e160f; background:#cfe9d3;
+  transition: transform .08s ease, filter .18s ease;
+}
+.ico:hover{ transform: translateY(-2px); filter: brightness(1.05) }
+
+.f-bottom{ border-top:1px solid rgba(255,255,255,.06); background:#0b1a11 }
+.f-bottom-row{
+  display:flex; gap:16px; align-items:center; justify-content:space-between;
+  padding:14px 0; color:var(--footer-muted);
+}
+.f-bottom-row a{ color:var(--footer-text) }
+.f-mini{ opacity:.9; font-size:14px }
+
+/* =============================================================================
+   🔧 FIX #5: Layout helpers - Grid responsive îmbunătățit
+   ========================================================================== */
+
+/* Mobil: 1 coloană cu spațiu generos + imagini mai înalte */
+@media (max-width:768px){
+  .grid{
+    grid-template-columns:1fr;  /* o singură coloană pe mobil */
+    gap:20px;                   /* spațiu mai mare între carduri */
+  }
+  .product .media{
+    min-height:240px;           /* imagini mai înalte pe mobil */
+  }
+}
+
+/* Tablet: 2 coloane */
+@media (min-width:769px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);  /* 2 coloane pe tablet */
+    gap:18px;
+  }
+  .detail{
+    grid-template-columns:1.1fr .9fr;
+  }
+}
+
+/* Desktop mic: 3 coloane */
+@media (min-width:1025px){
+  .grid{
+    grid-template-columns:repeat(3,1fr);  /* 3 coloane pe desktop */
+    gap:20px;
+  }
+}
+
+/* Desktop mare: 4 coloane */
+@media (min-width:1280px){
+  .grid{
+    grid-template-columns:repeat(4,1fr);  /* 4 coloane pe ecrane mari */
+  }
+}
