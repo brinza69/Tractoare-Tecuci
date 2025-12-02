@@ -1,8 +1,29 @@
+// ========== Link-uri OLX actualizate ==========
+const OLX_LINKS = {
+  'tractor-claas-arion-420-cis-panoramic': 'https://www.olx.ro/d/oferta/tractor-claas-arion-420-IDk0PzI.html',
+  'fendt-724-vario-tms-deutz-240cp': 'https://www.olx.ro/d/oferta/fendt-724-vario-tms-IDk1TL8.html',
+  'massey-ferguson-7724-dyna6-240cp': 'https://www.olx.ro/d/oferta/tractor-massey-ferguson-7724-IDk1TQc.html',
+  'massey-ferguson-7719-s-powershift': 'https://www.olx.ro/d/oferta/massey-ferguson-7719-IDjH5h3.html',
+  'fendt-724-vario-tms-deutz-240cp-2017': 'https://www.olx.ro/d/oferta/fendt-vario-tms-724-IDjOd3N.html',
+  'john-deere-6120m-powerquad-inversor': 'https://www.olx.ro/d/oferta/john-deere-6120-m-IDjZUGL.html',
+  'fendt-718-vario-tms-deutz-185cp': 'https://www.olx.ro/d/oferta/fendt-718-vario-tms-IDjZUXI.html',
+  'fendt-920-vario-tms-man-220cp': 'https://www.olx.ro/d/oferta/fendt-920-vario-tms-IDjZUMQ.html',
+  'merlo-panoramic-37-12-plus': 'https://www.olx.ro/d/oferta/merlo-panoramic-37-12-plus-IDjH5dG.html',
+  'semanatoare-kuhn-maxima-2-gt-prasitoare': 'https://www.olx.ro/d/oferta/semanatoare-de-plante-prasitoare-kuhn-maxima-2-gt-IDk2Bv7.html',
+  'semanatoare-gaspardo-mte-6-randuri': 'https://www.olx.ro/d/oferta/semanatoare-gaspardo-6-randuri-IDjeqEy.html'
+};
+
 // ========== helpers ==========
 const $  = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const fmt = n => (n || 0).toLocaleString('ro-RO');
-const getJSON = path => fetch(path, { cache: 'no-store' }).then(r => r.json());
+const getJSON = path => fetch(path, { cache: 'no-store' }).then(r => r.json()).then(items => {
+  // Actualizează link-urile OLX
+  return items.map(p => ({
+    ...p,
+    olx_link: OLX_LINKS[p.slug] || p.olx_link
+  }));
+});
 
 // ========== UI base (year + active link) ==========
 function uiBase() {
@@ -77,7 +98,7 @@ async function pageHome(){
   g.innerHTML = items.slice(0,8).map(cardProduct).join('');
 }
 
-// Card produs (fara pret) + CTA
+// Card produs (fara pret) + CTA + FIX "0 ore"
 function cardProduct(p){
   const hoursDisplay = p.hours && p.hours > 0 
     ? `${p.year || ""} · ${fmt(p.hours)} ore` 
@@ -114,9 +135,14 @@ async function pageList(){
   function apply(){
     const fd=new FormData(form);
     const q=(fd.get('q')||'').toLowerCase();
-    const category=fd.get('category')||'';
+    let category=fd.get('category')||'';
     const brand=fd.get('brand')||'';
     const maxHours=+fd.get('maxHours')||0;
+
+    // MAPARE: "alte" din HTML → "semanatoare" din JSON
+    if (category === 'alte') {
+      category = 'semanatoare';
+    }
 
     const list=items.filter(p=>{
       if(q && !(p.title.toLowerCase().includes(q)||p.brand.toLowerCase().includes(q))) return false;
@@ -130,6 +156,7 @@ async function pageList(){
   }
 
   form.addEventListener('submit',e=>{e.preventDefault(); apply();});
+  
   $$('.cat-tabs .tab').forEach(t=>t.addEventListener('click',()=>{
     $$('.cat-tabs .tab').forEach(x=>x.classList.remove('active'));
     t.classList.add('active');
@@ -163,16 +190,22 @@ async function pageDetail(){
 
   let rows=''; const s=item.specs||[];
   for(let i=0;i<s.length;i+=2){
-    rows+=`<div class="spec-grid">
-      <div class="spec"><strong>${s[i]?.k||''}:</strong> ${s[i]?.v||''}</div>
-      <div class="spec"><strong>${s[i+1]?.k||''}:</strong> ${s[i+1]?.v||''}</div>
-    </div>`;
+    // Afișează spec doar dacă are și cheie și valoare
+    const spec1 = s[i]?.k && s[i]?.v ? `<div class="spec"><strong>${s[i].k}:</strong> ${s[i].v}</div>` : '';
+    const spec2 = s[i+1]?.k && s[i+1]?.v ? `<div class="spec"><strong>${s[i+1].k}:</strong> ${s[i+1].v}</div>` : '';
+    
+    // Doar dacă există cel puțin un spec valid, adaugă grid-ul
+    if(spec1 || spec2) {
+      rows+=`<div class="spec-grid">${spec1}${spec2}</div>`;
+    }
   }
 
+  // FIX "0 ore" - afișează rândul doar dacă există ore > 0
   const hoursHTML = item.hours && item.hours > 0 
     ? `<div class="item">Ore: <strong>${item.hours.toLocaleString('ro-RO')}</strong></div>` 
     : '';
 
+  // Buton OLX cu icon
   const olxButton = item.olx_link 
     ? `<a class="btn btn-outline" href="${item.olx_link}" target="_blank" rel="noopener noreferrer">
          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -329,228 +362,6 @@ async function pagePost(){
     </div>`;
 }
 
-// ========== ADMIN ==========
-function download(name, content, mime='application/json'){
-  const a=document.createElement('a'); 
-  a.href=URL.createObjectURL(new Blob([content],{type:mime}));
-  a.download=name; 
-  a.click(); 
-  URL.revokeObjectURL(a.href);
-}
-
-async function pageAdmin(){
-  if(document.body.dataset.page!=='admin') return;
-
-  let products=[]; 
-  const listP=$('#adminProducts'), dlgP=$('#dlgProduct'), frmP=$('#frmProduct');
-  
-  const renderP=()=>{
-    listP.innerHTML=products.map(p=>`
-      <div class="card">
-        <div class="body">
-          <strong>${p.title}</strong>
-          <div class="muted">${p.brand} · ${p.category}</div>
-          <p>
-            <button class="btn" data-edit="${p.slug}">Editează</button>
-            <button class="btn" data-del="${p.slug}">Șterge</button>
-          </p>
-        </div>
-      </div>`).join('');
-  };
-  
-  try{
-    products=await getJSON('data/products.json'); 
-    renderP();
-  }catch(e){}
-
-  $('#importProducts').onchange=async e=>{
-    const f=e.target.files[0]; 
-    if(!f) return; 
-    products=JSON.parse(await f.text()); 
-    renderP();
-  };
-  
-  $('#exportProducts').onclick=()=>download('products.json', JSON.stringify(products,null,2));
-  
-  $('#newProduct').onclick=()=>{
-    if(!frmP) return;
-    frmP.reset(); 
-    frmP.dataset.mode='new';
-    $('#dlgProductTitle').textContent='Produs nou';
-    dlgP?.showModal();
-  };
-  
-  listP?.addEventListener('click',e=>{
-    const b=e.target.closest('button'); 
-    if(!b) return;
-    const slug=b.dataset.edit||b.dataset.del; 
-    const i=products.findIndex(x=>x.slug===slug);
-    
-    if(b.dataset.edit){
-      const p=products[i]; 
-      if(!frmP) return;
-      frmP.reset(); 
-      frmP.dataset.mode='edit'; 
-      frmP.dataset.slug=p.slug;
-      $('#dlgProductTitle').textContent='Editează produs';
-      frmP.title.value=p.title||''; 
-      frmP.slug.value=p.slug||'';
-      frmP.brand.value=p.brand||''; 
-      frmP.category.value=p.category||'';
-      frmP.year.value=p.year||''; 
-      frmP.hours.value=p.hours||'';
-      frmP.status.value=p.status||'In stoc';
-      frmP.cover.value=p.cover||'';
-      frmP.gallery.value=(p.gallery||[]).join(', ');
-      frmP.short_desc.value=p.short_desc||'';
-      frmP.specs.value=JSON.stringify(p.specs||[],null,2);
-      dlgP?.showModal();
-    } else if(b.dataset.del){
-      if(confirm('Ștergi produsul?')){ 
-        products.splice(i,1); 
-        renderP(); 
-      }
-    }
-  });
-  
-  frmP?.addEventListener('close',()=>{
-    if(frmP.returnValue!=='ok') return;
-    try{
-      const p={
-        title:frmP.title.value.trim(),
-        slug:frmP.slug.value.trim(),
-        brand:frmP.brand.value.trim(),
-        category:frmP.category.value,
-        year:+frmP.year.value||0,
-        hours:+frmP.hours.value||0,
-        status:frmP.status.value.trim()||'In stoc',
-        cover:frmP.cover.value.trim(),
-        gallery:frmP.gallery.value.split(',').map(s=>s.trim()).filter(Boolean),
-        short_desc:frmP.short_desc.value.trim(),
-        specs:JSON.parse(frmP.specs.value||'[]')
-      };
-      if(!p.title||!p.slug) throw new Error('Titlu și slug obligatorii.');
-      const i=products.findIndex(x=>x.slug===p.slug);
-      if(frmP.dataset.mode==='new'){
-        if(i>-1) throw new Error('Slug existent.');
-        products.unshift(p);
-      } else {
-        products[i]=p;
-      }
-      renderP();
-    }catch(err){ 
-      alert(err.message); 
-    }
-  });
-
-  // POSTS
-  let posts=[]; 
-  const listB=$('#adminPosts'), dlgB=$('#dlgPost'), frmB=$('#frmPost');
-  
-  const renderB=()=>{
-    listB.innerHTML=posts.map(p=>`
-      <div class="card">
-        <div class="body">
-          <strong>${p.title}</strong>
-          <p class="muted">${p.excerpt||''}</p>
-          <p>
-            <button class="btn" data-edit="${p.slug}">Editează</button>
-            <button class="btn" data-del="${p.slug}">Șterge</button>
-          </p>
-        </div>
-      </div>`).join('');
-  };
-  
-  try{
-    posts=await getJSON('data/posts.json'); 
-    renderB();
-  }catch(e){}
-
-  $('#importPosts').onchange=async e=>{
-    const f=e.target.files[0]; 
-    if(!f) return; 
-    posts=JSON.parse(await f.text()); 
-    renderB();
-  };
-  
-  $('#exportPosts').onclick=()=>download('posts.json', JSON.stringify(posts,null,2));
-  
-  $('#newPost').onclick=()=>{
-    frmB.reset(); 
-    frmB.dataset.mode='new'; 
-    $('#dlgPostTitle').textContent='Articol nou'; 
-    dlgB.showModal();
-  };
-  
-  listB?.addEventListener('click',e=>{
-    const b=e.target.closest('button'); 
-    if(!b) return;
-    const slug=b.dataset.edit||b.dataset.del; 
-    const i=posts.findIndex(x=>x.slug===slug);
-    
-    if(b.dataset.edit){
-      const p=posts[i];
-      frmB.reset(); 
-      frmB.dataset.mode='edit'; 
-      frmB.dataset.slug=p.slug;
-      $('#dlgPostTitle').textContent='Editează articol';
-      frmB.title.value=p.title; 
-      frmB.slug.value=p.slug; 
-      frmB.cover.value=p.cover||'';
-      frmB.excerpt.value=p.excerpt||''; 
-      frmB.html.value=p.html||''; 
-      dlgB.showModal();
-    } else if(b.dataset.del){
-      if(confirm('Ștergi articolul?')){ 
-        posts.splice(i,1); 
-        renderB(); 
-      }
-    }
-  });
-  
-  frmB?.addEventListener('close',()=>{
-    if(frmB.returnValue!=='ok') return;
-    try{
-      const p={
-        title:frmB.title.value.trim(),
-        slug:frmB.slug.value.trim(),
-        cover:frmB.cover.value.trim(),
-        excerpt:frmB.excerpt.value.trim(),
-        html:frmB.html.value
-      };
-      if(!p.title||!p.slug) throw new Error('Titlu și slug obligatorii.');
-      const i=posts.findIndex(x=>x.slug===slug);
-      if(frmB.dataset.mode==='new'){
-        if(i>-1) throw new Error('Slug existent.');
-        posts.unshift(p);
-      } else {
-        posts[i]=p;
-      }
-      renderB();
-    }catch(err){ 
-      alert(err.message); 
-    }
-  });
-
-  // SEO helpers
-  $('#genSitemap').onclick=()=>{
-    const base=location.origin+location.pathname.replace(/\/admin\.html.*$/,'');
-    const urls=[
-      `${base}/index.html`,
-      `${base}/utilaje.html`,
-      `${base}/products.html`,
-      `${base}/blog.html`
-    ];
-    const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>`;
-    download('sitemap.xml', xml, 'application/xml');
-  };
-  
-  $('#genRobots').onclick=()=>{
-    const base=location.origin+location.pathname.replace(/\/admin\.html.*$/,'');
-    download('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml`, 'text/plain');
-  };
-}
-
 // ========== Bootstrap ==========
 document.addEventListener('DOMContentLoaded', ()=>{
   uiBase();
@@ -563,5 +374,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(page==='detail') pageDetail();
   if(page==='blog')   pageBlog();
   if(page==='post')   pagePost();
-  if(page==='admin')  pageAdmin();
 });
