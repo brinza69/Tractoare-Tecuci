@@ -64,22 +64,33 @@
       border-color: var(--brand-12)
     }
 
+    /* ===================== FIX IMAGINI FULL WIDTH ===================== */
+    
+    /* 1. Containerul pozei - FĂRĂ SPAȚII */
     .card.product .media {
-      aspect-ratio: 16/10;
-      background: var(--brand-50);
-      overflow: hidden
+      aspect-ratio: 1/1;          /* Păstrăm formatul dreptunghiular standard */
+      width: 100%;
+      background-color: #fff;     /* Fundal alb */
+      display: block;             /* Important pentru aliniere */
+      overflow: hidden;
+      padding: 0;                 /* 🔧 ZERO PADDING: Asta elimină spațiul gol de pe margini */
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;         /* Necesar pentru poziționare */
     }
 
+    /* 2. Imaginea - ÎMPLE TOT SPAȚIUL */
     .card.product .media img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      transform: scale(1.02);
-      transition: transform .35s ease
+      display: block;
+      object-fit: cover;          /* 🔧 COVER: Umple tot cadrul (fără margini gri), dar taie puțin sus/jos dacă poza e prea înaltă */
+      object-position: center;    /* Centrează imaginea */
+      transition: transform 0.5s ease;
     }
 
+    /* 3. Efect ZOOM fin la Hover */
     .card.product:hover .media img {
-      transform: scale(1.06)
+      transform: scale(1.08);     /* Efect modern de zoom */
     }
 
     .card.product .body {
