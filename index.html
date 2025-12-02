@@ -10,278 +10,657 @@
   <link rel="canonical" href="http://localhost:5500/">
   <link rel="preload" as="style" href="assets/style.css" onload="this.rel='stylesheet'">
   <link rel="stylesheet" href="assets/style.css?v=10">
-<script defer src="assets/app.js?v=10"></script>
+  <script defer src="assets/app.js?v=10"></script>
 
-<style>
-  
-  /* ==========================================================================
+  <style>
+    /* ==========================================================================
      INDEX SECTIONS – culori luminoase + spacing aerisit
      ========================================================================== */
-  
-  /* ===================== PRODUSE NOI ===================== */
-  .new-products{
-    position: relative;
-    padding: 64px 0 72px; /* +spacing */
-    background:
-      radial-gradient(1200px 300px at 50% 0%, var(--brand-08), transparent 60%),
-      linear-gradient(180deg, var(--brand-08), transparent 40%),
-      var(--bg);
-  }
-  .new-products .section-head{ text-align:center; margin-bottom:26px } /* +spacing */
-  .new-products .section-head h2{ margin:0 0 8px; font-size:clamp(22px,3.2vw,32px) }
-  .product-grid{ gap:22px }
-  @media(min-width:1025px){ .product-grid{ grid-template-columns:repeat(3,1fr) } }
-  
-  .card.product{
-    border-radius:18px; background:var(--surface); box-shadow:var(--shadow); overflow:hidden;
-    border:1px solid var(--brand-08);
-    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-  }
-  .card.product:hover{ transform:translateY(-4px); box-shadow:0 16px 40px rgba(15,23,42,.10); border-color:var(--brand-12) }
-  .card.product .media{ aspect-ratio:16/10; background:var(--brand-50); overflow:hidden }
-  .card.product .media img{ width:100%;height:100%;object-fit:cover; transform:scale(1.02); transition:transform .35s ease }
-  .card.product:hover .media img{ transform:scale(1.06) }
-  .card.product .body{ padding:18px 16px 20px } /* +spacing în card */
-  .card.product .badge{ background:var(--brand-50); color:var(--brand-600); border:1px solid var(--brand-100); font-weight:700 }
-  .card.product h3{ margin:8px 0 6px; font-size:18px; line-height:1.35 }
-  .card.product .price{ margin-top:10px; font-size:20px }
-  
-  /* CTA “Vezi mai multe” */
-  .more-row{ display:flex; justify-content:center; margin-top:26px }
-  .more-btn{
-    display:inline-flex; align-items:center; gap:8px; padding:12px 18px; border-radius:999px;
-    background:var(--brand-500); color:#fff; border:2px solid var(--brand-500);
-    box-shadow:0 10px 26px var(--brand-20);
-    transition:transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
-  }
-  .more-btn .chev{ display:inline-block; font-weight:700; transform:translateX(0); transition:transform .18s ease }
-  .more-btn:hover{ transform:translateY(-2px); background:var(--brand-600); border-color:var(--brand-600); box-shadow:0 16px 34px var(--brand-20) }
-  .more-btn:hover .chev{ transform:translateX(3px) }
-  .more-row.hidden{ display:none }
-  
-  /* ===================== SERVICII ===================== */
-  .services-head{ margin-bottom:22px }           /* +spacing */
-  .services-head h2{ margin:0 0 8px }
-  .services-head .muted{ margin:0 }
-  
-  .services-grid{ display:grid; gap:18px }
-  @media (min-width:768px){ .services-grid{ grid-template-columns:repeat(3,1fr) } }
-  
-  .service-card{
-    background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow); overflow:hidden;
-    transform:translateY(0); transition:transform .18s ease, box-shadow .18s ease;
-  }
-  .service-card:hover{ transform:translateY(-4px); box-shadow:0 16px 40px rgba(15,23,42,.12) }
-  
-  .svc-media{ height:190px; background-size:cover; background-position:center; position:relative } /* +înălțime vizuală */
-  .svc-media::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.0) 20%, rgba(0,0,0,.22) 100%) }
-  
-  .svc-badge{
-    position:absolute; left:12px; bottom:12px; z-index:2; display:inline-block; padding:6px 10px;
-    background:var(--brand-500); color:#fff; border-radius:999px; font-weight:700; font-size:13px;
-    box-shadow:0 8px 20px var(--brand-20);
-  }
-  .svc-badge.ghost{ background:rgba(255,255,255,.88); color:var(--brand-600); border:1px solid var(--brand-100); box-shadow:none }
-  
-  .svc-body{ padding:18px }                     /* +spacing */
-  .svc-title{ margin:0 0 8px }
-  .svc-text{ margin:0 0 12px; color:var(--muted) }
-  
-  .svc-list{ list-style:none; margin:0 0 12px; padding:0 }
-  .svc-list li{
-    display:flex; align-items:center; gap:8px; margin:6px 0; color:var(--text); position:relative; padding-left:22px;
-  }
-  .svc-list li::before{
-    content:""; width:12px; height:12px; border-radius:3px; background:var(--brand-500); opacity:.9; position:absolute; left:0; top:7px;
-    mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
-    -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
-  }
-  
-  .svc-cta{
-    display:inline-flex; align-items:center; gap:8px; background:var(--brand-500); color:#fff; border-radius:999px;
-    padding:10px 14px; font-weight:700; border:2px solid var(--brand-500);
-    transition:transform .06s ease, background .18s ease, border-color .18s ease;
-  }
-  .svc-cta:hover{ transform:translateY(-1px); background:var(--brand-600); border-color:var(--brand-600) }
-  
-  /* ===================== ABOUT TEASER ===================== */
-  /* Trecem pe fundal deschis (ca să dispară „dunga” între secțiuni) */
-  .about-teaser{
-    background: var(--bg);
-    padding: 56px 0; /* spațiere uniformă cu restul */
-  }
-  .about-teaser__inner{
-    background: var(--surface);
-    border: 1px solid rgba(15,23,42,.06);
-    border-radius: 18px;
-    padding: clamp(22px, 3.8vw, 40px);   /* +spacing */
-    display: grid; gap: 24px; align-items: center; grid-template-columns: 1.1fr .9fr;
-  }
-  .about-teaser__content{ color: var(--text); text-align:center; padding: clamp(6px,1vw,12px) }
-  .about-teaser__title{ margin:0 0 12px; font-size:clamp(28px,4.4vw,44px); color:var(--text) }
-  .about-teaser__lead{ margin:0 0 12px; font-size:clamp(15px,1.4vw,18px); line-height:1.7; color:var(--muted) }
-  .about-teaser__cta{
-    margin-top: 6px;
-    background: var(--brand-500); color:#fff; border-color: var(--brand-500); font-weight:800;
-  }
-  .about-teaser__cta:hover{ background:var(--brand-600); border-color:var(--brand-600); transform:translateY(-1px) }
-  .about-teaser__media{
-    display:block; border-radius:14px; overflow:hidden; position:relative;
-    box-shadow:0 16px 36px rgba(0,0,0,.12); transition:transform .2s ease, box-shadow .2s ease; cursor:pointer
-  }
-  .about-teaser__media:hover{ transform:translateY(-2px); box-shadow:0 22px 44px rgba(0,0,0,.16) }
-  .about-teaser__media img{ width:100%; height:100%; object-fit:cover }
-  @media(max-width:980px){
-    .about-teaser__inner{ grid-template-columns:1fr }
-    .about-teaser__media{ max-height:46vh }
-  }
 
-  /* Fix "Despre noi" – text invizibil pe panou alb */
-.about-teaser__inner{
-  background: #fff;                     /* panou alb */
-  border: 1px solid rgba(15,23,42,.06); /* contur discret pe light */
-}
+    /* ===================== PRODUSE NOI ===================== */
+    .new-products {
+      position: relative;
+      padding: 64px 0 72px;
+      /* +spacing */
+      background:
+        radial-gradient(1200px 300px at 50% 0%, var(--brand-08), transparent 60%),
+        linear-gradient(180deg, var(--brand-08), transparent 40%),
+        var(--bg);
+    }
 
-.about-teaser__content{ 
-  color: var(--text) !important;        /* text principal pe light */
-}
+    .new-products .section-head {
+      text-align: center;
+      margin-bottom: 26px
+    }
 
-.about-teaser__title{
-  color: var(--text) !important;        /* titlu pe light */
-}
+    /* +spacing */
+    .new-products .section-head h2 {
+      margin: 0 0 8px;
+      font-size: clamp(22px, 3.2vw, 32px)
+    }
 
-.about-teaser__lead{
-  color: var(--text) !important;        /* paragrafe pe light */
-  opacity: .92;
-}
+    .product-grid {
+      gap: 22px
+    }
 
-/* butonul rămâne cu accentele brand */
-.about-teaser__cta{
-  background: var(--primary-50);
-  border-color: var(--primary-50);
-  color: var(--primary-600);
-}
-.about-teaser__cta:hover{
-  background: var(--primary-100);
-  border-color: var(--primary-100);
-}
+    @media(min-width:1025px) {
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
 
-  
-  /* ===================== IMPORTATOR OFICIAL ===================== */
-  /* Tot deschis, ca să nu apară banda albă la tranziție. */
-  .brand-hero{
-    background: var(--bg);
-    position: relative;
-    padding: 56px 0;  /* aliniat cu About */
-    overflow: hidden;
-    border-top: 1px solid rgba(15,23,42,.06);   /* delimitare discretă între secțiuni */
-  }
-  .brand-hero::before,
-  .brand-hero::after{ content:""; display:none }   /* eliminăm fade-ul întunecat */
-  .brand-hero__inner{ text-align:center }
-  .brand-hero__title{ margin:0 0 20px; font-size:clamp(28px,5vw,44px); line-height:1.15; color:var(--text); letter-spacing:.2px; font-weight:700 }
-  .brand-hero__logo{
-    display:inline-block; padding: clamp(10px,1.4vw,16px) clamp(16px,2vw,22px); border-radius:14px;
-    background: #fff; border:1px solid rgba(15,23,42,.06);
-    box-shadow:0 12px 30px rgba(15,23,42,.08); transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
-  }
-  .brand-hero__logo:hover{ transform:translateY(-2px); box-shadow:0 18px 44px rgba(15,23,42,.12); cursor:pointer }
-  .brand-hero__logo img{ display:block; width:clamp(180px,28vw,340px); height:auto }
-  
-  /* ===================== REVIEWS ===================== */
-  /* Luminos ca restul; carduri albe. */
-  .reviews{
-    background: var(--bg);
-    padding: 64px 0 72px;
-    border-top: 1px solid rgba(15,23,42,.06); /* separare discretă de secțiunea de mai sus */
-  }
-  .rev-title{ color:var(--text); text-align:center; margin:0 0 26px; font-size:clamp(28px,4.2vw,40px); letter-spacing:.2px }
-  .rev-shell{ max-width:880px; margin:0 auto; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:12px }
-  .rev-card{
-    position:relative; background:#fff; border:1px solid rgba(15,23,42,.06); border-radius:18px;
-    padding: clamp(20px, 3.2vw, 28px); color:var(--text); text-align:center; box-shadow:0 14px 34px rgba(15,23,42,.08);
-    min-height: 240px; transition:opacity .25s ease;
-  }
-  .rev-avatar{ width:84px; height:84px; object-fit:cover; border-radius:50%; border:3px solid rgba(15,23,42,.08); margin:-56px auto 12px; display:block; background:#fff }
-  .rev-stars{ color: var(--brand-600); letter-spacing:2px; font-size:18px; margin-bottom:6px }
-  .rev-quote{ margin:8px auto 12px; max-width: 640px; font-size:clamp(16px,2.2vw,19px); line-height:1.65; color:var(--text) }
-  .rev-meta{ color:var(--muted); font-weight:600; font-size:14px }
-  
-  /* Navigație carusel (dacă o folosești) */
-  .rev-arrow{
-    width:40px; height:40px; border:0; border-radius:50%;
-    background:rgba(15,23,42,.06); color:var(--text); font-size:22px; display:grid; place-items:center;
-    cursor:pointer; transition:background .18s ease, transform .18s ease;
-  }
-  .rev-arrow:hover{ background:rgba(15,23,42,.10); transform:scale(1.06) }
-  
-  .rev-dots{ display:flex; justify-content:center; gap:8px; margin-top:14px }
-  .rev-dots button{
-    width:8px; height:8px; border-radius:999px; border:0; background:rgba(15,23,42,.25);
-    cursor:pointer; transition:transform .18s ease, background .18s ease;
-  }
-  .rev-dots button[aria-selected="true"]{ transform:scale(1.45); background:var(--text) }
-  
-  @media (max-width:768px){
-    .rev-shell{ grid-template-columns:1fr }
-    .rev-arrow{ order:-1; justify-self:center }
-    .rev-arrow.next{ order:2 }
-    .rev-card{ margin-top:18px }
-  }
+    .card.product {
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid var(--brand-08);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
 
-  /* ============ 2) REVIEWS – 1 coloană pe mobil + aerisire ============ */
-/* containerul de carduri din secțiunea .reviews */
-.reviews .grid{
-  display: grid;
-  gap: 16px;
-}
+    .card.product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, .10);
+      border-color: var(--brand-12)
+    }
 
-/* pe ecrane mici: 1 coloană + padding lateral ca să nu lipească de margini */
-@media (max-width: 640px){
-  .reviews .grid{
-    grid-template-columns: 1fr !important;  /* forțează 1 coloană */
-    padding: 0 14px;                         /* spațiu stânga/dreapta */
-  }
-  .rev-card{
-    margin: 0;                               /* fără margini suplimentare */
-  }
-  .rev-title{
-    margin-bottom: 18px;                     /* puțin mai compact */
-  }
-}
+    .card.product .media {
+      aspect-ratio: 16/10;
+      background: var(--brand-50);
+      overflow: hidden
+    }
 
-/* un pic mai mult aer deasupra avatarului (opțional) */
-.rev-card{ padding-top: 36px; }
-.rev-avatar{ margin-top: -42px; } /* păstrează look-ul cu avatar ieșit din card */
-@media (max-width:600px){
-  .hero-inner .actions{
-    flex-direction:column;
-    gap:12px;
-    align-items:center;           /* <- asta le centrează orizontal */
-  }
-  .hero-inner .actions .btn{
-    width:min(88%,360px);
-    justify-content:center;
-  }
-}
-.svc-media{
-  position: relative;
-  height: 190px;          /* cât aveai înainte */
-  overflow: hidden;
-  background: none;       /* nu mai folosim background-image */
-}
+    .card.product .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: transform .35s ease
+    }
 
-.svc-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+    .card.product:hover .media img {
+      transform: scale(1.06)
+    }
+
+    .card.product .body {
+      padding: 18px 16px 20px
+    }
+
+    /* +spacing în card */
+    .card.product .badge {
+      background: var(--brand-50);
+      color: var(--brand-600);
+      border: 1px solid var(--brand-100);
+      font-weight: 700
+    }
+
+    .card.product h3 {
+      margin: 8px 0 6px;
+      font-size: 18px;
+      line-height: 1.35
+    }
+
+    .card.product .price {
+      margin-top: 10px;
+      font-size: 20px
+    }
+
+    /* CTA “Vezi mai multe” */
+    .more-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 26px
+    }
+
+    .more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--brand-500);
+      color: #fff;
+      border: 2px solid var(--brand-500);
+      box-shadow: 0 10px 26px var(--brand-20);
+      transition: transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .more-btn .chev {
+      display: inline-block;
+      font-weight: 700;
+      transform: translateX(0);
+      transition: transform .18s ease
+    }
+
+    .more-btn:hover {
+      transform: translateY(-2px);
+      background: var(--brand-600);
+      border-color: var(--brand-600);
+      box-shadow: 0 16px 34px var(--brand-20)
+    }
+
+    .more-btn:hover .chev {
+      transform: translateX(3px)
+    }
+
+    .more-row.hidden {
+      display: none
+    }
+
+    /* ===================== SERVICII ===================== */
+    .services-head {
+      margin-bottom: 22px
+    }
+
+    /* +spacing */
+    .services-head h2 {
+      margin: 0 0 8px
+    }
+
+    .services-head .muted {
+      margin: 0
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 18px
+    }
+
+    @media (min-width:768px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    .service-card {
+      background: var(--surface);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: translateY(0);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, .12)
+    }
+
+    .svc-media {
+      height: 190px;
+      background-size: cover;
+      background-position: center;
+      position: relative
+    }
+
+    /* +înălțime vizuală */
+    .svc-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .0) 20%, rgba(0, 0, 0, .22) 100%)
+    }
+
+    .svc-badge {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 2;
+      display: inline-block;
+      padding: 6px 10px;
+      background: var(--brand-500);
+      color: #fff;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      box-shadow: 0 8px 20px var(--brand-20);
+    }
+
+    .svc-badge.ghost {
+      background: rgba(255, 255, 255, .88);
+      color: var(--brand-600);
+      border: 1px solid var(--brand-100);
+      box-shadow: none
+    }
+
+    .svc-body {
+      padding: 18px
+    }
+
+    /* +spacing */
+    .svc-title {
+      margin: 0 0 8px
+    }
+
+    .svc-text {
+      margin: 0 0 12px;
+      color: var(--muted)
+    }
+
+    .svc-list {
+      list-style: none;
+      margin: 0 0 12px;
+      padding: 0
+    }
+
+    .svc-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+      color: var(--text);
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .svc-list li::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: var(--brand-500);
+      opacity: .9;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
+      -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
+    }
+
+    .svc-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-500);
+      color: #fff;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      border: 2px solid var(--brand-500);
+      transition: transform .06s ease, background .18s ease, border-color .18s ease;
+    }
+
+    .svc-cta:hover {
+      transform: translateY(-1px);
+      background: var(--brand-600);
+      border-color: var(--brand-600)
+    }
+
+    /* ===================== ABOUT TEASER ===================== */
+    /* Trecem pe fundal deschis (ca să dispară „dunga” între secțiuni) */
+    .about-teaser {
+      background: var(--bg);
+      padding: 56px 0;
+      /* spațiere uniformă cu restul */
+    }
+
+    .about-teaser__inner {
+      background: var(--surface);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 18px;
+      padding: clamp(22px, 3.8vw, 40px);
+      /* +spacing */
+      display: grid;
+      gap: 24px;
+      align-items: center;
+      grid-template-columns: 1.1fr .9fr;
+    }
+
+    .about-teaser__content {
+      color: var(--text);
+      text-align: center;
+      padding: clamp(6px, 1vw, 12px)
+    }
+
+    .about-teaser__title {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4.4vw, 44px);
+      color: var(--text)
+    }
+
+    .about-teaser__lead {
+      margin: 0 0 12px;
+      font-size: clamp(15px, 1.4vw, 18px);
+      line-height: 1.7;
+      color: var(--muted)
+    }
+
+    .about-teaser__cta {
+      margin-top: 6px;
+      background: var(--brand-500);
+      color: #fff;
+      border-color: var(--brand-500);
+      font-weight: 800;
+    }
+
+    .about-teaser__cta:hover {
+      background: var(--brand-600);
+      border-color: var(--brand-600);
+      transform: translateY(-1px)
+    }
+
+    .about-teaser__media {
+      display: block;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease;
+      cursor: pointer
+    }
+
+    .about-teaser__media:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 44px rgba(0, 0, 0, .16)
+    }
+
+    .about-teaser__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    @media(max-width:980px) {
+      .about-teaser__inner {
+        grid-template-columns: 1fr
+      }
+
+      .about-teaser__media {
+        max-height: 46vh
+      }
+    }
+
+    /* Fix "Despre noi" – text invizibil pe panou alb */
+    .about-teaser__inner {
+      background: #fff;
+      /* panou alb */
+      border: 1px solid rgba(15, 23, 42, .06);
+      /* contur discret pe light */
+    }
+
+    .about-teaser__content {
+      color: var(--text) !important;
+      /* text principal pe light */
+    }
+
+    .about-teaser__title {
+      color: var(--text) !important;
+      /* titlu pe light */
+    }
+
+    .about-teaser__lead {
+      color: var(--text) !important;
+      /* paragrafe pe light */
+      opacity: .92;
+    }
+
+    /* butonul rămâne cu accentele brand */
+    .about-teaser__cta {
+      background: var(--primary-50);
+      border-color: var(--primary-50);
+      color: var(--primary-600);
+    }
+
+    .about-teaser__cta:hover {
+      background: var(--primary-100);
+      border-color: var(--primary-100);
+    }
 
 
+    /* ===================== IMPORTATOR OFICIAL ===================== */
+    /* Tot deschis, ca să nu apară banda albă la tranziție. */
+    .brand-hero {
+      background: var(--bg);
+      position: relative;
+      padding: 56px 0;
+      /* aliniat cu About */
+      overflow: hidden;
+      border-top: 1px solid rgba(15, 23, 42, .06);
+      /* delimitare discretă între secțiuni */
+    }
 
+    .brand-hero::before,
+    .brand-hero::after {
+      content: "";
+      display: none
+    }
+
+    /* eliminăm fade-ul întunecat */
+    .brand-hero__inner {
+      text-align: center
+    }
+
+    .brand-hero__title {
+      margin: 0 0 20px;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.15;
+      color: var(--text);
+      letter-spacing: .2px;
+      font-weight: 700
+    }
+
+    .brand-hero__logo {
+      display: inline-block;
+      padding: clamp(10px, 1.4vw, 16px) clamp(16px, 2vw, 22px);
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid rgba(15, 23, 42, .06);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .brand-hero__logo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .12);
+      cursor: pointer
+    }
+
+    .brand-hero__logo img {
+      display: block;
+      width: clamp(180px, 28vw, 340px);
+      height: auto
+    }
+
+    /* ===================== REVIEWS ===================== */
+    /* Luminos ca restul; carduri albe. */
+    .reviews {
+      background: var(--bg);
+      padding: 64px 0 72px;
+      border-top: 1px solid rgba(15, 23, 42, .06);
+      /* separare discretă de secțiunea de mai sus */
+    }
+
+    .rev-title {
+      color: var(--text);
+      text-align: center;
+      margin: 0 0 26px;
+      font-size: clamp(28px, 4.2vw, 40px);
+      letter-spacing: .2px
+    }
+
+    .rev-shell {
+      max-width: 880px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 12px
+    }
+
+    .rev-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 18px;
+      padding: clamp(20px, 3.2vw, 28px);
+      color: var(--text);
+      text-align: center;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, .08);
+      min-height: 240px;
+      transition: opacity .25s ease;
+    }
+
+    .rev-avatar {
+      width: 84px;
+      height: 84px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(15, 23, 42, .08);
+      margin: -56px auto 12px;
+      display: block;
+      background: #fff
+    }
+
+    .rev-stars {
+      color: var(--brand-600);
+      letter-spacing: 2px;
+      font-size: 18px;
+      margin-bottom: 6px
+    }
+
+    .rev-quote {
+      margin: 8px auto 12px;
+      max-width: 640px;
+      font-size: clamp(16px, 2.2vw, 19px);
+      line-height: 1.65;
+      color: var(--text)
+    }
+
+    .rev-meta {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    /* Navigație carusel (dacă o folosești) */
+    .rev-arrow {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, .06);
+      color: var(--text);
+      font-size: 22px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease;
+    }
+
+    .rev-arrow:hover {
+      background: rgba(15, 23, 42, .10);
+      transform: scale(1.06)
+    }
+
+    .rev-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px
+    }
+
+    .rev-dots button {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      border: 0;
+      background: rgba(15, 23, 42, .25);
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .rev-dots button[aria-selected="true"] {
+      transform: scale(1.45);
+      background: var(--text)
+    }
+
+    @media (max-width:768px) {
+      .rev-shell {
+        grid-template-columns: 1fr
+      }
+
+      .rev-arrow {
+        order: -1;
+        justify-self: center
+      }
+
+      .rev-arrow.next {
+        order: 2
+      }
+
+      .rev-card {
+        margin-top: 18px
+      }
+    }
+
+    /* ============ 2) REVIEWS – 1 coloană pe mobil + aerisire ============ */
+    /* containerul de carduri din secțiunea .reviews */
+    .reviews .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    /* pe ecrane mici: 1 coloană + padding lateral ca să nu lipească de margini */
+    @media (max-width: 640px) {
+      .reviews .grid {
+        grid-template-columns: 1fr !important;
+        /* forțează 1 coloană */
+        padding: 0 14px;
+        /* spațiu stânga/dreapta */
+      }
+
+      .rev-card {
+        margin: 0;
+        /* fără margini suplimentare */
+      }
+
+      .rev-title {
+        margin-bottom: 18px;
+        /* puțin mai compact */
+      }
+    }
+
+    /* un pic mai mult aer deasupra avatarului (opțional) */
+    .rev-card {
+      padding-top: 36px;
+    }
+
+    .rev-avatar {
+      margin-top: -42px;
+    }
+
+    /* păstrează look-ul cu avatar ieșit din card */
+    @media (max-width:600px) {
+      .hero-inner .actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        /* <- asta le centrează orizontal */
+      }
+
+      .hero-inner .actions .btn {
+        width: min(88%, 360px);
+        justify-content: center;
+      }
+    }
+
+    .svc-media {
+      position: relative;
+      height: 190px;
+      /* cât aveai înainte */
+      overflow: hidden;
+      background: none;
+      /* nu mai folosim background-image */
+    }
+
+    .svc-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
   </style>
-  
+
 
 </head>
 
@@ -292,15 +671,15 @@
       <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="88" height="88">
       </a>
-  
+
       <!-- CENTRU: nav (vizibil doar pe desktop) -->
       <nav class="nav" aria-label="Navigație principală">
-        <a href="index.html"    class="nav-link">Acasă</a>
-        <a href="utilaje.html"  class="nav-link">Utilaje</a>
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="utilaje.html" class="nav-link">Utilaje</a>
         <a href="despre-noi.html" class="nav-link">Despre noi</a>
-        <a href="blog.html"     class="nav-link">Blog</a>
+        <a href="blog.html" class="nav-link">Blog</a>
       </nav>
-  
+
       <!-- DREAPTA: CTA desktop + burger (mobil/tabletă) -->
       <div class="header-cta">
         <a href="contact.html" class="btn primary contact-cta">Contact</a>
@@ -309,7 +688,7 @@
         </button>
       </div>
     </div>
-  
+
     <!-- Drawer mobil (UN SINGUR drawer în header) -->
     <nav id="mobile-drawer" class="drawer" aria-label="Meniu mobil">
       <div class="nav-list">
@@ -321,10 +700,10 @@
       <a href="contact.html" class="btn primary wfull">Contact</a>
     </nav>
   </header>
-  
+
   <!-- backdrop (opțional dar recomandat) -->
   <div class="nav-backdrop" hidden></div>
-  
+
 
   <main>
     <!-- HERO VIDEO -->
@@ -350,9 +729,9 @@
           <h2>Produse noi</h2>
           <p class="muted">Utilaje verificate, gata de lucru.</p>
         </div>
-    
+
         <div id="latestGrid" class="grid product-grid"></div>
-    
+
         <div class="more-row" id="moreLatest">
           <a class="btn more-btn" href="products.html">
             Vezi mai multe
@@ -361,170 +740,171 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- Servicii scurt -->
-<section id="servicii" class="section services">
-  <div class="wrap">
-    <div class="services-head">
-      <h2>Servicii</h2>
-      <p class="muted">Tot ce ai nevoie ca utilajul potrivit să ajungă la tine, gata de lucru.</p>
-    </div>
+    <section id="servicii" class="section services">
+      <div class="wrap">
+        <div class="services-head">
+          <h2>Servicii</h2>
+          <p class="muted">Tot ce ai nevoie ca utilajul potrivit să ajungă la tine, gata de lucru.</p>
+        </div>
 
-    <div class="services-grid">
-      <!-- VÂNZARE -->
-      <article class="service-card">
-        <div class="svc-media">
-          <img src="assets/index photos/servicii-vanzare-utilaje-agricole-tractoare-tecuci.webp"
-               alt="Tractor agricol second hand verificat tehnic, pregătit de livrare">
-          <span class="svc-badge">Vânzare</span>
-        </div>
-        <div class="svc-body">
-          <h3 class="svc-title">Utilaje verificate</h3>
-          <p class="svc-text">
-            Te ajutăm să alegi utilajul potrivit, verificat tehnic și pregătit de lucru din prima zi.
-          </p>
-          <ul class="svc-list">
-            <li>Verificare tehnică înainte de livrare</li>
-            <li>Istoric și documente clarificate</li>
-            <li>Recomandări în funcție de tipul fermei</li>
-          </ul>
-          <a href="utilaje.html" class="svc-cta">Vezi stocul</a>
-        </div>
-      </article>
+        <div class="services-grid">
+          <!-- VÂNZARE -->
+          <article class="service-card">
+            <div class="svc-media">
+              <img src="assets/index photos/servicii-vanzare-utilaje-agricole-tractoare-tecuci.webp"
+                alt="Tractor agricol second hand verificat tehnic, pregătit de livrare">
+              <span class="svc-badge">Vânzare</span>
+            </div>
+            <div class="svc-body">
+              <h3 class="svc-title">Utilaje verificate</h3>
+              <p class="svc-text">
+                Te ajutăm să alegi utilajul potrivit, verificat tehnic și pregătit de lucru din prima zi.
+              </p>
+              <ul class="svc-list">
+                <li>Verificare tehnică înainte de livrare</li>
+                <li>Istoric și documente clarificate</li>
+                <li>Recomandări în funcție de tipul fermei</li>
+              </ul>
+              <a href="utilaje.html" class="svc-cta">Vezi stocul</a>
+            </div>
+          </article>
 
-      <!-- FINANȚARE -->
-      <article class="service-card">
-        <div class="svc-media">
-          <img src="assets/index photos/servicii-finantare-consultanta-investitii-utilaje-agricole.webp"
-               alt="Consultant discutând cu fermier despre investiții în utilaje agricole">
-          <span class="svc-badge ghost">Finanțare</span>
-        </div>
-        <div class="svc-body">
-          <h3 class="svc-title">Opțiuni flexibile</h3>
-          <p class="svc-text">
-            Îți oferim consultanță pentru a planifica investiția în utilaje în ritmul și bugetul fermei tale.
-          </p>
-          <ul class="svc-list">
-            <li>Analiză rapidă a nevoilor și bugetului</li>
-            <li>Scenarii de plată adaptate fermei</li>
-            <li>Legătură cu parteneri financiari dedicați</li>
-          </ul>
-          <a href="contact.html" class="svc-cta">Cere ofertă</a>
-        </div>
-      </article>
+          <!-- FINANȚARE -->
+          <article class="service-card">
+            <div class="svc-media">
+              <img src="assets/index photos/servicii-finantare-consultanta-investitii-utilaje-agricole.webp"
+                alt="Consultant discutând cu fermier despre investiții în utilaje agricole">
+              <span class="svc-badge ghost">Finanțare</span>
+            </div>
+            <div class="svc-body">
+              <h3 class="svc-title">Opțiuni flexibile</h3>
+              <p class="svc-text">
+                Îți oferim consultanță pentru a planifica investiția în utilaje în ritmul și bugetul fermei tale.
+              </p>
+              <ul class="svc-list">
+                <li>Analiză rapidă a nevoilor și bugetului</li>
+                <li>Scenarii de plată adaptate fermei</li>
+                <li>Legătură cu parteneri financiari dedicați</li>
+              </ul>
+              <a href="contact.html" class="svc-cta">Cere ofertă</a>
+            </div>
+          </article>
 
-      <!-- TRANSPORT INTERNAȚIONAL -->
-      <article class="service-card">
-        <div class="svc-media">
-          <img src="assets/index photos/servicii-transport-international-utilaje-agricole.webp"
-               alt="Camion de transport utilaje agricole pe șosea">
-          <span class="svc-badge">Transport internațional</span>
-        </div>
-        <div class="svc-body">
-          <h3 class="svc-title">Rapid & sigur</h3>
-          <p class="svc-text">
-            Organizăm transportul utilajelor cumpărate astfel încât să ajungă în siguranță direct la fermă.
-          </p>
-          <ul class="svc-list">
-            <li>Transport în toată țara și în UE</li>
-            <li>Asigurare pe întreaga durată a traseului</li>
-            <li>Livrare la data și ora agreate</li>
-          </ul>
-          <a href="contact.html" class="svc-cta">Solicită transport</a>
-        </div>
-      </article>
+          <!-- TRANSPORT INTERNAȚIONAL -->
+          <article class="service-card">
+            <div class="svc-media">
+              <img src="assets/index photos/servicii-transport-international-utilaje-agricole.webp"
+                alt="Camion de transport utilaje agricole pe șosea">
+              <span class="svc-badge">Transport internațional</span>
+            </div>
+            <div class="svc-body">
+              <h3 class="svc-title">Rapid & sigur</h3>
+              <p class="svc-text">
+                Organizăm transportul utilajelor cumpărate astfel încât să ajungă în siguranță direct la fermă.
+              </p>
+              <ul class="svc-list">
+                <li>Transport în toată țara și în UE</li>
+                <li>Asigurare pe întreaga durată a traseului</li>
+                <li>Livrare la data și ora agreate</li>
+              </ul>
+              <a href="contact.html" class="svc-cta">Solicită transport</a>
+            </div>
+          </article>
 
-    </div>
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
 
 
 
     <!-- ABOUT TEASER -->
-<section class="about-teaser">
-  <div class="wrap about-teaser__inner">
-    <!-- stânga: text -->
-    <div class="about-teaser__content">
-      <h2 class="about-teaser__title">Despre noi</h2>
-      <p class="about-teaser__lead">
-        Tractoare Tecuci s-a născut din dorința de a sprijini fermierii români cu utilaje de calitate,
-        fiabile și adaptate nevoilor reale din agricultură. Cu experiență și pasiune, am devenit
-        un partener de încredere pentru agricultori din toată țara.
-      </p>
-      <p class="about-teaser__lead">
-        Importăm utilaje direct din Europa, verificăm fiecare echipament și oferim consultanță,
-        transport și suport tehnic. Seriozitate, eficiență și productivitate – promisiuni
-        respectate la fiecare livrare.
-      </p>
+    <section class="about-teaser">
+      <div class="wrap about-teaser__inner">
+        <!-- stânga: text -->
+        <div class="about-teaser__content">
+          <h2 class="about-teaser__title">Despre noi</h2>
+          <p class="about-teaser__lead">
+            Tractoare Tecuci s-a născut din dorința de a sprijini fermierii români cu utilaje de calitate,
+            fiabile și adaptate nevoilor reale din agricultură. Cu experiență și pasiune, am devenit
+            un partener de încredere pentru agricultori din toată țara.
+          </p>
+          <p class="about-teaser__lead">
+            Importăm utilaje direct din Europa, verificăm fiecare echipament și oferim consultanță,
+            transport și suport tehnic. Seriozitate, eficiență și productivitate – promisiuni
+            respectate la fiecare livrare.
+          </p>
 
-      <a class="btn about-teaser__cta" href="despre-noi.html">
-        Află mai multe <span aria-hidden="true">→</span>
-      </a>
-    </div>
+          <a class="btn about-teaser__cta" href="despre-noi.html">
+            Află mai multe <span aria-hidden="true">→</span>
+          </a>
+        </div>
 
-    <!-- dreapta: imagine (clickabilă) -->
-    <a class="about-teaser__media" href="despre-noi.html" aria-label="Mergi la Despre noi">
-      <!-- Poți schimba imaginea după preferință -->
-      <img src="assets/index photos/tractor-ara.webp" alt="Tractor lucrând pe câmp">
-    </a>
-  </div>
-</section>
-
-
-<!-- IMPORTATOR OFICIAL -->
-<section class="brand-hero">
-  <div class="wrap brand-hero__inner">
-    <h2 class="brand-hero__title">Importator oficial</h2>
-
-    <!-- Dacă vrei ca logo-ul să fie link, păstrează <a>; altfel folosește doar <img> -->
-    <a class="brand-hero__logo" href="https://www.casella.it/en/home" target="_blank" rel="noopener" aria-label="Casella – site oficial">
-      <img src="assets/index photos/casella.webp" alt="Casella">
-    </a>
-  </div>
-</section>
+        <!-- dreapta: imagine (clickabilă) -->
+        <a class="about-teaser__media" href="despre-noi.html" aria-label="Mergi la Despre noi">
+          <!-- Poți schimba imaginea după preferință -->
+          <img src="assets/index photos/tractor-ara.webp" alt="Tractor lucrând pe câmp">
+        </a>
+      </div>
+    </section>
 
 
+    <!-- IMPORTATOR OFICIAL -->
+    <section class="brand-hero">
+      <div class="wrap brand-hero__inner">
+        <h2 class="brand-hero__title">Importator oficial</h2>
 
-<!-- REVIEWS / TESTIMONIALE -->
-<section class="reviews">
-  <div class="wrap">
-    <h2 class="rev-title">Clienții noștri spun</h2>
-    <div class="grid" style="grid-template-columns:repeat(3,1fr); gap:16px;">
-      <article class="rev-card">
-        <img class="rev-avatar" src="assets/reviews/r1.webp" alt="">
-        <div class="rev-stars">★★★★★</div>
-        <blockquote class="rev-quote">„Prețurile sunt corecte, iar livrarea a fost rapidă.”</blockquote>
-        <div class="rev-meta">Mihai D., Agricultor Galați</div>
-      </article>
-
-      <article class="rev-card">
-        <img class="rev-avatar" src="assets/reviews/r2.webp" alt="">
-        <div class="rev-stars">★★★★★</div>
-        <blockquote class="rev-quote">„Consultanță excelentă și utilajul în stare impecabilă.”</blockquote>
-        <div class="rev-meta">Elena P., Ferma Codrii</div>
-      </article>
-
-      <article class="rev-card">
-        <img class="rev-avatar" src="assets/reviews/r3.webp" alt="">
-        <div class="rev-stars">★★★★★</div>
-        <blockquote class="rev-quote">„Transport internațional planificat perfect.”</blockquote>
-        <div class="rev-meta">Sorin R., Ferma Ardeal</div>
-      </article>
-    </div>
-  </div>
-</section>
+        <!-- Dacă vrei ca logo-ul să fie link, păstrează <a>; altfel folosește doar <img> -->
+        <a class="brand-hero__logo" href="https://www.casella.it/en/home" target="_blank" rel="noopener"
+          aria-label="Casella – site oficial">
+          <img src="assets/index photos/casella.webp" alt="Casella">
+        </a>
+      </div>
+    </section>
 
 
 
-    
+    <!-- REVIEWS / TESTIMONIALE -->
+    <section class="reviews">
+      <div class="wrap">
+        <h2 class="rev-title">Clienții noștri spun</h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr); gap:16px;">
+          <article class="rev-card">
+            <img class="rev-avatar" src="assets/reviews/r1.webp" alt="">
+            <div class="rev-stars">★★★★★</div>
+            <blockquote class="rev-quote">„Prețurile sunt corecte, iar livrarea a fost rapidă.”</blockquote>
+            <div class="rev-meta">Mihai D., Agricultor Galați</div>
+          </article>
 
-   
+          <article class="rev-card">
+            <img class="rev-avatar" src="assets/reviews/r2.webp" alt="">
+            <div class="rev-stars">★★★★★</div>
+            <blockquote class="rev-quote">„Consultanță excelentă și utilajul în stare impecabilă.”</blockquote>
+            <div class="rev-meta">Elena P., Ferma Codrii</div>
+          </article>
 
-    
+          <article class="rev-card">
+            <img class="rev-avatar" src="assets/reviews/r3.webp" alt="">
+            <div class="rev-stars">★★★★★</div>
+            <blockquote class="rev-quote">„Transport internațional planificat perfect.”</blockquote>
+            <div class="rev-meta">Sorin R., Ferma Ardeal</div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    
+
+
+
+
+
+
+
+
+
   </main>
 
   <footer class="site-footer">
@@ -538,7 +918,7 @@
           Utilaje agricole verificate, import direct din Europa. Consultanță, finanțare și transport rapid.
         </p>
       </div>
-  
+
       <!-- Col 2: linkuri rapide -->
       <nav class="f-col">
         <h3 class="f-title">Linkuri</h3>
@@ -550,78 +930,77 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-  
+
       <!-- Col 3: contact -->
       <div class="f-col">
         <h3 class="f-title">Contact</h3>
         <ul class="f-contact">
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z" />
+            </svg>
             <a href="tel:+40764199074">+40 764 199 074</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6" />
+            </svg>
             <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
-            <a
-              href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033"
-              target="_blank" rel="noopener"
-              title="Deschide pe Google Maps"
-            >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5" />
+            </svg>
+            <a href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033"
+              target="_blank" rel="noopener" title="Deschide pe Google Maps">
               Str. Tecuciului Nou, nr. 25, Tecuci
             </a>
           </li>
         </ul>
-        
-  
+
+
         <div class="f-social">
           <!-- OLX -->
-          <a
-  class="ico social olx-badge"
-  href="https://compaia.olx.ro/home/"
-  target="_blank" rel="noopener"
-  aria-label="OLX" title="Vezi profilul pe OLX"
->
-  <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
-    <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
-    <!-- „olx” alb, font independent (fallback geometric) -->
-    <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27
-      c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
-    <rect x="30.6" y="24.1" width="3.6" height="16" rx="1.8" ry="1.8" fill="#000000"/>
-    <path fill="#000000" d="M48.4,40.1l-4.9-6.1l4.7-6c0.3-0.4,0.4-0.9,0.2-1.4c-0.3-0.8-1.2-1.1-2-0.7c-0.2,0.1-0.4,0.3-0.5,0.4l-4,5.1
+          <a class="ico social olx-badge" href="https://compaia.olx.ro/home/" target="_blank" rel="noopener"
+            aria-label="OLX" title="Vezi profilul pe OLX">
+            <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="#23E5DB" />
+              <!-- „olx” alb, font independent (fallback geometric) -->
+              <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27
+      c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z" />
+              <rect x="30.6" y="24.1" width="3.6" height="16" rx="1.8" ry="1.8" fill="#000000" />
+              <path fill="#000000" d="M48.4,40.1l-4.9-6.1l4.7-6c0.3-0.4,0.4-0.9,0.2-1.4c-0.3-0.8-1.2-1.1-2-0.7c-0.2,0.1-0.4,0.3-0.5,0.4l-4,5.1
       l-4-5.1c-0.4-0.5-1.1-0.7-1.8-0.5c-0.9,0.3-1.2,1.3-0.6,2.1l4.7,5.9l-4.9,6.2c-0.3,0.4-0.4,0.9-0.2,1.4c0.3,0.8,1.2,1.1,2,0.7
-      c0.2-0.1,0.4-0.3,0.5-0.4l4.2-5.3l4.1,5.2c0.4,0.5,1.1,0.7,1.8,0.5C48.7,41.9,49,41,48.4,40.1z"/>
-  </svg>
-</a>
+      c0.2-0.1,0.4-0.3,0.5-0.4l4.2-5.3l4.1,5.2c0.4,0.5,1.1,0.7,1.8,0.5C48.7,41.9,49,41,48.4,40.1z" />
+            </svg>
+          </a>
 
-        
+
           <!-- TikTok -->
-          <a
-            class="ico social tiktok"
-            href="https://www.tiktok.com/@nicoletamirza6"
-            target="_blank" rel="noopener"
-            aria-label="TikTok"
-            title="Vezi profilul pe TikTok"
-          >
+          <a class="ico social tiktok" href="https://www.tiktok.com/@nicoletamirza6" target="_blank" rel="noopener"
+            aria-label="TikTok" title="Vezi profilul pe TikTok">
             <!-- Logo TikTok (multi-strat) -->
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <!-- fundal transparent pt. spațiere -->
-              <rect width="64" height="64" fill="none"/>
+              <rect width="64" height="64" fill="none" />
               <!-- cyan accent -->
-              <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
+              <path fill="#25F4EE"
+                d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z" />
               <!-- roșu accent -->
-              <path fill="#FE2C55" d="M40 10v8.8c2.6 2 6.2 3.2 10 3.2v6c-4.9 0-9.2-1.7-12.5-4.5v13.9c0 9.8-8 17.8-17.8 17.8S2 47.2 2 37.4s8-17.8 17.8-17.8c1.2 0 2.4.1 3.6.4v7.4c-1.1-.5-2.3-.8-3.6-.8-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4 10.4-4.7 10.4-10.4V10H40z" opacity=".35"/>
+              <path fill="#FE2C55"
+                d="M40 10v8.8c2.6 2 6.2 3.2 10 3.2v6c-4.9 0-9.2-1.7-12.5-4.5v13.9c0 9.8-8 17.8-17.8 17.8S2 47.2 2 37.4s8-17.8 17.8-17.8c1.2 0 2.4.1 3.6.4v7.4c-1.1-.5-2.3-.8-3.6-.8-5.7 0-10.4 4.7-10.4 10.4s4.7 10.4 10.4 10.4 10.4-4.7 10.4-10.4V10H40z"
+                opacity=".35" />
               <!-- strat principal (negru) -->
-              <path fill="#000000" d="M36.7 10v21.5c0 6.9-5.6 12.5-12.5 12.5S11.7 38.4 11.7 31.5 17.3 19 24.2 19c1.1 0 2.1.2 3.1.5v5.9c-.9-.4-1.9-.6-3-.6-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V10h5.4zm3.3 3c2.6 3.9 6.4 6.3 10.6 6.7v5.3c-4.9-.3-9.1-2.3-12-5.3V13z"/>
+              <path fill="#000000"
+                d="M36.7 10v21.5c0 6.9-5.6 12.5-12.5 12.5S11.7 38.4 11.7 31.5 17.3 19 24.2 19c1.1 0 2.1.2 3.1.5v5.9c-.9-.4-1.9-.6-3-.6-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7V10h5.4zm3.3 3c2.6 3.9 6.4 6.3 10.6 6.7v5.3c-4.9-.3-9.1-2.3-12-5.3V13z" />
             </svg>
           </a>
         </div>
-        
+
       </div>
     </div>
-  
+
     <div class="f-bottom">
       <div class="wrap f-bottom-row">
         <p>© <span id="year"></span> Tractoare Tecuci. Toate drepturile rezervate.</p>
@@ -631,107 +1010,107 @@
       </div>
     </div>
   </footer>
-  
+
 
 
   <script>
     // marchează linkul activ în meniu
-    document.querySelectorAll('.nav a, .drawer a').forEach(a=>{
-      if(location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
+    document.querySelectorAll('.nav a, .drawer a').forEach(a => {
+      if (location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
     });
 
-    const obs = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){ e.target.style.opacity=1; e.target.style.transform='translateY(0)'; obs.unobserve(e.target); }
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'translateY(0)'; obs.unobserve(e.target); }
+      });
+    }, { threshold: .12 });
+
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.style.opacity = .0;
+      card.style.transform = 'translateY(14px)';
+      card.style.transition = 'opacity .35s ease, transform .35s ease';
+      obs.observe(card);
     });
-  }, {threshold:.12});
-
-  document.querySelectorAll('.service-card').forEach(card=>{
-    card.style.opacity=.0;
-    card.style.transform='translateY(14px)';
-    card.style.transition='opacity .35s ease, transform .35s ease';
-    obs.observe(card);
-  });
 
 
-  // ====== REVIEWS / TESTIMONIALE ======
-function setupReviews(){
-  const root = document.querySelector('#reviews');
-  if (!root) return;
+    // ====== REVIEWS / TESTIMONIALE ======
+    function setupReviews() {
+      const root = document.querySelector('#reviews');
+      if (!root) return;
 
-  // dataset (poți muta în data/reviews.json și să-l încarci cu getJSON)
-  const data = [
-    {
-      quote: '„Prețurile sunt corecte, iar livrarea a fost rapidă.”',
-      meta: 'Mihai D., Agricultor Galați',
-      photo: 'assets/reviews/r1.webp',
-      alt: 'Mihai în câmp'
-    },
-    {
-      quote: '„Am primit consultanță tehnică excelentă și utilajul a fost în stare impecabilă.”',
-      meta: 'Elena P., Ferma Codrii',
-      photo: 'assets/reviews/r2.webp',
-      alt: 'Elena pe utilaj'
-    },
-    {
-      quote: '„Transport internațional fără griji, totul planificat perfect.”',
-      meta: 'Sorin R., Ferma Ardeal',
-      photo: 'assets/reviews/r3.webp',
-      alt: 'Sorin în parc de utilaje'
+      // dataset (poți muta în data/reviews.json și să-l încarci cu getJSON)
+      const data = [
+        {
+          quote: '„Prețurile sunt corecte, iar livrarea a fost rapidă.”',
+          meta: 'Mihai D., Agricultor Galați',
+          photo: 'assets/reviews/r1.webp',
+          alt: 'Mihai în câmp'
+        },
+        {
+          quote: '„Am primit consultanță tehnică excelentă și utilajul a fost în stare impecabilă.”',
+          meta: 'Elena P., Ferma Codrii',
+          photo: 'assets/reviews/r2.webp',
+          alt: 'Elena pe utilaj'
+        },
+        {
+          quote: '„Transport internațional fără griji, totul planificat perfect.”',
+          meta: 'Sorin R., Ferma Ardeal',
+          photo: 'assets/reviews/r3.webp',
+          alt: 'Sorin în parc de utilaje'
+        }
+      ];
+
+      const fig = root.querySelector('.rev-item');
+      const img = root.querySelector('.rev-photo');
+      const quoteEl = root.querySelector('.rev-quote');
+      const metaEl = root.querySelector('.rev-meta');
+      const dotsWrap = root.querySelector('.rev-dots');
+
+      // build dots
+      dotsWrap.innerHTML = data.map((_, i) => `<button role="tab" aria-selected="${i === 0 ? 'true' : 'false'}" aria-label="Slide ${i + 1}"></button>`).join('');
+      const dots = [...dotsWrap.querySelectorAll('button')];
+
+      let i = 0, timer;
+
+      function render(idx) {
+        const item = data[idx];
+        img.src = item.photo;
+        img.alt = item.alt || 'Client fericit';
+        quoteEl.textContent = item.quote;
+        metaEl.textContent = item.meta;
+        dots.forEach((d, di) => d.setAttribute('aria-selected', di === idx ? 'true' : 'false'));
+      }
+      function next() { i = (i + 1) % data.length; render(i); }
+      function prev() { i = (i - 1 + data.length) % data.length; render(i); }
+
+      // nav
+      root.querySelector('.rev-nav.next').addEventListener('click', next);
+      root.querySelector('.rev-nav.prev').addEventListener('click', prev);
+      dots.forEach((d, di) => d.addEventListener('click', () => { i = di; render(i); }));
+
+      // autoplay & pause on hover
+      function start() { timer = setInterval(next, 6000); }
+      function stop() { clearInterval(timer); }
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+
+      // swipe (mobil)
+      let sx = 0, dx = 0;
+      fig.addEventListener('touchstart', e => { sx = e.touches[0].clientX; dx = 0; }, { passive: true });
+      fig.addEventListener('touchmove', e => { dx = e.touches[0].clientX - sx; }, { passive: true });
+      fig.addEventListener('touchend', () => { if (Math.abs(dx) > 40) (dx < 0 ? next() : prev()); });
+
+      render(i);
+      start();
     }
-  ];
 
-  const fig = root.querySelector('.rev-item');
-  const img = root.querySelector('.rev-photo');
-  const quoteEl = root.querySelector('.rev-quote');
-  const metaEl = root.querySelector('.rev-meta');
-  const dotsWrap = root.querySelector('.rev-dots');
-
-  // build dots
-  dotsWrap.innerHTML = data.map((_,i)=>`<button role="tab" aria-selected="${i===0?'true':'false'}" aria-label="Slide ${i+1}"></button>`).join('');
-  const dots = [...dotsWrap.querySelectorAll('button')];
-
-  let i = 0, timer;
-
-  function render(idx){
-    const item = data[idx];
-    img.src = item.photo;
-    img.alt = item.alt || 'Client fericit';
-    quoteEl.textContent = item.quote;
-    metaEl.textContent = item.meta;
-    dots.forEach((d,di)=>d.setAttribute('aria-selected', di===idx ? 'true' : 'false'));
-  }
-  function next(){ i = (i+1)%data.length; render(i); }
-  function prev(){ i = (i-1+data.length)%data.length; render(i); }
-
-  // nav
-  root.querySelector('.rev-nav.next').addEventListener('click', next);
-  root.querySelector('.rev-nav.prev').addEventListener('click', prev);
-  dots.forEach((d,di)=>d.addEventListener('click', ()=>{ i=di; render(i); }));
-
-  // autoplay & pause on hover
-  function start(){ timer = setInterval(next, 6000); }
-  function stop(){ clearInterval(timer); }
-  root.addEventListener('mouseenter', stop);
-  root.addEventListener('mouseleave', start);
-
-  // swipe (mobil)
-  let sx=0, dx=0;
-  fig.addEventListener('touchstart', e=>{ sx = e.touches[0].clientX; dx = 0; }, {passive:true});
-  fig.addEventListener('touchmove', e=>{ dx = e.touches[0].clientX - sx; }, {passive:true});
-  fig.addEventListener('touchend', ()=>{ if (Math.abs(dx) > 40) (dx < 0 ? next() : prev()); });
-
-  render(i);
-  start();
-}
-
-// ———— PORNEȘTE reviews împreună cu restul bootstrap-ului ————
-// Caută în fișierul tău un singur `DOMContentLoaded` (ai deja unul).
-// În el, adaugă apelul:
-document.addEventListener('DOMContentLoaded', ()=>{
-  // ... apelurile tale existente
-  setupReviews();
-});
+    // ———— PORNEȘTE reviews împreună cu restul bootstrap-ului ————
+    // Caută în fișierul tău un singur `DOMContentLoaded` (ai deja unul).
+    // În el, adaugă apelul:
+    document.addEventListener('DOMContentLoaded', () => {
+      // ... apelurile tale existente
+      setupReviews();
+    });
 
   </script>
 </body>
