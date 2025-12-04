@@ -4,33 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact – Tractoare Tecuci</title>
-  <meta name="description" content="Contactează Tractoare Tecuci: adresă, telefon, email, program și hartă interactivă.">
-  <link rel="canonical" href="https://exemplu.ro/contact.html">
+  <meta name="description" content="Contactează Tractoare Tecuci: adresă, telefon, email, program și hartă interactivă. Răspundem rapid la orice întrebare.">
+  <link rel="canonical" href="https://tractoaretecuci.ro/contact.html">
 
-  <link rel="stylesheet" href="assets/style.css?v=9">
-  <script defer src="assets/app.js?v=9"></script>
+  <link rel="stylesheet" href="assets/style.css?v=11">
+  <script defer src="assets/app.js?v=11"></script>
 
   <style>
     /* ========================================
-       CONTACT.HTML - STIL LOCAL
+       CONTACT.HTML - STIL CU MICRO-INTERACȚIUNI
        ======================================== */
     :root{
       --brand: var(--brand-500,#2e7d32);
       --ink:#0f172a; --muted:#475569; --ring:#e6e9ee;
       --card:#fff; --shadow:0 16px 48px rgba(15,23,42,.12);
       --glow: 0 0 0 4px rgba(46,125,50,.10), 0 10px 30px rgba(46,125,50,.20);
+      --eco-accent: #22c55e;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
     }
+    
     body main{
       background:
         radial-gradient(1200px 260px at 50% -20px, rgba(46,125,50,.07), transparent 60%),
         linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
     }
+    
     .wrap{ max-width: 1160px; padding-inline: 18px; margin-inline: auto; }
 
     /* ========================================
-       HERO SECTION
+       HERO SECTION CU MICRO-INTERACȚIUNI
        ======================================== */
-    .contact-hero{ padding: clamp(40px,7vw,96px) 0 0; }
+    .contact-hero{ 
+      padding: clamp(40px,7vw,96px) 0 0;
+      animation: fadeIn .6s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
     .panel{
       background: rgba(255,255,255,.92);
       backdrop-filter: blur(6px);
@@ -38,7 +51,16 @@
       box-shadow: var(--shadow);
       padding: clamp(26px,3.4vw,40px);
       text-align:center;
+      transition: var(--transition-smooth);
     }
+    
+    /* Micro-interacțiune: Hover pe panel */
+    .panel:hover {
+      box-shadow: 0 20px 56px rgba(15,23,42,.16);
+      border-color: rgba(46,125,50,.12);
+      transform: translateY(-2px);
+    }
+    
     .contact-hero h1{ 
       margin:0 0 6px; 
       font-size: clamp(30px,4.6vw,50px); 
@@ -46,6 +68,7 @@
       letter-spacing:-.3px; 
       color:var(--ink); 
     }
+    
     .contact-hero p{ 
       color:var(--muted); 
       margin: 8px auto 0; 
@@ -58,35 +81,66 @@
       display: flex; flex-wrap: wrap; gap: 14px;
       justify-content: center;
     }
+    
     .btn-prime{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
       padding:.85rem 1.2rem; border-radius: 999px;
       background: linear-gradient(135deg, #2e7d32, #3fa047);
       color:#fff; text-decoration:none; font-weight:900;
       box-shadow: 0 10px 24px rgba(46,125,50,.25);
-      transition: transform .08s, box-shadow .18s, filter .18s;
+      transition: transform .2s ease, box-shadow .2s, filter .2s;
       white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      pointer-events: auto; /* ✅ ASIGURĂ clickability */
     }
+    
+    /* Micro-interacțiune: Ripple effect pe butoane CTA */
+    .btn-prime::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+      pointer-events: none; /* ✅ Nu blochează click-ul */
+    }
+    
+    .btn-prime:active::before {
+      width: 300px;
+      height: 300px;
+    }
+    
     .btn-prime:hover{ 
-      transform: translateY(-1px); 
-      filter: brightness(1.02); 
-      box-shadow: 0 14px 36px rgba(46,125,50,.30); 
+      transform: translateY(-2px) scale(1.02); 
+      filter: brightness(1.05); 
+      box-shadow: 0 14px 36px rgba(46,125,50,.35); 
     }
+    
+    .btn-prime:active {
+      transform: translateY(0) scale(0.98);
+    }
+    
     .tips{ 
       margin-top: 12px; 
       color:#334155; 
-      font-size:.98rem; 
+      font-size:.98rem;
+      animation: fadeIn .8s ease-out .3s both;
     }
 
     /* ========================================
-       🔧 FIX: CARDURI CONTACT - Grid flexibil + Email nu mai iese
+       CARDURI CONTACT CU MICRO-INTERACȚIUNI
        ======================================== */
     .contact-section{ padding: clamp(30px,5vw,54px) 0 0; }
     
     .cards-grid{
       display:grid; 
       gap:22px;
-      /* 🔧 auto-fit cu minmax pentru carduri care se adaptează și se centrează frumos */
       grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
       align-items: stretch;
     }
@@ -99,24 +153,55 @@
       box-shadow: var(--shadow);
       display:flex; 
       flex-direction:column; 
-      gap:10px;              /* spațiere verticală între elemente */
+      gap:10px;
       min-height: 132px;
+      transition: var(--transition-smooth);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: revealCard .5s ease-out forwards;
+    }
+    
+    .c-card:nth-child(1) { animation-delay: .1s; }
+    .c-card:nth-child(2) { animation-delay: .2s; }
+    .c-card:nth-child(3) { animation-delay: .3s; }
+    .c-card:nth-child(4) { animation-delay: .4s; }
+    
+    @keyframes revealCard {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Micro-interacțiune: Hover pe cards */
+    .c-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 56px rgba(15,23,42,.18);
+      border-color: var(--eco-accent);
     }
 
     .c-card h3{ 
       margin: 0 0 10px; 
       font-size: 1.08rem; 
-      color:#0b3b1d; 
+      color:#0b3b1d;
+      transition: var(--transition-smooth);
     }
     
+    .c-card:hover h3 {
+      color: var(--brand);
+    }
+    
+    /* ✅ FONT CONSISTENT pentru text în carduri */
     .c-card p{ 
       margin: 0; 
       color: var(--ink); 
       line-height: 1.6; 
+      font-size: 0.95rem;
+      font-weight: 400;
     }
 
     /* ========================================
-       🔧 FIX EMAIL LUNG PE PC - Chip cu text wrapping
+       CHIPS CU MICRO-INTERACȚIUNI ELEGANTE
        ======================================== */
     .chip{
       display:inline-flex; 
@@ -129,49 +214,64 @@
       border:2px solid var(--ring);
       text-decoration:none; 
       color:#0f172a; 
-      font-weight:800;
-      font-size: 0.9em;
-      transition: transform .08s, box-shadow .18s, border-color .18s;
+      font-weight:600; /* ✅ Redus de la 800 pentru consistență */
+      font-size: 0.85rem; /* ✅ Aceeași dimensiune ca textul din carduri */
+      transition: var(--transition-smooth);
+      cursor: pointer; /* ✅ CRUCIAL pentru clickability */
+      pointer-events: auto; /* ✅ ASIGURĂ că poate fi dat click */
       
-      /* 🔧 SOLUȚIA pentru email lung: permite text wrapping */
-      white-space: normal;           /* ✅ PERMITE text pe mai multe linii */
-      overflow-wrap: anywhere;       /* ✅ RUPE email-ul oriunde e nevoie */
-      word-break: break-word;        /* ✅ BACKUP: rupe cuvinte lungi */
-      max-width: 100%;               /* ✅ NU iese din card */
+      /* Email lung va fi rupt automat */
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      max-width: 100%;
     }
     
+    /* Micro-interacțiune: Hover elegant pe chips */
     .chip:hover{ 
-      transform: translateY(-2px); 
-      border-color: rgba(46,125,50,.38); 
+      transform: translateY(-3px) scale(1.02); 
+      border-color: var(--eco-accent); 
+      background: rgba(46,125,50,.04);
       box-shadow: var(--glow); 
     }
+    
+    .chip:active {
+      transform: translateY(0) scale(0.98);
+    }
 
-  
     /* ========================================
-       HARTĂ SECTION
+       HARTĂ SECTION CU MICRO-INTERACȚIUNI
        ======================================== */
     .map-section{
       padding: clamp(34px,6vw,70px) 0 clamp(40px,8vw,90px);
     }
+    
     .map-wrap{
       max-width: 980px; 
-      margin: 0 auto;              /* centrat */
+      margin: 0 auto;
       background:#fff; 
       border:1px solid var(--ring); 
       border-radius: 22px;
       overflow: hidden; 
       box-shadow: var(--shadow);
+      transition: var(--transition-smooth);
     }
     
-    /* 🔧 FIX: Header hartă cu wrap pe buton + centrat */
+    /* Micro-interacțiune: Hover pe map container */
+    .map-wrap:hover {
+      box-shadow: 0 20px 56px rgba(15,23,42,.16);
+      border-color: rgba(46,125,50,.12);
+      transform: translateY(-2px);
+    }
+    
     .map-wrap header{
       padding: 16px;
       border-bottom: 1px dashed #e8edf3;
       color:#334155;
       display:flex; 
-      flex-wrap:wrap;              /* ✅ Butonul se duce pe linie nouă pe mobil */
+      flex-wrap:wrap;
       align-items:center; 
-      justify-content:center;      /* ✅ Centrat */
+      justify-content:center;
       gap:12px;
       text-align:center;
     }
@@ -181,10 +281,50 @@
       height: 560px; 
       display:block; 
       border:0; 
-      filter: saturate(1.05) contrast(1.03); 
+      filter: saturate(1.05) contrast(1.03);
+      transition: filter .3s ease;
+      pointer-events: auto; /* ✅ Permite interacțiune cu harta */
+    }
+    
+    .map-wrap:hover iframe {
+      filter: saturate(1.08) contrast(1.05);
     }
 
     .section + .section{ margin-top: 0; }
+    
+    /* ========================================
+       ACCESIBILITATE & RESPONSIVE
+       ======================================== */
+    
+    /* Focus states pentru accesibilitate */
+    .btn-prime:focus-visible,
+    .chip:focus-visible {
+      outline: 2px solid var(--eco-accent);
+      outline-offset: 4px;
+    }
+    
+    /* Touch-friendly pe mobil */
+    @media (hover: none) {
+      .c-card:active {
+        transform: scale(0.98);
+        transition: transform .1s ease;
+      }
+      
+      .chip:active {
+        transform: scale(0.95);
+      }
+    }
+    
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -192,21 +332,26 @@
   <!-- ===== HEADER (identic cu restul site-ului) ===== -->
   <header class="site-header">
     <div class="wrap header-bar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
       </a>
-      <nav class="nav">
+      
+      <nav class="nav" aria-label="Navigație principală">
         <a href="index.html" class="nav-link">Acasă</a>
         <a href="utilaje.html" class="nav-link">Utilaje</a>
         <a href="despre-noi.html" class="nav-link">Despre noi</a>
         <a href="blog.html" class="nav-link">Blog</a>
       </nav>
+      
       <div class="header-cta">
         <a href="contact.html" class="btn primary contact-cta">Contact</a>
-        <button class="hamb" aria-label="Meniu"><span></span></button>
+        <button class="hamb" type="button" aria-label="Meniu" aria-controls="mobile-drawer" aria-expanded="false">
+          <span></span>
+        </button>
       </div>
     </div>
-    <nav class="drawer" aria-hidden="true">
+    
+    <nav id="mobile-drawer" class="drawer" aria-label="Meniu mobil">
       <div class="nav-list">
         <a href="index.html">Acasă</a>
         <a href="utilaje.html">Utilaje</a>
@@ -216,7 +361,8 @@
       <a href="contact.html" class="btn primary wfull">Contact</a>
     </nav>
   </header>
-  <div class="nav-backdrop"></div>
+  
+  <div class="nav-backdrop" hidden></div>
 
   <!-- ===== CONȚINUT ===== -->
   <main>
@@ -226,57 +372,88 @@
         <div class="panel">
           <h1>Sunteți bineveniți la Tractoare Tecuci</h1>
           <p>Răspundem rapid la întrebări, oferte sau consultanță tehnică. Spuneți-ne ce utilaj căutați și vă ghidăm de la A la Z.</p>
-          <div class="cta-row" role="group" aria-label="Acțiuni rapide">
-            <a class="btn-prime" href="tel:+40764199074">📞 Sună +40 764 199 074</a>
-            <a class="btn-prime" href="mailto:vasilemirza84@yahoo.com">✉️ Trimite email</a>
-            <a class="btn-prime" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">🗺️ Deschide pe Google Maps</a>
-            <a class="btn-prime" href="https://waze.com/ul?ll=45.8765729%2C27.4220120&navigate=yes" target="_blank" rel="noopener">🚗 Navighează cu Waze</a>
+          
+          <div class="cta-row" role="group" aria-label="Acțiuni rapide de contact">
+            <a class="btn-prime" href="tel:+40764199074" aria-label="Sună la +40 764 199 074">
+              📞 Sună +40 764 199 074
+            </a>
+            <a class="btn-prime" href="mailto:vasilemirza84@yahoo.com" aria-label="Trimite email">
+              ✉️ Trimite email
+            </a>
+            <a class="btn-prime" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" 
+              target="_blank" rel="noopener" aria-label="Deschide pe Google Maps">
+              🗺️ Deschide pe Google Maps
+            </a>
+            <a class="btn-prime" href="https://waze.com/ul?ll=45.8765729%2C27.4220120&navigate=yes" 
+              target="_blank" rel="noopener" aria-label="Navighează cu Waze">
+              🚗 Navighează cu Waze
+            </a>
           </div>
+          
           <p class="tips">Program: Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00</p>
         </div>
       </div>
     </section>
 
-    <!-- CARDURI CONTACT (aerisite) -->
+    <!-- CARDURI CONTACT -->
     <section class="section contact-section">
       <div class="wrap">
         <div class="cards-grid">
+          <!-- Card 1: Adresă -->
           <article class="c-card">
             <h3>Adresă</h3>
             <p>Strada Tecuciului Nou Nr. 25<br>Tecuci, 805300</p>
-            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">Vezi pe Google Maps</a>
+            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" 
+              target="_blank" rel="noopener" aria-label="Vezi adresa pe Google Maps">
+              📍 Vezi pe Google Maps
+            </a>
           </article>
 
+          <!-- Card 2: Telefon -->
           <article class="c-card">
             <h3>Telefon</h3>
-            <p><a class="chip" href="tel:+40764199074">+40 764 199 074</a></p>
+            <p>Disponibili pentru orice întrebare</p>
+            <a class="chip" href="tel:+40764199074" aria-label="Sună la +40 764 199 074">
+              📞 +40 764 199 074
+            </a>
           </article>
 
+          <!-- Card 3: Email -->
           <article class="c-card">
             <h3>Email</h3>
-            <!-- 🔧 Email lung va fi rupt automat prin CSS (white-space: normal + overflow-wrap: anywhere) -->
-            <p><a class="chip" href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a></p>
+            <p>Răspundem rapid la mesaje</p>
+            <a class="chip" href="mailto:vasilemirza84@yahoo.com" aria-label="Trimite email la vasilemirza84@yahoo.com">
+              ✉️ vasilemirza84@yahoo.com
+            </a>
           </article>
 
+          <!-- Card 4: Program -->
           <article class="c-card">
             <h3>Program</h3>
-            <p>Luni–Vineri: 09:00–17:00<br>Sâmbătă: 10:00–14:00</p>
+            <p>Luni–Vineri: 09:00–17:00<br>Sâmbătă: 10:00–14:00<br>Duminică: Închis</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- HARTA: dedesubt, central, cu spațiu generos -->
-    <section class="section map-section" aria-label="Hartă Tractoare Tecuci – Str. Tecuciului Nou 25, Tecuci">
+    <!-- HARTA -->
+    <section class="section map-section" aria-label="Hartă locație Tractoare Tecuci">
       <div class="wrap">
         <div class="map-wrap">
           <header>
-            <strong>Ne găsiți aici</strong>
-            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener">Deschide în Google Maps</a>
+            <strong>Ne găsiți aici: Str. Tecuciului Nou 25, Tecuci</strong>
+            <a class="chip" href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" 
+              target="_blank" rel="noopener" aria-label="Deschide harta în Google Maps">
+              🗺️ Deschide în Google Maps
+            </a>
           </header>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.736913460712!2d27.422012000000006!3d45.876572900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b4295c7d0cba87%3A0x11b4abacc20f9033!2sTarctoare%20Tecuci!5e0!3m2!1sro!2sro!4v1758820672158!5m2!1sro!2sro"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            allowfullscreen
+            title="Hartă Google Maps - Locația Tractoare Tecuci"
+            aria-label="Hartă interactivă Google Maps pentru Tractoare Tecuci, Str. Tecuciului Nou 25"></iframe>
         </div>
       </div>
     </section>
@@ -309,23 +486,31 @@
         <h3 class="f-title">Contact</h3>
         <ul class="f-contact">
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/>
+            </svg>
             <a href="tel:+40764199074">+40 764 199 074</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/>
+            </svg>
             <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
-            <a href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener" title="Deschide pe Google Maps">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/>
+            </svg>
+            <a href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" 
+              target="_blank" rel="noopener" title="Deschide pe Google Maps">
               Str. Tecuciului Nou, nr. 25, Tecuci
             </a>
           </li>
         </ul>
         
         <div class="f-social">
-          <a class="ico social olx-badge" href="https://compaia.olx.ro/home/" target="_blank" rel="noopener" aria-label="OLX" title="Vezi profilul pe OLX">
+          <a class="ico social olx-badge" href="https://compaia.olx.ro/home/" target="_blank" rel="noopener" 
+            aria-label="OLX" title="Vezi profilul pe OLX">
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
               <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
@@ -334,7 +519,8 @@
             </svg>
           </a>
         
-          <a class="ico social tiktok" href="https://www.tiktok.com/@nicoletamirza6" target="_blank" rel="noopener" aria-label="TikTok" title="Vezi profilul pe TikTok">
+          <a class="ico social tiktok" href="https://www.tiktok.com/@nicoletamirza6" target="_blank" rel="noopener" 
+            aria-label="TikTok" title="Vezi profilul pe TikTok">
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <rect width="64" height="64" fill="none"/>
               <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
@@ -357,21 +543,41 @@
   </footer>
 
   <script>
-    // link activ + meniu mobil + an curent
+    // Link activ + meniu mobil + an curent
     document.addEventListener('DOMContentLoaded', () => {
+      // Marchează linkul activ în meniu
       document.querySelectorAll('.nav a, .drawer a').forEach(a=>{
         if(location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
       });
-      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
-      const hamb=document.querySelector('.hamb'), drawer=document.querySelector('.drawer'), back=document.querySelector('.nav-backdrop');
-      if(hamb&&drawer&&back){
-        const toggle=()=>{ const open=drawer.getAttribute('aria-hidden')!=='false';
-          drawer.setAttribute('aria-hidden', open?'false':'true');
-          back.classList.toggle('active', open);
-          document.body.classList.toggle('no-scroll', open);
+      
+      // Actualizează anul în footer
+      const year = document.getElementById('year'); 
+      if(year) year.textContent = new Date().getFullYear();
+      
+      // Meniu mobil toggle
+      const hamb = document.querySelector('.hamb');
+      const drawer = document.querySelector('.drawer');
+      const backdrop = document.querySelector('.nav-backdrop');
+      
+      if(hamb && drawer && backdrop){
+        const toggle = () => { 
+          const isOpen = drawer.getAttribute('aria-hidden') !== 'false';
+          drawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+          backdrop.classList.toggle('active', isOpen);
+          backdrop.hidden = !isOpen;
+          document.body.classList.toggle('no-scroll', isOpen);
+          hamb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         };
-        hamb.addEventListener('click', toggle); back.addEventListener('click', toggle);
+        
+        hamb.addEventListener('click', toggle); 
+        backdrop.addEventListener('click', toggle);
       }
+      
+      // ✅ DEBUG: Verifică dacă linkurile funcționează
+      console.log('✅ Contact page loaded');
+      document.querySelectorAll('.chip').forEach(chip => {
+        console.log('Chip found:', chip.href, 'cursor:', getComputedStyle(chip).cursor);
+      });
     });
   </script>
 </body>

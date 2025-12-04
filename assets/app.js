@@ -1,3 +1,8 @@
+/* =============================================================================
+   TRACTOARE TECUCI - APP.JS COMPLET
+   Include: Funcționalitate site + Micro-Interacțiuni
+   ========================================================================== */
+
 // ========== Link-uri OLX actualizate ==========
 const OLX_LINKS = {
   'tractor-claas-arion-420-cis-panoramic': 'https://www.olx.ro/d/oferta/tractor-claas-arion-420-IDk0PzI.html',
@@ -362,16 +367,309 @@ async function pagePost(){
     </div>`;
 }
 
-// ========== Bootstrap ==========
+/* =============================================================================
+   MICRO-INTERACȚIUNI - FUNCȚIONALITATE EXTINSĂ
+   ========================================================================== */
+
+// ========== 1. STICKY NAVBAR – FADE SUBTIL LA SCROLL ==========
+function initStickyNavbar() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  let lastScroll = 0;
+  const scrollThreshold = 100;
+
+  function handleScroll() {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > scrollThreshold) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+  }
+
+  // Throttle pentru performanță
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        handleScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+}
+
+// ========== 2. RIPPLE EFFECT PE BUTOANE ==========
+function initRippleEffect() {
+  const buttons = document.querySelectorAll('.btn, .svc-cta, .more-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      ripple.classList.add('btn-ripple');
+
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      ripple.style.left = x + 'px';
+      ripple.style.top = y + 'px';
+
+      this.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    });
+  });
+}
+
+// ========== 3. INTERSECTION OBSERVER – SCROLL REVEALS ==========
+function initScrollReveals() {
+  const revealElements = document.querySelectorAll(
+    '.service-card, .card.product, .rev-card, .about-teaser__inner'
+  );
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-element', 'revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach((element, index) => {
+    element.classList.add('reveal-element');
+    
+    if (element.parentElement.classList.contains('product-grid') ||
+        element.parentElement.classList.contains('services-grid')) {
+      const delayClass = `delay-${Math.min((index % 3) * 100, 300)}`;
+      element.classList.add(delayClass);
+    }
+
+    observer.observe(element);
+  });
+}
+
+// ========== 4. SMOOTH SCROLL PENTRU ANCHOR LINKS ==========
+function initSmoothScroll() {
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      
+      if (targetId === '#' || targetId === '#top') return;
+
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        e.preventDefault();
+        
+        const headerHeight = document.querySelector('.site-header')?.offsetHeight || 0;
+        const targetPosition = targetElement.offsetTop - headerHeight - 20;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+
+// ========== 5. LAZY LOAD IMAGES ==========
+function initLazyLoad() {
+  if ('loading' in HTMLImageElement.prototype) {
+    return;
+  }
+
+  const lazyImages = document.querySelectorAll('img[data-src]');
+  
+  const imageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        imageObserver.unobserve(img);
+      }
+    });
+  });
+
+  lazyImages.forEach(img => imageObserver.observe(img));
+}
+
+// ========== 6. FORM VALIDATION SUBTILĂ ==========
+function initFormValidation() {
+  const forms = document.querySelectorAll('form');
+
+  forms.forEach(form => {
+    const inputs = form.querySelectorAll('input, textarea, select');
+
+    inputs.forEach(input => {
+      input.addEventListener('blur', function() {
+        if (this.hasAttribute('required') && !this.value.trim()) {
+          this.style.borderColor = '#ef4444';
+          this.setAttribute('aria-invalid', 'true');
+        } else {
+          this.style.borderColor = '';
+          this.removeAttribute('aria-invalid');
+        }
+      });
+
+      input.addEventListener('input', function() {
+        if (this.hasAttribute('required') && this.value.trim()) {
+          this.style.borderColor = '#22c55e';
+          this.removeAttribute('aria-invalid');
+        }
+      });
+    });
+  });
+}
+
+// ========== 7. CARD HOVER PARALLAX (OPȚIONAL) ==========
+function initCardParallax() {
+  if (window.matchMedia('(hover: hover) and (min-width: 1024px)').matches) {
+    const cards = document.querySelectorAll('.card.product, .service-card');
+
+    cards.forEach(card => {
+      card.addEventListener('mousemove', function(e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / centerY * 2;
+        const rotateY = (centerX - x) / centerX * 2;
+
+        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+      });
+
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = '';
+      });
+    });
+  }
+}
+
+// ========== 8. VIDEO PRELOAD ==========
+function initVideoPreload() {
+  const video = document.querySelector('.hero-bg');
+  if (!video) return;
+
+  video.addEventListener('loadeddata', function() {
+    this.style.opacity = '1';
+  });
+
+  video.addEventListener('error', function() {
+    console.warn('Video-ul nu s-a putut încărca');
+  });
+}
+
+// ========== 9. ACCESSIBILITY HELPERS ==========
+function initAccessibility() {
+  const drawer = document.querySelector('.drawer');
+  const hamburger = document.querySelector('.hamb');
+
+  if (hamburger && drawer) {
+    hamburger.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      
+      if (!isExpanded) {
+        setTimeout(() => {
+          const firstLink = drawer.querySelector('a');
+          if (firstLink) firstLink.focus();
+        }, 100);
+      }
+    });
+  }
+
+  // Skip to main content link
+  const skipLink = document.createElement('a');
+  skipLink.href = '#main';
+  skipLink.textContent = 'Sari la conținut';
+  skipLink.className = 'skip-link';
+  skipLink.style.cssText = `
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--eco-accent);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+    transition: top 0.3s;
+  `;
+  
+  skipLink.addEventListener('focus', () => {
+    skipLink.style.top = '0';
+  });
+  
+  skipLink.addEventListener('blur', () => {
+    skipLink.style.top = '-40px';
+  });
+
+  document.body.insertBefore(skipLink, document.body.firstChild);
+}
+
+// ========== 10. REDUCED MOTION SUPPORT ==========
+function respectReducedMotion() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (prefersReducedMotion.matches) {
+    document.documentElement.style.setProperty('--transition-smooth', 'none');
+    document.documentElement.style.setProperty('--transition-soft', 'none');
+    
+    console.log('♿ Reduced motion activat - animații dezactivate');
+  }
+}
+
+// ========== Bootstrap COMPLET ==========
 document.addEventListener('DOMContentLoaded', ()=>{
+  console.log('🚜 Tractoare Tecuci - Inițializare completă...');
+
+  // UI Base
   uiBase();
   setupMenu();
   setupContact();
 
+  // Micro-Interacțiuni
+  respectReducedMotion();
+  initStickyNavbar();
+  initRippleEffect();
+  initScrollReveals();
+  initSmoothScroll();
+  initLazyLoad();
+  initFormValidation();
+  initCardParallax();
+  initVideoPreload();
+  initAccessibility();
+
+  // Pagini
   const page=document.body.dataset.page||'';
   if(page==='home')   pageHome();
   if(page==='list')   pageList();
   if(page==='detail') pageDetail();
   if(page==='blog')   pageBlog();
   if(page==='post')   pagePost();
+
+  console.log('✅ Site + Micro-interacțiuni active!');
 });
+
+/* =============================================================================
+   FIN APP.JS COMPLET
+   ========================================================================== */
