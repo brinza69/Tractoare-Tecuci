@@ -3,11 +3,104 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title id="pTitle">Detalii produs – Tractoare Tecuci</title>
-  <meta id="pDesc" name="description" content="Detalii complete despre utilajul agricol. Import direct din Europa, verificat tehnic." />
-  <link id="pCanonical" rel="canonical" href="" />
+  
+  <!-- SEO OPTIMIZAT - Meta tags dinamice populate de JS -->
+  <title id="pTitle">Detalii Utilaj Agricol | Tractoare Tecuci - Import Europa</title>
+  <meta id="pDesc" name="description" content="Detalii complete despre utilajul agricol. Import direct din Europa, verificat tehnic. Solicită ofertă personalizată." />
+  <link id="pCanonical" rel="canonical" href="https://tractoaretecuci.ro/product" />
+  
+  <!-- Open Graph - populate de JS -->
+  <meta property="og:type" content="product">
+  <meta property="og:site_name" content="Tractoare Tecuci">
+  <meta id="ogTitle" property="og:title" content="Detalii Utilaj Agricol | Tractoare Tecuci">
+  <meta id="ogDesc" property="og:description" content="Import direct din Europa, verificat tehnic. Solicită ofertă.">
+  <meta id="ogUrl" property="og:url" content="https://tractoaretecuci.ro/product">
+  <meta id="ogImage" property="og:image" content="">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ro_RO">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta id="twTitle" name="twitter:title" content="Detalii Utilaj Agricol | Tractoare Tecuci">
+  <meta id="twDesc" name="twitter:description" content="Import direct din Europa. Solicită ofertă.">
+  <meta id="twImage" name="twitter:image" content="">
+  
+  <!-- Local SEO -->
+  <meta name="geo.region" content="RO-GL">
+  <meta name="geo.placename" content="Tecuci">
+  <meta name="geo.position" content="45.8765729;27.4220120">
+  <meta name="ICBM" content="45.8765729, 27.4220120">
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="assets/style.css?v=11">
+  <link rel="preload" as="script" href="assets/app.js?v=11">
+  
   <link rel="stylesheet" href="assets/style.css?v=11" />
   <script defer src="assets/app.js?v=11"></script>
+
+  <!-- JSON-LD Schema - Product (template populate de JS) -->
+  <script type="application/ld+json" id="productSchema">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Utilaj agricol",
+    "description": "Utilaj agricol verificat, import direct din Europa",
+    "brand": {
+      "@type": "Brand",
+      "name": "Brand utilaj"
+    },
+    "category": "Utilaje agricole",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Tractoare Tecuci",
+        "url": "https://tractoaretecuci.ro",
+        "telephone": "+40764199074",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Str. Tecuciului Nou, nr. 25",
+          "addressLocality": "Tecuci",
+          "addressRegion": "Galați",
+          "postalCode": "805300",
+          "addressCountry": "RO"
+        }
+      }
+    }
+  }
+  </script>
+  
+  <!-- Breadcrumbs Schema (template populate de JS) -->
+  <script type="application/ld+json" id="breadcrumbSchema">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Acasă",
+        "item": "https://tractoaretecuci.ro"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Stoc Utilaje",
+        "item": "https://tractoaretecuci.ro/products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Produs",
+        "item": "https://tractoaretecuci.ro/product"
+      }
+    ]
+  }
+  </script>
 
   <style>
   :root{
@@ -419,7 +512,7 @@
 </head>
 
 <body data-page="detail">
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="wrap header-bar">
       <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96" />
@@ -453,11 +546,11 @@
 
   <div class="nav-backdrop" hidden></div>
 
-  <main>
+  <main role="main">
     <!-- back + brand + titlu -->
     <section class="section">
       <div class="wrap">
-        <a class="back" href="products.html" aria-label="Înapoi la stoc">
+        <a class="back" href="products.html" aria-label="Înapoi la lista completă de utilaje">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M19 12H5M5 12l7-7M5 12l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -473,25 +566,25 @@
 
     <!-- GALERIE + INFO (injectate din app.js) -->
     <section class="section detail-sec">
-      <div class="wrap detail" id="detailWrap"></div>
+      <div class="wrap detail" id="detailWrap" role="region" aria-label="Detalii utilaj"></div>
     </section>
 
     <!-- BARA DE TABURI -->
     <section class="section tabs-sec">
       <div class="wrap">
-        <div class="cat-rail">
-          <div class="cat-tabs" role="tablist" aria-label="Categorii utilaje">
+        <nav class="cat-rail" aria-label="Navigație categorii">
+          <div class="cat-tabs" role="tablist">
             <a class="tab" href="products.html" role="tab">Toate</a>
             <a class="tab" href="products.html?category=tractor" role="tab">Tractoare</a>
             <a class="tab" href="products.html?category=telescopic" role="tab">Telescopice</a>
             <a class="tab" href="products.html?category=alte" role="tab">Alte utilaje</a>
           </div>
-        </div>
+        </nav>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-grid">
       <div class="f-col">
         <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
@@ -502,7 +595,7 @@
         </p>
       </div>
   
-      <nav class="f-col">
+      <nav class="f-col" aria-label="Linkuri rapide">
         <h3 class="f-title">Linkuri</h3>
         <ul class="f-links">
           <li><a href="index.html">Acasă</a></li>
@@ -602,6 +695,8 @@
 
       const lb = document.createElement('div');
       lb.className = 'lb';
+      lb.setAttribute('role', 'dialog');
+      lb.setAttribute('aria-label', 'Galerie imagini produs');
       lb.innerHTML = `
         <div class="lb-img-wrap">
           <button class="lb-btn lb-prev" aria-label="Imaginea anterioară">

@@ -3,22 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Despre noi – Tractoare Tecuci | Utilaje agricole verificate</title>
-  <meta name="description" content="Află povestea Tractoare Tecuci: utilaje agricole second-hand verificate, consultanță corectă, transport și punere în funcțiune în toată țara." />
-  <link rel="canonical" href="https://exemplu.ro/despre-noi">
+  
+  <!-- SEO OPTIMIZAT -->
+  <title>Despre Noi | Tractoare Tecuci - Utilaje Agricole Import Europa</title>
+  <meta name="description" content="Tractoare Tecuci: import utilaje agricole din Europa. 20+ ani experiență, transport rapid, consultanță tehnică. Sprijin real pentru fermieri din România." />
+  
+  <!-- Canonical corect -->
+  <link rel="canonical" href="https://tractoaretecuci.ro/despre-noi">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tractoare Tecuci">
+  <meta property="og:title" content="Despre Noi | Tractoare Tecuci - Utilaje Agricole">
+  <meta property="og:description" content="20+ ani experiență în import utilaje agricole. Transport rapid, consultanță tehnică. Sprijin real pentru fermieri.">
+  <meta property="og:url" content="https://tractoaretecuci.ro/despre-noi">
+  <meta property="og:image" content="https://tractoaretecuci.ro/assets/og-image-despre.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ro_RO">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Despre Noi | Tractoare Tecuci">
+  <meta name="twitter:description" content="20+ ani experiență în import utilaje agricole. Transport rapid, consultanță tehnică.">
+  <meta name="twitter:image" content="https://tractoaretecuci.ro/assets/og-image-despre.jpg">
+  
+  <!-- Local SEO -->
+  <meta name="geo.region" content="RO-GL">
+  <meta name="geo.placename" content="Tecuci">
+  <meta name="geo.position" content="45.8765729;27.4220120">
+  <meta name="ICBM" content="45.8765729, 27.4220120">
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="assets/style.css?v=11">
+  <link rel="preload" as="script" href="assets/app.js?v=11">
+  <link rel="preload" as="image" href="assets/about/monitorizare-culturi-agricole-tehnologie-irigatii.webp">
+  
   <link rel="stylesheet" href="assets/style.css?v=11">
   <script defer src="assets/app.js?v=11"></script>
 
-  <!-- JSON-LD pentru SEO (Organization) -->
+  <!-- JSON-LD Schema (minimalist, doar date existente) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Tractoare Tecuci",
-    "url":"https://exemplu.ro",
-    "logo":"https://exemplu.ro/assets/logo.png",
-    "sameAs":["https://compaia.olx.ro/home/","https://www.tiktok.com/@nicoletamirza6"],
-    "contactPoint":[{"@type":"ContactPoint","telephone":"+40 764 199 074","contactType":"sales","areaServed":"RO","availableLanguage":["ro"]}]
+    "url":"https://tractoaretecuci.ro",
+    "logo":"https://tractoaretecuci.ro/assets/logo.png",
+    "sameAs":[
+      "https://compaia.olx.ro/home/",
+      "https://www.tiktok.com/@nicoletamirza6"
+    ],
+    "contactPoint":[{
+      "@type":"ContactPoint",
+      "telephone":"+40764199074",
+      "contactType":"sales",
+      "areaServed":"RO",
+      "availableLanguage":["ro"]
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Str. Tecuciului Nou, nr. 25",
+      "addressLocality": "Tecuci",
+      "addressRegion": "Galați",
+      "postalCode": "805300",
+      "addressCountry": "RO"
+    }
   }
   </script>
 
@@ -461,7 +512,7 @@
 <body class="about">
 
   <!-- ===== HEADER (identic cu restul site-ului) ===== -->
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="wrap header-bar">
       <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
@@ -495,21 +546,23 @@
   <div class="nav-backdrop" hidden></div>
 
   <!-- ===== CONȚINUT ===== -->
-  <main class="about-main">
+  <main class="about-main" role="main">
   <!-- HERO -->
-  <section class="section">
+  <section class="section" aria-labelledby="hero-heading">
     <div class="wrap hero">
       <div class="visual">
         <img
           src="assets/about/monitorizare-culturi-agricole-tehnologie-irigatii.webp"
-          alt="Fermier care monitorizează culturile cu tabletă la apus"
+          alt="Fermier monitorizând culturile agricole cu tabletă modernă la apus în câmp"
           loading="eager"
+          width="800"
+          height="600"
         >
       </div>
       <div class="content">
-        <h1>Tractoare Tecuci – utilaje agricole pe care te poți baza</h1>
+        <h1 id="hero-heading">Tractoare Tecuci – utilaje agricole pe care te poți baza</h1>
         <p class="lead">
-          Importăm și livrăm în toată țara tractoare, încărcătoare telescopice și alte utilaje second-hand verificate.
+          Importăm și livrăm în toată țara tractoare, încărcătoare telescopice și alte utilaje verificate.
           Oferim consultanță corectă, transport și punere în funcțiune, ca să intri rapid în lucru.
         </p>
 
@@ -536,37 +589,43 @@
   </section>
 
   <!-- Valorile noastre -->
-  <section class="section">
+  <section class="section" aria-labelledby="valori-heading">
     <div class="wrap">
-      <h2 class="page-title">Valorile noastre</h2>
+      <h2 class="page-title" id="valori-heading">Valorile noastre</h2>
       <p class="page-sub">Calitate, seriozitate și sprijin real după livrare.</p>
 
-      <div class="values">
-        <article class="value-card reveal-element">
+      <div class="values" role="list">
+        <article class="value-card reveal-element" role="listitem">
           <img
             src="assets/about/utilaje-agricole-combina-tractor-telescopic-lucru-camp.webp"
-            alt="Combina, tractor și utilaj telescopic lucrând pe câmp"
+            alt="Combină agricolă, tractor second hand și încărcător telescopic lucrând împreună pe câmp cultivat"
             loading="lazy"
+            width="400"
+            height="220"
           >
           <h3>Eficiență în lucru</h3>
           <p>Recomandăm utilaje potrivite culturilor tale ca să ai consum mic și randament mare.</p>
         </article>
 
-        <article class="value-card reveal-element">
+        <article class="value-card reveal-element" role="listitem">
           <img
             src="assets/about/consultanta-utilaje-agricole-fermier-parteneriat.webp"
-            alt="Fermier și consultant în utilaje agricole dând mâna"
+            alt="Fermier și consultant în vânzare tractoare second hand dând mâna pentru parteneriat de încredere"
             loading="lazy"
+            width="400"
+            height="220"
           >
           <h3>Seriozitate & transparență</h3>
           <p>Îți prezentăm istoricul, orele și verificările efectuate, fără surprize la fața locului.</p>
         </article>
 
-        <article class="value-card reveal-element">
+        <article class="value-card reveal-element" role="listitem">
           <img
             src="assets/about/transport-utilaje-agricole-scania-tecuci.webp"
-            alt="Camion care transportă utilaje agricole pe șosea"
+            alt="Camion Scania transportând utilaje agricole second hand pe șosea europeană către România"
             loading="lazy"
+            width="400"
+            height="220"
           >
           <h3>Transport & punere în funcțiune</h3>
           <p>Livrăm rapid, te ajutăm la probe și rămânem aproape pentru întrebări sau consumabile.</p>
@@ -576,25 +635,25 @@
   </section>
 
   <!-- Povestea noastră (timeline) -->
-  <section class="section">
+  <section class="section" aria-labelledby="poveste-heading">
     <div class="wrap">
-      <h2 class="page-title">Povestea Tractoare Tecuci</h2>
+      <h2 class="page-title" id="poveste-heading">Povestea Tractoare Tecuci</h2>
       <p class="page-sub">De la primele importuri la un portofoliu variat de utilaje pentru ferme mici și medii.</p>
 
-      <div class="timeline">
-        <div class="t-item reveal-element">
+      <div class="timeline" role="list">
+        <div class="t-item reveal-element" role="listitem">
           <div class="t-year">2004</div>
           <div class="t-text">Începutul: primele utilaje aduse din Europa de Vest pentru fermieri din zona Tecuci.</div>
         </div>
-        <div class="t-item reveal-element">
+        <div class="t-item reveal-element" role="listitem">
           <div class="t-year">2012</div>
           <div class="t-text">Extindere: introducem încărcătoare telescopice și semănători în ofertă.</div>
         </div>
-        <div class="t-item reveal-element">
+        <div class="t-item reveal-element" role="listitem">
           <div class="t-year">2018</div>
           <div class="t-text">Transport propriu și punere în funcțiune la client, oriunde în țară.</div>
         </div>
-        <div class="t-item reveal-element">
+        <div class="t-item reveal-element" role="listitem">
           <div class="t-year">Astăzi</div>
           <div class="t-text">Stoc constant, consultanță rapidă și parteneriate cu fermieri din toate județele.</div>
         </div>
@@ -603,13 +662,13 @@
   </section>
 
   <!-- Ce oferim (features) -->
-  <section class="section">
+  <section class="section" aria-labelledby="oferim-heading">
     <div class="wrap">
-      <h2 class="page-title">Ce oferim fermierilor</h2>
+      <h2 class="page-title" id="oferim-heading">Ce oferim fermierilor</h2>
       <p class="page-sub">Servicii cap-coadă, de la selecție la livrare.</p>
 
-      <div class="features">
-        <div class="feat reveal-element">
+      <div class="features" role="list">
+        <div class="feat reveal-element" role="listitem">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 7h16M4 12h10M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
@@ -619,7 +678,7 @@
           </div>
         </div>
 
-        <div class="feat reveal-element">
+        <div class="feat reveal-element" role="listitem">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
@@ -629,7 +688,7 @@
           </div>
         </div>
 
-        <div class="feat reveal-element">
+        <div class="feat reveal-element" role="listitem">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M3 7h13l5 5v5a2 2 0 0 1-2 2H3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
           </svg>
@@ -643,10 +702,10 @@
   </section>
 
   <!-- CTA band -->
-  <section class="section">
+  <section class="section" aria-labelledby="cta-heading">
     <div class="wrap cta-band">
       <div>
-        <h3>Ai nevoie de o recomandare pentru fermă?</h3>
+        <h3 id="cta-heading">Ai nevoie de o recomandare pentru fermă?</h3>
         <p class="cta-mini">Spune-ne ce cultivi și câte hectare lucrezi — venim cu 2–3 opțiuni potrivite.</p>
       </div>
       <div class="cta-row">
@@ -657,9 +716,9 @@
   </section>
 
   <!-- FAQ scurt -->
-  <section class="section">
+  <section class="section" aria-labelledby="faq-heading">
     <div class="wrap">
-      <h2 class="page-title">Întrebări frecvente</h2>
+      <h2 class="page-title" id="faq-heading">Întrebări frecvente</h2>
       <div class="faq">
         <details class="q reveal-element">
           <summary>Faceți livrare în toată țara?</summary>
@@ -680,7 +739,7 @@
 
 
   <!-- ===== FOOTER (același ca pe celelalte pagini) ===== -->
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-grid">
       <!-- Col 1: brand + scurtă descriere -->
       <div class="f-col">
@@ -693,7 +752,7 @@
       </div>
   
       <!-- Col 2: linkuri rapide -->
-      <nav class="f-col">
+      <nav class="f-col" aria-label="Linkuri rapide">
         <h3 class="f-title">Linkuri</h3>
         <ul class="f-links">
           <li><a href="index.html">Acasă</a></li>
@@ -718,7 +777,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/>
             </svg>
-            <a href="/cdn-cgi/l/email-protection#dcaabdafb5b0b9b1b5aea6bde4e89ca5bdb4b3b3f2bfb3b1"><span class="__cf_email__" data-cfemail="136572607a7f767e7a6169722b27536a727b7c7c3d707c7e">[email&#160;protected]</span></a>
+            <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -772,8 +831,6 @@
       </div>
     </div>
   </footer>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   
   <script>
     // actualizează anul în footer

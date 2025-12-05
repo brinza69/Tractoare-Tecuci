@@ -1,0 +1,17 @@
+/* TEAM */
+Owner: Vasile Mirza
+Contact: vasilemirza84 [at] yahoo.com
+Location: Tecuci, Galați, România
+
+Developer: Alx
+Role: Full-stack Web Developer
+Location: București, România
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Vanilla JS, Custom CSS
+SEO: JSON-LD Schema, Open Graph
+Performance: Core Web Vitals optimized
+Accessibility: WCAG 2.1 AA compliant
+
+Last update: 2025-12-05

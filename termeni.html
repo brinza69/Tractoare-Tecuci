@@ -3,103 +3,318 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Termeni și condiții – Tractoare Tecuci</title>
-  <meta name="description" content="Termenii de utilizare ai site-ului Tractoare Tecuci - reguli simple și clare pentru cumpărători.">
-  <link rel="stylesheet" href="assets/style.css">
-  <script defer src="assets/app.js"></script>
+  
+  <!-- SEO OPTIMIZAT -->
+  <title>Termeni și Condiții | Tractoare Tecuci - Reguli Simple & Clare</title>
+  <meta name="description" content="Termeni și condiții Tractoare Tecuci: reguli simple pentru cumpărători, garanție, transport, suport post-vânzare. Procesul de cumpărare explicat clar.">
+  
+  <!-- Canonical corect -->
+  <link rel="canonical" href="https://tractoaretecuci.ro/termeni">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tractoare Tecuci">
+  <meta property="og:title" content="Termeni și Condiții | Tractoare Tecuci">
+  <meta property="og:description" content="Termeni simpli și clari pentru cumpărători: garanție, transport, suport post-vânzare.">
+  <meta property="og:url" content="https://tractoaretecuci.ro/termeni">
+  <meta property="og:image" content="https://tractoaretecuci.ro/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ro_RO">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Termeni și Condiții | Tractoare Tecuci">
+  <meta name="twitter:description" content="Reguli simple pentru cumpărători de utilaje agricole">
+  <meta name="twitter:image" content="https://tractoaretecuci.ro/assets/og-image.jpg">
+  
+  <!-- Local SEO -->
+  <meta name="geo.region" content="RO-GL">
+  <meta name="geo.placename" content="Tecuci">
+  <meta name="geo.position" content="45.8765729;27.4220120">
+  <meta name="ICBM" content="45.8765729, 27.4220120">
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="assets/style.css?v=11">
+  <link rel="preload" as="script" href="assets/app.js?v=11">
+  
+  <link rel="stylesheet" href="assets/style.css?v=11">
+  <script defer src="assets/app.js?v=11"></script>
+  
+  <!-- JSON-LD Schema - WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Termeni și Condiții",
+    "description": "Termeni și condiții pentru utilizarea site-ului și cumpărarea utilajelor agricole",
+    "url": "https://tractoaretecuci.ro/termeni",
+    "inLanguage": "ro-RO",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tractoare Tecuci",
+      "url": "https://tractoaretecuci.ro"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Termeni și condiții comerciale"
+    },
+    "lastReviewed": "2025-11-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Tractoare Tecuci",
+      "url": "https://tractoaretecuci.ro"
+    }
+  }
+  </script>
+  
+  <!-- Breadcrumbs Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Acasă",
+        "item": "https://tractoaretecuci.ro"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Termeni și Condiții",
+        "item": "https://tractoaretecuci.ro/termeni"
+      }
+    ]
+  }
+  </script>
+  
   <style>
+    :root {
+      --brand: #2e7d32;
+      --brand-dark: #1b5e20;
+      --ink: #0f172a;
+      --muted: #334155;
+      --ring: #e6e9ee;
+      --eco-accent: #22c55e;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    /* Hero cu gradient și micro-interacțiune */
     .legal-hero{
       background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
       color:#fff;
       padding:clamp(40px,8vw,80px) 0;
       text-align:center;
+      position: relative;
+      overflow: hidden;
     }
+    
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.1), transparent 60%);
+      pointer-events: none;
+    }
+    
     .legal-hero h1{
       margin:0 0 12px;
       font-size:clamp(28px,5vw,42px);
       font-weight:700;
+      position: relative;
+      animation: fadeInUp .6s ease-out;
     }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
     .legal-hero .muted{
       color:rgba(255,255,255,0.85);
       font-size:16px;
+      position: relative;
+      animation: fadeInUp .8s ease-out .2s both;
     }
+    
+    /* Main content */
     .legal{
       padding:48px 0;
       background:#f8faf9;
     }
+    
     .legal .wrap{
       max-width:900px;
       margin:0 auto;
       padding:0 20px;
     }
+    
+    /* Sections cu micro-interacțiuni */
     .legal section{
       background:#fff;
       border-radius:16px;
       box-shadow:0 4px 12px rgba(15,23,42,.08);
       padding:32px;
       margin:24px 0;
+      transition: var(--transition-smooth);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: revealSection .5s ease-out forwards;
     }
+    
+    .legal section:nth-child(1) { animation-delay: .1s; }
+    .legal section:nth-child(2) { animation-delay: .15s; }
+    .legal section:nth-child(3) { animation-delay: .2s; }
+    .legal section:nth-child(4) { animation-delay: .25s; }
+    .legal section:nth-child(5) { animation-delay: .3s; }
+    .legal section:nth-child(6) { animation-delay: .35s; }
+    .legal section:nth-child(7) { animation-delay: .4s; }
+    .legal section:nth-child(8) { animation-delay: .45s; }
+    .legal section:nth-child(9) { animation-delay: .5s; }
+    .legal section:nth-child(10) { animation-delay: .55s; }
+    .legal section:nth-child(11) { animation-delay: .6s; }
+    .legal section:nth-child(12) { animation-delay: .65s; }
+    
+    @keyframes revealSection {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Micro-interacțiune: Hover pe sections */
+    .legal section:hover {
+      box-shadow: 0 8px 24px rgba(15,23,42,.12);
+      transform: translateY(-2px);
+      border-left: 4px solid var(--eco-accent);
+      padding-left: 28px;
+    }
+    
     .legal h2{
-      color:#0f172a;
+      color:var(--ink);
       font-size:clamp(20px,3vw,26px);
       margin:0 0 16px;
       font-weight:700;
+      transition: color .2s;
     }
+    
+    .legal section:hover h2 {
+      color: var(--brand);
+    }
+    
     .legal p{
-      color:#334155;
+      color:var(--muted);
       line-height:1.7;
       margin:0 0 16px;
     }
+    
     .legal p:last-child{
       margin-bottom:0;
     }
+    
     .legal ul{
       margin:16px 0;
       padding-left:24px;
     }
+    
     .legal li{
-      color:#334155;
+      color:var(--muted);
       line-height:1.7;
       margin:8px 0;
+      transition: transform .2s, color .2s;
     }
+    
+    .legal li:hover {
+      transform: translateX(4px);
+      color: var(--ink);
+    }
+    
+    /* Links cu micro-interacțiune */
     .legal a{
-      color:#2e7d32;
+      color:var(--brand);
       text-decoration:underline;
       font-weight:600;
-      transition:color .2s;
+      transition: color .2s, text-decoration-color .2s;
+      position: relative;
     }
+    
     .legal a:hover{
-      color:#1b5e20;
+      color:var(--brand-dark);
+      text-decoration-color: var(--eco-accent);
     }
+    
     .legal strong{
-      color:#0f172a;
+      color:var(--ink);
       font-weight:600;
     }
+    
+    /* Focus states pentru accesibilitate */
+    .legal a:focus-visible {
+      outline: 2px solid var(--eco-accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    
+    /* Touch-friendly pe mobil */
+    @media (hover: none) {
+      .legal section:active {
+        transform: scale(0.98);
+        transition: transform .1s ease;
+      }
+    }
+    
     @media(max-width:768px){
       .legal section{
         padding:24px 20px;
+      }
+      
+      .legal section:hover {
+        padding-left: 16px;
+      }
+    }
+    
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
 </head>
 <body data-page="legal">
-  <header class="site-header">
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
     <div class="wrap header-bar">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96">
       </a>
-      <nav class="nav">
+      
+      <nav class="nav" aria-label="Navigație principală">
         <a href="index.html" class="nav-link">Acasă</a>
         <a href="utilaje.html" class="nav-link">Utilaje</a>
         <a href="despre-noi.html" class="nav-link">Despre noi</a>
         <a href="blog.html" class="nav-link">Blog</a>
       </nav>
+      
       <div class="header-cta">
         <a href="contact.html" class="btn primary contact-cta">Contact</a>
-        <button class="hamb" aria-label="Meniu"><span></span></button>
+        <button class="hamb" type="button" aria-label="Meniu" aria-controls="mobile-drawer" aria-expanded="false">
+          <span></span>
+        </button>
       </div>
     </div>
-    <nav class="drawer" aria-hidden="true">
+    
+    <nav id="mobile-drawer" class="drawer" aria-label="Meniu mobil">
       <div class="nav-list">
         <a href="index.html">Acasă</a>
         <a href="utilaje.html">Utilaje</a>
@@ -109,16 +324,17 @@
       <a href="contact.html" class="btn primary wfull">Contact</a>
     </nav>
   </header>
-  <div class="nav-backdrop"></div>
+  
+  <div class="nav-backdrop" hidden></div>
 
-  <section class="legal-hero">
+  <section class="legal-hero" role="region" aria-labelledby="terms-title">
     <div class="wrap">
-      <h1>Termeni și condiții</h1>
+      <h1 id="terms-title">Termeni și condiții</h1>
       <p class="muted">Ultima actualizare: <strong>Noiembrie 2025</strong></p>
     </div>
   </section>
 
-  <main class="legal">
+  <main class="legal" role="main">
     <div class="wrap">
       <section>
         <h2>Bun venit la Tractoare Tecuci</h2>
@@ -287,7 +503,7 @@
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-grid">
       <div class="f-col">
         <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
@@ -298,7 +514,7 @@
         </p>
       </div>
   
-      <nav class="f-col">
+      <nav class="f-col" aria-label="Linkuri rapide">
         <h3 class="f-title">Linkuri</h3>
         <ul class="f-links">
           <li><a href="index.html">Acasă</a></li>
@@ -313,23 +529,31 @@
         <h3 class="f-title">Contact</h3>
         <ul class="f-contact">
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.6 10.2a15.1 15.1 0 007.2 7.2l2.4-2.4a1 1 0 011-.24 11.2 11.2 0 003.5.56 1 1 0 011 1v3.8a1 1 0 01-1 1A17.3 17.3 0 012 6a1 1 0 011-1h3.8a1 1 0 011 1c0 1.2.2 2.4.56 3.5a1 1 0 01-.24 1l-2.52 2.7z"/>
+            </svg>
             <a href="tel:+40764199074">+40 764 199 074</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2l8 6 8-6"/>
+            </svg>
             <a href="mailto:vasilemirza84@yahoo.com">vasilemirza84@yahoo.com</a>
           </li>
           <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/></svg>
-            <a href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" target="_blank" rel="noopener" title="Deschide pe Google Maps">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5v6h5"/>
+            </svg>
+            <a href="https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033" 
+              target="_blank" rel="noopener" title="Deschide locația pe Google Maps">
               Str. Tecuciului Nou, nr. 25, Tecuci
             </a>
           </li>
         </ul>
 
         <div class="f-social">
-          <a class="ico social olx-badge" href="https://compaia.olx.ro/home/" target="_blank" rel="noopener" aria-label="OLX" title="Vezi profilul pe OLX">
+          <a class="ico social olx-badge" href="https://compaia.olx.ro/home/" target="_blank" rel="noopener" 
+            aria-label="OLX" title="Vezi profilul pe OLX">
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <circle cx="32" cy="32" r="30" fill="#23E5DB"/>
               <path fill="#000000" d="M20.9,40.3c-4.7,0-8.2-3.6-8.2-8.3s3.5-8.3,8.2-8.3c4.7,0,8.2,3.6,8.2,8.3S25.6,40.3,20.9,40.3z M20.9,27c-2.9,0-5,2.2-5,5s2.1,5,5,5s5-2.2,5-5S23.8,27,20.9,27z"/>
@@ -338,7 +562,8 @@
             </svg>
           </a>
         
-          <a class="ico social tiktok" href="https://www.tiktok.com/@nicoletamirza6" target="_blank" rel="noopener" aria-label="TikTok" title="Vezi profilul pe TikTok">
+          <a class="ico social tiktok" href="https://www.tiktok.com/@nicoletamirza6" target="_blank" rel="noopener" 
+            aria-label="TikTok" title="Vezi profilul pe TikTok">
             <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
               <rect width="64" height="64" fill="none"/>
               <path fill="#25F4EE" d="M40 12c2.7 3.6 6.2 6 10 6v6c-3.8 0-7.4-1.2-10-3.2v17.7c0 8.7-7 15.7-15.7 15.7S8.6 47.2 8.6 38.5c0-8.7 7-15.7 15.7-15.7 1.1 0 2.2.1 3.3.4v7.2c-.9-.4-1.9-.6-3-.6-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1V12h7.3z"/>
@@ -359,5 +584,34 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Actualizează anul în footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Link activ în meniu
+    document.querySelectorAll('.nav a, .drawer a').forEach(a => {
+      if(location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
+    });
+    
+    // Meniu mobil toggle
+    const hamb = document.querySelector('.hamb');
+    const drawer = document.querySelector('.drawer');
+    const backdrop = document.querySelector('.nav-backdrop');
+    
+    if(hamb && drawer && backdrop){
+      const toggle = () => { 
+        const isOpen = drawer.getAttribute('aria-hidden') !== 'false';
+        drawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        backdrop.classList.toggle('active', isOpen);
+        backdrop.hidden = !isOpen;
+        document.body.classList.toggle('no-scroll', isOpen);
+        hamb.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+      
+      hamb.addEventListener('click', toggle); 
+      backdrop.addEventListener('click', toggle);
+    }
+  </script>
 </body>
 </html>

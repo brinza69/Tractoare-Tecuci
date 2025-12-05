@@ -3,11 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Stoc utilaje – Tractoare Tecuci</title>
-  <meta name="description" content="Filtrează tractoare, telescopice și alte utilaje agricole verificate. Import direct din Europa." />
-  <link rel="canonical" href="https://tractoaretecuci.ro/products.html" />
+  
+  <!-- SEO OPTIMIZAT -->
+  <title>Stoc Utilaje Agricole | Tractoare Tecuci - Filtrează & Solicită Ofertă</title>
+  <meta name="description" content="Filtrează tractoare, telescopice și alte utilaje agricole verificate. Import direct din Europa. Stoc actualizat zilnic. Solicită ofertă personalizată." />
+  
+  <!-- Canonical corect -->
+  <link rel="canonical" href="https://tractoaretecuci.ro/products" />
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tractoare Tecuci">
+  <meta property="og:title" content="Stoc Utilaje Agricole | Tractoare Tecuci">
+  <meta property="og:description" content="Filtrează tractoare, telescopice și alte utilaje agricole verificate. Solicită ofertă personalizată.">
+  <meta property="og:url" content="https://tractoaretecuci.ro/products">
+  <meta property="og:image" content="https://tractoaretecuci.ro/assets/og-image-products.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ro_RO">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stoc Utilaje Agricole | Tractoare Tecuci">
+  <meta name="twitter:description" content="Filtrează tractoare, telescopice și utilaje agricole. Solicită ofertă.">
+  <meta name="twitter:image" content="https://tractoaretecuci.ro/assets/og-image-products.jpg">
+  
+  <!-- Local SEO -->
+  <meta name="geo.region" content="RO-GL">
+  <meta name="geo.placename" content="Tecuci">
+  <meta name="geo.position" content="45.8765729;27.4220120">
+  <meta name="ICBM" content="45.8765729, 27.4220120">
+  
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="assets/style.css?v=11">
+  <link rel="preload" as="script" href="assets/app.js?v=11">
+  
   <link rel="stylesheet" href="assets/style.css?v=11" />
   <script defer src="assets/app.js?v=11"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Stoc Utilaje Agricole",
+    "description": "Tractoare, telescopice și alte utilaje agricole verificate",
+    "url": "https://tractoaretecuci.ro/products",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tractoare Tecuci",
+      "url": "https://tractoaretecuci.ro"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Acasă",
+          "item": "https://tractoaretecuci.ro"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Stoc Utilaje",
+          "item": "https://tractoaretecuci.ro/products"
+        }
+      ]
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Utilaje agricole disponibile",
+      "description": "Listă completă cu tractoare, telescopice și alte utilaje agricole"
+    }
+  }
+  </script>
 
   <style>
   /* =========================================================
@@ -424,7 +495,7 @@
     border-color: var(--primary);
   }
 
-  /* CTA pe card */
+  /* CTA pe card - PREȚUL ASCUNS, AFIȘAT "Solicită ofertă" */
   body[data-page="list"] .card.product .price{
     color: transparent !important; 
     height:46px; 
@@ -501,7 +572,7 @@
 </head>
 
 <body data-page="list">
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="wrap header-bar">
       <a class="brand" href="index.html" aria-label="Acasă">
         <img class="logo" src="assets/logo.png" alt="Tractoare Tecuci" width="96" height="96" />
@@ -535,11 +606,11 @@
 
   <div class="nav-backdrop" hidden></div>
 
-  <main class="section">
+  <main class="section" role="main">
     <div class="wrap">
       <h1>Stoc de utilaje</h1>
 
-      <form id="filters" class="filters">
+      <form id="filters" class="filters" role="search" aria-label="Filtrare utilaje">
         <input type="search" name="q" placeholder="Căutare (brand, model...)" aria-label="Căutare utilaje">
         <select name="category" aria-label="Selectează categoria">
           <option value="">Categorie</option>
@@ -552,7 +623,7 @@
         </select>
         <input type="number" name="maxHours" min="0" step="100" placeholder="Ore max" aria-label="Ore maxime">
         <button type="submit" class="apply">Filtrează</button>
-        <a class="reset" href="products.html">Resetează</a>
+        <a class="reset" href="products.html" aria-label="Resetează toate filtrele">Resetează</a>
       </form>
 
       <div class="cat-rail">
@@ -568,7 +639,7 @@
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <div class="wrap footer-grid">
       <div class="f-col">
         <a class="f-brand" href="index.html" aria-label="Tractoare Tecuci">
@@ -579,7 +650,7 @@
         </p>
       </div>
   
-      <nav class="f-col">
+      <nav class="f-col" aria-label="Linkuri rapide">
         <h3 class="f-title">Linkuri</h3>
         <ul class="f-links">
           <li><a href="index.html">Acasă</a></li>

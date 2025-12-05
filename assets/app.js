@@ -1,6 +1,12 @@
 /* =============================================================================
    TRACTOARE TECUCI - APP.JS COMPLET
-   Include: Funcționalitate site + Micro-Interacțiuni
+   Include: Funcționalitate site + Micro-Interacțiuni + ALT text SEO "second hand"
+   
+   ✅ MODIFICĂRI SEO (invizibile pentru utilizatori):
+   - cardProduct(): ALT text pentru carduri produse (homepage + products.html)
+   - pageDetail(): ALT text pentru galerie produs individual
+   - pageBlog(): ALT text pentru carduri articole blog
+   - pagePost(): ALT text pentru cover image articol
    ========================================================================== */
 
 // ========== Link-uri OLX actualizate ==========
@@ -103,15 +109,24 @@ async function pageHome(){
   g.innerHTML = items.slice(0,8).map(cardProduct).join('');
 }
 
-// Card produs (fara pret) + CTA + FIX "0 ore"
+/* =============================================================================
+   ✅ MODIFICARE SEO #1: Card produs cu ALT text "second hand" (INVIZIBIL)
+   Locații: homepage (index.html), products.html
+   ========================================================================== */
 function cardProduct(p){
   const hoursDisplay = p.hours && p.hours > 0 
     ? `${p.year || ""} · ${fmt(p.hours)} ore` 
     : `${p.year || ""}`;
 
+  // ✅ ALT text cu "second hand" (INVIZIBIL pentru utilizatori, SEO pentru Google Images)
+  // Utilizatorii văd doar imaginea, NU văd textul "second hand"
+  // Google Images indexează: "brand model second hand year - category import europa"
+  const modelName = p.model || p.title.replace(p.brand, '').trim();
+  const altText = `${p.brand} ${modelName} second hand ${p.year} - ${p.category} import Europa verificat tehnic`;
+
   return `
 <a class="card product" href="product.html?slug=${encodeURIComponent(p.slug)}">
-  <div class="media"><img loading="lazy" src="${p.cover}" alt="${p.title}"></div>
+  <div class="media"><img loading="lazy" src="${p.cover}" alt="${altText}"></div>
   <div class="body">
     <span class="badge">${p.brand}</span>
     <h3>${p.title}</h3>
@@ -172,7 +187,10 @@ async function pageList(){
   apply();
 }
 
-// ========== DETAIL ==========
+/* =============================================================================
+   ✅ MODIFICARE SEO #2: Galerie produs cu ALT text "second hand" (INVIZIBIL)
+   Locație: product.html (pagină detaliu produs individual)
+   ========================================================================== */
 async function pageDetail(){
   const wrap=$('#detailWrap'); if(!wrap) return;
   const items=await getJSON('data/products.json');
@@ -187,10 +205,22 @@ async function pageDetail(){
   if(ht){ ht.textContent=item.title||''; ht.hidden=!item.title; }
 
   const gallery=[item.cover,...(item.gallery||[])];
+  
+  // ✅ ALT text cu "second hand" pentru imaginea principală (INVIZIBIL)
+  // Utilizatorii văd doar galeria, NU văd textul "second hand"
+  // Google Images indexează: "brand model second hand year - import europa verificat tehnic"
+  const modelName = item.model || item.title.replace(item.brand, '').trim();
+  const mainImageAlt = `${item.brand} ${modelName} second hand ${item.year} - import Europa verificat tehnic`;
+  
   const galleryHTML=`
-    <div class="g-main"><img src="${gallery[0]}" alt="${item.title}"></div>
+    <div class="g-main"><img src="${gallery[0]}" alt="${mainImageAlt}" loading="eager"></div>
     <div class="g-thumbs">
-      ${gallery.map((g,i)=> i===0 ? '' : `<img src="${g}" alt="${item.title} imagine ${i}">`).join('')}
+      ${gallery.map((g,i)=> {
+        if (i === 0) return '';
+        // ✅ ALT text cu "second hand" pentru thumbnail-uri (INVIZIBIL)
+        const thumbAlt = `${item.brand} ${modelName} second hand - detaliu imagine ${i}`;
+        return `<img src="${g}" alt="${thumbAlt}" loading="lazy">`;
+      }).join('')}
     </div>`;
 
   let rows=''; const s=item.specs||[];
@@ -242,21 +272,31 @@ async function pageDetail(){
     </div>`;
 }
 
-// ========== BLOG LIST ==========
+/* =============================================================================
+   ✅ MODIFICARE SEO #3: Carduri blog cu ALT text "second hand" (INVIZIBIL)
+   Locație: blog.html (listă articole blog)
+   ========================================================================== */
 async function pageBlog(){
   const list = $('#blogList'); 
   if (!list) return;
 
   const posts = await getJSON('data/posts.json');
 
-  const card = (p) => `
-    <a class="card post-card" href="post.html?p=${encodeURIComponent(p.slug)}">
-      <img loading="lazy" src="${p.cover || ''}" alt="${p.alt || p.title}">
-      <div class="body">
-        <h3>${p.title}</h3>
-        <p class="muted">${p.excerpt || ''}</p>
-      </div>
-    </a>`;
+  const card = (p) => {
+    // ✅ ALT text cu "second hand" pentru carduri articole (INVIZIBIL)
+    // Utilizatorii văd doar imaginea articolului, NU văd textul "second hand"
+    // Google Images indexează: "title - ghid tractoare utilaje agricole second hand import europa"
+    const altText = `${p.title} - ghid complet tractoare utilaje agricole second hand import Europa verificate tehnic`;
+    
+    return `
+      <a class="card post-card" href="post.html?p=${encodeURIComponent(p.slug)}">
+        <img loading="lazy" src="${p.cover || ''}" alt="${altText}">
+        <div class="body">
+          <h3>${p.title}</h3>
+          <p class="muted">${p.excerpt || ''}</p>
+        </div>
+      </a>`;
+  };
 
   const tabs = $$('.blog-cats .pill, .cat-tabs .pill');
   const normalize = (arr) => (Array.isArray(arr) && arr.length ? arr : ['ghiduri']);
@@ -277,7 +317,10 @@ async function pageBlog(){
   render('toate');
 }
 
-// ========== BLOG POST ==========
+/* =============================================================================
+   ✅ MODIFICARE SEO #4: Cover image articol cu ALT text "second hand" (INVIZIBIL)
+   Locație: blog-post.html (pagină articol individual)
+   ========================================================================== */
 async function pagePost(){
   const wrap = $('#postWrap');
   if (!wrap) return;
@@ -341,12 +384,17 @@ async function pagePost(){
   const words = (post.html || '').replace(/<[^>]*>/g, ' ').trim().split(/\s+/).filter(Boolean).length;
   const readTime = Math.max(2, Math.round(words / 200));
 
+  // ✅ ALT text cu "second hand" pentru cover image articol (INVIZIBIL)
+  // Utilizatorii văd doar cover image-ul, NU văd textul "second hand"
+  // Google Images indexează: "title - ghid complet tractoare second hand import europa"
+  const coverImageAlt = `${post.title} - ghid complet tractoare second hand import Europa verificate tehnic, sfaturi alegere și întreținere utilaje agricole`;
+
   wrap.innerHTML = `
     <header class="post-hero">
       <h1 class="post-title">${post.title}</h1>
       <div class="post-meta">${fmtDate(post.date)} · ${post.author || 'Tractoare Tecuci'} · ${readTime} min citire</div>
       <figure class="post-cover">
-        <img src="${post.cover}" alt="${post.alt || post.title}" loading="eager" decoding="async">
+        <img src="${post.cover}" alt="${coverImageAlt}" loading="eager" decoding="async">
       </figure>
     </header>
     <div class="post-body">
@@ -369,6 +417,7 @@ async function pagePost(){
 
 /* =============================================================================
    MICRO-INTERACȚIUNI - FUNCȚIONALITATE EXTINSĂ
+   (FĂRĂ MODIFICĂRI - funcționează perfect)
    ========================================================================== */
 
 // ========== 1. STICKY NAVBAR – FADE SUBTIL LA SCROLL ==========
@@ -667,9 +716,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(page==='blog')   pageBlog();
   if(page==='post')   pagePost();
 
-  console.log('✅ Site + Micro-interacțiuni active!');
+  console.log('✅ Site + Micro-interacțiuni + SEO "second hand" active!');
 });
 
 /* =============================================================================
-   FIN APP.JS COMPLET
+   FIN APP.JS COMPLET CU ALT TEXT "SECOND HAND" INVIZIBIL
+   
+   📊 REZUMAT MODIFICĂRI SEO:
+   - ✅ cardProduct(): ALT text pentru homepage + products.html
+   - ✅ pageDetail(): ALT text pentru galerie produs individual
+   - ✅ pageBlog(): ALT text pentru carduri articole blog
+   - ✅ pagePost(): ALT text pentru cover image articol
+   
+   🎯 REZULTAT:
+   - Utilizatorii văd: imagini normale, ZERO text "second hand" vizibil
+   - Google vede: ALT text "second hand" pentru indexare Google Images
+   - SEO boost: rankings pentru "tractoare second hand", "utilaje second hand romania"
    ========================================================================== */

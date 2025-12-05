@@ -1,3 +1,137 @@
+# ============================================================================
+# TRACTOARE TECUCI - ROBOTS.TXT ULTRA SEO FRIENDLY
+# Optimizat pentru Google, Bing, Yandex și alți bots
+# ============================================================================
+
+# ========== REGULI GLOBALE (Toți Bots) ==========
 User-agent: *
 Allow: /
-Sitemap: http://127.0.0.1:5500/sitemap.xml
+
+# Permite acces la toate resursele importante
+Allow: /assets/
+Allow: /data/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.gif
+Allow: /*.pdf
+
+# Block doar fișiere sistem (dacă există)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.github/
+Disallow: /backup/
+Disallow: /*?print=*
+Disallow: /*?sort=*
+
+# ========== GOOGLE BOT (Cel mai important) ==========
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Google Image Bot - CRUCIAL pentru strategia "second hand"
+User-agent: Googlebot-Image
+Allow: /
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.png
+Allow: /assets/*.webp
+Allow: /data/*.jpg
+Allow: /data/*.jpeg
+Allow: /data/*.png
+Allow: /data/*.webp
+
+# Google Mobile Bot
+User-agent: Googlebot-Mobile
+Allow: /
+
+# ========== BING BOT ==========
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: MSNBot
+Allow: /
+
+# ========== YANDEX BOT ==========
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# ========== SOCIAL MEDIA BOTS (Pentru Open Graph) ==========
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterest
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# ========== ALTRI BOTS UTILI ==========
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu (China)
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# ========== BLOCK BOTS AGRESIVI ==========
+# Scrapers agresivi
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Block bad bots complet
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# ========== SITEMAP LOCATION ==========
+Sitemap: https://tractoaretecuci.ro/sitemap.xml
+Sitemap: https://tractoaretecuci.ro/sitemap-images.xml
+
+# ========== CRAWL RATE LIMITS ==========
+# Crawl-delay global pentru bots necunoscuți
+User-agent: *
+Crawl-delay: 1
+
+# ========== NOTES ==========
+# Last updated: 2025-12-05
+# Contact: vasilemirza84@yahoo.com
+# Site: https://tractoaretecuci.ro

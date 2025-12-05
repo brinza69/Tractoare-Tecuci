@@ -1,11 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>http://127.0.0.1:5500/index.html</loc></url>
-  <url><loc>http://127.0.0.1:5500/utilaje.html</loc></url>
-  <url><loc>http://127.0.0.1:5500/products.html</loc></url>
-  <url><loc>http://127.0.0.1:5500/blog.html</loc></url>
-  <url><loc>http://127.0.0.1:5500/product.html?slug=tractor-john-deere-6150m</loc></url>
-  <url><loc>http://127.0.0.1:5500/product.html?slug=telescopic-jcb-535-95</loc></url>
-  <url><loc>http://127.0.0.1:5500/product.html?slug=alte-disc-4m</loc></url>
-  <url><loc>http://127.0.0.1:5500/post.html?slug=cum-alegi-un-tractor-second-hand</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ============================================================================
+       HOMEPAGE - Prioritate MAXIMĂ
+       ============================================================================ -->
+  <url>
+    <loc>https://tractoaretecuci.ro/</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ============================================================================
+       PAGINI PRINCIPALE - Prioritate ÎNALTĂ
+       ============================================================================ -->
+  
+  <!-- Utilaje - Categorii -->
+  <url>
+    <loc>https://tractoaretecuci.ro/utilaje</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Products - Lista completă -->
+  <url>
+    <loc>https://tractoaretecuci.ro/products</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Despre noi -->
+  <url>
+    <loc>https://tractoaretecuci.ro/despre-noi</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://tractoaretecuci.ro/contact</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://tractoaretecuci.ro/blog</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================================================
+       CATEGORII UTILAJE - Prioritate ÎNALTĂ
+       ============================================================================ -->
+  
+  <!-- Tractoare -->
+  <url>
+    <loc>https://tractoaretecuci.ro/products?category=tractor</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Telescopice -->
+  <url>
+    <loc>https://tractoaretecuci.ro/products?category=telescopic</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Alte utilaje -->
+  <url>
+    <loc>https://tractoaretecuci.ro/products?category=alte</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ============================================================================
+       PRODUSE INDIVIDUALE - Adaugă DINAMIC (Exemplu cu 11 produse curente)
+       IMPORTANT: Actualizează URL-urile când adaugi/ștergi produse
+       ============================================================================ -->
+
+  <!-- Tractor Claas Arion 420 -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=tractor-claas-arion-420-cis-panoramic</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 724 Vario TMS -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=fendt-724-vario-tms-deutz-240cp</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Massey Ferguson 7724 -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=massey-ferguson-7724-dyna6-240cp</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Massey Ferguson 7719 S -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=massey-ferguson-7719-s-powershift</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 724 Vario TMS 2017 -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=fendt-724-vario-tms-deutz-240cp-2017</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- John Deere 6120M -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=john-deere-6120m-powerquad-inversor</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 718 Vario TMS -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=fendt-718-vario-tms-deutz-185cp</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 920 Vario TMS -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=fendt-920-vario-tms-man-220cp</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Merlo Panoramic 37.12 -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=merlo-panoramic-37-12-plus</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Semănătoare Kuhn Maxima 2 GT -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=semanatoare-kuhn-maxima-2-gt-prasitoare</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Semănătoare Gaspardo -->
+  <url>
+    <loc>https://tractoaretecuci.ro/product?slug=semanatoare-gaspardo-mte-6-randuri</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ============================================================================
+       ARTICOLE BLOG - Adaugă DINAMIC când scrii articole noi
+       ============================================================================ -->
+
+  <!-- NOTĂ: Când adaugi articole în data/posts.json, adaugă aici URL-urile
+       Exemplu format:
+  <url>
+    <loc>https://tractoaretecuci.ro/blog-post?p=cum-alegi-tractor-agricol</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  -->
+
+  <!-- ============================================================================
+       PAGINI LEGALE - Prioritate SCĂZUTĂ
+       ============================================================================ -->
+
+  <!-- Termeni și condiții -->
+  <url>
+    <loc>https://tractoaretecuci.ro/termeni</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Politica de confidențialitate -->
+  <url>
+    <loc>https://tractoaretecuci.ro/confidentialitate</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ============================================================================
+       NOTĂ: 404.html NU se adaugă în sitemap (este noindex)
+       ============================================================================ -->
+
 </urlset>
