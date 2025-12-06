@@ -123,8 +123,8 @@ User-agent: DataForSeoBot
 Disallow: /
 
 # ========== SITEMAP LOCATION ==========
-Sitemap: https://tractoaretecuci.ro/sitemap.xml
-Sitemap: https://tractoaretecuci.ro/sitemap-images.xml
+Sitemap: https://www.tractoaretecuci.ro/sitemap.xml
+Sitemap: https://www.tractoaretecuci.ro/sitemap-images.xml
 
 # ========== CRAWL RATE LIMITS ==========
 # Crawl-delay global pentru bots necunoscuți
@@ -134,4 +134,4 @@ Crawl-delay: 1
 # ========== NOTES ==========
 # Last updated: 2025-12-05
 # Contact: vasilemirza84@yahoo.com
-# Site: https://tractoaretecuci.ro
+# Site: https://www.tractoaretecuci.ro

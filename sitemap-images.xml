@@ -11,9 +11,9 @@
        HOMEPAGE - Produse featured
        ============================================================================ -->
   <url>
-    <loc>https://tractoaretecuci.ro/</loc>
+    <loc>https://www.tractoaretecuci.ro/</loc>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/hero-video-poster.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/hero-video-poster.jpg</image:loc>
       <image:caption>Tractoare și utilaje agricole second hand import Europa - Tractoare Tecuci</image:caption>
       <image:title>Hero Tractoare Tecuci</image:title>
     </image:image>
@@ -23,24 +23,24 @@
        DESPRE NOI - 4 imagini cu "second hand" (DEJA în HTML)
        ============================================================================ -->
   <url>
-    <loc>https://tractoaretecuci.ro/despre-noi</loc>
+    <loc>https://www.tractoaretecuci.ro/despre-noi</loc>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/despre-1.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/despre-1.jpg</image:loc>
       <image:caption>Tractoare agricole second hand verificate tehnic în depozit Tractoare Tecuci</image:caption>
       <image:title>Depozit tractoare second hand</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/despre-2.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/despre-2.jpg</image:loc>
       <image:caption>Inspector verificând motor tractor second hand import Europa Tractoare Tecuci</image:caption>
       <image:title>Verificare motor tractor second hand</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/despre-3.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/despre-3.jpg</image:loc>
       <image:caption>Transport profesional tractor second hand pe platformă omologată Tractoare Tecuci</image:caption>
       <image:title>Transport tractor second hand</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/despre-4.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/despre-4.jpg</image:loc>
       <image:caption>Consultanță personalizată alegere tractor second hand la Tractoare Tecuci</image:caption>
       <image:title>Consultanță tractoare second hand</image:title>
     </image:image>
@@ -50,19 +50,19 @@
        UTILAJE - 3 categorii cu imagini (DEJA în HTML)
        ============================================================================ -->
   <url>
-    <loc>https://tractoaretecuci.ro/utilaje</loc>
+    <loc>https://www.tractoaretecuci.ro/utilaje</loc>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/cat-tractoare.webp</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/cat-tractoare.webp</image:loc>
       <image:caption>Tractoare agricole second hand aliniate pe câmp verde pentru demonstrație</image:caption>
       <image:title>Categorie Tractoare Second Hand</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/cat-telescopice.webp</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/cat-telescopice.webp</image:loc>
       <image:caption>Încărcător telescopic second hand ridicând un balot mare de paie pe câmp agricol</image:caption>
       <image:title>Categorie Telescopice Second Hand</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/assets/cat-alte.webp</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/assets/cat-alte.webp</image:loc>
       <image:caption>Combină cereale, tractor second hand și încărcător frontal lucrând împreună pe câmp cultivat</image:caption>
       <image:title>Categorie Alte Utilaje Second Hand</image:title>
     </image:image>
@@ -75,9 +75,9 @@
 
   <!-- Exemplu: Tractor Claas Arion 420 -->
   <url>
-    <loc>https://tractoaretecuci.ro/product?slug=tractor-claas-arion-420-cis-panoramic</loc>
+    <loc>https://www.tractoaretecuci.ro/product?slug=tractor-claas-arion-420-cis-panoramic</loc>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/data/products/claas-arion-420-1.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/data/products/claas-arion-420-1.jpg</image:loc>
       <image:caption>Claas Arion 420 second hand 2015 - tractor import Europa verificat tehnic</image:caption>
       <image:title>Claas Arion 420 Second Hand</image:title>
     </image:image>
@@ -91,9 +91,9 @@
   <!-- NOTĂ: Când adaugi articole în data/posts.json, adaugă aici imaginile cover
        Exemplu format:
   <url>
-    <loc>https://tractoaretecuci.ro/blog-post?p=cum-alegi-tractor</loc>
+    <loc>https://www.tractoaretecuci.ro/blog-post?p=cum-alegi-tractor</loc>
     <image:image>
-      <image:loc>https://tractoaretecuci.ro/data/blog/cum-alegi-tractor.jpg</image:loc>
+      <image:loc>https://www.tractoaretecuci.ro/data/blog/cum-alegi-tractor.jpg</image:loc>
       <image:caption>Cum alegi un tractor second hand - ghid complet tractoare agricole import Europa</image:caption>
       <image:title>Ghid alegere tractor second hand</image:title>
     </image:image>
