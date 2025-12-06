@@ -1,12 +1,4 @@
-# ============================================================================
-# TRACTOARE TECUCI - REDIRECTS PENTRU CLOUDFLARE PAGES / NETLIFY
-# 301 Permanent Redirects pentru SEO optimal
-# ============================================================================
-
-# ========== REDIRECT ROOT → WWW (CANONICAL DOMAIN) ==========
-https://tractoaretecuci.ro/* https://www.tractoaretecuci.ro/:splat 301!
-
-# ========== REDIRECTS CU .HTML → FĂRĂ .HTML (SEO FRIENDLY URLs) ==========
+# ========== REDIRECTS CU .HTML → FĂRĂ .HTML ==========
 /index.html              /                    301
 /despre-noi.html         /despre-noi          301
 /utilaje.html            /utilaje             301
