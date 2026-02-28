@@ -20,7 +20,13 @@ Allow: /*.svg
 Allow: /*.gif
 Allow: /*.pdf
 
-# Block doar fișiere sistem (dacă există)
+# Block pagini cu query params filtre (conținut duplicat/subțire)
+Disallow: /*?category=
+Disallow: /*?brand=
+Disallow: /*?q=
+Disallow: /*?maxHours=
+
+# Block fișiere sistem (dacă există)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /.git/
@@ -132,6 +138,6 @@ User-agent: *
 Crawl-delay: 1
 
 # ========== NOTES ==========
-# Last updated: 2025-12-05
+# Last updated: 2026-02-28
 # Contact: vasilemirza84@yahoo.com
 # Site: https://www.tractoaretecuci.ro

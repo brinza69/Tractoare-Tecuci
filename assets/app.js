@@ -188,7 +188,7 @@ async function pageList(){
 }
 
 /* =============================================================================
-   ✅ MODIFICARE SEO #2: Galerie produs cu ALT text "second hand" (INVIZIBIL)
+   ✅ MODIFICARE SEO #2: pageDetail() — meta tags + JSON-LD complete dinamice
    Locație: product.html (pagină detaliu produs individual)
    ========================================================================== */
 async function pageDetail(){
@@ -198,63 +198,168 @@ async function pageDetail(){
   const item=items.find(p=>p.slug===slug);
   if(!item){wrap.innerHTML='<p>Produsul nu există.</p>'; return;}
 
-  document.title=`${item.title} – Tractoare Tecuci`;
+  // ── Construiește datele SEO ─────────────────────────────────────────────
+  const baseUrl = 'https://www.tractoaretecuci.ro';
+  const canonical = `${baseUrl}/product?slug=${encodeURIComponent(item.slug)}`;
+  const ogImage = item.cover ? `${baseUrl}/${item.cover}` : `${baseUrl}/assets/og-image.jpg`;
+  const gallery = [item.cover, ...(item.gallery || [])];
+  const modelName = item.model || item.title.replace(item.brand, '').trim();
 
+  // Title: "Brand Model – An | Tractoare Tecuci"
+  const pageTitle = `${item.title} – ${item.year || ''} | Tractoare Tecuci`;
+
+  // Meta description: Brand + Model + CP + An + Ore + locație (~150 ch)
+  const cpSpec = (item.specs || []).find(s => s.k && (s.k.includes('PUTERE') || s.k.includes('CP')));
+  const cpVal = cpSpec ? ` ${cpSpec.v},` : '';
+  const hrsText = item.hours && item.hours > 0 ? ` ${item.hours.toLocaleString('ro-RO')} ore,` : '';
+  const itText = item.cover && item.cover.includes('italia') ? ' import Italia,' : '';
+  const metaDesc = `${item.title},${cpVal} an ${item.year || ''},${hrsText}${itText} Tecuci, Galați. Verificat tehnic, consultanță și transport disponibile. Solicită ofertă!`
+    .replace(/,\s*,/g, ',').replace(/\s{2,}/g, ' ').slice(0, 160);
+
+  // OG Title
+  const ogTitle = `${item.title} – ${item.year || ''} | Tractoare Tecuci`;
+
+  // ── Setare meta tags dinamice ───────────────────────────────────────────
+  document.title = pageTitle;
+
+  // Title + Description
+  const pTitle = document.getElementById('pTitle');
+  if (pTitle) pTitle.textContent = pageTitle;
+  const pDesc = document.getElementById('pDesc');
+  if (pDesc) pDesc.setAttribute('content', metaDesc);
+
+  // Canonical
+  const pCan = document.getElementById('pCanonical');
+  if (pCan) pCan.setAttribute('href', canonical);
+
+  // Open Graph
+  const ogT = document.getElementById('ogTitle');   if (ogT)  ogT.setAttribute('content', ogTitle);
+  const ogD = document.getElementById('ogDesc');    if (ogD)  ogD.setAttribute('content', metaDesc);
+  const ogU = document.getElementById('ogUrl');     if (ogU)  ogU.setAttribute('content', canonical);
+  const ogI = document.getElementById('ogImage');   if (ogI)  ogI.setAttribute('content', ogImage);
+
+  // Twitter Card
+  const twT = document.getElementById('twTitle');   if (twT)  twT.setAttribute('content', ogTitle);
+  const twD = document.getElementById('twDesc');    if (twD)  twD.setAttribute('content', metaDesc);
+  const twI = document.getElementById('twImage');   if (twI)  twI.setAttribute('content', ogImage);
+
+  // ── JSON-LD Product ─────────────────────────────────────────────────────
+  const isInStock = item.status === 'In stoc';
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": item.title,
+    "description": item.short_desc || metaDesc,
+    "sku": item.slug,
+    "brand": {
+      "@type": "Brand",
+      "name": item.brand || "Tractoare Tecuci"
+    },
+    "category": item.category === 'tractor' ? 'Tractoare' :
+                 item.category === 'telescopic' ? 'Încărcătoare telescopice' : 'Utilaje agricole',
+    "image": gallery.filter(Boolean).map(g => `${baseUrl}/${g}`),
+    "url": canonical,
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "availability": isInStock
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "seller": {
+        "@type": "Organization",
+        "name": "Tractoare Tecuci",
+        "url": baseUrl,
+        "telephone": "+40764199074",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Str. Tecuciului Nou, nr. 25",
+          "addressLocality": "Tecuci",
+          "addressRegion": "Galați",
+          "postalCode": "805300",
+          "addressCountry": "RO"
+        }
+      }
+    }
+  };
+  const productSchema = document.getElementById('productSchema');
+  if (productSchema) productSchema.textContent = JSON.stringify(productLd, null, 2);
+
+  // ── JSON-LD BreadcrumbList ──────────────────────────────────────────────
+  const catLabel = item.category === 'tractor' ? 'Tractoare' :
+                   item.category === 'telescopic' ? 'Telescopice' : 'Alte utilaje';
+  const catUrl = `${baseUrl}/products?category=${item.category}`;
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Acasă", "item": baseUrl },
+      { "@type": "ListItem", "position": 2, "name": "Stoc Utilaje", "item": `${baseUrl}/products` },
+      { "@type": "ListItem", "position": 3, "name": catLabel, "item": catUrl },
+      { "@type": "ListItem", "position": 4, "name": item.title, "item": canonical }
+    ]
+  };
+  const breadcrumbSchema = document.getElementById('breadcrumbSchema');
+  if (breadcrumbSchema) breadcrumbSchema.textContent = JSON.stringify(breadcrumbLd, null, 2);
+
+  // ── Head badge + titlu pagină ───────────────────────────────────────────
   const hb=$('#prodHeadBrand'), ht=$('#prodHeadTitle');
   if(hb){ hb.textContent=item.brand||''; hb.hidden=!item.brand; }
   if(ht){ ht.textContent=item.title||''; ht.hidden=!item.title; }
 
-  const gallery=[item.cover,...(item.gallery||[])];
-  
-  // ✅ ALT text cu "second hand" pentru imaginea principală (INVIZIBIL)
-  // Utilizatorii văd doar galeria, NU văd textul "second hand"
-  // Google Images indexează: "brand model second hand year - import europa verificat tehnic"
-  const modelName = item.model || item.title.replace(item.brand, '').trim();
+  // ── Galerie ─────────────────────────────────────────────────────────────
+  // ✅ ALT text cu "second hand" pentru imaginea principală
   const mainImageAlt = `${item.brand} ${modelName} second hand ${item.year} - import Europa verificat tehnic`;
-  
+
   const galleryHTML=`
     <div class="g-main"><img src="${gallery[0]}" alt="${mainImageAlt}" loading="eager"></div>
     <div class="g-thumbs">
-      ${gallery.map((g,i)=> {
+      ${gallery.map((g,i) => {
         if (i === 0) return '';
-        // ✅ ALT text cu "second hand" pentru thumbnail-uri (INVIZIBIL)
         const thumbAlt = `${item.brand} ${modelName} second hand - detaliu imagine ${i}`;
         return `<img src="${g}" alt="${thumbAlt}" loading="lazy">`;
       }).join('')}
     </div>`;
 
+  // ── Specs ───────────────────────────────────────────────────────────────
   let rows=''; const s=item.specs||[];
   for(let i=0;i<s.length;i+=2){
-    // Afișează spec doar dacă are și cheie și valoare
     const spec1 = s[i]?.k && s[i]?.v ? `<div class="spec"><strong>${s[i].k}:</strong> ${s[i].v}</div>` : '';
     const spec2 = s[i+1]?.k && s[i+1]?.v ? `<div class="spec"><strong>${s[i+1].k}:</strong> ${s[i+1].v}</div>` : '';
-    
-    // Doar dacă există cel puțin un spec valid, adaugă grid-ul
-    if(spec1 || spec2) {
-      rows+=`<div class="spec-grid">${spec1}${spec2}</div>`;
-    }
+    if(spec1 || spec2) rows+=`<div class="spec-grid">${spec1}${spec2}</div>`;
   }
 
-  // FIX "0 ore" - afișează rândul doar dacă există ore > 0
-  const hoursHTML = item.hours && item.hours > 0 
-    ? `<div class="item">Ore: <strong>${item.hours.toLocaleString('ro-RO')}</strong></div>` 
+  // FIX "0 ore"
+  const hoursHTML = item.hours && item.hours > 0
+    ? `<div class="item">Ore: <strong>${item.hours.toLocaleString('ro-RO')}</strong></div>`
     : '';
 
-  // Buton OLX cu icon
-  const olxButton = item.olx_link 
-    ? `<a class="btn btn-outline" href="${item.olx_link}" target="_blank" rel="noopener noreferrer">
+  // Buton OLX / source_link
+  const extLink = item.olx_link || item.source_link;
+  const extLabel = item.olx_link ? 'Vezi pe OLX' : 'Sursă listare';
+  const olxButton = extLink
+    ? `<a class="btn btn-outline" href="${extLink}" target="_blank" rel="noopener noreferrer">
          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
            <polyline points="15 3 21 3 21 9"></polyline>
            <line x1="10" y1="14" x2="21" y2="3"></line>
          </svg>
-         Vezi pe OLX
-       </a>` 
+         ${extLabel}
+       </a>`
+    : '';
+
+  // ── Badge status pentru produse Vandut ─────────────────────────────────
+  const statusBadge = item.status === 'Vandut'
+    ? `<p style="display:inline-flex;align-items:center;gap:6px;background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;border-radius:999px;padding:5px 12px;font-weight:700;font-size:14px;margin-bottom:12px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        Vândut
+       </p>`
     : '';
 
   wrap.innerHTML=`
     <div class="gallery">${galleryHTML}</div>
     <div class="info">
+      ${statusBadge}
       <p class="snippet">${item.short_desc||''}</p>
       <div class="meta">
         <div class="item">An: <strong>${item.year||'—'}</strong></div>
@@ -264,7 +369,7 @@ async function pageDetail(){
         <a class="ask-offer" href="contact.html">Solicită ofertă</a>
         ${olxButton}
       </div>
-      <span class="cta-note">Consultanță, transport & finanțare disponibile.</span>
+      <span class="cta-note">Consultanță, transport &amp; finanțare disponibile.</span>
       <div class="specs">
         <h3>Specificații</h3>
         ${rows || '<p class="muted">Fără specificații suplimentare.</p>'}

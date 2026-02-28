@@ -1,4 +1,802 @@
-[
+﻿[
+  {
+    "title": "New Holland 8340",
+    "slug": "new-holland-8340-italia-1998-7200h",
+    "brand": "New Holland",
+    "category": "tractor",
+    "year": 1998,
+    "hours": 7200,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/new-holland-8340/new-holland-8340-lateral-dreapta-125cp-italia-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/new-holland-8340/new-holland-8340-lateral-dreapta-125cp-italia-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-lateral-stanga-cabina-ac-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-frontal-anvelope-agricole-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-spate-tiranti-priza-putere-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-interior-cabina-comenzi-inversor-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-vedere-completa-import-italia-tractoare-tecuci.webp",
+      "assets/new-holland-8340/new-holland-8340-vedere-kilometraj-import-italia-tractoare-tecuci.webp"
+    ],
+    "short_desc": "Tractor New Holland (Ford) 8340, an 1998, ~7200 ore, import Italia. Motor 7.5L (7480 cm³ în anunț), aer condiționat, compresor, cutie mecanică cu inversor, documente de înmatriculare.",
+    "specs": [
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "1998"
+      },
+      {
+        "k": "ORE FUNCȚIONARE",
+        "v": "7200 h"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import"
+      },
+      {
+        "k": "MOTOR (TRACTORDATA)",
+        "v": "Ford Genesis turbo diesel, 6 cilindri, 7.5L (456 ci)"
+      },
+      {
+        "k": "MOTOR (ANUNȚ)",
+        "v": "7480 cm³"
+      },
+      {
+        "k": "PUTERE (ANUNȚ)",
+        "v": "125 CP"
+      },
+      {
+        "k": "PUTERE PTO (TRACTORDATA)",
+        "v": "≈10 CP testat (Nebraska Test)"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Cutie mecanică cu inversor (conform anunț)"
+      },
+      {
+        "k": "AER CONDIȚIONAT",
+        "v": "Da (conform anunț)"
+      },
+      {
+        "k": "COMPRESOR",
+        "v": "Da (conform anunț)"
+      },
+      {
+        "k": "GREUTATE (TRACTORDATA)",
+        "v": "≈3939–4936 kg (în funcție de 2WD/4WD şi cabină)"
+      },
+      {
+        "k": "DIMENSIUNI (TRACTORDATA)",
+        "v": "L ≈447 cm, lățime ≈210 cm"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/new-holland-8340-IDkiV2a.html"
+  },
+  {
+    "title": "Fendt 820 Vario TMS",
+    "slug": "fendt-820-vario-tms-2009-8000h-italia",
+    "brand": "Fendt",
+    "category": "tractor",
+    "year": 2009,
+    "hours": 8000,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/fendt-820-vario-tms/fendt-820-vario-tms-lateral-dreapta-205cp-italia-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/fendt-820-vario-tms/fendt-820-vario-tms-lateral-dreapta-205cp-italia-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-tms-lateral-stanga-punte-suspendata-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-tms-frontal-deutz-6-cilindri-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-tms-spate-cuplaj-hidraulic-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-tms-vedere-completa-2009-import-italia-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-interior-cabina-variotronic-tractoare-tecuci.webp",
+      "assets/fendt-820-vario-tms/fendt-820-vario-interior-comenzi-volan-display-tractoare-tecuci.webp"
+    ],
+    "short_desc": "205 CP motor Deutz 6 cilindri, transmisie Vario TMS (CVT), punte suspendată, cabină amortizată pe perne de aer, compresor, climă. 8000 ore, import Italia, an 2009.",
+    "specs": [
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "207 CP (154.4 kW)"
+      },
+      {
+        "k": "PUTERE NETĂ",
+        "v": "190 CP (141.7 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "212 CP (158.1 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "175 CP (130.5 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz 6.1L - 6 cilindri"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu aer condiționat"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT TOTAL",
+        "v": "110.1 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "3 sau 4"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/540E/1000"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm (opțional)"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "6053 kg"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "2503 kg"
+      },
+      {
+        "k": "GREUTATE",
+        "v": "7021 kg"
+      },
+      {
+        "k": "AMPATAMENT",
+        "v": "271 cm"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/fendt-820-vario-tms-IDkcRIb.html"
+  },
+  {
+    "title": "Case IH 885XL",
+    "slug": "case-ih-885xl-1994-8000h-italia",
+    "brand": "Case IH",
+    "category": "tractor",
+    "year": 1994,
+    "hours": 8000,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/case-ih-885xl/case-ih-885xl-lateral-dreapta-85cp-italia-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/case-ih-885xl/case-ih-885xl-lateral-dreapta-85cp-italia-tractoare-tecuci.webp",
+      "assets/case-ih-885xl/case-ih-885xl-lateral-stanga-simpla-tractiune-tractoare-tecuci.webp",
+      "assets/case-ih-885xl/case-ih-885xl-frontal-anvelope-tractoare-tecuci.webp",
+      "assets/case-ih-885xl/case-ih-885xl-spate-anvelope-noi-tractoare-tecuci.webp",
+      "assets/case-ih-885xl/case-ih-885xl-interior-cabina-ac-tractoare-tecuci.webp"
+    ],
+    "short_desc": "Tractor Case IH 885XL, an 1994, 8000 ore, import Italia. Motor 4 cilindri 85 CP, simplă tracțiune (2WD), cutie mecanică cu reductor, aer condiționat, anvelope spate noi, documente pentru înmatriculare.",
+    "specs": [
+      {
+        "k": "AN FABRICAȚIE (ANUNȚ)",
+        "v": "1994"
+      },
+      {
+        "k": "ORE FUNCȚIONARE (ANUNȚ)",
+        "v": "8000 h"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import"
+      },
+      {
+        "k": "SERIE (TRACTORDATA)",
+        "v": "885XL (1985–1990)"
+      },
+      {
+        "k": "PUTERE MOTOR (TRACTORDATA)",
+        "v": "83 CP (61.9 kW)"
+      },
+      {
+        "k": "MOTOR (TRACTORDATA)",
+        "v": "CaseIH 4.4L - 4 cilindri diesel"
+      },
+      {
+        "k": "TRANSMISIE (TRACTORDATA)",
+        "v": "16-speed"
+      },
+      {
+        "k": "HIDRAULICĂ (TRACTORDATA)",
+        "v": "Debit pompă 46.9 l/min"
+      },
+      {
+        "k": "LIFT SPATE (TRACTORDATA)",
+        "v": "2381 kg"
+      },
+      {
+        "k": "PTO SPATE (TRACTORDATA)",
+        "v": "Independent, 540/1000"
+      },
+      {
+        "k": "GREUTATE (TRACTORDATA)",
+        "v": "3560 kg"
+      },
+      {
+        "k": "AMPATAMENT (TRACTORDATA)",
+        "v": "216 cm"
+      },
+      {
+        "k": "ANVELOPE (TRACTORDATA)",
+        "v": "Față 12.4-24 / Spate 16.9-34"
+      },
+      {
+        "k": "TRACȚIUNE (ANUNȚ)",
+        "v": "2WD (simplă tracțiune)"
+      },
+      {
+        "k": "REDUCTOR (ANUNȚ)",
+        "v": "Da"
+      },
+      {
+        "k": "AER CONDIȚIONAT (ANUNȚ)",
+        "v": "Da"
+      },
+      {
+        "k": "ANVELOPE SPATE (ANUNȚ)",
+        "v": "Noi"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/tractor-case-885xl-IDkhcaD.html"
+  },
+  {
+    "title": "John Deere 6120M",
+    "slug": "john-deere-6120m-powerquad-inversor",
+    "brand": "John Deere",
+    "category": "tractor",
+    "year": 2018,
+    "hours": 5800,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/john-deere-6120m/john-deere-6120m-lateral-dreapta-120cp-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/john-deere-6120m/john-deere-6120m-lateral-dreapta-120cp-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-lateral-stanga-powerquad-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-frontal-turbo-aer-conditionat-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-spate-incarcator-frontal-sigma-4-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-vedere-completa-inversor-2018-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-interior-cabina-comenzi-powerquad-tractoare-tecuci.webp",
+      "assets/john-deere-6120m/john-deere-6120m-interior-display-incarcator-frontal-tractoare-tecuci.webp"
+    ],
+    "short_desc": "120 CP, motor John Deere 4.5L (4 cilindri turbo), transmisie PowerQuad cu inversor, aer condiționat. Încărcător frontal Sigma 4 (model 2022, profesional). 5800 ore, import Italia, an 2018.",
+    "specs": [
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "120 CP (89.5 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "127 CP (94.7 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "94 CP (70.1 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "John Deere 4.5L - 4 cilindri diesel (turbo)"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "PowerQuad (4-speed power shift) + inversor"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "2WD sau 4WD (în funcție de echipare)"
+      },
+      {
+        "k": "REDUCTOARE",
+        "v": "Planetare inboard"
+      },
+      {
+        "k": "BLOCARE DIFERENȚIAL",
+        "v": "Electro-hidraulică față/spate"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu AC"
+      },
+      {
+        "k": "ÎNCĂRCĂTOR FRONTAL",
+        "v": "Sigma 4 (model 2022, profesional)"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "200 bar (open center; load-sensing opțional)"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "79.9 l/min (113.6 l/min opțional)"
+      },
+      {
+        "k": "DISTRIBUITORI SPATE",
+        "v": "3 (opțional)"
+      },
+      {
+        "k": "DISTRIBUITORI MID",
+        "v": "3 (opțional)"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/1000 (1.375) / 540 (în funcție de echipare)"
+      },
+      {
+        "k": "CUPLARE PTO",
+        "v": "Electro-hidraulică"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "2531 kg (3370 kg opțional)"
+      },
+      {
+        "k": "GREUTATE",
+        "v": "5210 kg"
+      },
+      {
+        "k": "AMPATAMENT",
+        "v": "258 cm"
+      },
+      {
+        "k": "FABRICAT",
+        "v": "Mannheim, Germania"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/john-deere-6120-m-IDjZUGL.html"
+  },
+  {
+    "title": "Fendt 818 Vario TMS",
+    "slug": "fendt-818-vario-tms-2006-6300h-italia",
+    "brand": "Fendt",
+    "category": "tractor",
+    "year": 2006,
+    "hours": 6300,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/fendt-818-vario-tms/fendt-818-vario-tms-lateral-dreapta-185cp-italia-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/fendt-818-vario-tms/fendt-818-vario-tms-lateral-dreapta-185cp-italia-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-tms-lateral-stanga-punte-suspendata-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-tms-frontal-deutz-6-cilindri-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-tms-spate-cuplaj-hidraulic-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-tms-vedere-completa-2006-import-italia-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-interior-cabina-variotronic-tractoare-tecuci.webp",
+      "assets/fendt-818-vario-tms/fendt-818-vario-interior-comenzi-volan-display-tractoare-tecuci.webp"
+    ],
+    "short_desc": "185 CP motor Deutz 6 cilindri, transmisie Vario TMS (CVT), punte suspendată, cabină amortizată pe perne de aer, climă. ~6300 ore, fără erori la bord, import Italia, an 2006.",
+    "specs": [
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "186 CP (138.7 kW)"
+      },
+      {
+        "k": "PUTERE NETĂ",
+        "v": "170 CP (126.8 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "192 CP (143.2 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "160 CP (119.3 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz 6.1L - 6 cilindri diesel"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu aer condiționat"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT TOTAL",
+        "v": "110.1 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "3 sau 4"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/540E/1000"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm (opțional)"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "6053 kg"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "2503 kg"
+      },
+      {
+        "k": "GREUTATE",
+        "v": "7021 kg"
+      },
+      {
+        "k": "AMPATAMENT",
+        "v": "271 cm"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/fendt-818-vario-tms-IDjZUXI.html"
+  },
+  {
+    "title": "Manitou MLT 741-120H",
+    "slug": "manitou-mlt-741-120h-2013-6000h-italia",
+    "brand": "Manitou",
+    "category": "telescopic",
+    "year": 2013,
+    "hours": 6000,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-lateral-dreapta-41t-7m-italia-tractoare-tecuci.webp",
+    "gallery": [
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-lateral-dreapta-41t-7m-italia-tractoare-tecuci.webp",
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-lateral-stanga-brat-telescopic-7m-tractoare-tecuci.webp",
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-frontal-cabina-ac-tractoare-tecuci.webp",
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-spate-contra-greutate-tractoare-tecuci.webp",
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-vedere-completa-2013-import-italia-tractoare-tecuci.webp",
+      "assets/manitou-mlt-741-120h/manitou-mlt-741-120h-interior-comenzi-joystick-tractoare-tecuci.webp"
+    ],
+    "short_desc": "Încărcător telescopic Manitou MLT 741-120H, an 2013, 6000 ore, import Italia. Motor 4 cilindri turbo 120 CP (conform anunț), capacitate ridicare 4.1 t, braț 7 m, aer condiționat, compresor. Fără accesorii, factură externă.",
+    "specs": [
+      {
+        "k": "AN FABRICAȚIE (ANUNȚ)",
+        "v": "2013"
+      },
+      {
+        "k": "ORE FUNCȚIONARE (ANUNȚ)",
+        "v": "6000 h"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import"
+      },
+      {
+        "k": "STARE",
+        "v": "Utilizat"
+      },
+      {
+        "k": "CAPACITATE RIDICARE (FIȘĂ MODEL)",
+        "v": "4100 kg"
+      },
+      {
+        "k": "ÎNĂLȚIME MAX. RIDICARE (FIȘĂ MODEL)",
+        "v": "6.9 m"
+      },
+      {
+        "k": "REACH MAX. (FIȘĂ MODEL)",
+        "v": "≈3.93 m"
+      },
+      {
+        "k": "GREUTATE (FIȘĂ MODEL)",
+        "v": "≈7220 kg"
+      },
+      {
+        "k": "DIMENSIUNI (FIȘĂ MODEL)",
+        "v": "L ≈4.78 m / l ≈2.34 m / h ≈2.30 m"
+      },
+      {
+        "k": "MOTOR (ANUNȚ)",
+        "v": "Mercedes 4 cilindri turbo, 120 CP"
+      },
+      {
+        "k": "PUTERE (FIȘĂ MODEL)",
+        "v": "≈122–123 CP (în funcție de versiune)"
+      },
+      {
+        "k": "AER CONDIȚIONAT (ANUNȚ)",
+        "v": "Da"
+      },
+      {
+        "k": "COMPRESOR (ANUNȚ)",
+        "v": "Da"
+      },
+      {
+        "k": "ACCESORII",
+        "v": "Fără accesorii (conform anunț)"
+      },
+      {
+        "k": "DOCUMENTE",
+        "v": "Factură externă (conform anunț)"
+      }
+    ],
+    "olx_link": "https://www.olx.ro/d/oferta/telescopic-manitou-mlt-741-120h-IDk9tKh.html"
+  },
+  {
+    "title": "Fendt Favorit 924 Vario",
+    "slug": "fendt-favorit-924-vario-us25-578",
+    "brand": "Fendt",
+    "category": "tractor",
+    "year": 2003,
+    "hours": null,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/fendt-favorit-924-vario/fendt-favorit-924-vario-lateral-dreapta-253cp-2003.webp",
+    "gallery": [
+      "assets/fendt-favorit-924-vario/fendt-favorit-924-vario-lateral-dreapta-253cp-2003.webp",
+      "assets/fendt-favorit-924-vario/fendt-favorit-924-vario-lateral-stanga-tractiune-4x4.webp",
+      "assets/fendt-favorit-924-vario/fendt-favorit-924-vario-frontal.webp",
+      "assets/fendt-favorit-924-vario/fendt-favorit-924-vario-spate-priza-putere.webp"
+    ],
+    "short_desc": "Tractor Fendt Favorit 924 Vario, 253 CP, an 2003, 4x4, transmisie Vario (CVT), punte suspendată, cabină suspendată (amortizare mecanică), inversor electrohidraulic, frânare pneumatică, A/C. Anvelope: față 540/65 R34 (20%), spate 650/65 R42 (40%).",
+    "specs": [
+      {
+        "k": "PUTERE",
+        "v": "253 CP (CV)"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "2003"
+      },
+      {
+        "k": "MARCA / MODEL",
+        "v": "Fendt Favorit 924 Vario"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4RM (4x4)"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario (CVT)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "6 cilindri turbo"
+      },
+      {
+        "k": "PUNTE",
+        "v": "Suspendată"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Suspendată (amortizare mecanică) + A/C"
+      },
+      {
+        "k": "INVERSOR",
+        "v": "Electrohidraulic"
+      },
+      {
+        "k": "FRÂNARE",
+        "v": "Pneumatică (aer)"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "4 electrohidraulici"
+      },
+      {
+        "k": "ANVELOPE FAȚĂ",
+        "v": "540/65 R34, Alliance (20%)"
+      },
+      {
+        "k": "ANVELOPE SPATE",
+        "v": "650/65 R42, Firestone (40%)"
+      },
+      {
+        "k": "SCAUN",
+        "v": "Pneumatic"
+      },
+      {
+        "k": "NUMĂR (TARGA)",
+        "v": "BP 818 F"
+      },
+      {
+        "k": "COD INTERN",
+        "v": "US25/578"
+      },
+      {
+        "k": "DISPONIBILITATE",
+        "v": "În sediu (Casella)"
+      },
+      {
+        "k": "CONDIȚII",
+        "v": "Bune"
+      }
+    ],
+    "source_link": "https://www.casella.it/it/prodotti/noline/fendt-favorit-924-vario-us25/578/775c2fc6-ea09-4d23-9965-92fffaf5bb92"
+  },
+  {
+    "title": "Fendt Farmer 312 LSA",
+    "slug": "fendt-farmer-312-lsa-us25-760",
+    "brand": "Fendt",
+    "category": "tractor",
+    "year": 1991,
+    "hours": null,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-lateral-dreapta-120cp-1991.webp",
+    "gallery": [
+      "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-lateral-dreapta-120cp-1991.webp",
+      "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-lateral-stanga-incarcator-frontal.webp",
+      "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-frontal.webp",
+      "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-spate.webp",
+      "assets/fendt-farmer-312-lsa/fendt-farmer-312-lsa-interior-cabina.webp"
+    ],
+    "short_desc": "Tractor Fendt Farmer 312 LSA, 120 CP, an 1991, cu încărcător frontal. În condiții bune. Cod: US25/760. Număr: PC037461.",
+    "specs": [
+      {
+        "k": "PUTERE",
+        "v": "120 CP (CV)"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "1991"
+      },
+      {
+        "k": "MARCA / MODEL",
+        "v": "Fendt Farmer 312 LSA"
+      },
+      {
+        "k": "ÎNCĂRCĂTOR",
+        "v": "Da (cu încărcător)"
+      },
+      {
+        "k": "CONDIȚII",
+        "v": "Bune"
+      },
+      {
+        "k": "DISPONIBILITATE",
+        "v": "În sediu (Casella)"
+      },
+      {
+        "k": "NUMĂR (TARGA)",
+        "v": "PC037461"
+      },
+      {
+        "k": "COD INTERN",
+        "v": "US25/760"
+      },
+      {
+        "k": "STATUS LISTARE",
+        "v": "Disponibil"
+      }
+    ],
+    "source_link": "https://www.casella.it/it/prodotti/noline/fendt-farmer-312-lsa-us25/760/8d4d6e2c-c6f1-4ed3-ae27-73eb80aecd52"
+  },
+  {
+    "title": "Fendt Farmer 309 Ci",
+    "slug": "fendt-farmer-309-ci-us25-855",
+    "brand": "Fendt",
+    "category": "tractor",
+    "year": 2008,
+    "hours": 4516,
+    "currency": "EUR",
+    "status": "In stoc",
+    "cover": "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-lateral-dreapta-113cp-2008.webp",
+    "gallery": [
+      "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-lateral-dreapta-113cp-2008.webp",
+      "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-lateral-stanga-4x4.webp",
+      "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-frontal.webp",
+      "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-spate.webp",
+      "assets/fendt-farmer-309-ci/fendt-farmer-309-ci-interior-cabina.webp"
+    ],
+    "short_desc": "Tractor Fendt Farmer 309 Ci, 113 CP, an 2008, 4516 ore, 4x4, cutie mecanică, inversor mecanic pe volan, motor Deutz 4 cilindri turbo, A/C. Anvelope: față 380/85 R24 (BKT) 90%, spate 460/85 R34 (Kleber) 90%. Condiții foarte bune. Cod: US25/855.",
+    "specs": [
+      {
+        "k": "PUTERE",
+        "v": "113 CP (CV)"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "2008"
+      },
+      {
+        "k": "ORE",
+        "v": "4516 h"
+      },
+      {
+        "k": "MARCA / MODEL",
+        "v": "Fendt Farmer 309 Ci"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4RM (4x4)"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Mecanică"
+      },
+      {
+        "k": "INVERSOR",
+        "v": "Mecanic, pe volan"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz, 4 cilindri turbo"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Fixă + A/C"
+      },
+      {
+        "k": "SCAUN",
+        "v": "Pneumatic"
+      },
+      {
+        "k": "PUNTE",
+        "v": "Fixă"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "2 mecanici"
+      },
+      {
+        "k": "ANVELOPE FAȚĂ",
+        "v": "380/85 R24, BKT (90%)"
+      },
+      {
+        "k": "ANVELOPE SPATE",
+        "v": "460/85 R34, Kleber (90%)"
+      },
+      {
+        "k": "NUMĂR (TARGA)",
+        "v": "AL 933 R"
+      },
+      {
+        "k": "COD INTERN",
+        "v": "US25/855"
+      },
+      {
+        "k": "CONDIȚII",
+        "v": "Foarte bune"
+      },
+      {
+        "k": "DISPONIBILITATE",
+        "v": "În sediu (Casella)"
+      }
+    ],
+    "source_link": "https://www.casella.it/it/prodotti/noline/fendt-farmer-309-ci-us25/855/ad936f0f-8390-49e1-8889-1a5c411c8a10"
+  },
   {
     "title": "Tractor Claas Arion 420 CIS",
     "slug": "tractor-claas-arion-420-cis-panoramic",
@@ -19,16 +817,46 @@
     ],
     "short_desc": "100 CP (120 CP cu CPM), cabină PANORAMIC cu AC, transmisie QUADRISHIFT 16x16, încărcător frontal ready.",
     "specs": [
-      {"k": "PUTERE", "v": "100 CP (120 CP CPM)"},
-      {"k": "MOTOR", "v": "FPT NEF 4.5L"},
-      {"k": "TRANSMISIE", "v": "QUADRISHIFT 16x16"},
-      {"k": "GREUTATE", "v": "4900 kg"},
-      {"k": "CABINĂ", "v": "PANORAMIC cu AC"},
-      {"k": "LIFT SPATE", "v": "3200 kg"},
-      {"k": "PTO", "v": "540/540E/1000 rpm"},
-      {"k": "TRACȚIUNE", "v": "4WD"},
-      {"k": "HIDRAULICĂ", "v": "110 l/min"},
-      {"k": "VITEZĂ MAX", "v": "40 km/h"}
+      {
+        "k": "PUTERE",
+        "v": "100 CP (120 CP CPM)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "FPT NEF 4.5L"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "QUADRISHIFT 16x16"
+      },
+      {
+        "k": "GREUTATE",
+        "v": "4900 kg"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "PANORAMIC cu AC"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "3200 kg"
+      },
+      {
+        "k": "PTO",
+        "v": "540/540E/1000 rpm"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "HIDRAULICĂ",
+        "v": "110 l/min"
+      },
+      {
+        "k": "VITEZĂ MAX",
+        "v": "40 km/h"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/tractor-claas-arion-420-IDk0PzI.html"
   },
@@ -54,26 +882,86 @@
     ],
     "short_desc": "240 CP motor Deutz 6.1L, transmisie Vario TMS continuă, anvelope spate BKT noi cu punte suspendată, tiranți și priză de putere față, 5060 ore, import Italia.",
     "specs": [
-      {"k": "PUTERE BRUTĂ", "v": "237 CP (176.7 kW)"},
-      {"k": "PUTERE NETĂ", "v": "220 CP (164.1 kW)"},
-      {"k": "PUTERE MAXIMĂ", "v": "246 CP (183.4 kW)"},
-      {"k": "MOTOR", "v": "Deutz 6.1L - 6 cilindri"},
-      {"k": "CUPLU MAXIM", "v": "1072 Nm la 1500 rpm"},
-      {"k": "TRANSMISIE", "v": "Vario TMS (CVT continuă)"},
-      {"k": "VITEZĂ MAXIMĂ", "v": "50 km/h"},
-      {"k": "TRACȚIUNE", "v": "4WD - reductoare planetare"},
-      {"k": "PUNTE FAȚĂ", "v": "Suspendată pneumatic"},
-      {"k": "ANVELOPE SPATE", "v": "BKT noi"},
-      {"k": "CABINĂ", "v": "VisioPlus AC + pneumatic"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "152-193 l/min"},
-      {"k": "DISTRIBUITORI", "v": "2-5 spate + 0-2 față"},
-      {"k": "PTO SPATE", "v": "540/540E/1000/1000E"},
-      {"k": "PTO FAȚĂ", "v": "1000 rpm"},
-      {"k": "LIFT SPATE", "v": "10360 daN"},
-      {"k": "BATERIE", "v": "12V 180Ah"},
-      {"k": "ALTERNATOR", "v": "200A / 14V"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "237 CP (176.7 kW)"
+      },
+      {
+        "k": "PUTERE NETĂ",
+        "v": "220 CP (164.1 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "246 CP (183.4 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz 6.1L - 6 cilindri"
+      },
+      {
+        "k": "CUPLU MAXIM",
+        "v": "1072 Nm la 1500 rpm"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "VITEZĂ MAXIMĂ",
+        "v": "50 km/h"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD - reductoare planetare"
+      },
+      {
+        "k": "PUNTE FAȚĂ",
+        "v": "Suspendată pneumatic"
+      },
+      {
+        "k": "ANVELOPE SPATE",
+        "v": "BKT noi"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "VisioPlus AC + pneumatic"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "152-193 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "2-5 spate + 0-2 față"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/540E/1000/1000E"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "10360 daN"
+      },
+      {
+        "k": "BATERIE",
+        "v": "12V 180Ah"
+      },
+      {
+        "k": "ALTERNATOR",
+        "v": "200A / 14V"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/fendt-724-vario-tms-IDk1TL8.html"
   },
@@ -89,37 +977,97 @@
     "cover": "assets/massey-ferguson-7724/massey-ferguson-7724-lateral-dreapta-240cp-tractoare-tecuci.webp",
     "gallery": [
       "assets/massey-ferguson-7724/massey-ferguson-7724-lateral-dreapta-240cp-tractoare-tecuci.webp",
-      "assets/massey-ferguson-7724/massey-ferguson-7724-lateral-stanga-punte-suspendata-galati.webp",
       "assets/massey-ferguson-7724/massey-ferguson-7724-frontal-dyna6-powershift-italia.webp",
-      "assets/massey-ferguson-7724/massey-ferguson-7724-spate-tiranti-cabina-amortizata.webp",
-      "assets/massey-ferguson-7724/massey-ferguson-7724-vedere-completa-240cp-sisu.webp",
       "assets/massey-ferguson-7724/massey-ferguson-7724-interior-cabina-comenzi-dyna6.webp",
-      "assets/massey-ferguson-7724/massey-ferguson-7724-interior-volan-display-modern.webp"
+      "assets/massey-ferguson-7724/massey-ferguson-7724-interior-volan-display-modern.webp",
+      "assets/massey-ferguson-7724/massey-ferguson-7724-lateral-dreapta-240cp-tractoare-tecuci.webp",
+      "assets/massey-ferguson-7724/massey-ferguson-7724-lateral-stanga-punte-suspendata-galati.webp",
+      "assets/massey-ferguson-7724/massey-ferguson-7724-vedere-completa-240cp-sisu.webp"
     ],
-    "short_desc": "240 CP motor SISU turbo, transmisie full Powershift Dyna-6, punte suspendată, cabină amortizată, tiranți față, 4800 ore, import Italia 2019.",
+    "short_desc": "Tractor Massey Ferguson 7724, an 2019, motor SISU turbo 240 CP, transmisie Dyna-6 full Powershift, punte suspendată, cabină amortizată, tiranți față. 4800 ore, import Italia, unic proprietar, factură externă.",
     "specs": [
-      {"k": "PUTERE MOTOR", "v": "220 CP (164.1 kW)"},
-      {"k": "PUTERE PTO", "v": "180 CP (134.2 kW)"},
-      {"k": "PUTERE EFECTIVĂ", "v": "240 CP (turbo)"},
-      {"k": "MOTOR", "v": "SISU Turbo"},
-      {"k": "TRANSMISIE", "v": "Dyna-6 Full Powershift"},
-      {"k": "TRACȚIUNE", "v": "4WD"},
-      {"k": "BLOCARE DIFERENȚIAL", "v": "Electro-hidraulică față/spate"},
-      {"k": "PUNTE FAȚĂ", "v": "Suspendată"},
-      {"k": "CABINĂ", "v": "Amortizată cu AC"},
-      {"k": "TIRANȚI FAȚĂ", "v": "Da"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "110-189 l/min"},
-      {"k": "DISTRIBUITORI SPATE", "v": "2-5"},
-      {"k": "DISTRIBUITORI FAȚĂ", "v": "0-3"},
-      {"k": "PTO SPATE", "v": "540/1000 rpm"},
-      {"k": "PTO FAȚĂ", "v": "1000 rpm (opțional)"},
-      {"k": "LIFT SPATE", "v": "6302 kg (Dyna-6)"},
-      {"k": "LIFT FRONTAL", "v": "3999 kg"},
-      {"k": "VITEZĂ MAXIMĂ", "v": "50 km/h"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE MOTOR",
+        "v": "220 CP (164.1 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "180 CP (134.2 kW)"
+      },
+      {
+        "k": "PUTERE EFECTIVĂ",
+        "v": "240 CP (turbo)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "SISU Turbo"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Dyna-6 Full Powershift"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "BLOCARE DIFERENȚIAL",
+        "v": "Electro-hidraulică față/spate"
+      },
+      {
+        "k": "PUNTE FAȚĂ",
+        "v": "Suspendată"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Amortizată cu AC"
+      },
+      {
+        "k": "TIRANȚI FAȚĂ",
+        "v": "Da"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "110-189 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI SPATE",
+        "v": "2-5"
+      },
+      {
+        "k": "DISTRIBUITORI FAȚĂ",
+        "v": "0-3"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/1000 rpm"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm (opțional)"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "6302 kg (Dyna-6)"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "3999 kg"
+      },
+      {
+        "k": "VITEZĂ MAXIMĂ",
+        "v": "50 km/h"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
-    "olx_link": "https://www.olx.ro/d/oferta/tractor-massey-ferguson-7724-dyna-6-IDk4x9X.html"
+    "olx_link": "https://www.olx.ro/d/oferta/tractor-massey-ferguson-7724-IDk1TQc.html"
   },
   {
     "title": "Massey Ferguson 7719 S",
@@ -143,26 +1091,86 @@
     ],
     "short_desc": "195 CP motor SISU 6 cilindri, transmisie Powershift, aer condiționat, compresor, 5600 ore, import Italia 2018.",
     "specs": [
-      {"k": "PUTERE BRUTĂ", "v": "170 CP (126.8 kW)"},
-      {"k": "PUTERE PTO", "v": "145 CP (108.1 kW)"},
-      {"k": "PUTERE EFECTIVĂ", "v": "195 CP"},
-      {"k": "MOTOR", "v": "SISU 6 cilindri"},
-      {"k": "TRANSMISIE", "v": "Powershift"},
-      {"k": "TRACȚIUNE", "v": "4WD"},
-      {"k": "BLOCARE DIFERENȚIAL", "v": "Electro-hidraulică full"},
-      {"k": "CABINĂ", "v": "Aer condiționat standard"},
-      {"k": "COMPRESOR", "v": "Da"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "110-190 l/min"},
-      {"k": "DISTRIBUITORI", "v": "3-5"},
-      {"k": "DEBIT SCV", "v": "92 l/min"},
-      {"k": "PTO SPATE", "v": "540/1000 rpm"},
-      {"k": "LIFT SPATE", "v": "6123 kg"},
-      {"k": "LIFT FRONTAL", "v": "3607 kg"},
-      {"k": "REZERVOR", "v": "431.5 L"},
-      {"k": "FRÂNE", "v": "Disc umed"},
-      {"k": "ALTERNATOR", "v": "175A (240A opțional)"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "170 CP (126.8 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "145 CP (108.1 kW)"
+      },
+      {
+        "k": "PUTERE EFECTIVĂ",
+        "v": "195 CP"
+      },
+      {
+        "k": "MOTOR",
+        "v": "SISU 6 cilindri"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Powershift"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "BLOCARE DIFERENȚIAL",
+        "v": "Electro-hidraulică full"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Aer condiționat standard"
+      },
+      {
+        "k": "COMPRESOR",
+        "v": "Da"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "110-190 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "3-5"
+      },
+      {
+        "k": "DEBIT SCV",
+        "v": "92 l/min"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/1000 rpm"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "6123 kg"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "3607 kg"
+      },
+      {
+        "k": "REZERVOR",
+        "v": "431.5 L"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed"
+      },
+      {
+        "k": "ALTERNATOR",
+        "v": "175A (240A opțional)"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/tractor-massey-ferguson-7719-s-IDk4x91.html"
   },
@@ -187,29 +1195,98 @@
     ],
     "short_desc": "240 CP motor Deutz 6 cilindri, transmisie Vario TMS continuă, punte suspendată, tiranți față, cabină suspendată cu perne de aer, clima, compresor, ISOBUS, 5500 ore, import Italia 2017.",
     "specs": [
-      {"k": "PUTERE BRUTĂ", "v": "237 CP (176.7 kW)"},
-      {"k": "PUTERE NETĂ", "v": "220 CP (164.1 kW)"},
-      {"k": "PUTERE MAXIMĂ", "v": "246 CP (183.4 kW)"},
-      {"k": "MOTOR", "v": "Deutz 6.1L - 6 cilindri"},
-      {"k": "CUPLU MAXIM", "v": "1072 Nm la 1500 rpm"},
-      {"k": "TRANSMISIE", "v": "Vario TMS (CVT continuă)"},
-      {"k": "VITEZĂ MAXIMĂ", "v": "50 km/h"},
-      {"k": "TRACȚIUNE", "v": "4WD - reductoare planetare"},
-      {"k": "PUNTE FAȚĂ", "v": "Suspendată pneumatic"},
-      {"k": "TIRANȚI FAȚĂ", "v": "Da"},
-      {"k": "CABINĂ", "v": "Suspendată cu perne de aer"},
-      {"k": "CLIMATIZARE", "v": "Aer condiționat"},
-      {"k": "COMPRESOR", "v": "Da"},
-      {"k": "ISOBUS", "v": "Da"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "152-193 l/min"},
-      {"k": "DISTRIBUITORI", "v": "2-5 spate + 0-2 față"},
-      {"k": "PTO SPATE", "v": "540/540E/1000/1000E"},
-      {"k": "PTO FAȚĂ", "v": "1000 rpm"},
-      {"k": "LIFT SPATE", "v": "10360 daN"},
-      {"k": "BATERIE", "v": "12V 180Ah"},
-      {"k": "ALTERNATOR", "v": "200A / 14V"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "237 CP (176.7 kW)"
+      },
+      {
+        "k": "PUTERE NETĂ",
+        "v": "220 CP (164.1 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "246 CP (183.4 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz 6.1L - 6 cilindri"
+      },
+      {
+        "k": "CUPLU MAXIM",
+        "v": "1072 Nm la 1500 rpm"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "VITEZĂ MAXIMĂ",
+        "v": "50 km/h"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD - reductoare planetare"
+      },
+      {
+        "k": "PUNTE FAȚĂ",
+        "v": "Suspendată pneumatic"
+      },
+      {
+        "k": "TIRANȚI FAȚĂ",
+        "v": "Da"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Suspendată cu perne de aer"
+      },
+      {
+        "k": "CLIMATIZARE",
+        "v": "Aer condiționat"
+      },
+      {
+        "k": "COMPRESOR",
+        "v": "Da"
+      },
+      {
+        "k": "ISOBUS",
+        "v": "Da"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "152-193 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI",
+        "v": "2-5 spate + 0-2 față"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/540E/1000/1000E"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "10360 daN"
+      },
+      {
+        "k": "BATERIE",
+        "v": "12V 180Ah"
+      },
+      {
+        "k": "ALTERNATOR",
+        "v": "200A / 14V"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/tractor-fendt-724-vario-tms-2017-IDk4yHB.html"
   },
@@ -234,28 +1311,94 @@
     ],
     "short_desc": "120 CP motor 4 cilindri turbo, transmisie PowerQuad cu inversor, încărcător frontal model Sigma 4 (2022, profesional), aer condiționat, 5800 ore, import Italia 2018.",
     "specs": [
-      {"k": "PUTERE BRUTĂ", "v": "120 CP (89.5 kW)"},
-      {"k": "PUTERE MAXIMĂ", "v": "127 CP (94.7 kW)"},
-      {"k": "PUTERE PTO", "v": "94 CP (70.1 kW)"},
-      {"k": "MOTOR", "v": "4 cilindri Turbo"},
-      {"k": "TRANSMISIE", "v": "PowerQuad cu inversor"},
-      {"k": "TRACȚIUNE", "v": "4WD opțional"},
-      {"k": "REDUCTOARE", "v": "Planetare inboard"},
-      {"k": "BLOCARE DIFERENȚIAL", "v": "Electro-hidraulică față/spate"},
-      {"k": "CABINĂ", "v": "Standard cu AC"},
-      {"k": "ÎNCĂRCĂTOR FRONTAL", "v": "Sigma 4 (2022, profesional)"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "80-114 l/min"},
-      {"k": "DISTRIBUITORI SPATE", "v": "3 opțional"},
-      {"k": "DISTRIBUITORI MID", "v": "3 opțional"},
-      {"k": "DEBIT SCV", "v": "79.9 l/min"},
-      {"k": "PTO SPATE", "v": "540/1000 rpm"},
-      {"k": "CUPLARE PTO", "v": "Electro-hidraulică"},
-      {"k": "LIFT SPATE", "v": "2531-3370 kg"},
-      {"k": "FRÂNE", "v": "Disc umed hidraulic"},
-      {"k": "ALTERNATOR", "v": "120A (200A opțional)"},
-      {"k": "FABRICAT", "v": "Mannheim, Germania"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "120 CP (89.5 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "127 CP (94.7 kW)"
+      },
+      {
+        "k": "PUTERE PTO",
+        "v": "94 CP (70.1 kW)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "4 cilindri Turbo"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "PowerQuad cu inversor"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD opțional"
+      },
+      {
+        "k": "REDUCTOARE",
+        "v": "Planetare inboard"
+      },
+      {
+        "k": "BLOCARE DIFERENȚIAL",
+        "v": "Electro-hidraulică față/spate"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu AC"
+      },
+      {
+        "k": "ÎNCĂRCĂTOR FRONTAL",
+        "v": "Sigma 4 (2022, profesional)"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "80-114 l/min"
+      },
+      {
+        "k": "DISTRIBUITORI SPATE",
+        "v": "3 opțional"
+      },
+      {
+        "k": "DISTRIBUITORI MID",
+        "v": "3 opțional"
+      },
+      {
+        "k": "DEBIT SCV",
+        "v": "79.9 l/min"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/1000 rpm"
+      },
+      {
+        "k": "CUPLARE PTO",
+        "v": "Electro-hidraulică"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "2531-3370 kg"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed hidraulic"
+      },
+      {
+        "k": "ALTERNATOR",
+        "v": "120A (200A opțional)"
+      },
+      {
+        "k": "FABRICAT",
+        "v": "Mannheim, Germania"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/tractor-john-deere-6120m-cu-incarcator-frontal-IDk4yG7.html"
   },
@@ -277,26 +1420,86 @@
     ],
     "short_desc": "185 CP motor Deutz, transmisie Vario TMS continuă, stare perfectă, 7560 ore, import Italia 2008.",
     "specs": [
-      {"k": "PUTERE BRUTĂ", "v": "181 CP (135 kW)"},
-      {"k": "PUTERE NETĂ", "v": "165 CP (123 kW)"},
-      {"k": "PUTERE MAXIMĂ", "v": "186 CP (138.7 kW)"},
-      {"k": "PUTERE EFECTIVĂ", "v": "185 CP"},
-      {"k": "MOTOR", "v": "Deutz 6.1L"},
-      {"k": "TRANSMISIE", "v": "Vario TMS (CVT continuă)"},
-      {"k": "VITEZĂ MAXIMĂ", "v": "50 km/h"},
-      {"k": "TRACȚIUNE", "v": "4WD"},
-      {"k": "FRÂNE", "v": "Disc umed"},
-      {"k": "CABINĂ", "v": "Standard cu AC"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT TOTAL", "v": "110-154 l/min"},
-      {"k": "PTO SPATE", "v": "540/540E/1000 rpm"},
-      {"k": "PTO FAȚĂ", "v": "540/1000 rpm (opțional)"},
-      {"k": "LIFT SPATE", "v": "9258 kg"},
-      {"k": "LIFT FRONTAL", "v": "2503 kg"},
-      {"k": "BATERIE", "v": "12V 170Ah"},
-      {"k": "ALTERNATOR", "v": "200A"},
-      {"k": "FABRICAT", "v": "Marktoberdorf, Germania"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "PUTERE BRUTĂ",
+        "v": "181 CP (135 kW)"
+      },
+      {
+        "k": "PUTERE NETĂ",
+        "v": "165 CP (123 kW)"
+      },
+      {
+        "k": "PUTERE MAXIMĂ",
+        "v": "186 CP (138.7 kW)"
+      },
+      {
+        "k": "PUTERE EFECTIVĂ",
+        "v": "185 CP"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Deutz 6.1L"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "VITEZĂ MAXIMĂ",
+        "v": "50 km/h"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu AC"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT TOTAL",
+        "v": "110-154 l/min"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/540E/1000 rpm"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "540/1000 rpm (opțional)"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "9258 kg"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "2503 kg"
+      },
+      {
+        "k": "BATERIE",
+        "v": "12V 170Ah"
+      },
+      {
+        "k": "ALTERNATOR",
+        "v": "200A"
+      },
+      {
+        "k": "FABRICAT",
+        "v": "Marktoberdorf, Germania"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/tractor-fendt-718-vario-tms-IDk4yFr.html"
   },
@@ -321,27 +1524,90 @@
     ],
     "short_desc": "220 CP motor MAN 6.9L, transmisie Vario TMS continuă, punte suspendată, tiranți față, anvelope noi BKT, legendara serie 900, unic proprietar Italia, 9000 ore.",
     "specs": [
-      {"k": "PUTERE NETĂ", "v": "210 CP (156.6 kW)"},
-      {"k": "PUTERE EFECTIVĂ", "v": "220 CP"},
-      {"k": "MOTOR", "v": "MAN 6.9L"},
-      {"k": "TRANSMISIE", "v": "Vario TMS (CVT continuă)"},
-      {"k": "VITEZĂ MAXIMĂ", "v": "50 km/h"},
-      {"k": "TRACȚIUNE", "v": "4WD"},
-      {"k": "PUNTE FAȚĂ", "v": "Suspendată"},
-      {"k": "TIRANȚI FAȚĂ", "v": "Da"},
-      {"k": "ANVELOPE", "v": "BKT noi"},
-      {"k": "FRÂNE", "v": "Disc umed"},
-      {"k": "CABINĂ", "v": "Standard cu AC"},
-      {"k": "SISTEM HIDRAULIC", "v": "Load-sensing 200 bar"},
-      {"k": "DEBIT POMPĂ", "v": "112 l/min"},
-      {"k": "PTO SPATE", "v": "540/1000 sau 750/1000"},
-      {"k": "PTO FAȚĂ", "v": "1000 rpm (opțional)"},
-      {"k": "LIFT SPATE", "v": "9737 kg"},
-      {"k": "LIFT FRONTAL", "v": "5098 kg"},
-      {"k": "SERIE", "v": "Legendara 900 Vario"},
-      {"k": "BATERIE", "v": "12V"},
-      {"k": "FABRICAT", "v": "Marktoberdorf, Germania"},
-      {"k": "ORIGINE", "v": "Italia - unic proprietar"}
+      {
+        "k": "PUTERE NETĂ",
+        "v": "210 CP (156.6 kW)"
+      },
+      {
+        "k": "PUTERE EFECTIVĂ",
+        "v": "220 CP"
+      },
+      {
+        "k": "MOTOR",
+        "v": "MAN 6.9L"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Vario TMS (CVT continuă)"
+      },
+      {
+        "k": "VITEZĂ MAXIMĂ",
+        "v": "50 km/h"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4WD"
+      },
+      {
+        "k": "PUNTE FAȚĂ",
+        "v": "Suspendată"
+      },
+      {
+        "k": "TIRANȚI FAȚĂ",
+        "v": "Da"
+      },
+      {
+        "k": "ANVELOPE",
+        "v": "BKT noi"
+      },
+      {
+        "k": "FRÂNE",
+        "v": "Disc umed"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Standard cu AC"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Load-sensing 200 bar"
+      },
+      {
+        "k": "DEBIT POMPĂ",
+        "v": "112 l/min"
+      },
+      {
+        "k": "PTO SPATE",
+        "v": "540/1000 sau 750/1000"
+      },
+      {
+        "k": "PTO FAȚĂ",
+        "v": "1000 rpm (opțional)"
+      },
+      {
+        "k": "LIFT SPATE",
+        "v": "9737 kg"
+      },
+      {
+        "k": "LIFT FRONTAL",
+        "v": "5098 kg"
+      },
+      {
+        "k": "SERIE",
+        "v": "Legendara 900 Vario"
+      },
+      {
+        "k": "BATERIE",
+        "v": "12V"
+      },
+      {
+        "k": "FABRICAT",
+        "v": "Marktoberdorf, Germania"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - unic proprietar"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/fendt-920-vario-tms-IDk1TQc.html"
   },
@@ -366,21 +1632,66 @@
     ],
     "short_desc": "Încărcător telescopic, braț 12m, capacitate 3.7 tone, motor Perkins 4 cilindri 105 CP, aer condiționat, sarcină de ridicare 3.7t, anvelope noi BKT, 5600 ore, import Italia 2013.",
     "specs": [
-      {"k": "ÎNĂLȚIME RIDICARE", "v": "12 m"},
-      {"k": "CAPACITATE SARCINĂ", "v": "3700 kg (3.7 tone)"},
-      {"k": "MOTOR", "v": "Perkins 4 cilindri 105 CP"},
-      {"k": "PUTERE", "v": "105 CP"},
-      {"k": "TRANSMISIE", "v": "Hidrostatică"},
-      {"k": "BRAȚ", "v": "Telescopic 12 m"},
-      {"k": "CABINĂ", "v": "Panoramică cu AC"},
-      {"k": "ANVELOPE", "v": "BKT noi"},
-      {"k": "AN FABRICAȚIE", "v": "2013"},
-      {"k": "ORE FUNCȚIONARE", "v": "5600 h"},
-      {"k": "TRACȚIUNE", "v": "4x4"},
-      {"k": "STABILIZATOARE", "v": "Da"},
-      {"k": "SISTEM HIDRAULIC", "v": "Presiune ridicată"},
-      {"k": "STARE", "v": "Foarte bună"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "ÎNĂLȚIME RIDICARE",
+        "v": "12 m"
+      },
+      {
+        "k": "CAPACITATE SARCINĂ",
+        "v": "3700 kg (3.7 tone)"
+      },
+      {
+        "k": "MOTOR",
+        "v": "Perkins 4 cilindri 105 CP"
+      },
+      {
+        "k": "PUTERE",
+        "v": "105 CP"
+      },
+      {
+        "k": "TRANSMISIE",
+        "v": "Hidrostatică"
+      },
+      {
+        "k": "BRAȚ",
+        "v": "Telescopic 12 m"
+      },
+      {
+        "k": "CABINĂ",
+        "v": "Panoramică cu AC"
+      },
+      {
+        "k": "ANVELOPE",
+        "v": "BKT noi"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "2013"
+      },
+      {
+        "k": "ORE FUNCȚIONARE",
+        "v": "5600 h"
+      },
+      {
+        "k": "TRACȚIUNE",
+        "v": "4x4"
+      },
+      {
+        "k": "STABILIZATOARE",
+        "v": "Da"
+      },
+      {
+        "k": "SISTEM HIDRAULIC",
+        "v": "Presiune ridicată"
+      },
+      {
+        "k": "STARE",
+        "v": "Foarte bună"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/incarcator-telescopic-merlo-panoramic-37-12-plus-IDk4yIj.html"
   },
@@ -404,16 +1715,46 @@
     ],
     "short_desc": "Plante prășitoare, capacitate îngrășământ 1200 kg, calculator discuri floarea soarelui și porumb, stare perfectă de funcționare, import Italia 2009.",
     "specs": [
-      {"k": "TIP", "v": "Plante prășitoare"},
-      {"k": "AN FABRICAȚIE", "v": "2009"},
-      {"k": "CAPACITATE ÎNGRĂȘĂMÂNT", "v": "1200 kg"},
-      {"k": "CALCULATOR DISCURI", "v": "Floarea soarelui și porumb"},
-      {"k": "SISTEM SEMĂNAT", "v": "Precizie pneumatică"},
-      {"k": "FERTILIZARE", "v": "Integrată"},
-      {"k": "RÂNDURI", "v": "Configurabil"},
-      {"k": "CADRU", "v": "Telescopic"},
-      {"k": "STARE", "v": "Perfectă de funcționare"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "TIP",
+        "v": "Plante prășitoare"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "2009"
+      },
+      {
+        "k": "CAPACITATE ÎNGRĂȘĂMÂNT",
+        "v": "1200 kg"
+      },
+      {
+        "k": "CALCULATOR DISCURI",
+        "v": "Floarea soarelui și porumb"
+      },
+      {
+        "k": "SISTEM SEMĂNAT",
+        "v": "Precizie pneumatică"
+      },
+      {
+        "k": "FERTILIZARE",
+        "v": "Integrată"
+      },
+      {
+        "k": "RÂNDURI",
+        "v": "Configurabil"
+      },
+      {
+        "k": "CADRU",
+        "v": "Telescopic"
+      },
+      {
+        "k": "STARE",
+        "v": "Perfectă de funcționare"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/semanatoare-de-plante-prasitoare-kuhn-maxima-2-gt-IDk4yJt.html"
   },
@@ -435,18 +1776,54 @@
     ],
     "short_desc": "6 rânduri telescopică, fertilizare și microgranulator, an fabricație 2016, greutate 1645 kg, cuvă inox capacitate îngrășământ 800 kg, import Italia.",
     "specs": [
-      {"k": "RÂNDURI", "v": "6 (telescopică)"},
-      {"k": "AN FABRICAȚIE", "v": "2016"},
-      {"k": "GREUTATE", "v": "1645 kg"},
-      {"k": "CUVĂ", "v": "Inox"},
-      {"k": "CAPACITATE ÎNGRĂȘĂMÂNT", "v": "800 kg"},
-      {"k": "FERTILIZARE", "v": "Da"},
-      {"k": "MICROGRANULATOR", "v": "Da"},
-      {"k": "CADRU", "v": "Telescopic"},
-      {"k": "TIP", "v": "Plante prășitoare"},
-      {"k": "SISTEM SEMĂNAT", "v": "Precizie pneumatică"},
-      {"k": "STARE", "v": "Impecabilă"},
-      {"k": "ORIGINE", "v": "Italia - import direct"}
+      {
+        "k": "RÂNDURI",
+        "v": "6 (telescopică)"
+      },
+      {
+        "k": "AN FABRICAȚIE",
+        "v": "2016"
+      },
+      {
+        "k": "GREUTATE",
+        "v": "1645 kg"
+      },
+      {
+        "k": "CUVĂ",
+        "v": "Inox"
+      },
+      {
+        "k": "CAPACITATE ÎNGRĂȘĂMÂNT",
+        "v": "800 kg"
+      },
+      {
+        "k": "FERTILIZARE",
+        "v": "Da"
+      },
+      {
+        "k": "MICROGRANULATOR",
+        "v": "Da"
+      },
+      {
+        "k": "CADRU",
+        "v": "Telescopic"
+      },
+      {
+        "k": "TIP",
+        "v": "Plante prășitoare"
+      },
+      {
+        "k": "SISTEM SEMĂNAT",
+        "v": "Precizie pneumatică"
+      },
+      {
+        "k": "STARE",
+        "v": "Impecabilă"
+      },
+      {
+        "k": "ORIGINE",
+        "v": "Italia - import direct"
+      }
     ],
     "olx_link": "https://www.olx.ro/d/oferta/semanatoare-gaspardo-6-randuri-telescopica-IDk4x86.html"
   }

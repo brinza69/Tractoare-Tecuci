@@ -28,7 +28,7 @@
   <!-- Products - Lista completă -->
   <url>
     <loc>https://www.tractoaretecuci.ro/products</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -174,6 +174,78 @@
   <url>
     <loc>https://www.tractoaretecuci.ro/product?slug=semanatoare-gaspardo-mte-6-randuri</loc>
     <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- New Holland 8340 -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=new-holland-8340-italia-1998-7200h</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 820 Vario TMS -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-820-vario-tms-2009-8000h-italia</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Case IH 885XL -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=case-ih-885xl-1994-8000h-italia</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- John Deere 6120M -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=john-deere-6120m-powerquad-inversor</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt 818 Vario TMS -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-818-vario-tms-2006-6300h-italia</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Manitou MLT 741-120H -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=manitou-mlt-741-120h-2013-6000h-italia</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt Favorit 924 Vario -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-favorit-924-vario-us25-578</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt Farmer 312 LSA -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-farmer-312-lsa-us25-760</loc>
+    <lastmod>2026-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Fendt Farmer 309 Ci -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-farmer-309-ci-us25-855</loc>
+    <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
