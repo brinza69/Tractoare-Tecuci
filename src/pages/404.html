@@ -1,0 +1,33 @@
+<!--meta {
+  "title": "Pagina nu a fost găsită | Tractoare Tecuci",
+  "description": "Pagina căutată nu există. Vezi stocul de utilaje agricole sau contactează-ne.",
+  "css": [
+    "404"
+  ],
+  "body": "",
+  "mainClass": "wrap box",
+  "noindex": true,
+  "updated": "2026-11-03"
+} -->
+<section class="card" role="alert" aria-labelledby="error-title">
+      <h1 id="error-title">404 – Pagina nu a fost găsită</h1>
+      <p class="muted">Linkul poate fi greșit sau pagina a fost mutată. Îți oferim câteva opțiuni:</p>
+
+      <div class="actions" role="group" aria-label="Acțiuni rapide">
+        <a class="btn primary" href="/" aria-label="Înapoi la pagina principală">Înapoi la acasă</a>
+        <a class="btn" href="/utilaje" aria-label="Vezi lista de utilaje agricole">Vezi utilaje</a>
+        <a class="btn" href="/contact" aria-label="Contactează Tractoare Tecuci">Contact</a>
+      </div>
+
+      <form class="search" role="search" action="/products" method="get" aria-label="Căutare utilaje">
+        <input 
+          type="search" 
+          name="q" 
+          placeholder="Caută: tractor, telescopic, brand…" 
+          aria-label="Caută utilaje agricole după cuvinte cheie"
+          autocomplete="off">
+        <button class="btn" type="submit" aria-label="Trimite căutare">Caută</button>
+      </form>
+
+      <p class="muted" id="badUrl" aria-live="polite"></p>
+    </section>

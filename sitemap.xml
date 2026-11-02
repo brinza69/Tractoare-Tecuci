@@ -1,291 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- ============================================================================
-       HOMEPAGE - Prioritate MAXIMĂ
-       ============================================================================ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.tractoaretecuci.ro/</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- ============================================================================
-       PAGINI PRINCIPALE - Prioritate ÎNALTĂ
-       ============================================================================ -->
-  
-  <!-- Utilaje - Categorii -->
   <url>
     <loc>https://www.tractoaretecuci.ro/utilaje</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- Products - Lista completă -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/tractoare</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/1-9f221b44-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/1-95f52b2a-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/1-1efbd801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/1-82c10bea-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/incarcatoare-telescopice</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/1-c61699f4-960.webp</image:loc></image:image>
+  </url>
   <url>
     <loc>https://www.tractoaretecuci.ro/products</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/1-9f221b44-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/1-95f52b2a-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/1-1efbd801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/1-c61699f4-960.webp</image:loc></image:image>
   </url>
-
-  <!-- Despre noi -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/despre-noi</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.tractoaretecuci.ro/utilaje/massey-ferguson-2230-2011</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-1440.webp</image:loc></image:image>
   </url>
-
-  <!-- Contact -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/contact</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-favorit-512-c-1997</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-1440.webp</image:loc></image:image>
   </url>
-
-  <!-- Blog -->
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/mccormick-cx-85-2005</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/5-5c6531af-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-cx-85-2005/6-923896d1-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/same-argon-75-f-2005</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/1-9f221b44-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/2-fea3823b-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/5-d3764bfe-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/6-7b38cf53-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/same-argon-75-f-2005/7-36a91228-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-209-s-2005</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/1-95f52b2a-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/2-0b067afc-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/3-8afa1137-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/4-6425af1f-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/5-f2c52fcb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-209-s-2005/6-cf4c6f63-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/john-deere-6125r-2015</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/1-1efbd801-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/2-507926b1-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/3-b4b49581-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/4-21735ebf-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/7-69678269-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/john-deere-6125r-2015/8-7bf721d7-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/mccormick-x4-80-xl-2020</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/merlo-34-10-2007</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/1-c61699f4-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/2-0954fa0b-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/3-056d5fd6-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/4-6e85da60-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/5-f5d31d39-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/6-2e09662d-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/7-b711abc5-960.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/merlo-34-10-2007/8-3887b9ac-960.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-718-vario-2021</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/1-82c10bea-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/2-104a2932-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/3-b849d9a2-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/4-3551c603-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/7-e26b19a0-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-718-vario-2021/8-46562265-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-415-vario-2010</loc>
+    <lastmod>2026-10-31</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/1-26631da5-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/4-5536aef5-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/6-0264ba9d-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-820-vario-tms-2011</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/1-1d33e1a0-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/2-7a38b879-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/3-cae8086c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/4-71984482-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/5-9a78d40b-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/6-cd60f182-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/7-9c4dbddc-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-820-vario-tms-2011/8-cf97b825-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-930-vario-2008</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/1-ee9c6f4a-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/2-e944f53d-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/3-045fa4fb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/4-00a2bbbb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/5-2238facc-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/6-6e095e88-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/7-b2085d2c-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-930-vario-2008/8-6f85d400-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-farmer-309-ci-2009</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/1-002c56a4-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/2-15d503ab-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/3-eef89d0a-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/4-183caf50-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/5-ee5d59eb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/6-ab5de20e-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-309-ci-2009/7-7ee165e7-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/massey-ferguson-7724-2019</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/1-f78c8b9f-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/2-15013655-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/3-0bb4c8eb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/4-567ff168-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/5-aa94b967-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/6-bc597513-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/massey-ferguson-7724-2019/7-a2caf092-1440.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/utilaje/fendt-farmer-307-lsa-1988</loc>
+    <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/1-b446b8b1-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/2-08988d57-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/3-ff26cd22-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/4-5afb72fb-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/5-0515c3f4-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/6-dd68d54b-1440.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/utilaje/fendt-farmer-307-lsa-1988/7-5800afa0-1440.webp</image:loc></image:image>
+  </url>
   <url>
     <loc>https://www.tractoaretecuci.ro/blog</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2025-01-22</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-balotare-recoltare-fan-cultura-cereale-strujeni.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/camp-cereale-verde-agricultura-precizie-linii-perfecte.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/agricultura-moderna-vedere-drona-camp-cereale-romania.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/productie-agricola-legume-proaspete-ferma-romaneasca.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-puternic-lucrand-camp-productivitate-agricultura.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-plug-arat-teren-agricol-pregatire-sezon.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-vintage-agricultura-traditionala-istorie-farming.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-agricol-lucrand-camp-arat-discuit-vedere-aeriana.webp</image:loc></image:image>
   </url>
-
-  <!-- ============================================================================
-       CATEGORII UTILAJE - Prioritate ÎNALTĂ
-       ============================================================================ -->
-  
-  <!-- Tractoare -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/products?category=tractor</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/incarcatoare-telescopice-agricole-ghid</loc>
+    <lastmod>2025-01-22</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-balotare-recoltare-fan-cultura-cereale-strujeni.webp</image:loc></image:image>
   </url>
-
-  <!-- Telescopice -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/products?category=telescopic</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/tractoare-fendt-avantaje-caracteristici</loc>
+    <lastmod>2025-01-20</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/camp-cereale-verde-agricultura-precizie-linii-perfecte.webp</image:loc></image:image>
   </url>
-
-  <!-- Alte utilaje -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/products?category=alte</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/tractoare-agricole-ghid-complet</loc>
+    <lastmod>2025-01-18</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/agricultura-moderna-vedere-drona-camp-cereale-romania.webp</image:loc></image:image>
   </url>
-
-  <!-- ============================================================================
-       PRODUSE INDIVIDUALE - Adaugă DINAMIC (Exemplu cu 11 produse curente)
-       IMPORTANT: Actualizează URL-urile când adaugi/ștergi produse
-       ============================================================================ -->
-
-  <!-- Tractor Claas Arion 420 -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=tractor-claas-arion-420-cis-panoramic</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/ghid-verificari-incarcator-telescopic-folosit</loc>
+    <lastmod>2025-01-10</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/productie-agricola-legume-proaspete-ferma-romaneasca.webp</image:loc></image:image>
   </url>
-
-  <!-- Fendt 724 Vario TMS -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-724-vario-tms-deutz-240cp</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/cvt-vs-powershift-la-tractoare</loc>
+    <lastmod>2025-01-08</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-puternic-lucrand-camp-productivitate-agricultura.webp</image:loc></image:image>
   </url>
-
-  <!-- Massey Ferguson 7724 -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=massey-ferguson-7724-dyna6-240cp</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/anvelope-agricole-cum-alegi-profilul-corect</loc>
+    <lastmod>2025-01-05</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-plug-arat-teren-agricol-pregatire-sezon.webp</image:loc></image:image>
   </url>
-
-  <!-- Massey Ferguson 7719 S -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=massey-ferguson-7719-s-powershift</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/intretinere-sezoniera-pentru-iarna</loc>
+    <lastmod>2024-12-20</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-vintage-agricultura-traditionala-istorie-farming.webp</image:loc></image:image>
   </url>
-
-  <!-- Fendt 724 Vario TMS 2017 -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-724-vario-tms-deutz-240cp-2017</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/uleiuri-si-filtre-la-tractoare</loc>
+    <lastmod>2024-12-15</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-agricol-lucrand-camp-arat-discuit-vedere-aeriana.webp</image:loc></image:image>
   </url>
-
-  <!-- John Deere 6120M -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=john-deere-6120m-powerquad-inversor</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/blog/cum-alegi-tractor-second-hand-original</loc>
+    <lastmod>2024-12-10</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/cultura-porumb-rasaduri-tinere-sol-agricol-primavara.webp</image:loc></image:image>
   </url>
-
-  <!-- Fendt 718 Vario TMS -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-718-vario-tms-deutz-185cp</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/despre-noi</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- Fendt 920 Vario TMS -->
   <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-920-vario-tms-man-220cp</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.tractoaretecuci.ro/contact</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- Merlo Panoramic 37.12 -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=merlo-panoramic-37-12-plus</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Semănătoare Kuhn Maxima 2 GT -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=semanatoare-kuhn-maxima-2-gt-prasitoare</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Semănătoare Gaspardo -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=semanatoare-gaspardo-mte-6-randuri</loc>
-    <lastmod>2025-12-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- New Holland 8340 -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=new-holland-8340-italia-1998-7200h</loc>
-    <lastmod>2026-02-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Fendt 820 Vario TMS -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-820-vario-tms-2009-8000h-italia</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Case IH 885XL -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=case-ih-885xl-1994-8000h-italia</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- John Deere 6120M -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=john-deere-6120m-powerquad-inversor</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Fendt 818 Vario TMS -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-818-vario-tms-2006-6300h-italia</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Manitou MLT 741-120H -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=manitou-mlt-741-120h-2013-6000h-italia</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Fendt Favorit 924 Vario -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-favorit-924-vario-us25-578</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Fendt Farmer 312 LSA -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-farmer-312-lsa-us25-760</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Fendt Farmer 309 Ci -->
-  <url>
-    <loc>https://www.tractoaretecuci.ro/product?slug=fendt-farmer-309-ci-us25-855</loc>
-    <lastmod>2026-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- ============================================================================
-       ARTICOLE BLOG - Adaugă DINAMIC când scrii articole noi
-       ============================================================================ -->
-
-  <!-- NOTĂ: Când adaugi articole în data/posts.json, adaugă aici URL-urile
-       Exemplu format:
-  <url>
-    <loc>https://www.tractoaretecuci.ro/blog-post?p=cum-alegi-tractor-agricol</loc>
-    <lastmod>2025-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  -->
-
-  <!-- ============================================================================
-       PAGINI LEGALE - Prioritate SCĂZUTĂ
-       ============================================================================ -->
-
-  <!-- Termeni și condiții -->
   <url>
     <loc>https://www.tractoaretecuci.ro/termeni</loc>
-    <lastmod>2025-11-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- Politica de confidențialitate -->
   <url>
     <loc>https://www.tractoaretecuci.ro/confidentialitate</loc>
-    <lastmod>2025-11-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-11-03</lastmod>
   </url>
-
-  <!-- ============================================================================
-       NOTĂ: 404.html NU se adaugă în sitemap (este noindex)
-       ============================================================================ -->
-
 </urlset>

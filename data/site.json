@@ -1,0 +1,39 @@
+{
+  "_readme": "Sursa unică pentru numele firmei, contact, program și setări. Paginile, JSON-LD, llms.txt și politica de confidențialitate se generează din acest fișier: după o modificare rulează `node tools/build.mjs`.",
+  "name": "Tractoare Tecuci",
+  "url": "https://www.tractoaretecuci.ro",
+  "description": "Tractoare și utilaje agricole second hand, importate din Europa (în principal din Italia), verificate și livrate în toată România. Sediu în Tecuci, județul Galați.",
+  "company": {
+    "_readme": "Datele pentru Legea 365/2002. Blocul de identificare apare în subsol doar când cui și regCom sunt completate.",
+    "legalName": "II Mirza Nicoleta",
+    "cui": "",
+    "regCom": ""
+  },
+  "phone": "+40764199074",
+  "phoneDisplay": "+40 764 199 074",
+  "whatsapp": "40764199074",
+  "email": "vasilemirza84@yahoo.com",
+  "address": {
+    "street": "Str. Tecuciului Nou, nr. 25",
+    "city": "Tecuci",
+    "county": "Galați",
+    "postalCode": "805300",
+    "country": "RO"
+  },
+  "geo": { "lat": 45.8765729, "lng": 27.422012 },
+  "mapsUrl": "https://www.google.com/maps?hl=ro&gl=ro&um=1&ie=UTF-8&fb=1&sa=X&ftid=0x40b4295c7d0cba87:0x11b4abacc20f9033",
+  "mapsEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.736913460712!2d27.422012000000006!3d45.876572900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b4295c7d0cba87%3A0x11b4abacc20f9033!2sTarctoare%20Tecuci!5e0!3m2!1sro!2sro!4v1758820672158!5m2!1sro!2sro",
+  "wazeUrl": "https://waze.com/ul?ll=45.8765729%2C27.4220120&navigate=yes",
+  "hours": [
+    { "label": "Luni–Vineri", "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" },
+    { "label": "Sâmbătă", "days": ["Saturday"], "opens": "10:00", "closes": "14:00" }
+  ],
+  "closed": "Duminică: închis",
+  "social": {
+    "olx": "https://compaia.olx.ro/home/",
+    "tiktok": "https://www.tiktok.com/@nicoletamirza6"
+  },
+  "ga4Id": "",
+  "policyVersion": "03.11.2026",
+  "anpcSal": "https://anpc.ro/ce-este-sal/"
+}

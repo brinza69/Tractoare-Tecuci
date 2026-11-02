@@ -1,0 +1,234 @@
+:root{ 
+      --primary:#2e7d32; 
+      --primary-dark:#1b5e20;
+      --bg:#f6faf7; 
+      --text:#101828; 
+      --muted:#667085;
+      --shadow:0 8px 32px rgba(16,24,40,.08); 
+      --eco-accent: #22c55e;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    body{ 
+      margin:0; 
+      background:var(--bg); 
+      color:var(--text); 
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial; 
+    }
+    
+    .wrap{ 
+      max-width:900px; 
+      margin:0 auto; 
+      padding:0 16px; 
+    }
+    
+    /* Header cu micro-interacțiune */
+    .site-header {
+      box-shadow:var(--shadow);
+      background:#fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: var(--transition-smooth);
+    }
+    
+    .site-header:hover {
+      box-shadow: 0 12px 40px rgba(16,24,40,.12);
+    }
+    
+    .header-wrap {
+      display:flex; 
+      align-items:center; 
+      gap:16px; 
+      padding:10px 0;
+    }
+    
+    .brand {
+      display:flex; 
+      gap:12px; 
+      align-items:center;
+      transition: transform .2s;
+    }
+    
+    .brand:hover {
+      transform: scale(1.05);
+    }
+    
+    .brand img {
+      transition: transform .3s;
+    }
+    
+    .brand:hover img {
+      transform: rotate(-5deg);
+    }
+    
+    /* Main content cu animație */
+    .box{ 
+      min-height:80vh; 
+      display:grid; 
+      place-items:center; 
+      text-align:center; 
+    }
+    
+    /* Card cu micro-interacțiuni */
+    .card{ 
+      background:#fff; 
+      box-shadow:var(--shadow); 
+      border-radius:16px; 
+      padding:28px;
+      transition: var(--transition-smooth);
+      
+    }
+    
+    
+    
+    .card:hover {
+      box-shadow: 0 12px 48px rgba(16,24,40,.12);
+      transform: translateY(-4px);
+    }
+    
+    h1{ 
+      font-size:clamp(28px,4vw,48px); 
+      margin:0 0 6px;
+      
+    }
+    
+    p.muted{ 
+      color:var(--muted); 
+      margin:0 0 18px;
+      
+    }
+    
+    /* Actions cu micro-interacțiuni */
+    .actions{ 
+      display:flex; 
+      gap:10px; 
+      justify-content:center; 
+      flex-wrap:wrap;
+      
+    }
+    
+    .btn{ 
+      display:inline-flex; 
+      align-items:center; 
+      gap:8px; 
+      border:2px solid var(--primary); 
+      color:var(--primary);
+      padding:10px 14px; 
+      border-radius:999px; 
+      font-weight:700; 
+      text-decoration:none;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Micro-interacțiune: Ripple effect */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    .btn:active::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(46,125,50,.2);
+      border-color: var(--eco-accent);
+    }
+    
+    .btn.primary{ 
+      background:var(--primary); 
+      color:#fff; 
+    }
+    
+    .btn.primary:hover {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+      box-shadow: 0 8px 20px rgba(46,125,50,.3);
+    }
+    
+    .btn:active {
+      transform: translateY(0);
+    }
+    
+    /* Search form cu micro-interacțiuni */
+    .search{ 
+      display:flex; 
+      gap:8px; 
+      max-width:520px; 
+      margin:14px auto 0;
+      
+    }
+    
+    .search input{ 
+      flex:1; 
+      padding:12px 14px; 
+      border:1px solid #e5e7eb; 
+      border-radius:12px;
+      transition: var(--transition-smooth);
+      font-size: 15px;
+    }
+    
+    .search input:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(46,125,50,.08);
+    }
+    
+    .search input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(46,125,50,.12);
+    }
+    
+    .search button {
+      white-space: nowrap;
+    }
+    
+    #badUrl {
+      margin-top:12px;
+      font-size: 14px;
+      
+      word-break: break-all;
+    }
+    
+    /* Focus states pentru accesibilitate */
+    .btn:focus-visible,
+    .brand:focus-visible {
+      outline: 2px solid var(--eco-accent);
+      outline-offset: 4px;
+    }
+    
+    /* Touch-friendly pe mobil */
+    @media (hover: none) {
+      .btn:active {
+        transform: scale(0.95);
+        transition: transform .1s ease;
+      }
+      
+      .card:active {
+        transform: scale(0.98);
+      }
+    }
+    
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }

@@ -1,0 +1,200 @@
+:root{ 
+    --brand:var(--brand-500,#2e7d32); 
+    --brand-50:rgba(46,125,50,.06); 
+    --ink:#0f172a; 
+    --muted:#475569; 
+    --ring:#e6e9ee; 
+    --shadow:0 12px 40px rgba(15,23,42,.06); 
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  body[data-page="blog"] main.section{ 
+    --gap:clamp(48px,6vw,88px); 
+    padding-block:var(--gap);
+    background: radial-gradient(1200px 240px at 50% 0,var(--brand-50),transparent 60%), 
+                linear-gradient(180deg,rgba(46,125,50,.04),transparent 40%);
+  }
+  
+  body[data-page="blog"] .wrap{ 
+    max-width:1200px; 
+    padding-inline:16px; 
+    margin-inline:auto; 
+  }
+  
+  .blog-hero{ 
+    background:#fff; 
+    border:1px solid var(--ring); 
+    border-radius:22px; 
+    padding:24px; 
+    box-shadow:var(--shadow); 
+    transition: var(--transition-smooth);
+  }
+  
+  /* Micro-interacțiune: Hover pe hero */
+  .blog-hero:hover {
+    box-shadow: 0 16px 48px rgba(15,23,42,.10);
+    border-color: rgba(46,125,50,.12);
+  }
+  
+  .blog-hero h1{ 
+    margin:0; 
+    color:var(--ink); 
+    font-size:clamp(28px,4.6vw,46px); 
+    line-height:1.12; 
+    letter-spacing:-.3px; 
+  }
+  
+  .blog-hero p{ 
+    margin:8px 0 0; 
+    color:var(--muted); 
+    font-size:clamp(15px,1.5vw,18px) 
+  }
+  
+  .blog-cats{ 
+    margin:14px 0 0; 
+    display:flex; 
+    flex-wrap:wrap; 
+    gap:8px; 
+  }
+  
+  .blog-cats .pill{ 
+    display:inline-flex; 
+    align-items:center; 
+    justify-content:center; 
+    padding:.55rem .9rem; 
+    border-radius:999px; 
+    border:2px solid var(--ring); 
+    background:#fff; 
+    color:var(--ink); 
+    font-weight:800; 
+    text-decoration:none; 
+    transition: var(--transition-smooth);
+  }
+  
+  /* Micro-interacțiune: Hover pe pills */
+  .blog-cats .pill:hover{ 
+    transform:translateY(-1px); 
+    background:var(--brand-50); 
+    border-color:#dfe4ea; 
+    box-shadow: 0 4px 12px rgba(46,125,50,.12);
+  }
+  
+  .blog-cats .pill:active {
+    transform: translateY(0);
+  }
+  
+  .blog-cats .pill.active{ 
+    border-color:rgba(46,125,50,.38); 
+    color:#14532d; 
+    background:#fff; 
+    box-shadow:0 8px 20px rgba(46,125,50,.12);
+    transform: translateY(-1px);
+  }
+  
+  #blogList.grid{ 
+    margin-top:clamp(18px,3vw,26px); 
+    display:grid; 
+    gap:18px; 
+    grid-template-columns:1fr; 
+  }
+  
+  @media(min-width:740px){ 
+    #blogList.grid{ 
+      grid-template-columns:repeat(2,minmax(0,1fr)); 
+    } 
+  }
+  
+  @media(min-width:1040px){ 
+    #blogList.grid{ 
+      grid-template-columns:repeat(3,minmax(0,1fr)); 
+    } 
+  }
+  
+  .post-card{ 
+    display:flex; 
+    flex-direction:column; 
+    overflow:hidden; 
+    text-decoration:none; 
+    border-radius:18px; 
+    background:#fff; 
+    border:1px solid rgba(46,125,50,.08); 
+    box-shadow:var(--shadow); 
+    transition: var(--transition-smooth);
+  }
+  
+  /* Micro-interacțiune: Hover elegant pe carduri */
+  .post-card:hover{ 
+    transform:translateY(-6px); 
+    border-color:rgba(46,125,50,.20); 
+    box-shadow:0 20px 48px rgba(15,23,42,.14); 
+  }
+  
+  .post-card:active {
+    transform: translateY(-4px);
+  }
+  
+  .post-card img{ 
+    width:100%; 
+    aspect-ratio:16/10; 
+    object-fit:cover; 
+    display:block; 
+    transition: transform .5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  /* Micro-interacțiune: Zoom imagine pe hover card */
+  .post-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .post-card .body{ 
+    padding:14px 14px 16px; 
+  }
+  
+  .post-card .card-title{ 
+    margin:4px 0 6px; 
+    color:var(--ink); 
+    font-size:clamp(17px,1.8vw,20px); 
+    line-height:1.35; 
+    transition: color .2s ease;
+  }
+  
+  /* Micro-interacțiune: Titlul devine verde pe hover */
+  .post-card:hover .card-title {
+    color: var(--brand);
+  }
+  
+  .post-card .muted{ 
+    color:var(--muted); 
+    margin:0; 
+    font-size:.98rem; 
+  }
+  
+  /* Focus states pentru accesibilitate */
+  .blog-cats .pill:focus-visible,
+  .post-card:focus-visible {
+    outline: 2px solid #22c55e;
+    outline-offset: 4px;
+  }
+  
+  /* Touch-friendly pe mobil */
+  @media (hover: none) {
+    .blog-cats .pill:active {
+      transform: scale(0.95);
+      transition: transform .1s ease;
+    }
+    
+    .post-card:active {
+      transform: scale(0.98);
+    }
+  }
+  
+  /* Prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }

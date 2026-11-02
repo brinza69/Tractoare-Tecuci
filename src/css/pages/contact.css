@@ -1,0 +1,303 @@
+/* ========================================
+       CONTACT.HTML - STIL CU MICRO-INTERACȚIUNI
+       ======================================== */
+    :root{
+      --brand: var(--brand-500,#2e7d32);
+      --ink:#0f172a; --muted:#475569; --ring:#e6e9ee;
+      --card:#fff; --shadow:0 16px 48px rgba(15,23,42,.12);
+      --glow: 0 0 0 4px rgba(46,125,50,.10), 0 10px 30px rgba(46,125,50,.20);
+      --eco-accent: #22c55e;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    body main{
+      background:
+        radial-gradient(1200px 260px at 50% -20px, rgba(46,125,50,.07), transparent 60%),
+        linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
+    }
+    
+    .wrap{ max-width: 1160px; padding-inline: 18px; margin-inline: auto; }
+
+    /* ========================================
+       HERO SECTION CU MICRO-INTERACȚIUNI
+       ======================================== */
+    .contact-hero{ 
+      padding: clamp(40px,7vw,96px) 0 0;
+      
+    }
+    
+    
+    
+    .panel{
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(6px);
+      border:1px solid var(--ring); border-radius: 26px;
+      box-shadow: var(--shadow);
+      padding: clamp(26px,3.4vw,40px);
+      text-align:center;
+      transition: var(--transition-smooth);
+    }
+    
+    /* Micro-interacțiune: Hover pe panel */
+    .panel:hover {
+      box-shadow: 0 20px 56px rgba(15,23,42,.16);
+      border-color: rgba(46,125,50,.12);
+      transform: translateY(-2px);
+    }
+    
+    .contact-hero h1{ 
+      margin:0 0 6px; 
+      font-size: clamp(30px,4.6vw,50px); 
+      line-height:1.12; 
+      letter-spacing:-.3px; 
+      color:var(--ink); 
+    }
+    
+    .contact-hero p{ 
+      color:var(--muted); 
+      margin: 8px auto 0; 
+      max-width: 60ch; 
+      font-size: clamp(15px,1.5vw,18px); 
+    }
+
+    .cta-row{
+      margin-top: 18px;
+      display: flex; flex-wrap: wrap; gap: 14px;
+      justify-content: center;
+    }
+    
+    .btn-prime{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:.85rem 1.2rem; border-radius: 999px;
+      background: linear-gradient(135deg, #2e7d32, #3fa047);
+      color:#fff; text-decoration:none; font-weight:900;
+      box-shadow: 0 10px 24px rgba(46,125,50,.25);
+      transition: transform .2s ease, box-shadow .2s, filter .2s;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+    
+    /* Micro-interacțiune: Ripple effect pe butoane CTA */
+    .btn-prime::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+      pointer-events: none;
+    }
+    
+    .btn-prime:active::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .btn-prime:hover{ 
+      transform: translateY(-2px) scale(1.02); 
+      filter: brightness(1.05); 
+      box-shadow: 0 14px 36px rgba(46,125,50,.35); 
+    }
+    
+    .btn-prime:active {
+      transform: translateY(0) scale(0.98);
+    }
+    
+    .tips{ 
+      margin-top: 12px; 
+      color:#334155; 
+      font-size:.98rem;
+      
+    }
+
+    /* ========================================
+       CARDURI CONTACT CU MICRO-INTERACȚIUNI
+       ======================================== */
+    .contact-section{ padding: clamp(30px,5vw,54px) 0 0; }
+    
+    .cards-grid{
+      display:grid; 
+      gap:22px;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      align-items: stretch;
+    }
+
+    .c-card{
+      background: var(--card);
+      border: 1px solid var(--ring);
+      border-radius: 20px;
+      padding: 18px 18px 20px;
+      box-shadow: var(--shadow);
+      display:flex; 
+      flex-direction:column; 
+      gap:10px;
+      min-height: 132px;
+      transition: var(--transition-smooth);
+      
+      
+    }
+    
+    .c-card:nth-child(1) { animation-delay: .1s; }
+    .c-card:nth-child(2) { animation-delay: .2s; }
+    .c-card:nth-child(3) { animation-delay: .3s; }
+    .c-card:nth-child(4) { animation-delay: .4s; }
+    
+    
+    
+    /* Micro-interacțiune: Hover pe cards */
+    .c-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 56px rgba(15,23,42,.18);
+      border-color: var(--eco-accent);
+    }
+
+    .c-card h3{ 
+      margin: 0 0 10px; 
+      font-size: 1.08rem; 
+      color:#0b3b1d;
+      transition: var(--transition-smooth);
+    }
+    
+    .c-card:hover h3 {
+      color: var(--brand);
+    }
+    
+    .c-card p{ 
+      margin: 0; 
+      color: var(--ink); 
+      line-height: 1.6; 
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
+    /* ========================================
+       CHIPS CU MICRO-INTERACȚIUNI ELEGANTE
+       ======================================== */
+    .chip{
+      display:inline-flex; 
+      align-items:center; 
+      gap:8px;
+      margin-top: 12px;
+      border-radius: 999px; 
+      padding: .6rem .95rem;
+      background:#fff; 
+      border:2px solid var(--ring);
+      text-decoration:none; 
+      color:#0f172a; 
+      font-weight:600;
+      font-size: 0.85rem;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+      pointer-events: auto;
+      
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      max-width: 100%;
+    }
+    
+    /* Micro-interacțiune: Hover elegant pe chips */
+    .chip:hover{ 
+      transform: translateY(-3px) scale(1.02); 
+      border-color: var(--eco-accent); 
+      background: rgba(46,125,50,.04);
+      box-shadow: var(--glow); 
+    }
+    
+    .chip:active {
+      transform: translateY(0) scale(0.98);
+    }
+
+    /* ========================================
+       HARTĂ SECTION CU MICRO-INTERACȚIUNI
+       ======================================== */
+    .map-section{
+      padding: clamp(34px,6vw,70px) 0 clamp(40px,8vw,90px);
+    }
+    
+    .map-wrap{
+      max-width: 980px; 
+      margin: 0 auto;
+      background:#fff; 
+      border:1px solid var(--ring); 
+      border-radius: 22px;
+      overflow: hidden; 
+      box-shadow: var(--shadow);
+      transition: var(--transition-smooth);
+    }
+    
+    /* Micro-interacțiune: Hover pe map container */
+    .map-wrap:hover {
+      box-shadow: 0 20px 56px rgba(15,23,42,.16);
+      border-color: rgba(46,125,50,.12);
+      transform: translateY(-2px);
+    }
+    
+    .map-wrap header{
+      padding: 16px;
+      border-bottom: 1px dashed #e8edf3;
+      color:#334155;
+      display:flex; 
+      flex-wrap:wrap;
+      align-items:center; 
+      justify-content:center;
+      gap:12px;
+      text-align:center;
+    }
+    
+    .map-wrap iframe{ 
+      width:100%; 
+      height: 560px; 
+      display:block; 
+      border:0; 
+      filter: saturate(1.05) contrast(1.03);
+      transition: filter .3s ease;
+      pointer-events: auto;
+    }
+    
+    .map-wrap:hover iframe {
+      filter: saturate(1.08) contrast(1.05);
+    }
+
+    .section + .section{ margin-top: 0; }
+    
+    /* ========================================
+       ACCESIBILITATE & RESPONSIVE
+       ======================================== */
+    
+    /* Focus states pentru accesibilitate */
+    .btn-prime:focus-visible,
+    .chip:focus-visible {
+      outline: 2px solid var(--eco-accent);
+      outline-offset: 4px;
+    }
+    
+    /* Touch-friendly pe mobil */
+    @media (hover: none) {
+      .c-card:active {
+        transform: scale(0.98);
+        transition: transform .1s ease;
+      }
+      
+      .chip:active {
+        transform: scale(0.95);
+      }
+    }
+    
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }

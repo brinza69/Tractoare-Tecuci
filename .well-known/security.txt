@@ -1,0 +1,4 @@
+Contact: mailto:vasilemirza84@yahoo.com
+Expires: 2027-01-01T00:00:00Z
+Preferred-Languages: ro, en
+Canonical: https://www.tractoaretecuci.ro/.well-known/security.txt

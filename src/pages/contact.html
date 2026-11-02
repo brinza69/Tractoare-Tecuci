@@ -1,0 +1,64 @@
+<!--meta {
+  "title": "Contact Tractoare Tecuci: telefon, WhatsApp, adresă",
+  "description": "Sună la +40 764 199 074, scrie pe WhatsApp sau vino la Str. Tecuciului Nou 25, Tecuci. Program: luni–vineri 9–17, sâmbătă 10–14.",
+  "css": ["contact"],
+  "crumb": "Contact",
+  "updated": "2026-11-03"
+} -->
+<section class="section contact-hero">
+  <div class="wrap">
+    <div class="panel" aria-labelledby="contact-title">
+      <h1 id="contact-title">Sunteți bineveniți la Tractoare Tecuci</h1>
+      <p>Răspundem rapid la întrebări, oferte sau consultanță tehnică. Spuneți-ne ce utilaj căutați și vă ghidăm de la A la Z.</p>
+      <div class="cta-row" data-hero-cta>
+        <a class="btn-prime" href="tel:{{phone}}">{{icon:phone}} Sună acum</a>
+        <a class="btn-prime btn-wa" href="{{whatsappUrl}}" rel="noopener">{{icon:whatsapp}} WhatsApp</a>
+        <!--email_off--><a class="btn-prime btn-ghost" href="mailto:{{email}}">{{icon:mail}} Email</a><!--/email_off-->
+      </div>
+      <p class="tips">Program: {{hours}} · duminică închis</p>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" aria-labelledby="contact-cards">
+  <div class="wrap">
+    <h2 id="contact-cards" class="sr-only">Date de contact</h2>
+    <ul class="cards-grid" role="list">
+      <li class="c-card">
+        <h3>Telefon și WhatsApp</h3>
+        <p>Pentru preț, vizionare sau transport.</p>
+        <a class="chip" href="tel:{{phone}}">{{icon:phone}} {{phoneDisplay}}</a>
+      </li>
+      <li class="c-card">
+        <h3>Email</h3>
+        <p>Pentru documente și cereri detaliate.</p>
+        {{emailLink:chip}}
+      </li>
+      <li class="c-card">
+        <h3>Adresă</h3>
+        <p>{{address}}, 805300</p>
+        <a class="chip" href="{{mapsUrl}}" rel="noopener">{{icon:pin}} Google Maps</a>
+        <a class="chip" href="{{wazeUrl}}" rel="noopener">{{icon:car}} Waze</a>
+      </li>
+      <li class="c-card">
+        <h3>Program</h3>
+        <p>{{hoursHtml}}</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section map-section" aria-labelledby="map-title">
+  <div class="wrap">
+    <div class="map-wrap">
+      <header>
+        <h2 id="map-title" class="map-title">Ne găsiți la Str. Tecuciului Nou 25, Tecuci</h2>
+        <a class="chip" href="{{mapsUrl}}" rel="noopener">{{icon:external}} Deschide în Google Maps</a>
+      </header>
+      <div class="map-facade" data-map data-src="{{mapsEmbed}}">
+        <p>Harta este oferită de Google. O încărcăm doar dacă apeși pe buton; atunci Google poate seta cookie-uri, conform <a href="/confidentialitate#cookies">politicii de confidențialitate</a>.</p>
+        <button type="button" class="btn primary" data-map-load>{{icon:pin}} Arată harta</button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,225 @@
+/* =========================================================
+   UTILAJE – stiluri doar pentru pagina utilaje.html
+   (scop: body[data-page="utilaje"])
+   ========================================================= */
+
+  /* 1) Sticky footer pe pagină – nu mai apare „dunga albă" sub footer */
+  html {
+    min-height: 100%;
+    height: auto;
+  }
+
+  body[data-page="utilaje"] {
+    min-height: 100svh;
+    /* acoperă toată înălțimea vizibilă */
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+  }
+
+  body[data-page="utilaje"] > main {
+    flex: 1;
+  }
+
+  /* 2) Secțiune & titlu */
+  body[data-page="utilaje"] main.section {
+    padding: 56px 0 72px;
+    /* aerisit sus/jos */
+    background:
+      radial-gradient(1200px 280px at 50% 0, rgba(46, 125, 50, .06), transparent 60%),
+      linear-gradient(180deg, rgba(46, 125, 50, .04), transparent 40%);
+  }
+
+  body[data-page="utilaje"] h1 {
+    text-align: center;
+    margin: 0 0 22px;
+  }
+
+  /* 3) Grid categorii – centrat, responsive */
+  body[data-page="utilaje"] main .grid {
+    /* transformăm .grid existent într-un layout fluid & centrat */
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    justify-items: center;
+    /* card-urile stau pe centru pe coloana lor */
+  }
+
+  /* 4) Card categorie – cu micro-interacțiuni elegante */
+  body[data-page="utilaje"] .cat-card {
+    position: relative;
+    width: min(360px, 100%);
+    border-radius: 18px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1), 
+                box-shadow .3s ease, 
+                border-color .3s ease;
+    border: 1px solid rgba(46, 125, 50, .08);
+  }
+
+  /* Micro-interacțiune: Hover elegant cu lift și border verde */
+  body[data-page="utilaje"] .cat-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 48px rgba(15, 23, 42, .14);
+    border-color: var(--eco-accent, #22c55e);
+  }
+
+  /* container imagine categorie – un pic mai înalt ca să nu pară zoomate */
+  body[data-page="utilaje"] .cat-bg {
+    aspect-ratio: 4 / 3;          /* înainte era 16/10 – mai „tăiat" pe înălțime */
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+    position: relative;
+  }
+
+  /* imaginea se întinde pe tot containerul, cu zoom subtil pe hover */
+  body[data-page="utilaje"] .cat-bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  /* Micro-interacțiune: Zoom imagine pe hover */
+  body[data-page="utilaje"] .cat-card:hover .cat-bg img {
+    transform: scale(1.08);
+  }
+
+  /* Overlay subtil care se intensifică pe hover */
+  body[data-page="utilaje"] .cat-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg, 
+      transparent 0%, 
+      rgba(0, 0, 0, .25) 100%
+    );
+    transition: background .3s ease;
+  }
+
+  body[data-page="utilaje"] .cat-card:hover .cat-bg::after {
+    background: linear-gradient(
+      180deg, 
+      transparent 0%, 
+      rgba(0, 0, 0, .4) 100%
+    );
+  }
+
+  /* titlul peste imagine, cu umbră pentru lizibilitate */
+  body[data-page="utilaje"] .cat-card .cat-name {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(20px, 2.6vw, 28px);
+    text-shadow:
+      0 12px 26px rgba(0, 0, 0, .45),
+      0 2px 6px rgba(0, 0, 0, .35);
+    letter-spacing: .2px;
+    z-index: 10;
+    transition: transform .3s ease, text-shadow .3s ease;
+  }
+
+  /* Micro-interacțiune: Titlul se ridică subtil pe hover */
+  body[data-page="utilaje"] .cat-card:hover .cat-name {
+    transform: translateY(-3px);
+    text-shadow:
+      0 16px 32px rgba(0, 0, 0, .55),
+      0 4px 8px rgba(0, 0, 0, .45);
+  }
+
+  /* 5) Scroll reveal pentru carduri */
+  body[data-page="utilaje"] .cat-card {
+    opacity: 1;
+    transform: translateY(0);
+    
+  }
+
+  body[data-page="utilaje"] .cat-card:nth-child(1) {
+    animation-delay: .1s;
+  }
+
+  body[data-page="utilaje"] .cat-card:nth-child(2) {
+    animation-delay: .2s;
+  }
+
+  body[data-page="utilaje"] .cat-card:nth-child(3) {
+    animation-delay: .3s;
+  }
+
+  
+
+  /* 6) Mic polish pe breakpoint-uri mici */
+  @media (max-width: 480px) {
+    body[data-page="utilaje"] main.section {
+      padding: 44px 0 64px;
+    }
+
+    body[data-page="utilaje"] .cat-card .cat-name {
+      left: 16px;
+      bottom: 16px;
+    }
+
+    body[data-page="utilaje"] .cat-card:hover {
+      transform: translateY(-6px) scale(1.01);
+    }
+  }
+
+  /* ===== UTILAJE – egalăm paddingul sus/jos al secțiunii ===== */
+  body[data-page="utilaje"] main.section {
+    /* aceeași valoare pentru top și bottom */
+    --utilaje-gap: clamp(36px, 5vw, 64px);
+    padding-top: var(--utilaje-gap);
+    padding-bottom: var(--utilaje-gap);
+  }
+
+  /* spațiere mică între titlu și grid, fără să influențeze footerul */
+  body[data-page="utilaje"] main .grid {
+    margin-top: 18px;
+    /* poți pune 16–24 după gust */
+  }
+
+  /* eliminăm orice margine "rătăcită" sub ultimul element din wrap */
+  body[data-page="utilaje"] main .wrap > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 7) Focus state pentru accesibilitate */
+  body[data-page="utilaje"] .cat-card:focus-visible {
+    outline: 2px solid var(--eco-accent, #22c55e);
+    outline-offset: 4px;
+    border-radius: 18px;
+  }
+
+  /* 8) Smooth loading pentru imagini */
+  body[data-page="utilaje"] .cat-bg img {
+    opacity: 1;
+    
+  }
+
+  
+
+  /* 9) Responsive pentru hover effects pe touch devices */
+  @media (hover: none) {
+    body[data-page="utilaje"] .cat-card:active {
+      transform: translateY(-4px) scale(1.01);
+      transition: transform .1s ease;
+    }
+  }
+  
+  /* 10) Prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    body[data-page="utilaje"] .cat-card,
+    body[data-page="utilaje"] .cat-bg img {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+  }

@@ -1,0 +1,29 @@
+<!--meta {
+  "title": "Stoc utilaje agricole second hand | Tractoare Tecuci",
+  "description": "Toate tractoarele și utilajele agricole second hand din stoc la Tecuci: poze reale, an, ore de funcționare și țara de import. Filtrează după marcă și ore.",
+  "updated": "2026-11-03"
+} -->
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Acasă</a> <span aria-hidden="true">/</span> <span aria-current="page">Stoc</span></nav>
+  <h1>Stoc de utilaje</h1>
+  <p class="lead">{{stockCount}} utilaje în stoc, sincronizate cu anunțurile noastre de pe OLX. Prețul, vizionarea și transportul le stabilim la telefon sau pe WhatsApp.</p>
+
+  <form id="filters" class="filters" role="search" aria-label="Filtrare utilaje" action="/products" method="get">
+    <label class="sr-only" for="f-q">Caută</label>
+    <input id="f-q" type="search" name="q" placeholder="Caută marcă sau model" autocomplete="off">
+    <input type="hidden" name="category" value="">
+    <label class="sr-only" for="f-brand">Marcă</label>
+    <select id="f-brand" name="brand">
+      <option value="">Marcă</option>
+      <!-- @slot brand-options -->
+    </select>
+    <label class="sr-only" for="f-hours">Ore maxime</label>
+    <input id="f-hours" type="number" name="maxHours" min="0" step="500" placeholder="Ore maxime" inputmode="numeric">
+  </form>
+
+  <div class="chip-row" role="group" aria-label="Categorii"><!-- @slot category-chips --><a class="reset-link" href="/products">Resetează filtrele</a></div>
+  <p class="result-count" aria-live="polite" data-result-count></p>
+
+  <!-- @slot stock -->
+  <p class="empty-state" hidden data-empty>Niciun utilaj nu se potrivește filtrelor. <a href="/products">Arată tot stocul</a> sau sună-ne la <a href="tel:{{phone}}">{{phoneDisplay}}</a>: îți spunem ce urmează să intre în stoc.</p>
+</div>

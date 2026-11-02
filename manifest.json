@@ -1,28 +1,25 @@
 {
-  "name": "Tractoare Tecuci - Utilaje Agricole Second Hand",
+  "name": "Tractoare Tecuci: utilaje agricole second hand",
   "short_name": "Tractoare Tecuci",
-  "description": "Tractoare și utilaje agricole second hand import Europa. Verificate tehnic, garanție, transport în toată România.",
+  "description": "Tractoare și utilaje agricole second hand, importate din Europa (în principal din Italia), verificate și livrate în toată România. Sediu în Tecuci, județul Galați.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait-primary",
   "background_color": "#f7faf7",
   "theme_color": "#2e7d32",
   "lang": "ro-RO",
-  "dir": "ltr",
-  "categories": ["business", "shopping"],
   "icons": [
     {
-      "src": "/assets/icon-192.png",
+      "src": "/assets/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "/assets/icon-512.png",
+      "src": "/assets/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }

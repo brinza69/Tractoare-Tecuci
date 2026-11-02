@@ -1,0 +1,657 @@
+/* ==========================================================================
+     INDEX SECTIONS – culori luminoase + spacing aerisit
+     ========================================================================== */
+
+    /* ===================== PRODUSE NOI ===================== */
+    .new-products {
+      position: relative;
+      padding: 64px 0 72px;
+      /* +spacing */
+      background:
+        radial-gradient(1200px 300px at 50% 0%, var(--brand-08), transparent 60%),
+        linear-gradient(180deg, var(--brand-08), transparent 40%),
+        var(--bg);
+    }
+
+    .new-products .section-head {
+      text-align: center;
+      margin-bottom: 26px
+    }
+
+    /* +spacing */
+    .new-products .section-head h2 {
+      margin: 0 0 8px;
+      font-size: clamp(22px, 3.2vw, 32px)
+    }
+
+    .product-grid {
+      gap: 22px
+    }
+
+    @media(min-width:1025px) {
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    .card.product {
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid var(--brand-08);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .card.product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, .10);
+      border-color: var(--brand-12)
+    }
+
+    /* ===================== FIX IMAGINI FULL WIDTH ===================== */
+    
+    /* 1. Containerul pozei - FĂRĂ SPAȚII */
+    .card.product .media {
+      aspect-ratio: 1/1;          /* Păstrăm formatul dreptunghiular standard */
+      width: 100%;
+      background-color: #fff;     /* Fundal alb */
+      display: block;             /* Important pentru aliniere */
+      overflow: hidden;
+      padding: 0;                 /* 🔧 ZERO PADDING: Asta elimină spațiul gol de pe margini */
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;         /* Necesar pentru poziționare */
+    }
+
+    /* 2. Imaginea - ÎMPLE TOT SPAȚIUL */
+    .card.product .media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;          /* 🔧 COVER: Umple tot cadrul (fără margini gri), dar taie puțin sus/jos dacă poza e prea înaltă */
+      object-position: center;    /* Centrează imaginea */
+      transition: transform 0.5s ease;
+    }
+
+    /* 3. Efect ZOOM fin la Hover */
+    .card.product:hover .media img {
+      transform: scale(1.08);     /* Efect modern de zoom */
+    }
+
+    .card.product .body {
+      padding: 18px 16px 20px
+    }
+
+    /* +spacing în card */
+    .card.product .badge {
+      background: var(--brand-50);
+      color: var(--brand-600);
+      border: 1px solid var(--brand-100);
+      font-weight: 700
+    }
+
+    .card.product .card-title {
+      margin: 8px 0 6px;
+      font-size: 18px;
+      line-height: 1.35
+    }
+
+    .card.product .price {
+      margin-top: 10px;
+      font-size: 20px
+    }
+
+    /* CTA "Vezi mai multe" */
+    .more-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 26px
+    }
+
+    .more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--brand-500);
+      color: #fff;
+      border: 2px solid var(--brand-500);
+      box-shadow: 0 10px 26px var(--brand-20);
+      transition: transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+    }
+
+    .more-btn .chev {
+      display: inline-block;
+      font-weight: 700;
+      transform: translateX(0);
+      transition: transform .18s ease
+    }
+
+    .more-btn:hover {
+      transform: translateY(-2px);
+      background: var(--brand-600);
+      border-color: var(--brand-600);
+      box-shadow: 0 16px 34px var(--brand-20)
+    }
+
+    .more-btn:hover .chev {
+      transform: translateX(3px)
+    }
+
+    .more-row.hidden {
+      display: none
+    }
+
+    /* ===================== SERVICII ===================== */
+    .services-head {
+      margin-bottom: 22px
+    }
+
+    /* +spacing */
+    .services-head h2 {
+      margin: 0 0 8px
+    }
+
+    .services-head .muted {
+      margin: 0
+    }
+
+    .services-grid {
+      display: grid;
+      gap: 18px
+    }
+
+    @media (min-width:768px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    .service-card {
+      background: var(--surface);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transform: translateY(0);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, .12)
+    }
+
+    .svc-media {
+      height: 190px;
+      background-size: cover;
+      background-position: center;
+      position: relative
+    }
+
+    /* +înălțime vizuală */
+    .svc-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .0) 20%, rgba(0, 0, 0, .22) 100%)
+    }
+
+    .svc-badge {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      z-index: 2;
+      display: inline-block;
+      padding: 6px 10px;
+      background: var(--brand-500);
+      color: #fff;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 13px;
+      box-shadow: 0 8px 20px var(--brand-20);
+    }
+
+    .svc-badge.ghost {
+      background: rgba(255, 255, 255, .88);
+      color: var(--brand-600);
+      border: 1px solid var(--brand-100);
+      box-shadow: none
+    }
+
+    .svc-body {
+      padding: 18px
+    }
+
+    /* +spacing */
+    .svc-title {
+      margin: 0 0 8px
+    }
+
+    .svc-text {
+      margin: 0 0 12px;
+      color: var(--muted)
+    }
+
+    .svc-list {
+      list-style: none;
+      margin: 0 0 12px;
+      padding: 0
+    }
+
+    .svc-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0;
+      color: var(--text);
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .svc-list li::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+      background: var(--brand-500);
+      opacity: .9;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
+      -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="%23fff" d="M7.6 13.2 3.9 9.4 2.5 10.8l5.1 5.1L18 5.5 16.6 4z"/></svg>') no-repeat center/contain;
+    }
+
+    .svc-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--brand-500);
+      color: #fff;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      border: 2px solid var(--brand-500);
+      transition: transform .06s ease, background .18s ease, border-color .18s ease;
+    }
+
+    .svc-cta:hover {
+      transform: translateY(-1px);
+      background: var(--brand-600);
+      border-color: var(--brand-600)
+    }
+
+    /* ===================== ABOUT TEASER ===================== */
+    /* Trecem pe fundal deschis (ca să dispară „dunga" între secțiuni) */
+    .about-teaser {
+      background: var(--bg);
+      padding: 56px 0;
+      /* spațiere uniformă cu restul */
+    }
+
+    .about-teaser__inner {
+      background: var(--surface);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 18px;
+      padding: clamp(22px, 3.8vw, 40px);
+      /* +spacing */
+      display: grid;
+      gap: 24px;
+      align-items: center;
+      grid-template-columns: 1.1fr .9fr;
+    }
+
+    .about-teaser__content {
+      color: var(--text);
+      text-align: center;
+      padding: clamp(6px, 1vw, 12px)
+    }
+
+    .about-teaser__title {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4.4vw, 44px);
+      color: var(--text)
+    }
+
+    .about-teaser__lead {
+      margin: 0 0 12px;
+      font-size: clamp(15px, 1.4vw, 18px);
+      line-height: 1.7;
+      color: var(--muted)
+    }
+
+    .about-teaser__cta {
+      margin-top: 6px;
+      background: var(--brand-500);
+      color: #fff;
+      border-color: var(--brand-500);
+      font-weight: 800;
+    }
+
+    .about-teaser__cta:hover {
+      background: var(--brand-600);
+      border-color: var(--brand-600);
+      transform: translateY(-1px)
+    }
+
+    .about-teaser__media {
+      display: block;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, .12);
+      transition: transform .2s ease, box-shadow .2s ease;
+      cursor: pointer
+    }
+
+    .about-teaser__media:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 44px rgba(0, 0, 0, .16)
+    }
+
+    .about-teaser__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    @media(max-width:980px) {
+      .about-teaser__inner {
+        grid-template-columns: 1fr
+      }
+
+      .about-teaser__media {
+        max-height: 46vh
+      }
+    }
+
+    /* Fix "Despre noi" – text invizibil pe panou alb */
+    .about-teaser__inner {
+      background: #fff;
+      /* panou alb */
+      border: 1px solid rgba(15, 23, 42, .06);
+      /* contur discret pe light */
+    }
+
+    .about-teaser__content {
+      color: var(--text) !important;
+      /* text principal pe light */
+    }
+
+    .about-teaser__title {
+      color: var(--text) !important;
+      /* titlu pe light */
+    }
+
+    .about-teaser__lead {
+      color: var(--text) !important;
+      /* paragrafe pe light */
+      opacity: .92;
+    }
+
+    /* butonul rămâne cu accentele brand */
+    .about-teaser__cta {
+      background: var(--primary-50);
+      border-color: var(--primary-50);
+      color: var(--primary-600);
+    }
+
+    .about-teaser__cta:hover {
+      background: var(--primary-100);
+      border-color: var(--primary-100);
+    }
+
+
+    /* ===================== IMPORTATOR OFICIAL ===================== */
+    /* Tot deschis, ca să nu apară banda albă la tranziție. */
+    .brand-hero {
+      background: var(--bg);
+      position: relative;
+      padding: 56px 0;
+      /* aliniat cu About */
+      overflow: hidden;
+      border-top: 1px solid rgba(15, 23, 42, .06);
+      /* delimitare discretă între secțiuni */
+    }
+
+    .brand-hero::before,
+    .brand-hero::after {
+      content: "";
+      display: none
+    }
+
+    /* eliminăm fade-ul întunecat */
+    .brand-hero__inner {
+      text-align: center
+    }
+
+    .brand-hero__title {
+      margin: 0 0 20px;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.15;
+      color: var(--text);
+      letter-spacing: .2px;
+      font-weight: 700
+    }
+
+    .brand-hero__logo {
+      display: inline-block;
+      padding: clamp(10px, 1.4vw, 16px) clamp(16px, 2vw, 22px);
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid rgba(15, 23, 42, .06);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .brand-hero__logo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .12);
+      cursor: pointer
+    }
+
+    .brand-hero__logo img {
+      display: block;
+      width: clamp(180px, 28vw, 340px);
+      height: auto
+    }
+
+    /* ===================== REVIEWS ===================== */
+    /* Luminos ca restul; carduri albe. */
+    .reviews {
+      background: var(--bg);
+      padding: 64px 0 72px;
+      border-top: 1px solid rgba(15, 23, 42, .06);
+      /* separare discretă de secțiunea de mai sus */
+    }
+
+    .rev-title {
+      color: var(--text);
+      text-align: center;
+      margin: 0 0 26px;
+      font-size: clamp(28px, 4.2vw, 40px);
+      letter-spacing: .2px
+    }
+
+    .rev-shell {
+      max-width: 880px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 12px
+    }
+
+    .rev-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: 18px;
+      padding: clamp(20px, 3.2vw, 28px);
+      color: var(--text);
+      text-align: center;
+      box-shadow: 0 14px 34px rgba(15, 23, 42, .08);
+      min-height: 240px;
+      transition: opacity .25s ease;
+    }
+
+    .rev-avatar {
+      width: 84px;
+      height: 84px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(15, 23, 42, .08);
+      margin: -56px auto 12px;
+      display: block;
+      background: #fff
+    }
+
+    .rev-stars {
+      color: var(--brand-600);
+      letter-spacing: 2px;
+      font-size: 18px;
+      margin-bottom: 6px
+    }
+
+    .rev-quote {
+      margin: 8px auto 12px;
+      max-width: 640px;
+      font-size: clamp(16px, 2.2vw, 19px);
+      line-height: 1.65;
+      color: var(--text)
+    }
+
+    .rev-meta {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 14px
+    }
+
+    /* Navigație carusel (dacă o folosești) */
+    .rev-arrow {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(15, 23, 42, .06);
+      color: var(--text);
+      font-size: 22px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: background .18s ease, transform .18s ease;
+    }
+
+    .rev-arrow:hover {
+      background: rgba(15, 23, 42, .10);
+      transform: scale(1.06)
+    }
+
+    .rev-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px
+    }
+
+    .rev-dots button {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      border: 0;
+      background: rgba(15, 23, 42, .25);
+      cursor: pointer;
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .rev-dots button[aria-selected="true"] {
+      transform: scale(1.45);
+      background: var(--text)
+    }
+
+    @media (max-width:768px) {
+      .rev-shell {
+        grid-template-columns: 1fr
+      }
+
+      .rev-arrow {
+        order: -1;
+        justify-self: center
+      }
+
+      .rev-arrow.next {
+        order: 2
+      }
+
+      .rev-card {
+        margin-top: 18px
+      }
+    }
+
+    /* ============ 2) REVIEWS – 1 coloană pe mobil + aerisire ============ */
+    /* containerul de carduri din secțiunea .reviews */
+    .reviews .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    /* pe ecrane mici: 1 coloană + padding lateral ca să nu lipească de margini */
+    @media (max-width: 640px) {
+      .reviews .grid {
+        grid-template-columns: 1fr !important;
+        /* forțează 1 coloană */
+        padding: 0 14px;
+        /* spațiu stânga/dreapta */
+      }
+
+      .rev-card {
+        margin: 0;
+        /* fără margini suplimentare */
+      }
+
+      .rev-title {
+        margin-bottom: 18px;
+        /* puțin mai compact */
+      }
+    }
+
+    /* un pic mai mult aer deasupra avatarului (opțional) */
+    .rev-card {
+      padding-top: 36px;
+    }
+
+    .rev-avatar {
+      margin-top: -42px;
+    }
+
+    /* păstrează look-ul cu avatar ieșit din card */
+    @media (max-width:600px) {
+      .hero-inner .actions {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        /* <- asta le centrează orizontal */
+      }
+
+      .hero-inner .actions .btn {
+        width: min(88%, 360px);
+        justify-content: center;
+      }
+    }
+
+    .svc-media {
+      position: relative;
+      height: 190px;
+      /* cât aveai înainte */
+      overflow: hidden;
+      background: none;
+      /* nu mai folosim background-image */
+    }
+
+    .svc-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }

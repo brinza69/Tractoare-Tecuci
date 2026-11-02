@@ -144,7 +144,7 @@ input:focus,select:focus,textarea:focus{
 .site-header.scrolled{
   background-color:rgba(255,255,255,.98);
   box-shadow:0 2px 12px rgba(0,0,0,.08);
-  backdrop-filter:blur(10px);
+
 }
 .site-header.scrolled .logo{
   transform:scale(.95);
@@ -176,7 +176,7 @@ input:focus,select:focus,textarea:focus{
 }
 .nav .nav-link:hover{color:var(--eco-accent)}
 .nav .nav-link:hover::after{width:100%;left:0}
-.nav .nav-link.active{background:var(--brand-500);color:#fff}
+.nav .nav-link[aria-current="page"]{background:var(--brand-500);color:#fff}
 
 /* Burger */
 .hamb{width:44px;height:44px;border:0;background:transparent;position:relative;cursor:pointer}
@@ -351,15 +351,15 @@ input:focus,select:focus,textarea:focus{
 /* =============================================================================
    SCROLL REVEAL ANIMATIONS
    ========================================================================== */
-.reveal-element{
-  opacity:0;
-  transform:translateY(20px);
-  transition:opacity .5s cubic-bezier(.4,0,.2,1),
-             transform .5s cubic-bezier(.4,0,.2,1);
-}
-.reveal-element.revealed{
-  opacity:1;
-  transform:translateY(0);
+/* Movement only: text never fades to low contrast, and nothing moves with reduced motion. */
+@media (prefers-reduced-motion: no-preference){
+  .reveal-element{
+    transform:translateY(16px);
+    transition:transform .5s cubic-bezier(.4,0,.2,1);
+  }
+  .reveal-element.revealed{
+    transform:translateY(0);
+  }
 }
 .reveal-element.delay-100{transition-delay:.1s}
 .reveal-element.delay-200{transition-delay:.2s}

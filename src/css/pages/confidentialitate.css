@@ -1,0 +1,185 @@
+:root {
+      --brand: #2e7d32;
+      --brand-dark: #1b5e20;
+      --ink: #0f172a;
+      --muted: #334155;
+      --ring: #e6e9ee;
+      --eco-accent: #22c55e;
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    /* Hero cu gradient și micro-interacțiune */
+    .legal-hero{
+      background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+      color:#fff;
+      padding:clamp(40px,8vw,80px) 0;
+      text-align:center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 50% 0%, rgba(255,255,255,.1), transparent 60%);
+      pointer-events: none;
+    }
+    
+    .legal-hero h1{
+      margin:0 0 12px;
+      font-size:clamp(28px,5vw,42px);
+      font-weight:700;
+      position: relative;
+      
+    }
+    
+    
+    
+    .legal-hero .muted{
+      color:rgba(255,255,255,0.85);
+      font-size:16px;
+      position: relative;
+      
+    }
+    
+    /* Main content */
+    .legal{
+      padding:48px 0;
+      background:#f8faf9;
+    }
+    
+    .legal .wrap{
+      max-width:900px;
+      margin:0 auto;
+      padding:0 20px;
+    }
+    
+    /* Sections cu micro-interacțiuni */
+    .legal section{
+      background:#fff;
+      border-radius:16px;
+      box-shadow:0 4px 12px rgba(15,23,42,.08);
+      padding:32px;
+      margin:24px 0;
+      transition: var(--transition-smooth);
+      
+      
+    }
+    
+    .legal section:nth-child(1) { animation-delay: .1s; }
+    .legal section:nth-child(2) { animation-delay: .15s; }
+    .legal section:nth-child(3) { animation-delay: .2s; }
+    .legal section:nth-child(4) { animation-delay: .25s; }
+    .legal section:nth-child(5) { animation-delay: .3s; }
+    .legal section:nth-child(6) { animation-delay: .35s; }
+    .legal section:nth-child(7) { animation-delay: .4s; }
+    .legal section:nth-child(8) { animation-delay: .45s; }
+    .legal section:nth-child(9) { animation-delay: .5s; }
+    
+    
+    
+    /* Micro-interacțiune: Hover pe sections */
+    .legal section:hover {
+      box-shadow: 0 8px 24px rgba(15,23,42,.12);
+      transform: translateY(-2px);
+      border-left: 4px solid var(--eco-accent);
+      padding-left: 28px;
+    }
+    
+    .legal h2{
+      color:var(--ink);
+      font-size:clamp(20px,3vw,26px);
+      margin:0 0 16px;
+      font-weight:700;
+      transition: color .2s;
+    }
+    
+    .legal section:hover h2 {
+      color: var(--brand);
+    }
+    
+    .legal p{
+      color:var(--muted);
+      line-height:1.7;
+      margin:0 0 16px;
+    }
+    
+    .legal p:last-child{
+      margin-bottom:0;
+    }
+    
+    .legal ul{
+      margin:16px 0;
+      padding-left:24px;
+    }
+    
+    .legal li{
+      color:var(--muted);
+      line-height:1.7;
+      margin:8px 0;
+      transition: transform .2s, color .2s;
+    }
+    
+    .legal li:hover {
+      transform: translateX(4px);
+      color: var(--ink);
+    }
+    
+    /* Links cu micro-interacțiune */
+    .legal a{
+      color:var(--brand);
+      text-decoration:underline;
+      font-weight:600;
+      transition: color .2s, text-decoration-color .2s;
+      position: relative;
+    }
+    
+    .legal a:hover{
+      color:var(--brand-dark);
+      text-decoration-color: var(--eco-accent);
+    }
+    
+    .legal strong{
+      color:var(--ink);
+      font-weight:600;
+    }
+    
+    /* Focus states pentru accesibilitate */
+    .legal a:focus-visible {
+      outline: 2px solid var(--eco-accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    
+    /* Touch-friendly pe mobil */
+    @media (hover: none) {
+      .legal section:active {
+        transform: scale(0.98);
+        transition: transform .1s ease;
+      }
+    }
+    
+    @media(max-width:768px){
+      .legal section{
+        padding:24px 20px;
+      }
+      
+      .legal section:hover {
+        padding-left: 16px;
+      }
+    }
+    
+    /* Prefers reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
