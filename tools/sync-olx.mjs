@@ -12,7 +12,7 @@ import sharp from 'sharp';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SHOP = 'https://compaia.olx.ro/home/';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
-const WIDTHS = [480, 960, 1440];
+const WIDTHS = [240, 480, 960, 1200, 1440];
 const DRY = process.argv.includes('--dry');
 const OUT_DIR = join(ROOT, 'assets/utilaje');
 const overridesPath = join(ROOT, 'data/products.overrides.json');

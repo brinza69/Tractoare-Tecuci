@@ -255,3 +255,7 @@ body[data-page="list"] .filters [name="brand"],body[data-page="list"] .filters [
 
 /* Category cards: stock count as a badge on the photo */
 .cat-card .cat-count{position:absolute;top:14px;left:14px;z-index:2;margin:0;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.94);color:#14532d;font-size:14px;font-weight:800;text-shadow:none}
+/* Category grid: card width comes from the column, never from the image (no shift while photos load) */
+body[data-page="utilaje"] main .cat-grid{justify-items:stretch;max-width:1100px;margin-inline:auto}
+body[data-page="utilaje"] .cat-grid>li{width:100%;min-width:0}
+body[data-page="utilaje"] .cat-card{width:100%}

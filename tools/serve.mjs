@@ -7,6 +7,9 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PORT = Number(process.argv[2]) || 8788;
+// --local-sitemap: sitemap/robots/llms point at this server, so the SiteKit audit crawls the local pages.
+const LOCAL = process.argv.includes('--local-sitemap');
+const SITE = 'https://www.tractoaretecuci.ro';
 const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.webp': 'image/webp', '.avif': 'image/avif', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.mp4': 'video/mp4', '.webm': 'video/webm' };
 const isFile = async (p) => { try { return (await stat(p)).isFile(); } catch { return false; } };
 
@@ -27,7 +30,7 @@ createServer(async (req, res) => {
         return;
       }
       res.writeHead(200, { 'content-type': TYPES[extname(file)] || 'application/octet-stream', 'accept-ranges': 'bytes' });
-      res.end(body);
+      res.end(LOCAL && /\.(xml|txt)$/.test(file) ? body.toString('utf8').replaceAll(SITE, `http://localhost:${PORT}`) : body);
       return;
     }
   }
