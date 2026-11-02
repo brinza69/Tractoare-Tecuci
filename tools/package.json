@@ -1,0 +1,16 @@
+{
+  "name": "tractoare-tecuci-tools",
+  "private": true,
+  "type": "module",
+  "description": "Build, OLX sync and checks for tractoaretecuci.ro. The site itself is the generated HTML at the repo root.",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "sync": "node sync-olx.mjs",
+    "serve": "node serve.mjs"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.11",
+    "sharp": "^0.34.4"
+  }
+}

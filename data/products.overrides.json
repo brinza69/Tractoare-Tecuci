@@ -1,0 +1,63 @@
+{
+  "_readme": "Corecturi pe anunțurile OLX, după ID-ul OLX: titlu (scrierea modelului), descriere (doar diacritice și ortografie, fără fapte noi), categorie. Se aplică la fiecare `node tools/sync-olx.mjs`. Un ID care nu mai e pe OLX se ignoră.",
+  "310805872": {
+    "title": "Massey Ferguson 2230",
+    "description": "Tractor Massey Ferguson 2230, fabricat în 2011. Motor Perkins, 4 cilindri, 80 CP. Carte RAR, aer condiționat, în condiții excelente."
+  },
+  "310799841": {
+    "title": "Fendt Favorit 512 C",
+    "description": "Tractor Fendt, an de fabricație 1997. Motor MWM turbo, 6 cilindri, 125 CP. 9.800 ore de funcționare. Cutie mecanică cu inversor, punte suspendată. Foarte bine întreținut, import Italia."
+  },
+  "310799217": {
+    "title": "McCormick CX 85",
+    "description": "Tractor McCormick, an de fabricație 2005. Motor Perkins turbo, 4 cilindri, 95 CP. Încărcător frontal, cutie de viteze Case cu inversor. Foarte bine întreținut, import Italia."
+  },
+  "310798971": {
+    "title": "Same Argon 75 F",
+    "description": "Tractor Same, an de fabricație 2005. Motor de 4 cilindri cu răcire pe aer, 75 CP, 4x4. Cutie mecanică cu inversor. 4.800 ore de funcționare, folosit doar la deszăpeziri. Import Italia."
+  },
+  "310798787": {
+    "title": "Fendt 209 S",
+    "description": "Tractor Fendt, an de fabricație 2005. Motor Deutz, 4 cilindri cu răcire pe aer, 95 CP. Tiranți și priză de putere față, punte suspendată, aer condiționat. Cutie de viteze mecanică cu inversor. Recent importat din Italia."
+  },
+  "310775204": {
+    "title": "John Deere 6125R",
+    "description": "Tractor John Deere, an de fabricație 2015, 7.280 ore de funcționare. Motor turbo, 4 cilindri, 125 CP. Cutie PowerQuad, priză și tiranți față, încărcător frontal original John Deere (cu furci de baloți), cabină amortizată. Recent importat din Italia."
+  },
+  "304203631": {
+    "title": "McCormick X4.80 XL",
+    "description": "Tractor viticol McCormick, an de fabricație 2020, 5.191 ore de funcționare. Motor Deutz turbo, 4 cilindri, 85 CP. Tiranți și priză față, cabină climatizată, cutie mecanică cu inversor, distribuitoare hidraulice manuale. Recent adus."
+  },
+  "309277921": {
+    "title": "Merlo 34.10",
+    "description": "Încărcător telescopic Merlo, an de fabricație 2007, 5.400 ore de funcționare. Sarcină de ridicare 3,4 tone, braț telescopic de 10 metri. Motor Deutz, 4 cilindri. Cu cupă și factură externă."
+  },
+  "309279297": {
+    "title": "Fendt 718 Vario",
+    "description": "Tractor Fendt, an de fabricație 2021, 4.000 ore de funcționare, unic proprietar în Italia. Motor Deutz, 6 cilindri, 195 CP, cutie Vario în parametri. Punte suspendată, tiranți față, cabină amortizată (perne de aer), climă, compresor. Recent adus din Italia."
+  },
+  "309286736": {
+    "title": "Fendt 415 Vario",
+    "description": "Tractor Fendt, an de fabricație 2010, circa 8.000 ore. Motor Deutz, 4 cilindri, 150 CP. Aer condiționat, compresor, cutie Vario în parametri, punte suspendată, tiranți față. Recent importat din Italia."
+  },
+  "306101968": {
+    "title": "Fendt 820 Vario TMS",
+    "description": "Tractor Fendt 820 Vario TMS (Com 3), an de fabricație 2011. Motor Deutz, 6 cilindri, 205 CP. Tiranți și priză de putere față, cutie în parametri. Foarte bine întreținut, recent importat din Italia, cu factură externă."
+  },
+  "304199738": {
+    "title": "Fendt 930 Vario",
+    "description": "Tractor Fendt, an de fabricație 2008, 8.500 ore de funcționare. Motor Deutz, 300 CP, cutie Vario TMS în parametri. Cabină suspendată (perne de aer), punte și tiranți față, climă, compresor. Recent importat din Italia."
+  },
+  "301774248": {
+    "title": "Fendt Farmer 309 Ci",
+    "description": "Tractor Fendt, an de fabricație 2009. Motor Deutz turbo, 4 cilindri, 104 CP. Anvelope noi, totul mecanic, 4.500 ore de funcționare. Impecabil din toate punctele de vedere, cu factură externă."
+  },
+  "295979704": {
+    "title": "Massey Ferguson 7724",
+    "description": "Tractor Massey Ferguson, motor SISU turbo, 240 CP. Cutie full powershift Dyna-6, punte suspendată, cabină amortizată, tiranți față. Unic proprietar, recent importat din Italia, cu factură externă."
+  },
+  "307216774": {
+    "title": "Fendt Farmer 307 LSA",
+    "description": "Tractor Fendt Farmer, an de fabricație 1988. Motor MWM turbo, 3 cilindri, cu pompă de injecție în linie, circa 75 CP. Tracțiune 4x2, cutie de viteze mecanică cu reductor, priză de putere 540 rot/min. Recent importat din Italia."
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "306101968": {
+    "source": "https://www.tractordata.com/farm-tractors/006/6/4/6646-fendt-820-vario.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "din 2006"
+      },
+      {
+        "k": "Fabricat în",
+        "v": "Marktoberdorf, Germania"
+      },
+      {
+        "k": "Motor",
+        "v": "Deutz 6,1 L 6 cilindri, diesel"
+      },
+      {
+        "k": "Putere motor (brut)",
+        "v": "154,4 kW (210 CP)"
+      },
+      {
+        "k": "Putere motor (net)",
+        "v": "141,7 kW (193 CP)"
+      },
+      {
+        "k": "Putere la priză (declarată)",
+        "v": "130,5 kW (177 CP)"
+      },
+      {
+        "k": "Transmisie",
+        "v": "transmisie continuu variabilă (IVT)"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "339,9 L"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "6053 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/540E/1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "271 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "7021 kg"
+      }
+    ]
+  },
+  "307216774": {
+    "source": "https://www.tractordata.com/farm-tractors/002/6/5/2650-fendt-farmer-307ls.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "1985–1993"
+      },
+      {
+        "k": "Motor",
+        "v": "MWM 3,1 L 3 cilindri, diesel"
+      },
+      {
+        "k": "Transmisie",
+        "v": "21 viteze"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "79,9 L"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "37,1 lpm"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "2865 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540, 750, 1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "229 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "3150–3421 kg"
+      },
+      {
+        "k": "Anvelope față",
+        "v": "10.00-16"
+      },
+      {
+        "k": "Anvelope spate",
+        "v": "16.9R34"
+      }
+    ]
+  },
+  "309286736": {
+    "source": "https://www.tractordata.com/farm-tractors/010/7/6/10768-fendt-415-vario.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "2006–2012"
+      },
+      {
+        "k": "Motor",
+        "v": "Deutz 4,0 L 4 cilindri, diesel"
+      },
+      {
+        "k": "Putere motor (brut)",
+        "v": "113,0 kW (154 CP)"
+      },
+      {
+        "k": "Putere motor (net)",
+        "v": "103,0 kW (140 CP)"
+      },
+      {
+        "k": "Transmisie",
+        "v": "transmisie continuu variabilă"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "244,9 L"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "74,9 lpm"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "7449 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/540E/1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "241 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "5420 kg"
+      },
+      {
+        "k": "Anvelope față",
+        "v": "540/65R24"
+      },
+      {
+        "k": "Anvelope spate",
+        "v": "600/65R38"
+      }
+    ]
+  },
+  "310775204": {
+    "source": "https://www.tractordata.com/farm-tractors/007/1/5/7155-john-deere-6125r.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "2012–2016"
+      },
+      {
+        "k": "Fabricat în",
+        "v": "Mannheim, Baden-Württemberg, Germania"
+      },
+      {
+        "k": "Motor",
+        "v": "John Deere 4,5 L 4 cilindri, diesel"
+      },
+      {
+        "k": "Putere motor (brut)",
+        "v": "93,2 kW (127 CP)"
+      },
+      {
+        "k": "Transmisie",
+        "v": "24 viteze powershift parțial; transmisie continuu variabilă"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "219,9 L"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "79,9 lpm"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "4350 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/540E/1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "258 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "5470 kg"
+      }
+    ]
+  },
+  "310798787": {
+    "source": "https://www.tractordata.com/farm-tractors/005/6/6/5662-fendt-209.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "2003–2009"
+      },
+      {
+        "k": "Motor",
+        "v": "Deutz 4,3 L 4 cilindri, diesel"
+      },
+      {
+        "k": "Putere motor (brut)",
+        "v": "69,0 kW (94 CP)"
+      },
+      {
+        "k": "Putere motor (net)",
+        "v": "66,0 kW (90 CP)"
+      },
+      {
+        "k": "Transmisie",
+        "v": "21 viteze sincronizată; 21 viteze cu inversor"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "60,2 L"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "46,9 lpm"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/750/1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "223 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "3099 kg"
+      },
+      {
+        "k": "Anvelope față",
+        "v": "335/80R18"
+      },
+      {
+        "k": "Anvelope spate",
+        "v": "480/70R30"
+      }
+    ]
+  },
+  "310799217": {
+    "source": "https://www.tractordata.com/farm-tractors/002/7/4/2743-mccormick-intl-cx85.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "2003–2007"
+      },
+      {
+        "k": "Fabricat în",
+        "v": "Doncaster, Anglia"
+      },
+      {
+        "k": "Putere motor (net)",
+        "v": "62,6 kW (85 CP)"
+      },
+      {
+        "k": "Putere la priză (declarată)",
+        "v": "50,0 kW (68 CP)"
+      },
+      {
+        "k": "Transmisie",
+        "v": "24 viteze powershift parțial; 8 viteze cu inversor sincronizat; 16 viteze powershift parțial"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "60,0 lpm"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "2957 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/1000 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "235 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "3770–3841 kg"
+      },
+      {
+        "k": "Anvelope față",
+        "v": "10.00-16"
+      },
+      {
+        "k": "Anvelope spate",
+        "v": "16.9R34"
+      }
+    ]
+  },
+  "310799841": {
+    "source": "https://www.tractordata.com/farm-tractors/002/6/9/2694-fendt-favorit-512c.html",
+    "spec": [
+      {
+        "k": "Ani de producție",
+        "v": "1993–1999"
+      },
+      {
+        "k": "Motor",
+        "v": "MWM 6,2 L 6 cilindri, diesel"
+      },
+      {
+        "k": "Transmisie",
+        "v": "44 viteze powershift în 4 trepte"
+      },
+      {
+        "k": "Rezervor combustibil",
+        "v": "210,1 L"
+      },
+      {
+        "k": "Debit pompă hidraulică",
+        "v": "101,8 lpm"
+      },
+      {
+        "k": "Capacitate ridicare spate",
+        "v": "6886 kg"
+      },
+      {
+        "k": "Priză de putere spate",
+        "v": "540/750/1000/1400 rot/min"
+      },
+      {
+        "k": "Ampatament",
+        "v": "261 cm"
+      },
+      {
+        "k": "Greutate",
+        "v": "5410 kg"
+      },
+      {
+        "k": "Anvelope față",
+        "v": "420/70R28"
+      },
+      {
+        "k": "Anvelope spate",
+        "v": "520/70R38"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "306101968": "https://www.tractordata.com/farm-tractors/006/6/4/6646-fendt-820-vario.html",
+  "307216774": "https://www.tractordata.com/farm-tractors/002/6/5/2650-fendt-farmer-307ls.html",
+  "309286736": "https://www.tractordata.com/farm-tractors/010/7/6/10768-fendt-415-vario.html",
+  "310775204": "https://www.tractordata.com/farm-tractors/007/1/5/7155-john-deere-6125r.html",
+  "310798787": "https://www.tractordata.com/farm-tractors/005/6/6/5662-fendt-209.html",
+  "310799217": "https://www.tractordata.com/farm-tractors/002/7/4/2743-mccormick-intl-cx85.html",
+  "310799841": "https://www.tractordata.com/farm-tractors/002/6/9/2694-fendt-favorit-512c.html",
+  "_readme": "ID OLX -> pagina TractorData a modelului exact. tools/tractordata.mjs o folosește doar dacă anii de producție includ anul utilajului. Scoase intenționat: Fendt 718 Vario și 930 Vario (pagina TractorData amestecă generațiile; motorul nu corespunde anunțului), MF 2230, Fendt Farmer 309 Ci și MF 7724 (anii de producție nu includ anul utilajului). Same Argon 75, McCormick X4.80, Merlo 34.10: modelul nu există pe TractorData."
+}
