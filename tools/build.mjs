@@ -498,7 +498,7 @@ ${similar.length ? `<section class="section similar-sec" aria-labelledby="simila
 <dialog class="lb" data-lb aria-label="Fotografii ${esc(name)}">
   <div class="lb-img-wrap">
     <button type="button" class="lb-btn lb-prev" data-lb-prev aria-label="Fotografia anterioară">${icon('prev')}</button>
-    <img class="lb-img" alt="" data-lb-img decoding="async">
+    <img class="lb-img" alt="" data-lb-img width="1440" height="1920" decoding="async">
     <button type="button" class="lb-btn lb-next" data-lb-next aria-label="Fotografia următoare">${icon('next')}</button>
     <button type="button" class="lb-btn lb-close" data-lb-close aria-label="Închide">${icon('close')}</button>
     <p class="lb-count" aria-live="polite" data-lb-count></p>

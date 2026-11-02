@@ -63,7 +63,7 @@ main{display:block}
 .card.product:hover .media img{transform:scale(1.05)}
 .card.product .body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
 .card.product .badge{align-self:flex-start}
-.card-title{margin:4px 0 0;font-size:18px;line-height:1.35;font-weight:800;color:var(--text)}
+.card-title{margin:4px 0 0;font-size:18px;line-height:1.35;font-weight:700;color:var(--text)}
 .card-facts{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0;padding:0}
 .card-facts span{font-size:13px;font-weight:600;color:var(--text-2);background:#f2f6f3;border:1px solid #e1eae3;border-radius:999px;padding:3px 10px}
 
@@ -92,7 +92,7 @@ main{display:block}
 .head-stack{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .head-stack .head-title{flex-basis:100%}
 .brand-badge{margin-top:0}
-.stock-badge{display:inline-flex;align-items:center;gap:6px;background:#e8f5e9;color:var(--brand-700);border:1px solid #c8e6c9;border-radius:999px;padding:.35rem .7rem;font-weight:800;font-size:14px}
+.stock-badge{display:inline-flex;align-items:center;gap:6px;background:#e8f5e9;color:var(--brand-700);border:1px solid #c8e6c9;border-radius:999px;padding:.35rem .7rem;font-weight:700;font-size:14px}
 .stock-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand-500)}
 @media (min-width:1024px){
   .detail{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important;align-items:start}
@@ -117,7 +117,7 @@ main{display:block}
 .meta{margin:0}
 .meta .item{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
 .meta dt{font-size:13px;font-weight:600;color:var(--text-2)}
-.meta dd{margin:0;font-size:18px;font-weight:800;color:var(--text)}
+.meta dd{margin:0;font-size:18px;font-weight:700;color:var(--text)}
 .cta{margin:0}
 .ask-offer{gap:8px;min-width:0}
 @media (prefers-reduced-motion:no-preference){.ask-offer::before{animation-duration:3s}}
@@ -149,7 +149,7 @@ dialog.lb .lb-img{max-width:94vw;max-height:88dvh;object-fit:contain}
 /* Phone action bar (fixed, so it never shifts the layout) */
 .action-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(23,34,27,.08);transition:transform .25s ease}
 .action-bar.is-hidden,.consent-open .action-bar{transform:translateY(110%)}
-.ab-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;font-weight:800;color:#fff;background:var(--brand-500)}
+.ab-btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:12px;font-weight:700;color:#fff;background:var(--brand-500)}
 .ab-wa{background:var(--wa)}
 @media (max-width:767px){body{padding-bottom:72px}}
 @media (min-width:768px){.action-bar{display:none}}
@@ -194,7 +194,7 @@ dialog.lb .lb-img{max-width:94vw;max-height:88dvh;object-fit:contain}
 .related-list a{color:var(--brand-600);text-decoration:underline;text-underline-offset:3px;font-weight:600}
 
 /* Footer */
-.f-title{font-weight:800}
+.f-title{font-weight:700}
 .f-contact li{align-items:flex-start}
 .f-contact .ico-svg{width:18px;height:18px;fill:#cfe9d3;flex:0 0 auto;margin-top:3px}
 .f-brand img{width:auto;height:56px}
@@ -212,7 +212,7 @@ dialog.lb .lb-img{max-width:94vw;max-height:88dvh;object-fit:contain}
 .consent-choices label{display:flex;gap:10px;align-items:flex-start;font-size:15px}
 .consent-choices input{width:22px;height:22px;margin-top:1px;accent-color:var(--brand-500)}
 .consent-actions{position:sticky;bottom:-18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px;padding-top:6px}
-.consent-btn{flex:1 1 140px;min-height:44px;border-radius:12px;border:1px solid var(--brand-500);background:var(--brand-500);color:#fff;font:inherit;font-weight:800;cursor:pointer}
+.consent-btn{flex:1 1 140px;min-height:44px;border-radius:12px;border:1px solid var(--brand-500);background:var(--brand-500);color:#fff;font:inherit;font-weight:700;cursor:pointer}
 .consent-btn-link{background:#fff;color:var(--brand-700)}
 
 /* Motion and forced colours */
@@ -254,7 +254,7 @@ body[data-page="list"] .filters [name="brand"],body[data-page="list"] .filters [
 }
 
 /* Category cards: stock count as a badge on the photo */
-.cat-card .cat-count{position:absolute;top:14px;left:14px;z-index:2;margin:0;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--brand-700);font-size:14px;font-weight:800;text-shadow:none}
+.cat-card .cat-count{position:absolute;top:14px;left:14px;z-index:2;margin:0;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--brand-700);font-size:14px;font-weight:700;text-shadow:none}
 /* Category grid: card width comes from the column, never from the image (no shift while photos load) */
 body[data-page="utilaje"] main .cat-grid{justify-items:stretch;max-width:1100px;margin-inline:auto}
 body[data-page="utilaje"] .cat-grid>li{width:100%;min-width:0}
@@ -310,3 +310,8 @@ body{letter-spacing:-.003em}
 .lb-btn .ico-svg{width:20px;height:20px}
 .lb-count{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);margin:0;background:rgba(0,0,0,.55);color:#fff;font-weight:700;font-size:14px;border-radius:999px;padding:4px 12px}
 dialog.lb .lb-img{touch-action:pan-y pinch-zoom}
+/* 404: the card takes the column width (it overflowed at 320 px) */
+main.box{grid-template-columns:minmax(0,1fr)}
+main.box .card{width:min(640px,100%);justify-self:center}
+main.box .search input{min-width:0}
+dialog.lb .lb-img{width:auto;height:auto}

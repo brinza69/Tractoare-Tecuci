@@ -147,7 +147,7 @@
     height:52px;
     border:0; 
     border-radius:14px;
-    font-weight:800; 
+    font-weight:700; 
     font-size: 16px;
     background:var(--primary); 
     color:#fff; 
@@ -433,7 +433,7 @@
     border-radius:999px;
     background:var(--primary); 
     color:#fff; 
-    font-weight:800; 
+    font-weight:700; 
     font-size: 14px;
     letter-spacing:.3px;
     border:2px solid var(--primary);

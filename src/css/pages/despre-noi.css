@@ -86,7 +86,7 @@
   .cta-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
   .btn.primary{
     background:var(--brand); border:2px solid var(--brand);
-    color:#fff; font-weight:900; border-radius:999px; padding:.9rem 1.3rem;
+    color:#fff; font-weight:700; border-radius:999px; padding:.9rem 1.3rem;
     box-shadow: 0 12px 28px rgba(var(--brand-rgb),.18);
     transition: transform .2s ease, filter .18s, box-shadow .18s;
     position: relative;
@@ -104,7 +104,7 @@
   }
   
   .btn{
-    background:#fff; border:2px solid var(--ring); color:var(--ink); font-weight:800;
+    background:#fff; border:2px solid var(--ring); color:var(--ink); font-weight:700;
     border-radius:999px; padding:.9rem 1.2rem; 
     transition: transform .2s ease, background .18s, border-color .18s;
   }
@@ -225,7 +225,7 @@
   }
   
   .t-year{
-    font-weight:900; color:var(--brand); font-size:clamp(18px, 2vw, 22px);
+    font-weight:700; color:var(--brand); font-size:clamp(18px, 2vw, 22px);
     background:var(--brand-50); border:1px solid rgba(var(--brand-rgb),.12); 
     border-radius:10px; padding:8px 10px;
     transition: var(--transition-smooth);
@@ -317,7 +317,7 @@
   }
   
   .q summary{
-    list-style:none; cursor:pointer; font-weight:800; color:var(--ink);
+    list-style:none; cursor:pointer; font-weight:700; color:var(--ink);
     transition: var(--transition-smooth);
     position: relative;
     padding-right: 24px;
