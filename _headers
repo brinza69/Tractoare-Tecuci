@@ -1,58 +1,39 @@
-# ============================================================================
-# TRACTOARE TECUCI - HEADERS PENTRU CLOUDFLARE PAGES / NETLIFY
-# Security, Performance, SEO optimizations
-# ============================================================================
+# Cloudflare Pages headers. Rules that match the same path are merged, so Cache-Control is set
+# only once per path (HTML keeps the Pages default: revalidate on every visit).
 
-# ========== TOATE PAGINILE - SECURITY HEADERS ==========
 /*
-  X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
-  X-XSS-Protection: 1; mode=block
+  X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(self), microphone=(), camera=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src https://www.google.com https://maps.google.com;
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Cache-Control: public, max-age=0, must-revalidate
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; frame-src https://www.google.com; media-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
 
-# ========== ASSETS STATICE - CACHE AGRESIV ==========
+# The technical Pages hostname must not compete with www.tractoaretecuci.ro in search.
+https://tractoare-tecuci.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Photos, scripts and media: file names change when the content changes (hash or new name).
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
-  
-/data/*.json
-  Cache-Control: public, max-age=3600, must-revalidate
-  
-/*.css
-  Cache-Control: public, max-age=31536000, immutable
-  
-/*.js
-  Cache-Control: public, max-age=31536000, immutable
 
-# ========== IMAGINI - CACHE LUNG ==========
-/*.jpg
-  Cache-Control: public, max-age=31536000, immutable
-  
-/*.jpeg
-  Cache-Control: public, max-age=31536000, immutable
-  
-/*.png
-  Cache-Control: public, max-age=31536000, immutable
-  
-/*.webp
-  Cache-Control: public, max-age=31536000, immutable
-  
-/*.svg
-  Cache-Control: public, max-age=31536000, immutable
+/favicon.ico
+  Cache-Control: public, max-age=604800
 
-# ========== FONTS - CACHE PERMANENT ==========
-/*.woff2
-  Cache-Control: public, max-age=31536000, immutable
-  Access-Control-Allow-Origin: *
-
-# ========== SITEMAP & ROBOTS ==========
-/sitemap.xml
-  Cache-Control: public, max-age=3600
-  Content-Type: application/xml
-  
 /robots.txt
-  Cache-Control: public, max-age=3600
-  Content-Type: text/plain
+  Content-Type: text/plain; charset=utf-8
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/security.txt
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+
+/manifest.json
+  Content-Type: application/manifest+json; charset=utf-8
