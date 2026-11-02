@@ -13,7 +13,7 @@
     --gap:clamp(48px,6vw,88px); 
     padding-block:var(--gap);
     background: radial-gradient(1200px 240px at 50% 0,var(--brand-50),transparent 60%), 
-                linear-gradient(180deg,rgba(46,125,50,.04),transparent 40%);
+                linear-gradient(180deg,rgba(var(--brand-rgb),.04),transparent 40%);
   }
   
   body[data-page="post"] .wrap{ 
@@ -95,7 +95,7 @@
   
   /* Micro-interacțiune: Hover pe cover image */
   .post-cover:hover {
-    box-shadow: 0 16px 48px rgba(15,23,42,.12);
+    box-shadow: 0 16px 48px rgba(23,34,27,.12);
     transform: translateY(-2px);
   }
   
@@ -124,16 +124,16 @@
   }
   
   .post-body:hover {
-    box-shadow: 0 16px 48px rgba(15,23,42,.10);
-    border-color: rgba(46,125,50,.08);
+    box-shadow: 0 16px 48px rgba(23,34,27,.10);
+    border-color: rgba(var(--brand-rgb),.08);
   }
   
   .prose{ max-width:none; }
-  .prose p{ margin:0 0 16px; line-height:1.7; color:#1e293b; font-size:17px; }
+  .prose p{ margin:0 0 16px; line-height:1.7; color:var(--text); font-size:17px; }
   .prose h2{ margin:32px 0 16px; color:var(--ink); font-size:clamp(22px,3vw,28px); line-height:1.3; font-weight:700; letter-spacing:-.2px; }
   .prose h3{ margin:24px 0 12px; color:var(--ink); font-size:clamp(18px,2.4vw,22px); font-weight:600; }
   .prose ul, .prose ol{ margin:0 0 16px; padding-left:24px; }
-  .prose li{ margin:0 0 8px; line-height:1.6; color:#1e293b; }
+  .prose li{ margin:0 0 8px; line-height:1.6; color:var(--text); }
   .prose strong{ color:var(--ink); font-weight:600; }
   .prose em{ font-style:italic; }
   
@@ -145,7 +145,7 @@
   }
   
   .prose a:hover{ 
-    color:#1b5e20; 
+    color:var(--brand-600); 
     text-decoration-color: var(--eco-accent);
   }
   
@@ -155,7 +155,7 @@
     background:var(--brand-50); 
     border-left:4px solid var(--brand); 
     border-radius:8px; 
-    color:#1e293b; 
+    color:var(--text); 
     font-style:italic; 
     transition: var(--transition-smooth);
   }
@@ -171,7 +171,7 @@
     border-collapse:collapse; 
     border-radius:12px; 
     overflow:hidden; 
-    box-shadow:0 4px 12px rgba(15,23,42,.08); 
+    box-shadow:0 4px 12px rgba(23,34,27,.08); 
   }
   
   .prose th, .prose td{ 
@@ -188,7 +188,7 @@
     font-size:15px; 
   }
   
-  .prose td{ color:#334155; }
+  .prose td{ color:var(--text-2); }
   
   .prose tr:hover td {
     background: var(--brand-50);
@@ -245,7 +245,7 @@
     background:var(--brand); 
     color:#fff; 
     transform:translateY(-2px); 
-    box-shadow:0 4px 12px rgba(46,125,50,.2); 
+    box-shadow:0 4px 12px rgba(var(--brand-rgb),.2); 
   }
   
   .share .btn:active {

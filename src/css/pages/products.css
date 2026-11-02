@@ -17,8 +17,8 @@
     --gap-page: clamp(48px, 6vw, 80px);
     padding-block: var(--gap-page);
     background:
-      radial-gradient(1200px 260px at 50% 0, rgba(46,125,50,.06), transparent 60%),
-      linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
+      radial-gradient(1200px 260px at 50% 0, rgba(var(--brand-rgb),.06), transparent 60%),
+      linear-gradient(180deg, rgba(var(--brand-rgb),.04), transparent 40%);
   }
   body[data-page="list"] h1{
     margin:0 0 clamp(24px, 4vw, 32px);
@@ -41,16 +41,16 @@
     padding: clamp(22px, 3.5vw, 28px);
     border-radius: 22px;
     background:#fff;
-    border:1px solid #e6e9ee; 
-    box-shadow:0 16px 48px rgba(15,23,42,.10);
+    border:1px solid var(--line); 
+    box-shadow:0 16px 48px rgba(23,34,27,.10);
     overflow: visible;
     transition: var(--transition-smooth);
   }
   
   /* Micro-interacțiune: Hover pe container filtre */
   body[data-page="list"] .filters:hover {
-    box-shadow:0 20px 56px rgba(15,23,42,.12);
-    border-color: rgba(46,125,50,.12);
+    box-shadow:0 20px 56px rgba(23,34,27,.12);
+    border-color: rgba(var(--brand-rgb),.12);
   }
   
   body[data-page="list"] .filters > *{ min-width:0; }
@@ -59,7 +59,7 @@
   body[data-page="list"] .filters [name="q"]{
     height: 52px;
     border-radius:14px; 
-    border:2px solid #e6e9ee;
+    border:2px solid var(--line);
     padding:14px 20px;
     background:#fafbfc url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%2394a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>') no-repeat 16px center;
     padding-left: 48px;
@@ -70,12 +70,12 @@
   body[data-page="list"] .filters [name="q"]:focus{
     border-color: var(--primary-600);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(46,125,50,.12), 0 4px 12px rgba(15,23,42,.08);
+    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
   body[data-page="list"] .filters [name="q"]::placeholder{
-    color: #94a3b8;
+    color: #8a988f;
     font-weight: 500;
   }
 
@@ -83,19 +83,19 @@
   body[data-page="list"] .filters select{
     height: 52px;
     border-radius:14px; 
-    border:2px solid #e6e9ee;
+    border:2px solid var(--line);
     padding:14px 16px;
     background:#fafbfc;
     font-size: 15px;
     font-weight: 600;
-    color: #334155;
+    color: var(--text-2);
     transition: var(--transition-smooth);
     cursor: pointer;
   }
   body[data-page="list"] .filters select:focus{
     border-color: var(--primary-600);
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(46,125,50,.12), 0 4px 12px rgba(15,23,42,.08);
+    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
@@ -108,7 +108,7 @@
   body[data-page="list"] .filters [name="maxHours"]{
     height: 52px;
     border-radius:14px; 
-    border:2px solid #e6e9ee;
+    border:2px solid var(--line);
     padding:14px 18px;
     background:#fafbfc;
     font-size: 15px;
@@ -118,12 +118,12 @@
   body[data-page="list"] .filters [name="maxHours"]:focus{
     border-color: var(--primary-600);
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(46,125,50,.12), 0 4px 12px rgba(15,23,42,.08);
+    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
   body[data-page="list"] .filters [name="maxHours"]::placeholder{
-    color: #94a3b8;
+    color: #8a988f;
     font-weight: 500;
   }
 
@@ -154,7 +154,7 @@
     cursor:pointer;
     justify-self: stretch; 
     width:100%;
-    box-shadow:0 8px 20px rgba(46,125,50,.25);
+    box-shadow:0 8px 20px rgba(var(--brand-rgb),.25);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -182,7 +182,7 @@
   body[data-page="list"] .filters .apply:hover{
     transform: translateY(-2px);
     background:var(--primary-600);
-    box-shadow: 0 12px 32px rgba(46,125,50,.35);
+    box-shadow: 0 12px 32px rgba(var(--brand-rgb),.35);
   }
   
   body[data-page="list"] .filters .apply:active{
@@ -197,7 +197,7 @@
     padding: 0 22px;
     margin-top: 4px;
     border-radius: 14px; 
-    border:2px solid #e6e9ee; 
+    border:2px solid var(--line); 
     background:#fff;
     font-weight:700; 
     font-size: 15px;
@@ -210,7 +210,7 @@
     background: var(--primary-50);
     border-color: var(--primary-400);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(46,125,50,.12);
+    box-shadow: 0 4px 12px rgba(var(--brand-rgb),.12);
   }
 
   /* responsive – pe desktop câmpurile se reorganizează */
@@ -275,15 +275,15 @@
     border-radius: 99px;
     
     background: #fff;
-    border: 1px solid #e2e8f0;
-    color: #64748b;
+    border: 1px solid var(--line);
+    color: var(--muted);
     
     font-weight: 700;
     font-size: 15px;
     white-space: nowrap;
     cursor: pointer;
     
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 2px 8px rgba(23,34,27, 0.04);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     
     user-select: none;
@@ -295,7 +295,7 @@
     transform: translateY(-2px);
     border-color: var(--primary-400);
     color: var(--primary-700);
-    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.12);
+    box-shadow: 0 4px 12px rgba(var(--brand-rgb), 0.12);
   }
 
   /* STARE ACTIVĂ */
@@ -303,14 +303,14 @@
     background: var(--primary);
     color: #fff;
     border-color: var(--primary);
-    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.35);
+    box-shadow: 0 4px 12px rgba(var(--brand-rgb), 0.35);
     transform: translateY(-1px);
   }
 
   body[data-page="list"] .cat-tabs .tab.active:hover {
     background: var(--primary-600);
     border-color: var(--primary-600);
-    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.45);
+    box-shadow: 0 6px 16px rgba(var(--brand-rgb), 0.45);
   }
 
   @media (max-width: 1000px) {
@@ -337,8 +337,8 @@
     border-radius:20px;
     background:#fff; 
     overflow:hidden;
-    border:1px solid rgba(46,125,50,.08); 
-    box-shadow:0 8px 24px rgba(15,23,42,.06);
+    border:1px solid rgba(var(--brand-rgb),.08); 
+    box-shadow:0 8px 24px rgba(23,34,27,.06);
     transition: all .3s cubic-bezier(0.4, 0.0, 0.2, 1);
   }
   
@@ -346,7 +346,7 @@
   body[data-page="list"] .card.product:hover{
     transform: translateY(-8px);
     border-color: var(--eco-accent);
-    box-shadow: 0 24px 56px rgba(15,23,42,.16);
+    box-shadow: 0 24px 56px rgba(23,34,27,.16);
   }
 
   /* ===================== IMAGINI FULL WIDTH (1:1 Pătrat) ===================== */
@@ -358,7 +358,7 @@
     display: block;
     overflow: hidden;
     padding: 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--line);
     position: relative;
   }
 
@@ -437,7 +437,7 @@
     font-size: 14px;
     letter-spacing:.3px;
     border:2px solid var(--primary);
-    box-shadow:0 10px 24px rgba(46,125,50,.22);
+    box-shadow:0 10px 24px rgba(var(--brand-rgb),.22);
     transition: all .2s ease;
   }
   

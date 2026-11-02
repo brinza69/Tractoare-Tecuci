@@ -10,7 +10,7 @@
     
     /* Hero cu gradient și micro-interacțiune */
     .legal-hero{
-      background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+      background: linear-gradient(135deg, var(--brand-500) 0%, var(--brand-600) 100%);
       color:#fff;
       padding:clamp(40px,8vw,80px) 0;
       text-align:center;
@@ -62,7 +62,7 @@
     .legal section{
       background:#fff;
       border-radius:16px;
-      box-shadow:0 4px 12px rgba(15,23,42,.08);
+      box-shadow:0 4px 12px rgba(23,34,27,.08);
       padding:32px;
       margin:24px 0;
       transition: var(--transition-smooth);
@@ -84,7 +84,7 @@
     
     /* Micro-interacțiune: Hover pe sections */
     .legal section:hover {
-      box-shadow: 0 8px 24px rgba(15,23,42,.12);
+      box-shadow: 0 8px 24px rgba(23,34,27,.12);
       transform: translateY(-2px);
       border-left: 4px solid var(--eco-accent);
       padding-left: 28px;

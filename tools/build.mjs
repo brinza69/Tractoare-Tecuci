@@ -36,22 +36,25 @@ const wa = (text) => `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(t
 const ga4 = /^G-[A-Z0-9]+$/.test(site.ga4Id || '');
 const hasCompany = Boolean(site.company.cui && site.company.regCom);
 
-const ICONS = {
-  phone: '<path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/>',
-  mail: '<path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.4l8 5.1 8-5.1V7z"/>',
-  whatsapp: '<path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/>',
-  pin: '<path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>',
-  clock: '<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4 3.2 1.9-.8 1.3L11 13V7h2z"/>',
-  car: '<path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11a2 2 0 0 1 2 2v4h-2v2h-3v-2H8v2H5v-2H3v-4a2 2 0 0 1 2-2zm2.1 0h9.8l-1-3H8.1zM6.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>',
-  external: '<path d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14zM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>',
-  arrow: '<path d="M13 5l7 7-7 7-1.4-1.4 4.6-4.6H4v-2h12.2l-4.6-4.6z"/>',
-  back: '<path d="M11 5l-7 7 7 7 1.4-1.4L7.8 13H20v-2H7.8l4.6-4.6z"/>',
-  star: '<path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/>',
-  pause: '<path d="M7 5h4v14H7zm6 0h4v14h-4z"/>',
-  play: '<path d="M8 5v14l11-7z"/>',
-  zoom: '<path d="M10 3a7 7 0 0 1 5.6 11.2l5.1 5.1-1.4 1.4-5.1-5.1A7 7 0 1 1 10 3zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm-1 2h2v2h2v2h-2v2H9v-2H7V9h2z"/>',
+// Icons: Font Awesome Free 7 (CC BY 4.0, https://fontawesome.com/license/free), inlined from the SVG files.
+const FA_DIR = join(ROOT, 'tools/node_modules/@fortawesome/fontawesome-free/svgs');
+const ICON_MAP = {
+  phone: 'solid/phone', mail: 'solid/envelope', whatsapp: 'brands/whatsapp', pin: 'solid/location-dot', clock: 'solid/clock',
+  car: 'brands/waze', external: 'solid/arrow-up-right-from-square', arrow: 'solid/arrow-right', back: 'solid/arrow-left',
+  star: 'solid/star', pause: 'solid/pause', play: 'solid/play', zoom: 'solid/magnifying-glass-plus', tractor: 'solid/tractor',
+  truck: 'solid/truck', handshake: 'solid/handshake', check: 'solid/circle-check', tiktok: 'brands/tiktok', prev: 'solid/chevron-left',
+  next: 'solid/chevron-right', close: 'solid/xmark', calendar: 'solid/calendar', gauge: 'solid/gauge-high', globe: 'solid/earth-europe',
+  images: 'solid/images', warehouse: 'solid/warehouse', filter: 'solid/filter',
 };
-const icon = (name, cls = 'ico-svg') => `<svg class="${cls}" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor">${ICONS[name]}</svg>`;
+const faCache = new Map();
+function fa(name) {
+  if (!faCache.has(name)) {
+    const svg = readFileSync(join(FA_DIR, `${ICON_MAP[name]}.svg`), 'utf8');
+    faCache.set(name, { viewBox: svg.match(/viewBox="([^"]+)"/)[1], d: svg.match(/<path[^>]* d="([^"]+)"/)[1] });
+  }
+  return faCache.get(name);
+}
+const icon = (name, cls = 'ico-svg') => { const i = fa(name); return `<svg class="${cls}" viewBox="${i.viewBox}" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor"><path d="${i.d}"/></svg>`; };
 const emailLink = (cls = '', label = site.email) => `<!--email_off--><a${cls ? ` class="${cls}"` : ''} href="mailto:${site.email}">${label}</a><!--/email_off-->`;
 
 const CATS = {
@@ -222,11 +225,14 @@ function actionBar(ctx = {}) {
 }
 
 let APP_JS = '';
+// Text and heading fonts are preloaded; both use font-display: swap with metric-matched fallbacks.
+const FONT_PRELOAD = [...read('src/css/fonts.css').matchAll(/url\('(\/assets\/fonts\/(?:inter-var|barlow-sc-700)\.[^']+)'\)/g)]
+  .map((m) => `<link rel="preload" as="font" type="font/woff2" href="${m[1]}" crossorigin>\n`).join('');
 let CONSENT_JS = '';
 async function layout(p) {
   const canonical = abs(p.path);
   const ogImage = p.ogImage || `${site.url}/assets/og-image.jpg`;
-  const style = await css('src/css/base.css', ...(p.css || []).map((c) => `src/css/pages/${c}.css`), 'src/css/upgrade.css');
+  const style = await css('src/css/fonts.css', 'src/css/base.css', ...(p.css || []).map((c) => `src/css/pages/${c}.css`), 'src/css/upgrade.css');
   const graph = [business(), website(), { '@type': 'WebPage', '@id': `${canonical}#webpage`, url: canonical, name: p.title, isPartOf: { '@id': WEBSITE_ID }, inLanguage: 'ro-RO', ...(p.crumbs ? { breadcrumb: crumbs(p.crumbs) } : {}) }, ...(p.ld || [])];
   const consentHead = ga4
     ? `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});window.TT_GA4=${JSON.stringify(site.ga4Id)};</script>`
@@ -254,7 +260,7 @@ ${p.ogImageSize ? `<meta property="og:image:width" content="${p.ogImageSize[0]}"
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2e7d32">
-${p.preload || ''}<style>${style}</style>
+${FONT_PRELOAD}${p.preload || ''}<style>${style}</style>
 ${consentHead}<script defer src="${APP_JS}"></script>
 ${ga4 ? `<script defer src="${CONSENT_JS}"></script>\n` : ''}${ldScript(graph)}
 </head>
@@ -305,13 +311,13 @@ const CARD_SIZES = '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100
 function productCard(p, { level = 3, eager = false } = {}) {
   const ph = p.photos[0];
   const mid = photoMid(ph);
-  const facts = [p.year, p.hours ? `${int(p.hours)} ore` : '', p.origin ? `import ${p.origin}` : ''].filter(Boolean);
+  const facts = [[p.year, 'calendar'], [p.hours ? `${int(p.hours)} ore` : '', 'gauge'], [p.origin ? `import ${p.origin}` : '', 'globe']].filter(([v]) => v);
   return `<a class="card product" href="${productPath(p)}" data-cat="${p.category}" data-brand="${esc(p.brand)}" data-hours="${p.hours || 0}" data-text="${esc(`${fullTitle(p)} ${p.brand} ${p.type}`.toLowerCase())}">
   <div class="media"><img src="${url(mid.src)}" srcset="${photoSrcset(ph)}" sizes="${CARD_SIZES}" width="${mid.w}" height="${Math.round((ph.h * mid.w) / ph.w)}" alt="${esc(`${fullTitle(p)}, ${p.year}`)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></div>
   <div class="body">
     <span class="badge">${esc(p.brand)}</span>
     <h${level} class="card-title">${esc(fullTitle(p))}</h${level}>
-    <p class="card-facts">${facts.map((f) => `<span>${esc(f)}</span>`).join('')}</p>
+    <p class="card-facts">${facts.map(([f, ic]) => `<span>${icon(ic)}${esc(f)}</span>`).join('')}</p>
   </div>
 </a>`;
 }
@@ -431,15 +437,17 @@ async function productPage(p) {
     ['Țara de proveniență', p.origin], ['Anunț actualizat', p.refreshed ? roDate(p.refreshed) : ''],
   ].filter(([, v]) => v);
   const similar = products.filter((x) => x !== p && x.category === p.category).slice(0, 3);
+  // Swipeable strip (scroll snap) + thumbnails + full-screen viewer. Works without JS as a scrollable strip.
+  const n = photos.length;
   const gallery = `<div class="gallery" data-gallery>
-  <figure class="g-main">
-    <button type="button" class="g-open" data-lb-open aria-label="Mărește fotografia">
-      <img src="${url(photoMid(main0).src)}" srcset="${photoSrcset(main0)}" sizes="${DETAIL_SIZES}" width="${photoMid(main0).w}" height="${Math.round((main0.h * photoMid(main0).w) / main0.w)}" alt="${esc(`${name}, fotografia 1 din ${photos.length}`)}" fetchpriority="high" decoding="async" data-main>
-      <span class="g-zoom">${icon('zoom')}</span>
-    </button>
-    <figcaption class="g-count" aria-live="polite"><span data-count>1</span> / ${photos.length}</figcaption>
-  </figure>
-  <ul class="g-thumbs" role="list">${photos.map((ph, i) => `<li><button type="button" class="g-thumb" data-index="${i}" data-full="${url(ph.src.at(-1).src)}" data-srcset="${photoSrcset(ph)}" aria-label="Fotografia ${i + 1} din ${photos.length}"${i === 0 ? ' aria-current="true"' : ''}><img src="${url(ph.src[0].src)}" width="${ph.src[0].w}" height="${Math.round((ph.h * ph.src[0].w) / ph.w)}" alt="" loading="lazy" decoding="async"></button></li>`).join('')}</ul>
+  <div class="g-stage">
+    <ul class="g-track" role="list" data-track tabindex="0" aria-label="Fotografii ${esc(name)}">${photos.map((ph, i) => `<li class="g-slide"><button type="button" class="g-open" data-lb-open data-index="${i}" data-full="${url(ph.src.at(-1).src)}" aria-label="Mărește fotografia ${i + 1} din ${n}"><img src="${url(photoMid(ph).src)}" srcset="${photoSrcset(ph)}" sizes="${DETAIL_SIZES}" width="${photoMid(ph).w}" height="${Math.round((ph.h * photoMid(ph).w) / ph.w)}" alt="${esc(`${name}, fotografia ${i + 1} din ${n}`)}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></button></li>`).join('')}</ul>
+    <button type="button" class="g-nav g-prev" data-prev aria-label="Fotografia anterioară" disabled>${icon('prev')}</button>
+    <button type="button" class="g-nav g-next" data-next aria-label="Fotografia următoare">${icon('next')}</button>
+    <span class="g-count"><span data-count>1</span> / ${n}</span>
+    <span class="g-zoom" aria-hidden="true">${icon('zoom')}</span>
+  </div>
+  <ul class="g-thumbs" role="list" data-thumbs>${photos.map((ph, i) => `<li><button type="button" class="g-thumb" data-index="${i}" aria-label="Arată fotografia ${i + 1} din ${n}"${i === 0 ? ' aria-current="true"' : ''}><img src="${url(ph.src[0].src)}" width="${ph.src[0].w}" height="${Math.round((ph.h * ph.src[0].w) / ph.w)}" alt="" loading="lazy" decoding="async"></button></li>`).join('')}</ul>
 </div>`;
   const specTable = spec
     ? `<section class="specs" aria-labelledby="spec-model">
@@ -461,7 +469,7 @@ async function productPage(p) {
   <div class="wrap detail">
     ${gallery}
     <div class="info">
-      <dl class="meta">${facts.slice(0, 4).map(([k, v]) => `<div class="item"><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+      <dl class="meta">${facts.slice(0, 4).map(([k, v], i) => `<div class="item"><dt>${icon(['tractor', 'warehouse', 'calendar', 'gauge'][i])}${k}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
       <div class="cta" data-hero-cta>
         <a class="ask-offer" href="tel:${site.phone}">${icon('phone')} Sună acum</a>
         <a class="btn btn-wa" href="${esc(wa(msg))}" rel="noopener">${icon('whatsapp')} WhatsApp</a>
@@ -489,10 +497,11 @@ ${similar.length ? `<section class="section similar-sec" aria-labelledby="simila
 </section>` : ''}
 <dialog class="lb" data-lb aria-label="Fotografii ${esc(name)}">
   <div class="lb-img-wrap">
-    <button type="button" class="lb-btn lb-prev" data-lb-prev aria-label="Fotografia anterioară"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <img class="lb-img" alt="" data-lb-img>
-    <button type="button" class="lb-btn lb-next" data-lb-next aria-label="Fotografia următoare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    <button type="button" class="lb-btn lb-close" data-lb-close aria-label="Închide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <button type="button" class="lb-btn lb-prev" data-lb-prev aria-label="Fotografia anterioară">${icon('prev')}</button>
+    <img class="lb-img" alt="" data-lb-img decoding="async">
+    <button type="button" class="lb-btn lb-next" data-lb-next aria-label="Fotografia următoare">${icon('next')}</button>
+    <button type="button" class="lb-btn lb-close" data-lb-close aria-label="Închide">${icon('close')}</button>
+    <p class="lb-count" aria-live="polite" data-lb-count></p>
   </div>
 </dialog>`;
   const title = truncate(`${name} ${p.year}${p.hours ? `, ${int(p.hours)} ore` : ''} | Tractoare Tecuci`, 60);

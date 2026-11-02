@@ -12,7 +12,7 @@
     --gap:clamp(48px,6vw,88px); 
     padding-block:var(--gap);
     background: radial-gradient(1200px 240px at 50% 0,var(--brand-50),transparent 60%), 
-                linear-gradient(180deg,rgba(46,125,50,.04),transparent 40%);
+                linear-gradient(180deg,rgba(var(--brand-rgb),.04),transparent 40%);
   }
   
   body[data-page="blog"] .wrap{ 
@@ -32,8 +32,8 @@
   
   /* Micro-interacțiune: Hover pe hero */
   .blog-hero:hover {
-    box-shadow: 0 16px 48px rgba(15,23,42,.10);
-    border-color: rgba(46,125,50,.12);
+    box-shadow: 0 16px 48px rgba(23,34,27,.10);
+    border-color: rgba(var(--brand-rgb),.12);
   }
   
   .blog-hero h1{ 
@@ -76,7 +76,7 @@
     transform:translateY(-1px); 
     background:var(--brand-50); 
     border-color:#dfe4ea; 
-    box-shadow: 0 4px 12px rgba(46,125,50,.12);
+    box-shadow: 0 4px 12px rgba(var(--brand-rgb),.12);
   }
   
   .blog-cats .pill:active {
@@ -84,10 +84,10 @@
   }
   
   .blog-cats .pill.active{ 
-    border-color:rgba(46,125,50,.38); 
-    color:#14532d; 
+    border-color:rgba(var(--brand-rgb),.38); 
+    color:var(--brand-700); 
     background:#fff; 
-    box-shadow:0 8px 20px rgba(46,125,50,.12);
+    box-shadow:0 8px 20px rgba(var(--brand-rgb),.12);
     transform: translateY(-1px);
   }
   
@@ -117,7 +117,7 @@
     text-decoration:none; 
     border-radius:18px; 
     background:#fff; 
-    border:1px solid rgba(46,125,50,.08); 
+    border:1px solid rgba(var(--brand-rgb),.08); 
     box-shadow:var(--shadow); 
     transition: var(--transition-smooth);
   }
@@ -125,8 +125,8 @@
   /* Micro-interacțiune: Hover elegant pe carduri */
   .post-card:hover{ 
     transform:translateY(-6px); 
-    border-color:rgba(46,125,50,.20); 
-    box-shadow:0 20px 48px rgba(15,23,42,.14); 
+    border-color:rgba(var(--brand-rgb),.20); 
+    box-shadow:0 20px 48px rgba(23,34,27,.14); 
   }
   
   .post-card:active {
@@ -172,7 +172,7 @@
   /* Focus states pentru accesibilitate */
   .blog-cats .pill:focus-visible,
   .post-card:focus-visible {
-    outline: 2px solid #22c55e;
+    outline: 2px solid var(--eco-accent);
     outline-offset: 4px;
   }
   

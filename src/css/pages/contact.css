@@ -12,8 +12,8 @@
     
     body main{
       background:
-        radial-gradient(1200px 260px at 50% -20px, rgba(46,125,50,.07), transparent 60%),
-        linear-gradient(180deg, rgba(46,125,50,.04), transparent 40%);
+        radial-gradient(1200px 260px at 50% -20px, rgba(var(--brand-rgb),.07), transparent 60%),
+        linear-gradient(180deg, rgba(var(--brand-rgb),.04), transparent 40%);
     }
     
     .wrap{ max-width: 1160px; padding-inline: 18px; margin-inline: auto; }
@@ -40,8 +40,8 @@
     
     /* Micro-interacțiune: Hover pe panel */
     .panel:hover {
-      box-shadow: 0 20px 56px rgba(15,23,42,.16);
-      border-color: rgba(46,125,50,.12);
+      box-shadow: 0 20px 56px rgba(23,34,27,.16);
+      border-color: rgba(var(--brand-rgb),.12);
       transform: translateY(-2px);
     }
     
@@ -69,9 +69,9 @@
     .btn-prime{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
       padding:.85rem 1.2rem; border-radius: 999px;
-      background: linear-gradient(135deg, #2e7d32, #3fa047);
+      background: linear-gradient(135deg, var(--brand-500), #3fa047);
       color:#fff; text-decoration:none; font-weight:900;
-      box-shadow: 0 10px 24px rgba(46,125,50,.25);
+      box-shadow: 0 10px 24px rgba(var(--brand-rgb),.25);
       transition: transform .2s ease, box-shadow .2s, filter .2s;
       white-space: nowrap;
       position: relative;
@@ -103,7 +103,7 @@
     .btn-prime:hover{ 
       transform: translateY(-2px) scale(1.02); 
       filter: brightness(1.05); 
-      box-shadow: 0 14px 36px rgba(46,125,50,.35); 
+      box-shadow: 0 14px 36px rgba(var(--brand-rgb),.35); 
     }
     
     .btn-prime:active {
@@ -112,7 +112,7 @@
     
     .tips{ 
       margin-top: 12px; 
-      color:#334155; 
+      color:var(--text-2); 
       font-size:.98rem;
       
     }
@@ -154,7 +154,7 @@
     /* Micro-interacțiune: Hover pe cards */
     .c-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 24px 56px rgba(15,23,42,.18);
+      box-shadow: 0 24px 56px rgba(23,34,27,.18);
       border-color: var(--eco-accent);
     }
 
@@ -190,7 +190,7 @@
       background:#fff; 
       border:2px solid var(--ring);
       text-decoration:none; 
-      color:#0f172a; 
+      color:var(--text); 
       font-weight:600;
       font-size: 0.85rem;
       transition: var(--transition-smooth);
@@ -207,7 +207,7 @@
     .chip:hover{ 
       transform: translateY(-3px) scale(1.02); 
       border-color: var(--eco-accent); 
-      background: rgba(46,125,50,.04);
+      background: rgba(var(--brand-rgb),.04);
       box-shadow: var(--glow); 
     }
     
@@ -235,15 +235,15 @@
     
     /* Micro-interacțiune: Hover pe map container */
     .map-wrap:hover {
-      box-shadow: 0 20px 56px rgba(15,23,42,.16);
-      border-color: rgba(46,125,50,.12);
+      box-shadow: 0 20px 56px rgba(23,34,27,.16);
+      border-color: rgba(var(--brand-rgb),.12);
       transform: translateY(-2px);
     }
     
     .map-wrap header{
       padding: 16px;
       border-bottom: 1px dashed #e8edf3;
-      color:#334155;
+      color:var(--text-2);
       display:flex; 
       flex-wrap:wrap;
       align-items:center; 

@@ -26,8 +26,8 @@
     padding: 56px 0 72px;
     /* aerisit sus/jos */
     background:
-      radial-gradient(1200px 280px at 50% 0, rgba(46, 125, 50, .06), transparent 60%),
-      linear-gradient(180deg, rgba(46, 125, 50, .04), transparent 40%);
+      radial-gradient(1200px 280px at 50% 0, rgba(var(--brand-rgb), .06), transparent 60%),
+      linear-gradient(180deg, rgba(var(--brand-rgb), .04), transparent 40%);
   }
 
   body[data-page="utilaje"] h1 {
@@ -58,14 +58,14 @@
     transition: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1), 
                 box-shadow .3s ease, 
                 border-color .3s ease;
-    border: 1px solid rgba(46, 125, 50, .08);
+    border: 1px solid rgba(var(--brand-rgb), .08);
   }
 
   /* Micro-interacțiune: Hover elegant cu lift și border verde */
   body[data-page="utilaje"] .cat-card:hover {
     transform: translateY(-8px) scale(1.01);
-    box-shadow: 0 20px 48px rgba(15, 23, 42, .14);
-    border-color: var(--eco-accent, #22c55e);
+    box-shadow: 0 20px 48px rgba(23,34,27, .14);
+    border-color: var(--eco-accent, var(--eco-accent));
   }
 
   /* container imagine categorie – un pic mai înalt ca să nu pară zoomate */
@@ -194,7 +194,7 @@
 
   /* 7) Focus state pentru accesibilitate */
   body[data-page="utilaje"] .cat-card:focus-visible {
-    outline: 2px solid var(--eco-accent, #22c55e);
+    outline: 2px solid var(--eco-accent, var(--eco-accent));
     outline-offset: 4px;
     border-radius: 18px;
   }

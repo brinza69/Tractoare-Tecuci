@@ -159,40 +159,75 @@ function blogFilters() {
 function gallery() {
   const g = $('[data-gallery]');
   if (!g) return;
-  const main = $('[data-main]', g);
-  const count = $('[data-count]', g);
+  const track = $('[data-track]', g);
+  const slides = $$('.g-open', track);
   const thumbs = $$('.g-thumb', g);
-  const name = main.alt.replace(/, fotografia.*$/, '');
+  const thumbList = $('[data-thumbs]', g);
+  const count = $('[data-count]', g);
+  const prev = $('[data-prev]', g);
+  const next = $('[data-next]', g);
+  const total = slides.length;
+  const behavior = reduceMotion ? 'auto' : 'smooth';
   let index = 0;
-  const show = (i) => {
-    index = (i + thumbs.length) % thumbs.length;
-    const t = thumbs[index];
-    main.srcset = t.dataset.srcset;
-    main.alt = `${name}, fotografia ${index + 1} din ${thumbs.length}`;
-    count.textContent = String(index + 1);
-    thumbs.forEach((x, j) => (j === index ? x.setAttribute('aria-current', 'true') : x.removeAttribute('aria-current')));
-  };
-  thumbs.forEach((t, i) => t.addEventListener('click', () => show(i)));
 
+  // The strip scrolls natively (swipe, trackpad, keyboard); the index follows the scroll position.
+  const sync = () => {
+    const i = Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+    if (i === index) return;
+    index = Math.min(total - 1, Math.max(0, i));
+    count.textContent = String(index + 1);
+    prev.disabled = index === 0;
+    next.disabled = index === total - 1;
+    thumbs.forEach((t, j) => (j === index ? t.setAttribute('aria-current', 'true') : t.removeAttribute('aria-current')));
+    const t = thumbs[index].parentElement;
+    const left = t.offsetLeft - (thumbList.clientWidth - t.clientWidth) / 2;
+    thumbList.scrollTo({ left, behavior });
+  };
+  let raf = 0;
+  track.addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync); }, { passive: true });
+  const go = (i) => track.scrollTo({ left: Math.min(total - 1, Math.max(0, i)) * track.clientWidth, behavior });
+  prev.addEventListener('click', () => go(index - 1));
+  next.addEventListener('click', () => go(index + 1));
+  thumbs.forEach((t, i) => t.addEventListener('click', () => go(i)));
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(index - 1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(index + 1); }
+  });
+  addEventListener('resize', () => go(index), { passive: true });
+
+  // Full-screen viewer (native <dialog>: focus trap, Esc, focus returns to the photo).
   const lb = $('[data-lb]');
   if (!lb || typeof lb.showModal !== 'function') return;
   const img = $('[data-lb-img]', lb);
-  const set = (i) => { show(i); img.src = thumbs[index].dataset.full; img.alt = main.alt; };
-  $('[data-lb-open]', g).addEventListener('click', () => { set(index); lb.showModal(); lb.classList.add('open'); });
-  lb.addEventListener('close', () => lb.classList.remove('open'));
-  $('[data-lb-prev]', lb).addEventListener('click', () => set(index - 1));
-  $('[data-lb-next]', lb).addEventListener('click', () => set(index + 1));
+  const lbCount = $('[data-lb-count]', lb);
+  let at = 0;
+  const preload = (i) => { const s = slides[(i + total) % total]; if (s) new Image().src = s.dataset.full; };
+  const show = (i) => {
+    at = (i + total) % total;
+    img.src = slides[at].dataset.full;
+    img.alt = $('img', slides[at]).alt;
+    lbCount.textContent = `${at + 1} / ${total}`;
+    preload(at + 1);
+    preload(at - 1);
+  };
+  slides.forEach((s, i) => s.addEventListener('click', () => { show(i); lb.showModal(); lb.classList.add('open'); }));
+  lb.addEventListener('close', () => { lb.classList.remove('open'); go(at); });
+  $('[data-lb-prev]', lb).addEventListener('click', () => show(at - 1));
+  $('[data-lb-next]', lb).addEventListener('click', () => show(at + 1));
   $('[data-lb-close]', lb).addEventListener('click', () => lb.close());
-  lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
+  lb.addEventListener('click', (e) => { if (e.target === lb || e.target.classList.contains('lb-img-wrap')) lb.close(); });
   lb.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') set(index - 1);
-    if (e.key === 'ArrowRight') set(index + 1);
+    if (e.key === 'ArrowLeft') show(at - 1);
+    if (e.key === 'ArrowRight') show(at + 1);
   });
   let sx = 0;
-  lb.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; }, { passive: true });
+  let sy = 0;
+  lb.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
   lb.addEventListener('touchend', (e) => {
-    const d = e.changedTouches[0].clientX - sx;
-    if (Math.abs(d) > 50) set(index + (d < 0 ? 1 : -1));
+    const dx = e.changedTouches[0].clientX - sx;
+    const dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(at + (dx < 0 ? 1 : -1));
+    else if (dy > 90 && Math.abs(dy) > Math.abs(dx)) lb.close();
   });
 }
 
