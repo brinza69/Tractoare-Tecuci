@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
@@ -74,7 +75,8 @@ async function photo(link, dir, n) {
     if (w > meta.width && files.length) break;
     const width = Math.min(w, meta.width);
     const height = Math.round((meta.height * width) / meta.width);
-    const file = `${n}-${width}.webp`;
+    // Content hash in the name: the files can be cached for a year and a changed photo gets a new URL.
+    const file = `${n}-${createHash('sha1').update(buf).digest('hex').slice(0, 8)}-${width}.webp`;
     if (!DRY) await sharp(buf).rotate().resize({ width }).webp({ quality: 72, effort: 6 }).toFile(join(dir, file));
     files.push({ w: width, h: height, file });
   }
