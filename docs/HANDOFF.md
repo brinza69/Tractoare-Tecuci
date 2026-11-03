@@ -2,9 +2,10 @@
 
 ## Stare
 
-- Toată lucrarea e pe ramura `upgrade/site-2026-11`. `main` (site-ul live) nu a fost atins.
-- Previzualizare publică a ramurii: https://upgrade-site-2026-11.tractoare-tecuci.pages.dev (Cloudflare îi pune `noindex`).
-- Publicarea = merge în `main` (Cloudflare Pages publică automat). Se face doar cu acordul proprietarului.
+- **Publicat pe 03.11.2026** cu acordul proprietarului: `main` = ramura `upgrade/site-2026-11` (fast-forward), Cloudflare a publicat în ~20 s.
+- Verificat pe domeniul live: toate paginile răspund 200, redirecționările vechi duc la paginile noi, videoul răspunde 206 (merge în Safari), pozele au cache de un an, `docs/`, `tools/`, `src/` și `tractoare-tecuci.pages.dev` sunt `noindex`, emailul nu mai e rescris de Cloudflare.
+- Live, PageSpeed: acasă pe telefon 100 / 100 / 100 / 100 (LCP 1,5 s, CLS 0,001); pagina de utilaj 99 / 100 / 100 / 100 pe telefon (LCP 2,1 s, CLS 0) și 100 / 100 / 100 / 100 pe calculator.
+- Auditul SiteKit pe live: 1 eroare și 55 de avertismente, față de 47 de erori și 231 de avertismente înainte. Eroarea (prima poză din rândul de sus pe categorii, pe calculator) e reparată în commit-ul de după.
 
 ## Cifrele (PageSpeed, Performance / Accesibilitate / Best Practices, LCP, CLS)
 

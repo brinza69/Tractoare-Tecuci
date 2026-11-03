@@ -308,12 +308,12 @@ function fill(html, slots = {}) {
 
 // ---------------------------------------------------------------- shared blocks
 const CARD_SIZES = '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)';
-function productCard(p, { level = 3, eager = false } = {}) {
+function productCard(p, { level = 3, eager = false, priority = false } = {}) {
   const ph = p.photos[0];
   const mid = photoMid(ph);
   const facts = [[p.year, 'calendar'], [p.hours ? `${int(p.hours)} ore` : '', 'gauge'], [p.origin ? `import ${p.origin}` : '', 'globe']].filter(([v]) => v);
   return `<a class="card product" href="${productPath(p)}" data-cat="${p.category}" data-brand="${esc(p.brand)}" data-hours="${p.hours || 0}" data-text="${esc(`${fullTitle(p)} ${p.brand} ${p.type}`.toLowerCase())}">
-  <div class="media"><img src="${url(mid.src)}" srcset="${photoSrcset(ph)}" sizes="${CARD_SIZES}" width="${mid.w}" height="${Math.round((ph.h * mid.w) / ph.w)}" alt="${esc(`${fullTitle(p)}, ${p.year}`)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></div>
+  <div class="media"><img src="${url(mid.src)}" srcset="${photoSrcset(ph)}" sizes="${CARD_SIZES}" width="${mid.w}" height="${Math.round((ph.h * mid.w) / ph.w)}" alt="${esc(`${fullTitle(p)}, ${p.year}`)}"${priority ? ' fetchpriority="high"' : eager ? '' : ' loading="lazy"'} decoding="async"></div>
   <div class="body">
     <span class="badge">${esc(p.brand)}</span>
     <h${level} class="card-title">${esc(fullTitle(p))}</h${level}>
@@ -321,7 +321,7 @@ function productCard(p, { level = 3, eager = false } = {}) {
   </div>
 </a>`;
 }
-const grid = (items, opts) => `<ul class="grid product-grid" role="list">${items.map((p, i) => `<li>${productCard(p, { ...opts, eager: opts?.eagerFirst && i < (opts.eagerCount || 1) })}</li>`).join('')}</ul>`;
+const grid = (items, opts) => `<ul class="grid product-grid" role="list">${items.map((p, i) => `<li>${productCard(p, { ...opts, eager: opts?.eagerFirst && i < (opts.eagerCount || 1), priority: opts?.eagerFirst && i === 0 })}</li>`).join('')}</ul>`;
 const itemList = (items) => ({ '@type': 'ItemList', numberOfItems: items.length, itemListElement: items.map((p, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(productPath(p)), name: fullTitle(p) })) });
 const preloadImg = (ph, sizes) => `<link rel="preload" as="image" imagesrcset="${photoSrcset(ph)}" imagesizes="${sizes}" fetchpriority="high">\n`;
 
@@ -394,7 +394,7 @@ async function categoryPage(c) {
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Acasă</a> <span aria-hidden="true">/</span> <a href="/utilaje">Utilaje</a> <span aria-hidden="true">/</span> <span aria-current="page">${c.name}</span></nav>
   <h1>${c.name} second hand</h1>
   <p class="lead">${esc(intro)}</p>
-  ${grid(c.items, { level: 2, eagerFirst: true, eagerCount: 1 })}
+  ${grid(c.items, { level: 2, eagerFirst: true, eagerCount: 3 })}
   <p class="more-row"><a class="btn more-btn" href="/products">Tot stocul ${icon('arrow')}</a></p>
 </div>`;
   await page(path, `utilaje/${c.slug}.html`, {
@@ -413,7 +413,7 @@ async function stockPage() {
     'brand-options': brands.map((b) => `<option>${esc(b)}</option>`).join(''),
     'category-options': cats.map(([k, c]) => `<option value="${k}">${c.name}</option>`).join(''),
     'category-chips': [['', 'Toate'], ...cats.map(([k, c]) => [k, c.name])].map(([k, n]) => `<button type="button" class="chip-filter" data-cat="${k}" aria-pressed="${k === '' ? 'true' : 'false'}">${n}</button>`).join(''),
-    stock: grid(products, { level: 2, eagerFirst: true, eagerCount: 1 }),
+    stock: grid(products, { level: 2, eagerFirst: true, eagerCount: 3 }),
   };
   await page('/products', 'products.html', {
     title: meta.title, description: meta.description, css: ['products'], bodyAttrs: 'data-page="list"', mainClass: 'section',
