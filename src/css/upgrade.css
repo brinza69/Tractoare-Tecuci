@@ -315,3 +315,46 @@ main.box{grid-template-columns:minmax(0,1fr)}
 main.box .card{width:min(640px,100%);justify-self:center}
 main.box .search input{min-width:0}
 dialog.lb .lb-img{width:auto;height:auto}
+
+/* Polish pass: browser surfaces, numerals, one motion language */
+:root{caret-color:var(--brand-500);accent-color:var(--brand-500)}
+.card-facts,.meta dd,.spec-list dd,.g-count,.lb-count,.result-count,.f-contact,.tips,.post-meta{font-variant-numeric:tabular-nums}
+.prose a,.crumbs a,.spec-note a,.related-list a{text-underline-offset:3px;text-decoration-thickness:1px}
+.g-thumbs{scrollbar-width:thin;scrollbar-color:var(--brand-100) transparent}
+.g-thumbs::-webkit-scrollbar{height:6px}
+.g-thumbs::-webkit-scrollbar-thumb{background:var(--brand-100);border-radius:999px}
+@media (prefers-reduced-motion:no-preference){
+  .reveal-element{transform:translateY(12px);transition:transform .7s cubic-bezier(.16,1,.3,1)}
+}
+@media (min-width:900px){.map-facade{min-height:240px}}
+
+/* Detector pass (impeccable): contrast, nested cards, glow, motion on layout properties */
+.btn.primary:hover,.btn.primary:focus-visible{color:#fff;background:var(--brand-600);border-color:var(--brand-600)}
+.btn-prime{background:var(--brand-500)}
+.btn-prime:hover{background:var(--brand-600)}
+.ask-offer{background:var(--brand-500);box-shadow:0 8px 18px rgba(23,34,27,.16)}
+.ask-offer::before{display:none}
+.ask-offer:hover{background:var(--brand-600);filter:none;box-shadow:0 10px 22px rgba(23,34,27,.2)}
+::placeholder{color:var(--muted);opacity:1}
+body[data-page="list"] .filters input::placeholder{color:var(--muted)}
+/* Product page: one card, sections separated by rules (no cards inside the card) */
+.info .desc,.info .specs{background:none;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;padding:18px 0 0}
+.info .specs:hover{box-shadow:none;border-color:var(--line)}
+.spec-list .spec{background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:8px 0}
+.spec-list .spec:hover{background:none;transform:none}
+.meta .item{background:var(--bg);border-color:transparent;box-shadow:none}
+.meta .item:hover{transform:none;box-shadow:none;background:var(--bg);border-color:transparent}
+.head-meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.g-thumbs img:hover{transform:none;box-shadow:none}
+/* Motion only on transform/opacity */
+.more-btn:hover .chev{animation:none}
+.nav .nav-link::after{left:12px;right:12px;width:auto;transform:scaleX(0);transform-origin:center;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.nav .nav-link:hover::after{left:12px;width:auto;transform:scaleX(1)}
+.f-links a{transition:background .18s ease,color .18s ease,transform .3s cubic-bezier(.16,1,.3,1)}
+.f-links a::before{content:none}
+.f-links a:hover{padding-left:10px;transform:translateX(4px)}
+/* Softer depth on contact (thin border + wide blur read as generic) */
+.panel,.c-card{box-shadow:0 8px 22px rgba(23,34,27,.07)}
+.panel{padding-inline:clamp(18px,4vw,40px)}
+.rev-card{padding:22px 20px}
+.contact-strip .btn.primary:hover{background:#fff;color:var(--brand-700);border-color:#fff}

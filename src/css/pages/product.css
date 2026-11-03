@@ -106,9 +106,7 @@
   }
   
   /* Micro-interacțiune: Hover pe imagine mare */
-  .g-main:hover img {
-    transform: scale(1.03);
-  }
+  
   
   .g-thumbs{ 
     margin-top:12px; display:grid; grid-auto-flow:column; gap:12px; 
@@ -122,11 +120,7 @@
   }
   
   /* Micro-interacțiune: Hover pe thumbnails */
-  .g-thumbs img:hover{ 
-    transform:translateY(-3px) scale(1.05); 
-    border-color:var(--eco-accent);
-    box-shadow: 0 6px 16px rgba(var(--brand-rgb),.25);
-  }
+  .g-thumbs img:hover{ border-color:var(--eco-accent); }
   
   .g-thumbs img:active {
     transform: translateY(0) scale(1);
@@ -328,7 +322,7 @@
   .lb-img{ 
     max-width:100%; max-height:90vh; border-radius:12px; 
     box-shadow:0 24px 80px rgba(0,0,0,.4);
-    transform:scale(.96); opacity:0; 
+    transform:scale(.96);  
     transition:transform .28s cubic-bezier(.2,.8,.2,1), opacity .28s; 
   }
   

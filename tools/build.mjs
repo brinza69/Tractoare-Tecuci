@@ -12,7 +12,8 @@ import sharp from 'sharp';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const CHECK = process.argv.includes('--check');
-const read = (p) => readFileSync(join(ROOT, p), 'utf8').replace(/^\uFEFF/, '');
+// Sources may be checked out with CRLF (core.autocrlf on Windows); output is always LF.
+const read = (p) => readFileSync(join(ROOT, p), 'utf8').replace(/^\uFEFF/, '').replace(/\r\n/g, '\n');
 const json = (p) => JSON.parse(read(p));
 
 const site = json('data/site.json');
@@ -460,8 +461,8 @@ async function productPage(p) {
   <div class="wrap">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Acasă</a> <span aria-hidden="true">/</span> <a href="/utilaje">Utilaje</a> <span aria-hidden="true">/</span> <a href="/utilaje/${c.slug}">${c.name}</a> <span aria-hidden="true">/</span> <span aria-current="page">${esc(name)}</span></nav>
     <div class="head-stack">
-      <span class="brand-badge">${esc(p.brand)}</span><span class="stock-badge">În stoc</span>
       <h1 class="head-title">${esc(name)}, ${p.year}</h1>
+      <p class="head-meta"><span class="brand-badge">${esc(p.brand)}</span><span class="stock-badge">În stoc</span></p>
     </div>
   </div>
 </section>
@@ -498,7 +499,7 @@ ${similar.length ? `<section class="section similar-sec" aria-labelledby="simila
 <dialog class="lb" data-lb aria-label="Fotografii ${esc(name)}">
   <div class="lb-img-wrap">
     <button type="button" class="lb-btn lb-prev" data-lb-prev aria-label="Fotografia anterioară">${icon('prev')}</button>
-    <img class="lb-img" alt="" data-lb-img width="1440" height="1920" decoding="async">
+    <img class="lb-img" src="${url(main0.src.at(-1).src)}" alt="" data-lb-img width="1440" height="1920" loading="lazy" decoding="async">
     <button type="button" class="lb-btn lb-next" data-lb-next aria-label="Fotografia următoare">${icon('next')}</button>
     <button type="button" class="lb-btn lb-close" data-lb-close aria-label="Închide">${icon('close')}</button>
     <p class="lb-count" aria-live="polite" data-lb-count></p>

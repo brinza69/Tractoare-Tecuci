@@ -40,7 +40,7 @@ function reveals() {
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
   }, { rootMargin: '0px 0px -40px 0px' });
-  $$('.service-card, .card.product, .rev-card, .value-card, .post-card').forEach((el, i) => {
+  $$('.card.product, .post-card').forEach((el, i) => {
     if (el.getBoundingClientRect().top < innerHeight) return;
     el.classList.add('reveal-element', `delay-${(i % 3) * 100}`);
     io.observe(el);

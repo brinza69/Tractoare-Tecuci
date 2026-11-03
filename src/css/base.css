@@ -188,10 +188,10 @@ input:focus,select:focus,textarea:focus{
 }
 .nav .nav-link::after{
   content:'';position:absolute;bottom:-4px;left:50%;width:0;height:2px;
-  background:var(--eco-accent);transition:width .3s ease, left .3s ease;
+  background:var(--eco-accent);transform:scaleX(0);transition:transform .35s cubic-bezier(.16,1,.3,1);
 }
 .nav .nav-link:hover{color:var(--eco-accent)}
-.nav .nav-link:hover::after{width:100%;left:0}
+.nav .nav-link:hover::after{transform:scaleX(1)}
 .nav .nav-link[aria-current="page"]{background:var(--brand-500);color:#fff}
 
 /* Burger */
@@ -487,7 +487,7 @@ input:focus,select:focus,textarea:focus{
 .f-links a{
   position:relative;
   color:var(--footer-text);padding:8px 10px;border-radius:10px;
-  transition:background .18s ease, color .18s ease, padding-left .3s ease;
+  transition:background .18s ease, color .18s ease, transform .3s ease;
 }
 .f-links a::before{
   content:'→';position:absolute;left:-20px;opacity:0;
@@ -496,7 +496,7 @@ input:focus,select:focus,textarea:focus{
 .f-links a:hover::before{left:-14px;opacity:1}
 .f-links a:hover{
   background:rgba(255,255,255,.06);color:#fff;
-  padding-left:14px;transform:translateX(2px);
+  transform:translateX(4px);
 }
 .f-contact{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .f-contact li{display:flex;align-items:center;gap:10px;color:var(--footer-muted)}
@@ -574,14 +574,7 @@ button:focus-visible{
   display:inline-block;
   transition:transform .3s ease;
 }
-.more-btn:hover .chev{
-  transform:translateX(4px);
-  animation:bounce-right .6s ease infinite;
-}
-@keyframes bounce-right{
-  0%, 100%{transform:translateX(4px)}
-  50%{transform:translateX(8px)}
-}
+.more-btn:hover .chev{transform:translateX(4px)}
 
 /* =============================================================================
    REVIEWS - cu micro-interacțiuni
