@@ -9,6 +9,7 @@ Disallow: /*?gclid=
 Disallow: /*?fbclid=
 Disallow: /tools/
 Disallow: /src/
+Disallow: /docs/
 
 # Motoarele de căutare cu AI au voie să citească site-ul, ca să poată recomanda utilajele din stoc.
 User-agent: OAI-SearchBot

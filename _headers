@@ -37,3 +37,13 @@ https://tractoare-tecuci.pages.dev/*
 
 /manifest.json
   Content-Type: application/manifest+json; charset=utf-8
+
+# Repo folders that Pages also serves (sources, tools, notes): not for search engines.
+/docs/*
+  X-Robots-Tag: noindex
+
+/tools/*
+  X-Robots-Tag: noindex
+
+/src/*
+  X-Robots-Tag: noindex
