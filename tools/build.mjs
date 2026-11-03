@@ -751,6 +751,19 @@ ${posts.map((p) => `### ${p.title}\n\n${abs(`/blog/${p.slug}`)}\n\n${plain(p.htm
   emit('llms-full.txt', full);
 }
 
+// Sold machines (data/sold.json, written by sync-olx): their pages answer 301 to the category instead of 404.
+function redirects() {
+  const MARK = '# --- generat de tools/build.mjs: utilaje vândute (nu edita sub această linie) ---';
+  const hand = read('_redirects').split(MARK)[0].trimEnd();
+  const sold = existsSync(join(ROOT, 'data/sold.json')) ? json('data/sold.json') : [];
+  const live = new Set(products.map((p) => p.slug));
+  const lines = sold.filter((s) => !live.has(s.slug)).map((s) => {
+    const target = products.some((p) => p.category === s.category) ? `/utilaje/${(CATS[s.category] || CATS.alte).slug}` : '/products';
+    return `/utilaje/${s.slug}  ${target}  301`;
+  });
+  emit('_redirects', `${hand}\n\n${MARK}\n${lines.join('\n')}${lines.length ? '\n' : ''}`);
+}
+
 function manifest() {
   emit('manifest.json', `${JSON.stringify({
     name: `${site.name}: utilaje agricole second hand`,
@@ -796,6 +809,7 @@ redirectStub('post.html', Object.fromEntries(posts.map((p) => [p.slug, `/blog/${
 sitemap();
 robots();
 llms();
+redirects();
 manifest();
 securityTxt();
 

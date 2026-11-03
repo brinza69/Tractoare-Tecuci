@@ -1,0 +1,37 @@
+# Șablon: copiază acest fișier în .github/workflows/stock-sync.yml (vezi docs/HANDOFF.md, „Stocul automat”).
+# Updates the stock from the OLX shop twice a day and publishes it (Cloudflare Pages deploys main).
+# Scheduled workflows run on the default branch only, so this starts once the work is merged into main.
+# Manual run: GitHub > Actions > Stoc OLX > Run workflow.
+name: Stoc OLX
+
+on:
+  schedule:
+    - cron: '0 5 * * *'   # 07:00 / 08:00 ora României
+    - cron: '0 15 * * *'  # 17:00 / 18:00 ora României
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install tools
+        run: npm ci --no-audit --no-fund
+        working-directory: tools
+      - name: Git identity
+        run: |
+          git config user.name "stoc-olx[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Sync, build, check, commit
+        run: node tools/update-stock.mjs --commit
