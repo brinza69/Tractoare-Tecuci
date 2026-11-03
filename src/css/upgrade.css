@@ -214,6 +214,8 @@ dialog.lb .lb-img{max-width:94vw;max-height:88dvh;object-fit:contain}
 .consent-actions{position:sticky;bottom:-18px;background:#fff;display:flex;flex-wrap:wrap;gap:8px;padding-top:6px}
 .consent-btn{flex:1 1 140px;min-height:44px;border-radius:12px;border:1px solid var(--brand-500);background:var(--brand-500);color:#fff;font:inherit;font-weight:700;cursor:pointer}
 .consent-btn-link{background:#fff;color:var(--brand-700)}
+.consent-card:focus{outline:none}
+.consent-btn:focus-visible{border-radius:12px}
 
 /* Motion and forced colours */
 @media (prefers-reduced-motion:reduce){

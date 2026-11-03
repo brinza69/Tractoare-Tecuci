@@ -53,7 +53,7 @@
   box.className = 'consent';
   box.setAttribute('aria-label', 'Cookie-uri');
   box.hidden = true;
-  box.innerHTML = `<div class="consent-card">
+  box.innerHTML = `<div class="consent-card" tabindex="-1">
     <h2 class="consent-title">Cookie-uri</h2>
     <p>Folosim Google Analytics doar dacă ești de acord, ca să vedem ce pagini ajută. Fără acord nu se încarcă nimic de la Google. Detalii în <a href="/confidentialitate#cookies">politica de confidențialitate</a>.</p>
     <form class="consent-choices" hidden>
@@ -69,6 +69,7 @@
   </div>`;
   document.body.append(box);
   const form = box.querySelector('form');
+  const card = box.querySelector('.consent-card');
   const btn = (k) => box.querySelector(`[data-c="${k}"]`);
   const open = (choose) => {
     const c = read();
@@ -79,7 +80,8 @@
     btn('save').hidden = !choose;
     box.hidden = false;
     document.body.classList.add('consent-open');
-    (choose ? form.elements.analytics : btn('all')).focus({ preventScroll: true });
+    // First view: focus the card, not a button, so neither Accept nor Refuz is highlighted.
+    (choose ? form.elements.analytics : card).focus({ preventScroll: true });
   };
   const close = () => { box.hidden = true; document.body.classList.remove('consent-open'); };
   const decide = (c) => { c.ts = Date.now(); write(c); apply(c); close(); };
