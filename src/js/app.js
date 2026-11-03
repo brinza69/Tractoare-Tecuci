@@ -170,6 +170,18 @@ function gallery() {
   const behavior = reduceMotion ? 'auto' : 'smooth';
   let index = 0;
 
+  // Full-size photos for slides 2+ once the page has loaded, or as soon as the visitor touches the gallery.
+  let upgraded = false;
+  const upgrade = () => {
+    if (upgraded) return;
+    upgraded = true;
+    $$('img[data-srcset]', track).forEach((img) => { img.srcset = img.dataset.srcset; img.removeAttribute('data-srcset'); });
+  };
+  ['pointerdown', 'keydown', 'focusin'].forEach((ev) => g.addEventListener(ev, upgrade, { once: true, passive: true }));
+  track.addEventListener('scroll', upgrade, { once: true, passive: true });
+  const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(upgrade, { timeout: 4000 }) : setTimeout(upgrade, 2500));
+  if (document.readyState === 'complete') idle(); else addEventListener('load', idle, { once: true });
+
   // The strip scrolls natively (swipe, trackpad, keyboard); the index follows the scroll position.
   const sync = () => {
     const i = Math.round(track.scrollLeft / Math.max(1, track.clientWidth));

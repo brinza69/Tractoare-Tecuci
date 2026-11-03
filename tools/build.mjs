@@ -442,7 +442,11 @@ async function productPage(p) {
   const n = photos.length;
   const gallery = `<div class="gallery" data-gallery>
   <div class="g-stage">
-    <ul class="g-track" role="list" data-track tabindex="0" aria-label="Fotografii ${esc(name)}">${photos.map((ph, i) => `<li class="g-slide"><button type="button" class="g-open" data-lb-open data-index="${i}" data-full="${url(ph.src.at(-1).src)}" aria-label="Mărește fotografia ${i + 1} din ${n}"><img src="${url(photoMid(ph).src)}" srcset="${photoSrcset(ph)}" sizes="${DETAIL_SIZES}" width="${photoMid(ph).w}" height="${Math.round((ph.h * photoMid(ph).w) / ph.w)}" alt="${esc(`${name}, fotografia ${i + 1} din ${n}`)}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async"></button></li>`).join('')}</ul>
+    <ul class="g-track" role="list" data-track tabindex="0" aria-label="Fotografii ${esc(name)}">${photos.map((ph, i) => `<li class="g-slide"><button type="button" class="g-open" data-lb-open data-index="${i}" data-full="${url(ph.src.at(-1).src)}" aria-label="Mărește fotografia ${i + 1} din ${n}">${i === 0
+      ? `<img src="${url(photoMid(ph).src)}" srcset="${photoSrcset(ph)}" sizes="${DETAIL_SIZES}" width="${photoMid(ph).w}" height="${Math.round((ph.h * photoMid(ph).w) / ph.w)}" alt="${esc(`${name}, fotografia 1 din ${n}`)}" fetchpriority="high">`
+      // Slides 2+ sit right next to the screen, so the browser would fetch and decode them all at once and delay the
+      // first photo. They start as the small thumbnail; app.js swaps in the full srcset after load or on first use.
+      : `<img src="${url(ph.src[0].src)}" data-srcset="${photoSrcset(ph)}" sizes="${DETAIL_SIZES}" width="${ph.src[0].w}" height="${Math.round((ph.h * ph.src[0].w) / ph.w)}" alt="${esc(`${name}, fotografia ${i + 1} din ${n}`)}" loading="lazy" decoding="async">`}</button></li>`).join('')}</ul>
     <button type="button" class="g-nav g-prev" data-prev aria-label="Fotografia anterioară" disabled>${icon('prev')}</button>
     <button type="button" class="g-nav g-next" data-next aria-label="Fotografia următoare">${icon('next')}</button>
     <span class="g-count"><span data-count>1</span> / ${n}</span>
