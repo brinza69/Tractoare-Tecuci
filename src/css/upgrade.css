@@ -358,3 +358,7 @@ body[data-page="list"] .filters input::placeholder{color:var(--muted)}
 .panel{padding-inline:clamp(18px,4vw,40px)}
 .rev-card{padding:22px 20px}
 .contact-strip .btn.primary:hover{background:#fff;color:var(--brand-700);border-color:#fff}
+/* Tables in guides scroll inside their own box on phones */
+.table-wrap{overflow-x:auto;max-width:100%;margin:0 0 1.2em;-webkit-overflow-scrolling:touch}
+.table-wrap table{min-width:520px;margin:0}
+.table-wrap:focus-visible{outline:3px solid var(--focus);outline-offset:2px}

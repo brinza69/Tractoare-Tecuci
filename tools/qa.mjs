@@ -12,7 +12,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = process.argv[2] || 'http://localhost:8788';
 const OUT = join(ROOT, '.tmp/qa');
 mkdirSync(OUT, { recursive: true });
-const PAGES = ['/', '/utilaje', '/utilaje/tractoare', '/products', '/utilaje/fendt-820-vario-tms-2011', '/blog', '/blog/cvt-vs-powershift-la-tractoare', '/contact', '/despre-noi', '/confidentialitate', '/nu-exista'];
+const PAGES = ['/', '/utilaje', '/utilaje/tractoare', '/products', '/utilaje/fendt-820-vario-tms-2011', '/blog', '/blog/cvt-vs-powershift-la-tractoare', '/blog/incarcatoare-telescopice-agricole-ghid', '/blog/tractoare-fendt-avantaje-caracteristici', '/blog/tractoare-agricole-ghid-complet', '/contact', '/despre-noi', '/confidentialitate', '/nu-exista'];
 const WIDTHS = [320, 390, 768, 1440, 1920];
 const ENGINES = [
   ['chrome', () => pw.chromium.launch({ channel: 'chrome' }).catch(() => pw.chromium.launch())],

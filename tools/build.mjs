@@ -178,7 +178,7 @@ function footer() {
   return `<footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="f-col">
-      <a class="f-brand" href="/" aria-label="${site.name}, acasă"><img src="/assets/icons/logo-440.webp" width="220" height="66" alt="${site.name}" loading="lazy" decoding="async"></a>
+      <a class="f-brand" href="/" aria-label="${site.name}, acasă"><img src="/assets/icons/logo-440.webp" srcset="/assets/icons/logo-240.webp 240w, /assets/icons/logo-440.webp 440w" sizes="186px" width="220" height="66" alt="${site.name}" loading="lazy" decoding="async"></a>
       <p class="f-desc">Tractoare și utilaje agricole second hand, import direct din Europa. Consultanță, finanțare și transport.</p>
     </div>
     <nav class="f-col" aria-label="Linkuri rapide">
@@ -351,7 +351,7 @@ async function home() {
     'svc-2': await pic('assets/index photos/servicii-finantare-consultanta-investitii-utilaje-agricole.webp', { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: 'Consultanță pentru investiții agricole' }),
     'svc-3': await pic('assets/index photos/servicii-transport-international-utilaje-agricole.webp', { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: 'Transport utilaje agricole' }),
     about: await pic('assets/index photos/tractor-ara.webp', { widths: [471], sizes: '(min-width: 900px) 471px, calc(100vw - 32px)', alt: 'Tractor lucrând pe câmp' }),
-    casella: await pic('assets/index photos/casella.webp', { widths: [340, 680], sizes: '340px', alt: 'Casella' }),
+    casella: await pic('assets/index photos/casella.webp', { widths: [180, 340, 680], sizes: '(max-width: 600px) 180px, 340px', alt: 'Casella' }),
     'rev-1': reviews[0], 'rev-2': reviews[1], 'rev-3': reviews[2],
     stars: `<span class="rev-stars" role="img" aria-label="5 din 5 stele">${icon('star').repeat(5)}</span>`,
   };
@@ -368,7 +368,7 @@ async function categoriesPage() {
   const { meta, body } = source('utilaje');
   const cats = Object.entries(CATS).map(([key, c]) => ({ key, ...c, items: products.filter((p) => p.category === key) })).filter((c) => c.items.length);
   const cards = await Promise.all(cats.map(async (c, i) => `<li><a class="cat-card" href="/utilaje/${c.slug}">
-  <div class="cat-bg">${await pic(c.img, { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: c.alt, eager: i === 0, priority: i === 0 })}</div>
+  <div class="cat-bg">${await pic(c.img, { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: c.alt, eager: i < 3, priority: i === 0 })}</div>
   <h2 class="cat-name">${c.name}</h2>
   <p class="cat-count">${c.items.length} ${c.items.length === 1 ? 'utilaj' : 'utilaje'} în stoc</p>
 </a></li>`));
@@ -541,7 +541,7 @@ async function blogPages() {
   const cats = [...new Set(posts.flatMap((p) => (p.cats?.length ? p.cats : ['ghiduri'])))];
   const label = (c) => ({ ghiduri: 'Ghiduri', intretinere: 'Întreținere' }[c] || c);
   const cards = await Promise.all(posts.map(async (p, i) => `<li><a class="card post-card" href="/blog/${p.slug}" data-cats="${(p.cats || ['ghiduri']).join(' ')}">
-  ${await pic(p.cover, { widths: [400, 800], sizes: '(min-width: 1040px) 375px, (min-width: 740px) 46vw, calc(100vw - 32px)', alt: p.alt || p.title, eager: i === 0, priority: i === 0 })}
+  ${await pic(p.cover, { widths: [400, 800], sizes: '(min-width: 1040px) 375px, (min-width: 740px) 46vw, calc(100vw - 32px)', alt: p.alt || p.title, eager: i < 3, priority: i === 0 })}
   <div class="body"><h2 class="card-title">${esc(p.title)}</h2><p class="muted">${esc(p.excerpt || '')}</p></div>
 </a></li>`));
   const slots = {
@@ -554,6 +554,18 @@ async function blogPages() {
     ld: [{ '@type': 'Blog', '@id': `${abs('/blog')}#blog`, name: 'Blog Tractoare Tecuci', url: abs('/blog'), blogPost: posts.map((p) => ({ '@id': `${abs(`/blog/${p.slug}`)}#article` })) }],
   }, day(posts[0].date), posts.map((p) => ({ src: [{ src: p.cover }] })));
   for (const p of posts) await postPage(p, label);
+}
+
+// Post bodies come from the old site: fix headings, links to the old query-string pages and wide tables.
+function postHtml(html) {
+  const posts_ = new Set(posts.map((x) => x.slug));
+  const prods = new Set(products.map((x) => x.slug));
+  return html
+    .replace(/<h1(\s|>)/g, '<h2$1').replace(/<\/h1>/g, '</h2>')
+    .replace(/ href="(?:https?:\/\/www\.tractoaretecuci\.ro)?\/?post(?:\.html)?\?(?:p|slug)=([^"&]+)[^"]*"/g, (_, slug) => ` href="${posts_.has(slug) ? `/blog/${slug}` : '/blog'}"`)
+    .replace(/ href="(?:https?:\/\/www\.tractoaretecuci\.ro)?\/?product(?:\.html)?\?slug=([^"&]+)[^"]*"/g, (_, slug) => ` href="${prods.has(slug) ? `/utilaje/${slug}` : '/products'}"`)
+    .replace(/ href="(?:https?:\/\/www\.tractoaretecuci\.ro)?\/?(products|utilaje|contact|despre-noi|blog)\.html(\?[^"]*)?"/g, ' href="/$1$2"')
+    .replace(/<table/g, '<div class="table-wrap" role="region" tabindex="0" aria-label="Tabel"><table').replace(/<\/table>/g, '</table></div>');
 }
 
 async function postPage(p, label) {
@@ -572,7 +584,7 @@ async function postPage(p, label) {
     </header>
     <div class="post-body">
       <div class="prose">
-        ${p.html.replace(/<h1(\s|>)/g, '<h2$1').replace(/<\/h1>/g, '</h2>').replace(/ href="(?:https?:\/\/www\.tractoaretecuci\.ro)?\/?(products|utilaje|contact|despre-noi|blog)\.html/g, ' href="/$1')}
+        ${postHtml(p.html)}
         <div class="share">
           <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(share)}" rel="noopener">Facebook</a>
           <a class="btn" href="https://wa.me/?text=${encodeURIComponent(`${p.title} ${share}`)}" rel="noopener">WhatsApp</a>
@@ -610,7 +622,7 @@ async function responsiveImgs(html) {
     const cls = (attrs.match(/class="([^"]*)"/) || [])[1] || '';
     out.push(html.slice(last, m.index), await pic(m[2], {
       widths: [400, 800, 1200], alt, cls, eager, priority: eager,
-      sizes: eager ? '(min-width: 1024px) 50vw, calc(100vw - 32px)' : '(min-width: 1025px) 380px, (min-width: 700px) 46vw, calc(100vw - 32px)',
+      sizes: eager ? '(min-width: 1024px) 520px, calc(100vw - 32px)' : '(min-width: 1025px) 380px, (min-width: 700px) 46vw, calc(100vw - 32px)',
     }));
     last = m.index + m[0].length;
   }

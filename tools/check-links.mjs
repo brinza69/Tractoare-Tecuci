@@ -20,9 +20,12 @@ for (const file of html) {
   const t = readFileSync(file, 'utf8');
   const refs = [...t.matchAll(/\s(?:href|src|poster|data-full|data-src-[a-z]+|data-(?:webm|mp4)-[a-z]+)="([^"]+)"/g)].map((m) => m[1])
     .concat([...t.matchAll(/\s(?:srcset|imagesrcset|data-srcset)="([^"]+)"/g)].flatMap((m) => m[1].split(',').map((s) => s.trim().split(/\s+/)[0])));
+  // Page URL as Cloudflare serves it: x.html -> /x, so relative links resolve against its folder.
+  const pageUrl = new URL('/' + relative(ROOT, file).split(String.fromCharCode(92)).join('/').replace(/(index)?\.html$/, ''), 'https://x');
   for (const r of refs) {
-    if (!r.startsWith('/') || r.startsWith('//')) continue;
-    if (!exists(r)) { bad++; console.log(`${relative(ROOT, file)}: ${r}`); }
+    if (r.startsWith('//') || /^[a-z]+:/i.test(r) || r.startsWith('#')) continue;
+    const path = new URL(r, pageUrl).pathname;
+    if (!exists(path)) { bad++; console.log(`${relative(ROOT, file)}: ${r}`); }
   }
 }
 console.log(bad ? `${bad} broken internal reference(s)` : `all internal references resolve (${html.length} pages)`);
