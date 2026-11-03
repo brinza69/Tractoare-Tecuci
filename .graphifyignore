@@ -1,0 +1,8 @@
+assets/
+utilaje/
+blog/
+*.html
+!src/pages/*.html
+.tmp/
+tools/node_modules/
+llms-full.txt

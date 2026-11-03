@@ -226,9 +226,8 @@ function actionBar(ctx = {}) {
 }
 
 let APP_JS = '';
-// Text and heading fonts are preloaded; both use font-display: swap with metric-matched fallbacks.
-const FONT_PRELOAD = [...read('src/css/fonts.css').matchAll(/url\('(\/assets\/fonts\/(?:inter-var|barlow-sc-700)\.[^']+)'\)/g)]
-  .map((m) => `<link rel="preload" as="font" type="font/woff2" href="${m[1]}" crossorigin>\n`).join('');
+// Fonts are not preloaded: on a slow phone they competed with the LCP photo. font-display: swap plus the
+// metric-matched fallback faces in src/css/fonts.css keep text from moving when they arrive.
 let CONSENT_JS = '';
 async function layout(p) {
   const canonical = abs(p.path);
@@ -261,7 +260,7 @@ ${p.ogImageSize ? `<meta property="og:image:width" content="${p.ogImageSize[0]}"
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#2e7d32">
-${FONT_PRELOAD}${p.preload || ''}<style>${style}</style>
+${p.preload || ''}<style>${style}</style>
 ${consentHead}<script defer src="${APP_JS}"></script>
 ${ga4 ? `<script defer src="${CONSENT_JS}"></script>\n` : ''}${ldScript(graph)}
 </head>
