@@ -92,14 +92,9 @@ node tools/update-stock.mjs            # doar actualizează fișierele
 node tools/update-stock.mjs --commit   # și face commit + push (publică dacă ești pe main)
 ```
 
-- E sigură nesupravegheată: nu schimbă nimic dacă OLX arată brusc sub jumătate din anunțuri (blocare sau pagină incompletă), nu descarcă din nou pozele anunțurilor neschimbate (o rulare fără noutăți durează ~30 s) și nu lasă fișiere orfane.
-- **Rulare automată de două ori pe zi** (aprox. 07–08 și 17–18): șablonul GitHub Actions e în `docs/stock-sync.workflow.yml`. Nu l-am putut urca activ, pentru că autentificarea GitHub de pe acest calculator nu are dreptul `workflow`. După merge în `main`, rulează o dată:
-
-  ```bash
-  gh auth refresh -s workflow
-  ```
-
-  apoi mută fișierul în `.github/workflows/stock-sync.yml`, commit și push. Dacă OLX blochează serverele GitHub (rularea apare ca eșuată în fila Actions, fără să strice nimic), alternativa e o sarcină programată în Windows pe un calculator care stă pornit, cu aceeași comandă.
+- E sigură nesupravegheată: nu schimbă nimic dacă OLX arată brusc sub jumătate din anunțuri (blocare sau pagină incompletă), nu descarcă din nou pozele anunțurilor neschimbate (o rulare fără noutăți durează ~30 s) și nu lasă fișiere orfane. Cu `--commit` nu face nimic cât timp în folder sunt modificări nesalvate (cineva lucrează), pornește de la ce e live și scrie în commit utilajele noi și cele scoase.
+- **Rulare automată de două ori pe zi, activă din 04.11.2026:** sarcina Windows „Tractoare Tecuci - stoc OLX” (Task Scheduler) rulează `tools/stock-sync.cmd` zilnic la 07:30 și 17:30. Dacă PC-ul e oprit la ora respectivă, rulează la pornire. Nu deschide nicio fereastră. Jurnalul e în `.tmp/stock-sync.log`. Testată pe 04.11: 15 anunțuri, stoc neschimbat. Merge doar cât timp acest PC e pornit și autentificat cu `gh`.
+- **Alternativă care nu depinde de PC:** șablonul GitHub Actions din `docs/stock-sync.workflow.yml`. Are nevoie o singură dată de `gh auth refresh -s workflow` și de mutarea fișierului în `.github/workflows/stock-sync.yml`. Atunci sarcina Windows se poate opri, ca să nu ruleze de două ori. OLX poate bloca serverele GitHub.
 - Un anunț nou de tractor apare automat; specificațiile TractorData pentru el se adaugă de mână în `data/specs.map.json` (scriptul afișează ce anunțuri noi nu au încă). Corecturile de diacritice pentru anunțurile noi merg în `data/products.overrides.json`.
 
 ## Cum lucrezi de acum
@@ -123,7 +118,7 @@ Textele paginilor sunt în `src/pages/`, stilurile în `src/css/`, iar telefonul
 4. **Acces la statistici pentru proprietar (opțional):** GA4 → Administrare → Gestionarea accesului la proprietate → adaugă emailul lui, cu rolul Vizualizator sau Administrator.
 5. **De verificat în anunțurile OLX:** Fendt 209 S are 85 de ore în câmpul „Ore de lucru”; Massey Ferguson 7724 are anul 2019 în câmp și 2018 în text; la Merlo 34.10 textul spune „2025140 CP”.
 6. **Imaginile de prezentare** (servicii, despre noi, blog): dacă nu sunt poze proprii, trebuie marcate „Imagine ilustrativă”. Spune-ne care sunt.
-7. **Stocul automat:** `gh auth refresh -s workflow`, apoi activarea workflow-ului (secțiunea de mai sus).
+7. **Stocul automat:** rulează de pe acest PC (sarcina Windows, vezi „Stocul automat”). Opțional, varianta GitHub Actions, care nu depinde de PC.
 8. **Cloudflare (opțional):** `http://tractoaretecuci.ro` face 2 redirecționări până la `https://www.` (o regulă de redirect în Cloudflare le face una). Setarea „AI Crawl Control” blochează crawlerele de antrenare AI (GPTBot, ClaudeBot, Google-Extended); crawlerele de căutare AI au voie. E o alegere, nu o eroare.
 9. **Videoul din hero pe un iPhone:** de verificat (Safari cere răspuns 206 la video; domeniul live îl dă, adresa de test `pages.dev` nu).
 
