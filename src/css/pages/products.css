@@ -70,7 +70,7 @@
   body[data-page="list"] .filters [name="q"]:focus{
     border-color: var(--primary-600);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
+    box-shadow:0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
@@ -95,7 +95,7 @@
   body[data-page="list"] .filters select:focus{
     border-color: var(--primary-600);
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
+    box-shadow:0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
@@ -118,7 +118,7 @@
   body[data-page="list"] .filters [name="maxHours"]:focus{
     border-color: var(--primary-600);
     background: #fff;
-    box-shadow: 0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
+    box-shadow:0 0 0 4px rgba(var(--brand-rgb),.12), 0 4px 12px rgba(23,34,27,.08);
     transform: translateY(-1px);
     outline: none;
   }
@@ -154,7 +154,7 @@
     cursor:pointer;
     justify-self: stretch; 
     width:100%;
-    box-shadow:0 8px 20px rgba(var(--brand-rgb),.25);
+    box-shadow:0 8px 20px rgba(23,34,27,.25);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -182,7 +182,7 @@
   body[data-page="list"] .filters .apply:hover{
     transform: translateY(-2px);
     background:var(--primary-600);
-    box-shadow: 0 12px 32px rgba(var(--brand-rgb),.35);
+    box-shadow:0 12px 32px rgba(23,34,27,.35);
   }
   
   body[data-page="list"] .filters .apply:active{
@@ -210,7 +210,7 @@
     background: var(--primary-50);
     border-color: var(--primary-400);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(var(--brand-rgb),.12);
+    box-shadow:0 4px 12px rgba(23,34,27,.12);
   }
 
   /* responsive – pe desktop câmpurile se reorganizează */
@@ -245,7 +245,7 @@
     background: transparent;
     border: none;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow:none;
     
     overflow-x: auto;
     overflow-y: hidden;
@@ -283,7 +283,7 @@
     white-space: nowrap;
     cursor: pointer;
     
-    box-shadow: 0 2px 8px rgba(23,34,27, 0.04);
+    box-shadow:0 2px 8px rgba(23,34,27, 0.04);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     
     user-select: none;
@@ -295,7 +295,7 @@
     transform: translateY(-2px);
     border-color: var(--primary-400);
     color: var(--primary-700);
-    box-shadow: 0 4px 12px rgba(var(--brand-rgb), 0.12);
+    box-shadow:0 4px 12px rgba(23,34,27,0.12);
   }
 
   /* STARE ACTIVĂ */
@@ -303,14 +303,14 @@
     background: var(--primary);
     color: #fff;
     border-color: var(--primary);
-    box-shadow: 0 4px 12px rgba(var(--brand-rgb), 0.35);
+    box-shadow:0 4px 12px rgba(23,34,27,0.35);
     transform: translateY(-1px);
   }
 
   body[data-page="list"] .cat-tabs .tab.active:hover {
     background: var(--primary-600);
     border-color: var(--primary-600);
-    box-shadow: 0 6px 16px rgba(var(--brand-rgb), 0.45);
+    box-shadow:0 6px 16px rgba(23,34,27,0.45);
   }
 
   @media (max-width: 1000px) {
@@ -333,121 +333,6 @@
     } 
   }
 
-  body[data-page="list"] .card.product{
-    border-radius:20px;
-    background:#fff; 
-    overflow:hidden;
-    border:1px solid rgba(var(--brand-rgb),.08); 
-    box-shadow:0 8px 24px rgba(23,34,27,.06);
-    transition: all .3s cubic-bezier(0.4, 0.0, 0.2, 1);
-  }
-  
-  /* Micro-interacțiune: Hover elegant pe card */
-  body[data-page="list"] .card.product:hover{
-    transform: translateY(-8px);
-    border-color: var(--eco-accent);
-    box-shadow: 0 24px 56px rgba(23,34,27,.16);
-  }
-
-  /* ===================== IMAGINI FULL WIDTH (1:1 Pătrat) ===================== */
-  
-  body[data-page="list"] .card.product .media {
-    aspect-ratio: 1/1;
-    width: 100%;
-    background-color: #fff;
-    display: block;
-    overflow: hidden;
-    padding: 0;
-    border-bottom: 1px solid var(--line);
-    position: relative;
-  }
-
-  body[data-page="list"] .card.product .media img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
-  }
-
-  /* Micro-interacțiune: Zoom imagine pe hover */
-  body[data-page="list"] .card.product:hover .media img {
-    transform: scale(1.08);
-  }
-
-  /* ===================== END IMAGINI ===================== */
-
-  body[data-page="list"] .card.product .body{ 
-    padding:18px 18px 20px 
-  }
-  
-  body[data-page="list"] .card.product .card-title{ 
-    margin:10px 0 8px; 
-    font-size:18px; 
-    line-height:1.35;
-    transition: var(--transition-smooth);
-  }
-  
-  /* Micro-interacțiune: Titlul devine verde pe hover */
-  body[data-page="list"] .card.product:hover .card-title{
-    color: var(--primary);
-  }
-  
-  body[data-page="list"] .card.product .badge{
-    background:var(--primary-50); 
-    color:var(--primary-600); 
-    border:1px solid var(--primary-100); 
-    font-weight:700;
-    padding: 5px 10px;
-    font-size: 13px;
-    transition: var(--transition-smooth);
-  }
-  
-  /* Micro-interacțiune: Badge scale pe hover card */
-  body[data-page="list"] .card.product:hover .badge{
-    transform: scale(1.05);
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
-  }
-
-  /* CTA pe card - PREȚUL ASCUNS, AFIȘAT "Solicită ofertă" */
-  body[data-page="list"] .card.product .price{
-    color: transparent !important; 
-    height:46px; 
-    margin-top:14px; 
-    position:relative;
-  }
-  
-  body[data-page="list"] .card.product .price::after{
-    content:"Solicită ofertă";
-    position:absolute; 
-    inset:0 auto 0 0;
-    display:inline-flex; 
-    align-items:center; 
-    justify-content:center;
-    min-width:180px; 
-    height:46px; 
-    padding:0 20px; 
-    border-radius:999px;
-    background:var(--primary); 
-    color:#fff; 
-    font-weight:700; 
-    font-size: 14px;
-    letter-spacing:.3px;
-    border:2px solid var(--primary);
-    box-shadow:0 10px 24px rgba(var(--brand-rgb),.22);
-    transition: all .2s ease;
-  }
-  
-  /* Micro-interacțiune: Buton CTA lift pe hover */
-  body[data-page="list"] .card.product:hover .price::after{
-    transform: translateY(-2px);
-    background:var(--primary-600); 
-    border-color:var(--primary-600);
-    box-shadow:0 14px 32px rgba(27,94,32,.32);
-  }
   
   /* Focus states pentru accesibilitate */
   body[data-page="list"] .filters input:focus-visible,

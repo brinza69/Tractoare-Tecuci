@@ -95,7 +95,7 @@
   
   /* Micro-interacțiune: Hover pe cover image */
   .post-cover:hover {
-    box-shadow: 0 16px 48px rgba(23,34,27,.12);
+    box-shadow:0 16px 48px rgba(23,34,27,.12);
     transform: translateY(-2px);
   }
   
@@ -124,7 +124,7 @@
   }
   
   .post-body:hover {
-    box-shadow: 0 16px 48px rgba(23,34,27,.10);
+    box-shadow:0 16px 48px rgba(23,34,27,.10);
     border-color: rgba(var(--brand-rgb),.08);
   }
   
@@ -245,7 +245,7 @@
     background:var(--brand); 
     color:#fff; 
     transform:translateY(-2px); 
-    box-shadow:0 4px 12px rgba(var(--brand-rgb),.2); 
+    box-shadow:0 4px 12px rgba(23,34,27,0.12); 
   }
   
   .share .btn:active {

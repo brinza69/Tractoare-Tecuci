@@ -5,7 +5,7 @@
       --brand: var(--brand-500,#2e7d32);
       --ink:#0f172a; --muted:#475569; --ring:#e6e9ee;
       --card:#fff; --shadow:0 16px 48px rgba(15,23,42,.12);
-      --glow: 0 0 0 4px rgba(46,125,50,.10), 0 10px 30px rgba(46,125,50,.20);
+      --glow: 0 0 0 4px rgba(46,125,50,.10), 0 10px 30px -12px rgba(23,34,27,.25);
       --eco-accent: #22c55e;
       --transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
     }
@@ -32,7 +32,7 @@
       background: rgba(255,255,255,.92);
       backdrop-filter: blur(6px);
       border:1px solid var(--ring); border-radius: 26px;
-      box-shadow: var(--shadow);
+      box-shadow:var(--shadow);
       padding: clamp(26px,3.4vw,40px);
       text-align:center;
       transition: var(--transition-smooth);
@@ -40,7 +40,7 @@
     
     /* Micro-interacțiune: Hover pe panel */
     .panel:hover {
-      box-shadow: 0 20px 56px rgba(23,34,27,.16);
+      box-shadow:0 20px 56px rgba(23,34,27,.16);
       border-color: rgba(var(--brand-rgb),.12);
       transform: translateY(-2px);
     }
@@ -71,7 +71,7 @@
       padding:.85rem 1.2rem; border-radius: 999px;
       background: linear-gradient(135deg, var(--brand-500), #3fa047);
       color:#fff; text-decoration:none; font-weight:700;
-      box-shadow:0 10px 18px rgba(var(--brand-rgb),.25);
+      box-shadow:0 10px 18px rgba(23,34,27,0.15);
       transition: transform .2s ease, box-shadow .2s, filter .2s;
       white-space: nowrap;
       position: relative;
@@ -103,7 +103,7 @@
     .btn-prime:hover{ 
       transform: translateY(-2px) scale(1.02); 
       filter: brightness(1.05); 
-      box-shadow: 0 14px 36px rgba(var(--brand-rgb),.35); 
+      box-shadow:0 14px 36px rgba(23,34,27,0.21); 
     }
     
     .btn-prime:active {
@@ -134,7 +134,7 @@
       border: 1px solid var(--ring);
       border-radius: 20px;
       padding: 18px 18px 20px;
-      box-shadow: var(--shadow);
+      box-shadow:var(--shadow);
       display:flex; 
       flex-direction:column; 
       gap:10px;
@@ -154,7 +154,7 @@
     /* Micro-interacțiune: Hover pe cards */
     .c-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 24px 56px rgba(23,34,27,.18);
+      box-shadow:0 24px 56px rgba(23,34,27,.18);
       border-color: var(--eco-accent);
     }
 
@@ -208,7 +208,7 @@
       transform: translateY(-3px) scale(1.02); 
       border-color: var(--eco-accent); 
       background: rgba(var(--brand-rgb),.04);
-      box-shadow: var(--glow); 
+      box-shadow:var(--glow); 
     }
     
     .chip:active {
@@ -229,13 +229,13 @@
       border:1px solid var(--ring); 
       border-radius: 22px;
       overflow: hidden; 
-      box-shadow: var(--shadow);
+      box-shadow:var(--shadow);
       transition: var(--transition-smooth);
     }
     
     /* Micro-interacțiune: Hover pe map container */
     .map-wrap:hover {
-      box-shadow: 0 20px 56px rgba(23,34,27,.16);
+      box-shadow:0 20px 56px rgba(23,34,27,.16);
       border-color: rgba(var(--brand-rgb),.12);
       transform: translateY(-2px);
     }

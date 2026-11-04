@@ -55,7 +55,7 @@ function fa(name) {
   }
   return faCache.get(name);
 }
-const icon = (name, cls = 'ico-svg') => { const i = fa(name); return `<svg class="${cls}" viewBox="${i.viewBox}" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor"><path d="${i.d}"/></svg>`; };
+const icon = (name, cls = 'ico-svg') => { const i = fa(name); return `<svg class="${cls} ico-${name}" viewBox="${i.viewBox}" width="20" height="20" aria-hidden="true" focusable="false" fill="currentColor"><path d="${i.d}"/></svg>`; };
 const emailLink = (cls = '', label = site.email) => `<!--email_off--><a${cls ? ` class="${cls}"` : ''} href="mailto:${site.email}">${label}</a><!--/email_off-->`;
 
 const CATS = {
@@ -168,25 +168,41 @@ const ldScript = (nodes) => `<script type="application/ld+json">${JSON.stringify
 // ---------------------------------------------------------------- layout
 const NAV = [['/', 'Acasă'], ['/utilaje', 'Utilaje'], ['/despre-noi', 'Despre noi'], ['/blog', 'Blog']];
 const isCurrent = (href, path) => (href === '/' ? path === '/' : path === href || path.startsWith(`${href}/`));
+// Floating nav pill (Impecabil pattern) + a full-screen menu on a native modal <dialog> (focus trap, Esc, top layer).
 function header(path) {
-  const links = (cls) => NAV.map(([href, label]) => `<a href="${href}"${cls ? ` class="${cls}"` : ''}${isCurrent(href, path) ? ' aria-current="page"' : ''}>${label}</a>`).join('');
+  const cur = (href) => (isCurrent(href, path) ? ' aria-current="page"' : '');
   const logo = (w) => `<img class="logo" src="/assets/icons/logo-240.webp" srcset="/assets/icons/logo-240.webp 240w, /assets/icons/logo-440.webp 440w" sizes="${w}px" width="${w}" height="${Math.round((w * 200) / 664)}" alt="${site.name}">`;
+  const cats = Object.values(CATS).filter((c) => products.some((p) => catOf(p) === c));
+  const menuLinks = [...NAV, ['/contact', 'Contact']];
   return `<a class="skip-link" href="#main">Sari la conținut</a>
-<header class="site-header">
-  <div class="wrap header-bar">
-    <a class="brand" href="/" aria-label="${site.name}, acasă">${logo(120)}</a>
-    <nav class="nav" aria-label="Navigație principală">${links('nav-link')}</nav>
-    <div class="header-cta">
-      <a href="/contact" class="btn primary contact-cta"${path === '/contact' ? ' aria-current="page"' : ''}>Contact</a>
-      <button class="hamb" type="button" aria-label="Meniu" aria-controls="mobile-drawer" aria-expanded="false"><span></span></button>
+<header class="site-nav" data-nav>
+  <nav class="site-nav__pill" aria-label="Navigație principală">
+    <a class="site-nav__logo" href="/" aria-label="${site.name}, acasă">${logo(104)}</a>
+    <ul class="site-nav__links" role="list">${NAV.map(([href, label]) => `<li><a href="${href}"${cur(href)}>${label}</a></li>`).join('')}</ul>
+    <div class="site-nav__actions">
+      <a class="site-nav__phone" href="tel:${site.phone}">${icon('phone')}<span>${site.phoneDisplay}</span></a>
+      <a class="btn primary site-nav__cta" href="/contact"${cur('/contact')}>Contact</a>
+      <button class="site-nav__burger" type="button" aria-controls="menu" aria-expanded="false" data-menu-open><span class="sr-only">Deschide meniul</span><span class="site-nav__burger-lines" aria-hidden="true"><span></span><span></span></span></button>
     </div>
-  </div>
-  <nav id="mobile-drawer" class="drawer" aria-label="Meniu mobil">
-    <div class="nav-list">${links('')}</div>
-    <a href="/contact" class="btn primary wfull">Contact</a>
   </nav>
 </header>
-<div class="nav-backdrop" hidden></div>`;
+<dialog id="menu" class="menu" aria-label="Meniu principal">
+  <div class="menu__bar">
+    <a class="menu__logo" href="/" aria-label="${site.name}, acasă">${logo(104)}</a>
+    <button class="menu__close" type="button" data-menu-close><span class="sr-only">Închide meniul</span>${icon('close')}</button>
+  </div>
+  <nav class="menu__body" aria-label="Meniu">
+    <ul class="menu__links" role="list">${menuLinks.map(([href, label], i) => `<li style="--i:${i}"><a href="${href}"${cur(href)}>${label}</a></li>`).join('')}</ul>
+    <ul class="menu__cats" role="list" aria-label="Categorii">${cats.map((c) => `<li><a href="/utilaje/${c.slug}">${icon(c === CATS.telescopic ? 'warehouse' : 'tractor')}${c.name}</a></li>`).join('')}<li><a href="/products">${icon('images')}Tot stocul</a></li></ul>
+  </nav>
+  <div class="menu__foot">
+    <div class="menu__contact">
+      <a class="btn primary" href="tel:${site.phone}">${icon('phone')}Sună</a>
+      <a class="btn menu__wa" href="${wa('Bună ziua, vă scriu de pe tractoaretecuci.ro.')}" rel="noopener">${icon('whatsapp')}WhatsApp</a>
+    </div>
+    <p class="menu__hours">${esc(hoursText)}</p>
+  </div>
+</dialog>`;
 }
 
 function footer() {
@@ -337,6 +353,7 @@ function productCard(p, { level = 3, eager = false, priority = false } = {}) {
     <h${level} class="card-title">${esc(fullTitle(p))}</h${level}>
     <p class="card-facts">${facts.map(([f, ic]) => `<span>${icon(ic)}${esc(f)}</span>`).join('')}</p>
   </div>
+  <span class="card-go" aria-hidden="true">${icon('arrow')}</span>
 </a>`;
 }
 const grid = (items, opts) => `<ul class="grid product-grid" role="list">${items.map((p, i) => `<li>${productCard(p, { ...opts, eager: opts?.eagerFirst && i < (opts.eagerCount || 1), priority: opts?.eagerFirst && i === 0 })}</li>`).join('')}</ul>`;

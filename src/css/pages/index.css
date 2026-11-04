@@ -34,73 +34,6 @@
       }
     }
 
-    .card.product {
-      border-radius: 18px;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      border: 1px solid var(--brand-08);
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-
-    .card.product:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(23,34,27, .10);
-      border-color: var(--brand-12)
-    }
-
-    /* ===================== FIX IMAGINI FULL WIDTH ===================== */
-    
-    /* 1. Containerul pozei - FĂRĂ SPAȚII */
-    .card.product .media {
-      aspect-ratio: 1/1;          /* Păstrăm formatul dreptunghiular standard */
-      width: 100%;
-      background-color: #fff;     /* Fundal alb */
-      display: block;             /* Important pentru aliniere */
-      overflow: hidden;
-      padding: 0;                 /* 🔧 ZERO PADDING: Asta elimină spațiul gol de pe margini */
-      border-bottom: 1px solid var(--line);
-      position: relative;         /* Necesar pentru poziționare */
-    }
-
-    /* 2. Imaginea - ÎMPLE TOT SPAȚIUL */
-    .card.product .media img {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: cover;          /* 🔧 COVER: Umple tot cadrul (fără margini gri), dar taie puțin sus/jos dacă poza e prea înaltă */
-      object-position: center;    /* Centrează imaginea */
-      transition: transform 0.5s ease;
-    }
-
-    /* 3. Efect ZOOM fin la Hover */
-    .card.product:hover .media img {
-      transform: scale(1.08);     /* Efect modern de zoom */
-    }
-
-    .card.product .body {
-      padding: 18px 16px 20px
-    }
-
-    /* +spacing în card */
-    .card.product .badge {
-      background: var(--brand-50);
-      color: var(--brand-600);
-      border: 1px solid var(--brand-100);
-      font-weight: 700
-    }
-
-    .card.product .card-title {
-      margin: 8px 0 6px;
-      font-size: 18px;
-      line-height: 1.35
-    }
-
-    .card.product .price {
-      margin-top: 10px;
-      font-size: 20px
-    }
-
     /* CTA "Vezi mai multe" */
     .more-row {
       display: flex;
@@ -117,7 +50,7 @@
       background: var(--brand-500);
       color: #fff;
       border: 2px solid var(--brand-500);
-      box-shadow: 0 10px 26px var(--brand-20);
+      box-shadow:0 10px 26px rgba(23,34,27,.14);
       transition: transform .12s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
     }
 
@@ -132,7 +65,7 @@
       transform: translateY(-2px);
       background: var(--brand-600);
       border-color: var(--brand-600);
-      box-shadow: 0 16px 34px var(--brand-20)
+      box-shadow:0 16px 34px rgba(23,34,27,.14)
     }
 
     .more-btn:hover .chev {
@@ -171,7 +104,7 @@
     .service-card {
       background: var(--surface);
       border-radius: var(--r);
-      box-shadow: var(--shadow);
+      box-shadow:var(--shadow);
       overflow: hidden;
       transform: translateY(0);
       transition: transform .18s ease, box-shadow .18s ease;
@@ -179,7 +112,7 @@
 
     .service-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 16px 40px rgba(23,34,27, .12)
+      box-shadow:0 16px 40px rgba(23,34,27, .12)
     }
 
     .svc-media {
@@ -209,14 +142,14 @@
       border-radius: 999px;
       font-weight: 700;
       font-size: 13px;
-      box-shadow: 0 8px 20px var(--brand-20);
+      box-shadow:0 8px 20px rgba(23,34,27,.14);
     }
 
     .svc-badge.ghost {
       background: rgba(255, 255, 255, .88);
       color: var(--brand-600);
       border: 1px solid var(--brand-100);
-      box-shadow: none
+      box-shadow:none
     }
 
     .svc-body {
@@ -340,14 +273,14 @@
       border-radius: 14px;
       overflow: hidden;
       position: relative;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, .12);
+      box-shadow:0 16px 36px rgba(0, 0, 0, .12);
       transition: transform .2s ease, box-shadow .2s ease;
       cursor: pointer
     }
 
     .about-teaser__media:hover {
       transform: translateY(-2px);
-      box-shadow: 0 22px 44px rgba(0, 0, 0, .16)
+      box-shadow:0 22px 44px rgba(0, 0, 0, .16)
     }
 
     .about-teaser__media img {
@@ -441,13 +374,13 @@
       border-radius: 14px;
       background: #fff;
       border: 1px solid rgba(23,34,27, .06);
-      box-shadow: 0 12px 30px rgba(23,34,27, .08);
+      box-shadow:0 12px 30px rgba(23,34,27, .08);
       transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
     }
 
     .brand-hero__logo:hover {
       transform: translateY(-2px);
-      box-shadow: 0 18px 44px rgba(23,34,27, .12);
+      box-shadow:0 18px 44px rgba(23,34,27, .12);
       cursor: pointer
     }
 
@@ -491,7 +424,7 @@
       padding: clamp(20px, 3.2vw, 28px);
       color: var(--text);
       text-align: center;
-      box-shadow: 0 14px 34px rgba(23,34,27, .08);
+      box-shadow:0 14px 34px rgba(23,34,27, .08);
       min-height: 240px;
       transition: opacity .25s ease;
     }

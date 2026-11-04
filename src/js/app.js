@@ -3,33 +3,26 @@ const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// Mobile menu
+// Full-screen menu on a native modal <dialog>: focus trap, Esc and the inert page come from the browser.
 function menu() {
-  const header = $('.site-header');
-  const hamb = $('.hamb', header || document);
-  const backdrop = $('.nav-backdrop');
-  if (!header || !hamb) return;
-  const set = (open) => {
-    header.classList.toggle('open', open);
-    hamb.setAttribute('aria-expanded', String(open));
-    if (backdrop) backdrop.hidden = !open;
-    if (open) $('#mobile-drawer a')?.focus();
-  };
-  hamb.addEventListener('click', () => set(!header.classList.contains('open')));
-  backdrop?.addEventListener('click', () => set(false));
-  $('#mobile-drawer')?.addEventListener('click', (e) => { if (e.target.closest('a')) set(false); });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && header.classList.contains('open')) { set(false); hamb.focus(); }
-  });
-  addEventListener('resize', () => { if (innerWidth >= 769) set(false); }, { passive: true });
+  const dialog = $('dialog#menu');
+  if (!dialog?.showModal) return;
+  const openers = $$('[data-menu-open]');
+  const setExpanded = (v) => openers.forEach((b) => b.setAttribute('aria-expanded', String(v)));
+  openers.forEach((b) => b.addEventListener('click', () => { dialog.showModal(); setExpanded(true); }));
+  $$('[data-menu-close]', dialog).forEach((b) => b.addEventListener('click', () => dialog.close()));
+  // Following a link closes the menu first, so the page behind is clean on back navigation.
+  dialog.addEventListener('click', (e) => { if (e.target.closest('a')) dialog.close(); });
+  dialog.addEventListener('close', () => { setExpanded(false); openers[0]?.focus({ preventScroll: true }); });
+  matchMedia('(min-width: 1024px)').addEventListener('change', (m) => { if (m.matches && dialog.open) dialog.close(); });
 }
 
-// Header shadow after the first screen; one rAF per scroll burst.
+// The nav pill frosts a little more once the page scrolls; one rAF per scroll burst.
 function stickyHeader() {
-  const header = $('.site-header');
+  const header = $('[data-nav]');
   if (!header) return;
   let ticking = false;
-  const update = () => { header.classList.toggle('scrolled', scrollY > 40); ticking = false; };
+  const update = () => { header.toggleAttribute('data-scrolled', scrollY > 24); ticking = false; };
   addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
   update();
 }
@@ -40,7 +33,7 @@ function reveals() {
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }
   }, { rootMargin: '0px 0px -40px 0px' });
-  $$('.card.product, .post-card').forEach((el, i) => {
+  $$('.card.product, .post-card, .section-head, .services-head, .service-card, .rev-card, .cat-card, .about-teaser__inner > *, .faq-block, .guides, .q, .related-list > li').forEach((el, i) => {
     if (el.getBoundingClientRect().top < innerHeight) return;
     el.classList.add('reveal-element', `delay-${(i % 3) * 100}`);
     io.observe(el);
@@ -50,7 +43,7 @@ function reveals() {
 // Subtle tilt on product and service cards for mouse users on large screens.
 function tilt() {
   if (reduceMotion || !matchMedia('(hover: hover) and (min-width: 1024px)').matches) return;
-  $$('.card.product, .service-card').forEach((card) => {
+  $$('.service-card').forEach((card) => {
     card.addEventListener('mousemove', (e) => {
       const r = card.getBoundingClientRect();
       const x = ((e.clientX - r.left) / r.width - 0.5) * 4;
