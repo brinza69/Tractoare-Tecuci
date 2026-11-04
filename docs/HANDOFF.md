@@ -1,5 +1,23 @@
 # Handoff tractoaretecuci.ro (04.11.2026)
 
+## Actualizare 04.11.2026 (a doua): design și blog automat
+
+**Design** (commit c41721b; mai multe detalii în mesajul commit-ului):
+- **Navbar:** pilulă plutitoare. Pe prima pagină stă transparentă peste film, cu text alb, și devine albă la derulare; pe celelalte pagini e albă de la început. Pe telefon, „Contact” e în meniul burger, nu în bară.
+- **Meniul de pe telefon:** pe tot ecranul (dialog nativ), cu linkuri mari, categorii, Sună / WhatsApp și programul. Se închide cu Esc sau cu X.
+- **Cardurile cu utilaje:** poza ocupă tot cardul, cu o corecție fină de culoare; marca, modelul, anul, orele și proveniența stau pe un gradient închis. Fără chenar alb.
+- **Butoanele:** colțuri continue (squircle, ca la Apple) unde browserul le suportă, verde închis, fără efecte strălucitoare. Pe film, butonul principal e crem și cel secundar „de sticlă”.
+- **Mișcare:** o singură curbă de animație; secțiunile apar la derulare, iar trecerea între pagini se face cu o estompare scurtă. Nimic din toate acestea la „mișcare redusă”.
+- **Verificat:** PageSpeed pe live 100 / 100 / 100 / 100 pe telefon (LCP 1,2 s, CLS 0,001) și 100 pe calculator; axe fără probleme; testul pe 4 browsere × 5 lățimi trece; meniul și consimțământul trec în Chrome, WebKit și Firefox.
+
+**Blog automat, zilnic** (commit 9d81140):
+- Taskul programat „Blog zilnic Tractoare Tecuci” rulează în aplicația Claude de pe acest calculator, zilnic la ~08:43. Dacă aplicația e închisă la ora aceea, rulează la următoarea pornire.
+- Ia următorul subiect din `data/blog-plan.json` (30 de subiecte, legate de utilajele din stoc și de întrebările cumpărătorilor), se documentează din surse, scrie articolul și îl trece prin `tools/new-post.mjs`. Scriptul respinge articolul dacă e prea scurt, are linkuri moarte, prețuri, alt telefon, promisiuni neconfirmate sau o copertă care nu e poza reală a unui utilaj din stoc. Abia apoi construiește site-ul, rulează verificările și publică.
+- Fiecare articol listează la final sursele folosite. Subiectele noi se adaugă la finalul `data/blog-plan.json`, cu `"status": "todo"`.
+- **De știut:** Google penalizează conținutul produs în masă fără valoare. De aceea verificările sunt stricte, iar un articol care nu le trece nu se publică (subiectul e marcat `skipped`). Recomandarea mea: o privire pe articole în primele două săptămâni; dacă nu sunt bune, taskul se oprește din aplicație (Scheduled → Blog zilnic Tractoare Tecuci → dezactivare).
+
+**Linkul din Google Business Profile:** `?utm_source=google&utm_medium=gbp` doar marchează în GA4 vizitele venite din profil; adresa canonică rămâne cea simplă. Profilul nu e administrat din conturile de pe acest calculator, deci nu l-am modificat.
+
 ## Actualizare 04.11.2026: Google Analytics, Search Console, întrebări frecvente
 
 Totul de mai jos e pe **contul Google al lui Alex** (administratorul site-ului), singurul proprietar al proprietății Search Console. Adresa contului nu e scrisă aici, pentru că `docs/` se poate deschide public.
