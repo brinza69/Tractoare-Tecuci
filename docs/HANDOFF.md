@@ -1,4 +1,38 @@
-# Handoff tractoaretecuci.ro (03.11.2026)
+# Handoff tractoaretecuci.ro (04.11.2026)
+
+## Actualizare 04.11.2026: Google Analytics, Search Console, întrebări frecvente
+
+Totul de mai jos e pe **contul Google al lui Alex** (administratorul site-ului), singurul proprietar al proprietății Search Console. Adresa contului nu e scrisă aici, pentru că `docs/` se poate deschide public.
+
+**GA4** (contul Analytics „Alex Brînzei”, 405279578, unde e și Impecabil):
+- Proprietatea **Tractoare Tecuci**, ID **562146511**, fus orar România, monedă RON.
+- Flux web `https://www.tractoaretecuci.ro`, ID **16265207559**, Measurement ID **`G-ZYBRN9TW7B`** (în `data/site.json` → `ga4Id`).
+- Păstrarea datelor: **14 luni** pentru evenimente și utilizatori, ca în politica de confidențialitate.
+- Măsurare îmbunătățită activă, fără „Interacțiuni cu formulare”: singurul formular de pe site e bannerul de cookie-uri, pe care GA îl număra ca formular.
+- **Evenimente-cheie:** `click_phone`, `click_whatsapp`, `click_email` (create după nume, fără valoare în bani). `close_convert_lead` și `qualify_lead` sunt puse automat de Google și nu apar pe site.
+- **Conectări:** Search Console `tractoaretecuci.ro` legat de fluxul web (03.11.2026).
+- Verificat pe site-ul live, în Chrome și WebKit: nimic de la Google și niciun cookie `_ga` înainte de alegere; „Refuz” arată identic cu „Accept tot”; „Aleg eu” arată cele două bife, nebifate; „Statistici” încarcă GA4 și trimite `page_view`; retragerea din „Setări cookies” șterge `_ga*`. GA4 Realtime a văzut vizita de test și cele trei clicuri.
+
+**Bannerul de cookie-uri**, reparat după primul test: bifele apăreau din prima vedere, fără buton de salvare; „Accept tot” era evidențiat de focus; pe telefoanele mici și în modul peisaj bannerul acoperea „Vezi stocul” și „Sună acum”. Acum prima vedere are doar Accept tot / Refuz / Aleg eu, fără buton evidențiat. Pe telefoanele mici bannerul se retrage cât timp ar acoperi butoanele din hero și apare la prima derulare; după „Aleg eu” nu se mai retrage.
+
+**Search Console** (proprietate Domeniu `tractoaretecuci.ro`):
+- Sitemap: `https://www.tractoaretecuci.ro/sitemap.xml` retrimis pe 03.11.2026, stare **Reușit**, 34 de pagini. Vechiul `sitemap-images.xml` (acum redirecționat) a fost eliminat.
+- Inspectarea adreselor, 03.11.2026. Google acceptă circa 10–11 cereri pe zi; a 12-a a primit „Cotă depășită”.
+
+| Adresa | Stare la 03.11 | Ce s-a făcut |
+|---|---|---|
+| `/`, `/utilaje`, `/products`, `/contact`, `/despre-noi`, `/blog` | indexate | nimic (nu se cere din nou) |
+| `/utilaje/tractoare` | Google nu cunoaște adresa | indexare cerută |
+| `/utilaje/fendt-718-vario-2021`, `john-deere-6125r-2015`, `massey-ferguson-7724-2019`, `fendt-930-vario-2008`, `fendt-820-vario-tms-2011`, `merlo-34-10-2007`, `fendt-farmer-309-ci-2009` | Google nu cunoaște adresa | indexare cerută |
+| `/utilaje/mccormick-x4-80-xl-2020`, `fendt-415-vario-2010`, `massey-ferguson-2230-2011` | Descoperită, neindexată | indexare cerută |
+| `/utilaje/fendt-favorit-512-c-1997`, `same-argon-75-f-2005`, `/utilaje/incarcatoare-telescopice` | Google nu cunoaște adresa | de cerut în zilele următoare |
+| `/utilaje/mccormick-cx-85-2005`, `fendt-209-s-2005`, `fendt-farmer-307-lsa-1988` | Descoperită, neindexată | de cerut în zilele următoare |
+| 9 articole din `/blog/…` | 6 descoperite, 3 necunoscute | după paginile de utilaje |
+| `/termeni` / `/confidentialitate` | descoperită / accesată cu crawlere, neindexată | fără grabă |
+
+**Întrebări frecvente și ghiduri** (pentru Google și pentru răspunsurile date de AI): `/utilaje` are 7 întrebări despre cumpărare (preț la telefon, proveniență, verificare tehnică, vizionare sau apel video, transport în țară și UE, opțiuni de plată, program), generate din `data/site.json` și doar din afirmații care erau deja pe site. Aceleași întrebări sunt în `llms-full.txt`, cu date structurate `FAQPage` pe `/utilaje` și pe `/despre-noi`. Paginile de categorie listează ghidurile din blog (7 la tractoare, 2 la încărcătoare telescopice). Textul principal de pe `/utilaje` a crescut de la 46 la 215 cuvinte.
+
+**Google Business Profile**, nemodificat: „Tractoare Tecuci”, Dealer de tractoare, 4,6 stele din 9 recenzii, adresa și telefonul identice cu site-ul. Niciun cont Google logat pe acest calculator nu administrează profilul. Diferențe față de site: **sâmbătă 09–12 în profil, 10–14 pe site**, iar linkul site-ului nu are UTM.
 
 ## Stare
 
@@ -27,7 +61,7 @@ Auditul SiteKit complet (34 de pagini, Chrome și WebKit): problemele reale găs
 - **Pagini statice** în loc de pagini construite din JavaScript: fiecare utilaj are adresa lui (`/utilaje/<slug>`), plus categorii (`/utilaje/tractoare`, `/utilaje/incarcatoare-telescopice`) și articolele (`/blog/<slug>`). Linkurile vechi `?slug=` trimit automat la paginile noi; utilajele vândute redirecționează (301) spre categoria lor.
 - **Design în aceeași temă, îmbunătățit:** paletă unitară (verde de câmp, olivul din logo, galben de semnalizare), fonturi Inter (text) și Barlow Semi Condensed (titluri), iconițe Font Awesome, galerie cu glisare și vizualizator pe tot ecranul, bară Sună / WhatsApp pe telefon, contact simplu (Sună, WhatsApp, Email, hartă la cerere). Finisare cu skill-ul `impeccable` (contrast, stări de hover, ierarhie), verificare SEO cu checklist-ul `searchfit-seo`.
 - **Video hero** de la 4,6 MB la 1,0 MB (calculator) și 0,5 MB (telefon), cu poster afișat imediat, buton de pauză și oprire la economizor de date.
-- **Fără trackere și fără cereri către Google înainte de un clic.** Harta Google se încarcă doar la „Arată harta”. Bannerul de cookie-uri (Statistici și Marketing separate, Consent Mode v2) e gata, dar apare doar când se completează un ID GA4.
+- **Fără trackere și fără cereri către Google înainte de un clic.** Harta Google se încarcă doar la „Arată harta”. Bannerul de cookie-uri (Statistici și Marketing separate, Consent Mode v2) e activ de pe 03.11.2026, cu GA4 `G-ZYBRN9TW7B`.
 - **SEO și AI:** titluri și descrieri noi, date structurate (firmă, utilaje, articole, breadcrumbs), sitemap corect, `robots.txt` curat, `llms.txt` și `llms-full.txt`, `security.txt`, favicon pentru Google, imagine de distribuire 1200×630.
 - **Accesibilitate:** 100 în PageSpeed pe toate paginile măsurate; contrast, ordinea titlurilor, tastatură, mișcare redusă.
 
@@ -65,19 +99,19 @@ Textele paginilor sunt în `src/pages/`, stilurile în `src/css/`, iar telefonul
 
 ## Acțiunile proprietarului
 
-1. **Acordul pentru publicare** (merge în `main`).
-2. **Datele firmei** pentru Legea 365/2002: CUI și nr. Reg. Com. pentru II Mirza Nicoleta, în `data/site.json` → `company`. Blocul apare automat în subsol.
-3. **Google Analytics (opțional):** ID-ul `G-...` în `data/site.json` → `ga4Id`, apoi build. Bannerul de consimțământ apare abia atunci.
-4. **De verificat în anunțurile OLX:** Fendt 209 S are 85 de ore în câmpul „Ore de lucru”; Massey Ferguson 7724 are anul 2019 în câmp și 2018 în text; la Merlo 34.10 textul spune „2025140 CP”.
-5. **Imaginile de prezentare** (servicii, despre noi, blog): dacă nu sunt poze proprii, trebuie marcate „Imagine ilustrativă”. Spune-ne care sunt.
-6. **Stocul automat:** `gh auth refresh -s workflow`, apoi activarea workflow-ului (secțiunea de mai sus).
-7. **Cloudflare (opțional):** `http://tractoaretecuci.ro` face 2 redirecționări până la `https://www.` (o regulă de redirect în Cloudflare le face una). Setarea „AI Crawl Control” blochează crawlerele de antrenare AI (GPTBot, ClaudeBot, Google-Extended); crawlerele de căutare AI au voie. E o alegere, nu o eroare.
-8. **După publicare, în Search Console** (proprietatea e deja verificată prin DNS): trimite `https://www.tractoaretecuci.ro/sitemap.xml` și cere indexarea paginilor noi de utilaje, circa 10 pe zi.
-9. **După publicare:** verifică videoul din hero pe un iPhone (Safari cere răspuns 206 la video; domeniul live îl dă, adresa de test `pages.dev` nu).
+1. **Datele firmei** pentru Legea 365/2002: CUI și nr. Reg. Com. pentru II Mirza Nicoleta, în `data/site.json` → `company`. Blocul apare automat în subsol.
+2. **Google Business Profile:** spune-ne ce cont Google administrează profilul (sau adaugă contul Google al lui Alex ca administrator). Apoi, cu acordul tău: linkul site-ului devine `https://www.tractoaretecuci.ro/?utm_source=google&utm_medium=gbp` și programul de sâmbătă devine 10–14, ca pe site (acum profilul spune 09–12).
+3. **Search Console, în zilele următoare** (circa 10 cereri pe zi): Solicită indexarea pentru adresele marcate „de cerut” în tabelul de mai sus, apoi reinspectează adresele cerute pe 03.11; ce nu e încă pe Google primește încă o cerere.
+4. **Acces la statistici pentru proprietar (opțional):** GA4 → Administrare → Gestionarea accesului la proprietate → adaugă emailul lui, cu rolul Vizualizator sau Administrator.
+5. **De verificat în anunțurile OLX:** Fendt 209 S are 85 de ore în câmpul „Ore de lucru”; Massey Ferguson 7724 are anul 2019 în câmp și 2018 în text; la Merlo 34.10 textul spune „2025140 CP”.
+6. **Imaginile de prezentare** (servicii, despre noi, blog): dacă nu sunt poze proprii, trebuie marcate „Imagine ilustrativă”. Spune-ne care sunt.
+7. **Stocul automat:** `gh auth refresh -s workflow`, apoi activarea workflow-ului (secțiunea de mai sus).
+8. **Cloudflare (opțional):** `http://tractoaretecuci.ro` face 2 redirecționări până la `https://www.` (o regulă de redirect în Cloudflare le face una). Setarea „AI Crawl Control” blochează crawlerele de antrenare AI (GPTBot, ClaudeBot, Google-Extended); crawlerele de căutare AI au voie. E o alegere, nu o eroare.
+9. **Videoul din hero pe un iPhone:** de verificat (Safari cere răspuns 206 la video; domeniul live îl dă, adresa de test `pages.dev` nu).
 
-## Starea Google (fără autentificare)
+## Starea Google
 
-- **Search Console:** domeniul e verificat prin înregistrarea DNS `google-site-verification`. Starea indexării se vede doar din cont.
-- **Bing Webmaster Tools:** verificat prin `BingSiteAuth.xml`.
-- **Google Business Profile:** există, „Tractoare Tecuci”, categoria „Dealer de tractoare”, 4,6 stele din 9 recenzii, aceeași adresă și același telefon ca site-ul. Linkul site-ului din profil poate primi `?utm_source=google&utm_medium=gbp`, ca vizitele să se vadă separat în GA4.
+- **Search Console și GA4:** vezi „Actualizare 04.11.2026” de mai sus.
+- **Bing Webmaster Tools:** verificat prin `BingSiteAuth.xml`; după indexarea în Google se poate importa din Search Console.
+- **Google Ads:** nu a fost cerut; nu există cont.
 - **„Surse preferate” Google:** pagina cere autentificare; neverificat.
