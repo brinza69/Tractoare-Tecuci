@@ -63,6 +63,24 @@ const CATS = {
   telescopic: { slug: 'incarcatoare-telescopice', name: 'Încărcătoare telescopice', lower: 'încărcătoare telescopice', one: 'încărcător telescopic', img: 'assets/categorii/telescopice.webp', alt: 'Încărcător telescopic ridicând un balot de paie' },
   alte: { slug: 'alte-utilaje', name: 'Alte utilaje', lower: 'alte utilaje', one: 'utilaj', img: 'assets/categorii/alte-utilaje.webp', alt: 'Combină, tractor și încărcător frontal pe un câmp cultivat' },
 };
+// Blog guides shown on each category page (matched by slug).
+const CAT_GUIDES = { tractor: /tracto|fendt|cvt|anvelope|uleiuri|intretinere/, telescopic: /telescop|incarcator/ };
+// Buying questions on /utilaje: every answer repeats a claim the owner confirmed (home services, despre-noi FAQ, site.json).
+const BUY_FAQ = [
+  ['Cât costă utilajele din stoc?', `Prețurile nu sunt afișate pe site. Ți le spunem la telefon sau pe WhatsApp, la ${site.phoneDisplay}, pentru fiecare utilaj în parte.`],
+  ['De unde provin utilajele?', 'Le importăm direct din Europa, în principal din Italia. Pagina fiecărui utilaj arată anul, orele de funcționare, țara de proveniență și fotografiile exemplarului.'],
+  ['Sunt verificate înainte de vânzare?', 'Da. Fiecare utilaj are verificare tehnică înainte de livrare, iar istoricul și documentele sunt clarificate.'],
+  ['Pot vedea utilajul înainte să-l cumpăr?', `Da. Programăm o vizită la sediul din ${site.address.city} (${addressText}) sau un apel video pentru inspecție.`],
+  ['Faceți transport?', 'Da, în toată țara și în Uniunea Europeană, cu asigurare pe toată durata traseului și livrare la data și ora stabilite împreună.'],
+  ['Există opțiuni de plată sau finanțare?', 'Discutăm scenarii de plată adaptate fermei și te punem în legătură cu parteneri financiari.'],
+  ['Când vă pot suna?', `${hoursText}; ${site.closed.toLowerCase()}. Telefon și WhatsApp: ${site.phoneDisplay}.`],
+];
+const faqHtml = (list, id) => `<section class="faq-block" aria-labelledby="${id}">
+  <h2 id="${id}">Întrebări despre cumpărare</h2>
+  <div class="faq">${list.map(([q, a]) => `<details class="q"><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>
+</section>`;
+const faqLd = (list, path) => ({ '@type': 'FAQPage', '@id': `${abs(path)}#faq`, url: abs(path), inLanguage: 'ro-RO', mainEntity: list.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
+const unhtml = (s) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 const catOf = (p) => CATS[p.category] || CATS.alte;
 const productPath = (p) => `/utilaje/${p.slug}`;
 const fullTitle = (p) => `${p.brand && !p.title.startsWith(p.brand) ? `${p.brand} ` : ''}${p.title}`;
@@ -367,19 +385,20 @@ async function categoriesPage() {
   const { meta, body } = source('utilaje');
   const cats = Object.entries(CATS).map(([key, c]) => ({ key, ...c, items: products.filter((p) => p.category === key) })).filter((c) => c.items.length);
   const cards = await Promise.all(cats.map(async (c, i) => `<li><a class="cat-card" href="/utilaje/${c.slug}">
-  <div class="cat-bg">${await pic(c.img, { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: c.alt, eager: i < 3, priority: i === 0 })}</div>
+  <div class="cat-bg">${await pic(c.img, { widths: [400, 800], sizes: '(min-width: 1025px) 374px, (min-width: 700px) 46vw, calc(100vw - 32px)', alt: c.alt, eager: i < 3, priority: i < 2 })}</div>
   <h2 class="cat-name">${c.name}</h2>
   <p class="cat-count">${c.items.length} ${c.items.length === 1 ? 'utilaj' : 'utilaje'} în stoc</p>
 </a></li>`));
   const brands = [...new Set(products.map((p) => p.brand))].sort((a, b) => a.localeCompare(b, 'ro'));
   const slots = {
     categories: `<ul class="grid cat-grid" role="list">${cards.join('')}</ul>`,
+    faq: faqHtml(BUY_FAQ, 'faq-title'),
     summary: `<p class="lead">Avem acum ${products.length} utilaje în stoc: ${cats.map((c) => `${c.items.length} ${c.items.length === 1 ? c.one : c.lower}`).join(' și ')}. Mărci: ${brands.join(', ')}. Majoritatea sunt importate din ${[...new Set(products.map((p) => p.origin).filter(Boolean))].join(' și ')}.</p>`,
   };
   await page('/utilaje', 'utilaje.html', {
     title: meta.title, description: meta.description, css: ['utilaje'], bodyAttrs: 'data-page="utilaje"', mainClass: 'section',
     main: fill(body, slots), crumbs: [['Acasă', '/'], ['Utilaje', '/utilaje']],
-    ld: [{ '@type': 'CollectionPage', '@id': `${abs('/utilaje')}#collection`, name: 'Categorii utilaje agricole', url: abs('/utilaje') }],
+    ld: [{ '@type': 'CollectionPage', '@id': `${abs('/utilaje')}#collection`, name: 'Categorii utilaje agricole', url: abs('/utilaje') }, faqLd(BUY_FAQ, '/utilaje')],
   }, meta.updated);
   for (const c of cats) await categoryPage(c);
 }
@@ -389,6 +408,8 @@ async function categoryPage(c) {
   const brands = [...new Set(c.items.map((p) => p.brand))].sort((a, b) => a.localeCompare(b, 'ro'));
   const years = c.items.map((p) => p.year).filter(Boolean);
   const title = `${c.name} second hand de vânzare | Tractoare Tecuci`;
+  const guideRe = CAT_GUIDES[c.key];
+  const guides = guideRe ? posts.filter((p) => guideRe.test(p.slug) && !(c.key === 'tractor' && CAT_GUIDES.telescopic.test(p.slug))) : [];
   const intro = `${c.items.length} ${c.items.length === 1 ? c.one : c.lower} în stoc, ${years.length ? `din anii ${Math.min(...years)}–${Math.max(...years)}, ` : ''}mărcile ${brands.join(', ')}. Fiecare anunț are fotografiile exemplarului, anul, orele de funcționare și țara de proveniență. Pentru preț, vizionare sau transport, sună-ne sau scrie-ne pe WhatsApp.`;
   const main = `<div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Acasă</a> <span aria-hidden="true">/</span> <a href="/utilaje">Utilaje</a> <span aria-hidden="true">/</span> <span aria-current="page">${c.name}</span></nav>
@@ -396,6 +417,10 @@ async function categoryPage(c) {
   <p class="lead">${esc(intro)}</p>
   ${grid(c.items, { level: 2, eagerFirst: true, eagerCount: 3 })}
   <p class="more-row"><a class="btn more-btn" href="/products">Tot stocul ${icon('arrow')}</a></p>
+  ${guides.length ? `<section class="guides" aria-labelledby="guides-title">
+    <h2 id="guides-title">Ghiduri pentru ${c.lower}</h2>
+    <ul role="list">${guides.map((p) => `<li><a href="/blog/${p.slug}">${esc(p.title)}</a><span>${esc(p.excerpt || '')}</span></li>`).join('')}</ul>
+  </section>` : ''}
 </div>`;
   await page(path, `utilaje/${c.slug}.html`, {
     title: truncate(title, 60), description: truncate(`${c.name} second hand din import: ${brands.join(', ')}. ${c.items.length} în stoc la Tecuci, cu poze reale, an și ore de funcționare. Transport în toată țara.`, 158),
@@ -544,7 +569,7 @@ async function blogPages() {
   const cats = [...new Set(posts.flatMap((p) => (p.cats?.length ? p.cats : ['ghiduri'])))];
   const label = (c) => ({ ghiduri: 'Ghiduri', intretinere: 'Întreținere' }[c] || c);
   const cards = await Promise.all(posts.map(async (p, i) => `<li><a class="card post-card" href="/blog/${p.slug}" data-cats="${(p.cats || ['ghiduri']).join(' ')}">
-  ${await pic(p.cover, { widths: [400, 800], sizes: '(min-width: 1040px) 375px, (min-width: 740px) 46vw, calc(100vw - 32px)', alt: p.alt || p.title, eager: i < 3, priority: i === 0 })}
+  ${await pic(p.cover, { widths: [400, 800], sizes: '(min-width: 1040px) 375px, (min-width: 740px) 46vw, calc(100vw - 32px)', alt: p.alt || p.title, eager: i < 3, priority: i < 3 })}
   <div class="body"><h2 class="card-title">${esc(p.title)}</h2><p class="muted">${esc(p.excerpt || '')}</p></div>
 </a></li>`));
   const slots = {
@@ -745,6 +770,9 @@ ${products.map((p) => {
 ${p.description}
 ${s ? `\nSpecificații de model (TractorData.com, date de catalog, nu ale exemplarului):\n${s.spec.map((x) => `- ${x.k}: ${x.v}`).join('\n')}\n` : ''}`;
 }).join('\n')}
+## Întrebări frecvente
+
+${BUY_FAQ.map(([q, a]) => `### ${q}\n\n${a}\n`).join('\n')}
 ## Ghiduri
 
 ${posts.map((p) => `### ${p.title}\n\n${abs(`/blog/${p.slug}`)}\n\n${plain(p.html)}\n`).join('\n')}`;
@@ -800,7 +828,8 @@ await categoriesPage();
 await stockPage();
 for (const p of products) await productPage(p);
 await blogPages();
-await staticPage('despre-noi', '/despre-noi');
+const aboutFaq = [...source('despre-noi').body.matchAll(/<summary>([\s\S]*?)<\/summary>\s*<p>([\s\S]*?)<\/p>/g)].map((m) => [unhtml(m[1]), unhtml(m[2])]);
+await staticPage('despre-noi', '/despre-noi', { ld: aboutFaq.length ? [faqLd(aboutFaq, '/despre-noi')] : [] });
 await staticPage('contact', '/contact', { slots: { map: '' } });
 await staticPage('termeni', '/termeni');
 await staticPage('confidentialitate', '/confidentialitate', { slots: { analytics: ga4 ? read('src/pages/_analytics-policy.html') : '' } });

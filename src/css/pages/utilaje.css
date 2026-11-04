@@ -223,3 +223,26 @@
       transition-duration: 0.01ms !important;
     }
   }
+
+  /* 11) Întrebări despre cumpărare (răspunsuri scurte, citabile) */
+  body[data-page="utilaje"] .faq-block { max-width: 820px; margin: 56px auto 0; }
+  body[data-page="utilaje"] .faq-block h2 { text-align: center; margin: 0 0 18px; }
+  body[data-page="utilaje"] .faq { display: grid; gap: 10px; }
+  body[data-page="utilaje"] .q {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 14px 16px; box-shadow: var(--shadow); transition: border-color .2s ease;
+  }
+  body[data-page="utilaje"] .q[open] { border-color: var(--brand-400); }
+  body[data-page="utilaje"] .q summary {
+    list-style: none; cursor: pointer; font-weight: 700; color: var(--text);
+    position: relative; padding-right: 28px; min-height: 24px;
+  }
+  body[data-page="utilaje"] .q summary::-webkit-details-marker { display: none; }
+  body[data-page="utilaje"] .q summary::after {
+    content: ""; position: absolute; right: 4px; top: 6px; width: 8px; height: 8px;
+    border-right: 2px solid var(--brand-500); border-bottom: 2px solid var(--brand-500);
+    transform: rotate(45deg); transition: transform .2s ease;
+  }
+  body[data-page="utilaje"] .q[open] summary::after { transform: rotate(-135deg); top: 10px; }
+  body[data-page="utilaje"] .q summary:hover { color: var(--brand-600); }
+  body[data-page="utilaje"] .q p { color: var(--text-2); margin: 10px 0 0; line-height: 1.6; }
