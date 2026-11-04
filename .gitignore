@@ -2,3 +2,4 @@ tools/node_modules/
 .tmp/
 graphify-out/
 .claude/
+drafts/

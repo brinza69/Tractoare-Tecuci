@@ -630,6 +630,8 @@ async function postPage(p, label) {
     <div class="post-body">
       <div class="prose">
         ${postHtml(p.html)}
+        ${p.sources?.length ? `<h2>Surse</h2>
+        <ul class="sources">${p.sources.map((u) => `<li><a href="${esc(u)}" rel="noopener">${esc(u.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''))}</a></li>`).join('')}</ul>` : ''}
         <div class="share">
           <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(share)}" rel="noopener">Facebook</a>
           <a class="btn" href="https://wa.me/?text=${encodeURIComponent(`${p.title} ${share}`)}" rel="noopener">WhatsApp</a>
