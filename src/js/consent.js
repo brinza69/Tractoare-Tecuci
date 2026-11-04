@@ -53,7 +53,7 @@
   box.className = 'consent';
   box.setAttribute('aria-label', 'Cookie-uri');
   box.hidden = true;
-  box.innerHTML = `<div class="consent-card" tabindex="-1">
+  box.innerHTML = `<div class="consent-card">
     <h2 class="consent-title">Cookie-uri</h2>
     <p>Folosim Google Analytics doar dacă ești de acord, ca să vedem ce pagini ajută. Fără acord nu se încarcă nimic de la Google. Detalii în <a href="/confidentialitate#cookies">politica de confidențialitate</a>.</p>
     <form class="consent-choices" hidden>
@@ -71,8 +71,26 @@
   const form = box.querySelector('form');
   const card = box.querySelector('.consent-card');
   const btn = (k) => box.querySelector(`[data-c="${k}"]`);
+  // Small phones: the first view would sit on the hero buttons, so it steps aside (invisible, out of the tab order)
+  // until they scroll away. Never once the switches are open. Nothing is tracked in the meantime.
+  const hero = document.querySelector('[data-hero-cta]');
+  let choosing = false;
+  let raf = 0;
+  const yieldCheck = () => {
+    raf = 0;
+    if (!hero || box.hidden || choosing) { box.removeAttribute('data-yield'); return; }
+    const a = card.getBoundingClientRect();
+    const b = hero.getBoundingClientRect();
+    box.toggleAttribute('data-yield', a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom);
+  };
+  if (hero) {
+    const queue = () => { raf ||= requestAnimationFrame(yieldCheck); };
+    addEventListener('scroll', queue, { passive: true });
+    addEventListener('resize', queue);
+  }
   const open = (choose) => {
     const c = read();
+    choosing = choose;
     form.elements.analytics.checked = !!c?.analytics;
     form.elements.marketing.checked = !!c?.marketing;
     form.hidden = !choose;
@@ -80,8 +98,9 @@
     btn('save').hidden = !choose;
     box.hidden = false;
     document.body.classList.add('consent-open');
-    // First view: focus the card, not a button, so neither Accept nor Refuz is highlighted.
-    (choose ? form.elements.analytics : card).focus({ preventScroll: true });
+    yieldCheck();
+    // The first view takes no focus, so neither Accept nor Refuz is highlighted; the switches view focuses Statistici.
+    if (choose) form.elements.analytics.focus({ preventScroll: true });
   };
   const close = () => { box.hidden = true; document.body.classList.remove('consent-open'); };
   const decide = (c) => { c.ts = Date.now(); write(c); apply(c); close(); };
