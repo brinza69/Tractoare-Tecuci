@@ -10,73 +10,6 @@
 
 ## Utilaje în stoc
 
-### Fendt Farmer 307 LSA, 1988
-
-- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-farmer-307-lsa-1988
-- Tip: Tractor; marcă: Fendt; an: 1988; 5.600 ore de funcționare; import Italia
-- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-farmer-307-lsa-IDkN37g.html
-
-Tractor Fendt Farmer, an de fabricație 1988. Motor MWM turbo, 3 cilindri, cu pompă de injecție în linie, circa 75 CP. Tracțiune 4x2, cutie de viteze mecanică cu reductor, priză de putere 540 rot/min. Recent importat din Italia.
-
-Specificații de model (TractorData.com, date de catalog, nu ale exemplarului):
-- Ani de producție: 1985–1993
-- Motor: MWM 3,1 L 3 cilindri, diesel
-- Transmisie: 21 viteze
-- Rezervor combustibil: 79,9 L
-- Debit pompă hidraulică: 37,1 lpm
-- Capacitate ridicare spate: 2865 kg
-- Priză de putere spate: 540, 750, 1000 rot/min
-- Ampatament: 229 cm
-- Greutate: 3150–3421 kg
-- Anvelope față: 10.00-16
-- Anvelope spate: 16.9R34
-
-### Fendt 930 Vario, 2008
-
-- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-930-vario-2008
-- Tip: Tractor; marcă: Fendt; an: 2008; 8.503 ore de funcționare; import Italia
-- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-vario-930-IDkAofo.html
-
-Tractor Fendt, an de fabricație 2008, 8.500 ore de funcționare. Motor Deutz, 300 CP, cutie Vario TMS în parametri. Cabină suspendată (perne de aer), punte și tiranți față, climă, compresor. Recent importat din Italia.
-
-### Fendt 820 Vario TMS, 2011
-
-- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-820-vario-tms-2011
-- Tip: Tractor; marcă: Fendt; an: 2011; 7.500 ore de funcționare; import Italia
-- Anunț OLX: https://www.olx.ro/d/oferta/fendt-vario-tms-820-IDkIn6v.html
-
-Tractor Fendt 820 Vario TMS (Com 3), an de fabricație 2011. Motor Deutz, 6 cilindri, 205 CP. Tiranți și priză de putere față, cutie în parametri. Foarte bine întreținut, recent importat din Italia, cu factură externă.
-
-Specificații de model (TractorData.com, date de catalog, nu ale exemplarului):
-- Ani de producție: din 2006
-- Fabricat în: Marktoberdorf, Germania
-- Motor: Deutz 6,1 L 6 cilindri, diesel
-- Putere motor (brut): 154,4 kW (210 CP)
-- Putere motor (net): 141,7 kW (193 CP)
-- Putere la priză (declarată): 130,5 kW (177 CP)
-- Transmisie: transmisie continuu variabilă (IVT)
-- Rezervor combustibil: 339,9 L
-- Capacitate ridicare spate: 6053 kg
-- Priză de putere spate: 540/540E/1000 rot/min
-- Ampatament: 271 cm
-- Greutate: 7021 kg
-
-### Fendt Farmer 309 Ci, 2009
-
-- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-farmer-309-ci-2009
-- Tip: Tractor; marcă: Fendt; an: 2009; 4.500 ore de funcționare; import Italia
-- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-farmer309ci-IDkqdgA.html
-
-Tractor Fendt, an de fabricație 2009. Motor Deutz turbo, 4 cilindri, 104 CP. Anvelope noi, totul mecanic, 4.500 ore de funcționare. Impecabil din toate punctele de vedere, cu factură externă.
-
-### Massey Ferguson 7724, 2019
-
-- Pagina: https://www.tractoaretecuci.ro/utilaje/massey-ferguson-7724-2019
-- Tip: Tractor; marcă: Massey Ferguson; an: 2019; 5.998 ore de funcționare; import Italia
-- Anunț OLX: https://www.olx.ro/d/oferta/tractor-massey-ferguson-7724-IDk1TQc.html
-
-Tractor Massey Ferguson, motor SISU turbo, 240 CP. Cutie full powershift Dyna-6, punte suspendată, cabină amortizată, tiranți față. Unic proprietar, recent importat din Italia, cu factură externă.
-
 ### Massey Ferguson 2230, 2011
 
 - Pagina: https://www.tractoaretecuci.ro/utilaje/massey-ferguson-2230-2011
@@ -225,6 +158,73 @@ Specificații de model (TractorData.com, date de catalog, nu ale exemplarului):
 - Greutate: 5420 kg
 - Anvelope față: 540/65R24
 - Anvelope spate: 600/65R38
+
+### Fendt Farmer 307 LSA, 1988
+
+- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-farmer-307-lsa-1988
+- Tip: Tractor; marcă: Fendt; an: 1988; 5.600 ore de funcționare; import Italia
+- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-farmer-307-lsa-IDkN37g.html
+
+Tractor Fendt Farmer, an de fabricație 1988. Motor MWM turbo, 3 cilindri, cu pompă de injecție în linie, circa 75 CP. Tracțiune 4x2, cutie de viteze mecanică cu reductor, priză de putere 540 rot/min. Recent importat din Italia.
+
+Specificații de model (TractorData.com, date de catalog, nu ale exemplarului):
+- Ani de producție: 1985–1993
+- Motor: MWM 3,1 L 3 cilindri, diesel
+- Transmisie: 21 viteze
+- Rezervor combustibil: 79,9 L
+- Debit pompă hidraulică: 37,1 lpm
+- Capacitate ridicare spate: 2865 kg
+- Priză de putere spate: 540, 750, 1000 rot/min
+- Ampatament: 229 cm
+- Greutate: 3150–3421 kg
+- Anvelope față: 10.00-16
+- Anvelope spate: 16.9R34
+
+### Fendt 930 Vario, 2008
+
+- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-930-vario-2008
+- Tip: Tractor; marcă: Fendt; an: 2008; 8.503 ore de funcționare; import Italia
+- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-vario-930-IDkAofo.html
+
+Tractor Fendt, an de fabricație 2008, 8.500 ore de funcționare. Motor Deutz, 300 CP, cutie Vario TMS în parametri. Cabină suspendată (perne de aer), punte și tiranți față, climă, compresor. Recent importat din Italia.
+
+### Fendt 820 Vario TMS, 2011
+
+- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-820-vario-tms-2011
+- Tip: Tractor; marcă: Fendt; an: 2011; 7.500 ore de funcționare; import Italia
+- Anunț OLX: https://www.olx.ro/d/oferta/fendt-vario-tms-820-IDkIn6v.html
+
+Tractor Fendt 820 Vario TMS (Com 3), an de fabricație 2011. Motor Deutz, 6 cilindri, 205 CP. Tiranți și priză de putere față, cutie în parametri. Foarte bine întreținut, recent importat din Italia, cu factură externă.
+
+Specificații de model (TractorData.com, date de catalog, nu ale exemplarului):
+- Ani de producție: din 2006
+- Fabricat în: Marktoberdorf, Germania
+- Motor: Deutz 6,1 L 6 cilindri, diesel
+- Putere motor (brut): 154,4 kW (210 CP)
+- Putere motor (net): 141,7 kW (193 CP)
+- Putere la priză (declarată): 130,5 kW (177 CP)
+- Transmisie: transmisie continuu variabilă (IVT)
+- Rezervor combustibil: 339,9 L
+- Capacitate ridicare spate: 6053 kg
+- Priză de putere spate: 540/540E/1000 rot/min
+- Ampatament: 271 cm
+- Greutate: 7021 kg
+
+### Fendt Farmer 309 Ci, 2009
+
+- Pagina: https://www.tractoaretecuci.ro/utilaje/fendt-farmer-309-ci-2009
+- Tip: Tractor; marcă: Fendt; an: 2009; 4.500 ore de funcționare; import Italia
+- Anunț OLX: https://www.olx.ro/d/oferta/tractor-fendt-farmer309ci-IDkqdgA.html
+
+Tractor Fendt, an de fabricație 2009. Motor Deutz turbo, 4 cilindri, 104 CP. Anvelope noi, totul mecanic, 4.500 ore de funcționare. Impecabil din toate punctele de vedere, cu factură externă.
+
+### Massey Ferguson 7724, 2019
+
+- Pagina: https://www.tractoaretecuci.ro/utilaje/massey-ferguson-7724-2019
+- Tip: Tractor; marcă: Massey Ferguson; an: 2019; 5.998 ore de funcționare; import Italia
+- Anunț OLX: https://www.olx.ro/d/oferta/tractor-massey-ferguson-7724-IDk1TQc.html
+
+Tractor Massey Ferguson, motor SISU turbo, 240 CP. Cutie full powershift Dyna-6, punte suspendată, cabină amortizată, tiranți față. Unic proprietar, recent importat din Italia, cu factură externă.
 
 ## Întrebări frecvente
 

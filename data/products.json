@@ -1,5 +1,2121 @@
 [
   {
+    "olxId": 310805872,
+    "slug": "massey-ferguson-2230-2011",
+    "title": "Massey Ferguson 2230",
+    "brand": "Massey Ferguson",
+    "category": "tractor",
+    "type": "",
+    "year": 2011,
+    "hours": 3600,
+    "origin": "Franța",
+    "description": "Tractor Massey Ferguson 2230, fabricat în 2011. Motor Perkins, 4 cilindri, 80 CP. Carte RAR, aer condiționat, în condiții excelente.",
+    "olxUrl": "https://www.olx.ro/d/oferta/massey-ferguson-2230-IDl26NV.html",
+    "refreshed": "2026-11-08T12:18:31+02:00",
+    "created": "2026-10-18T12:18:26+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dkxt50f2zvds3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/fk5gv3rpzoum2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/wi5mi87chpjg1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/w9zhz2coccs83-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/zrg0y3l5q0pd-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ei3azqm1ktby2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/a1c9m8gi106z2-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 310799841,
+    "slug": "fendt-favorit-512-c-1997",
+    "title": "Fendt Favorit 512 C",
+    "brand": "Fendt",
+    "category": "tractor",
+    "type": "",
+    "year": 1997,
+    "hours": 9800,
+    "origin": "Italia",
+    "description": "Tractor Fendt, an de fabricație 1997. Motor MWM turbo, 6 cilindri, 125 CP. 9.800 ore de funcționare. Cutie mecanică cu inversor, punte suspendată. Foarte bine întreținut, import Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/fendt-favorit-512-c-IDl25eF.html",
+    "refreshed": "2026-11-08T09:57:29+02:00",
+    "created": "2026-10-18T09:57:24+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/tdsxfqjlyow03-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/i509kb4i8ztv3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ind559vaurtc2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/k2fvuqeulppt2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/3opfh3ar2doe-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bqytba2banfg3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/gro09ns7ad5t-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/oimqn244mkbk-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 310799217,
+    "slug": "mccormick-cx-85-2005",
+    "title": "McCormick CX 85",
+    "brand": "McCormick",
+    "category": "tractor",
+    "type": "",
+    "year": 2005,
+    "hours": 7500,
+    "origin": "Italia",
+    "description": "Tractor McCormick, an de fabricație 2005. Motor Perkins turbo, 4 cilindri, 95 CP. Încărcător frontal, cutie de viteze Case cu inversor. Foarte bine întreținut, import Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-mccormick-cx-85-IDl254B.html",
+    "refreshed": "2026-11-08T09:39:00+02:00",
+    "created": "2026-10-18T09:38:55+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/o7ucspfmyxkm1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1y5zpxmyliu83-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/2u7n8ib6d5l4-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bopu69e6gqtx1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xtt5dxa5j11y-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/pge9morrpr4u3-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1080,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 310798971,
+    "slug": "same-argon-75-f-2005",
+    "title": "Same Argon 75 F",
+    "brand": "Same",
+    "category": "tractor",
+    "type": "",
+    "year": 2005,
+    "hours": 4852,
+    "origin": "Italia",
+    "description": "Tractor Same, an de fabricație 2005. Motor de 4 cilindri cu răcire pe aer, 75 CP, 4x4. Cutie mecanică cu inversor. 4.800 ore de funcționare, folosit doar la deszăpeziri. Import Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-same-argon-75-f-IDl250D.html",
+    "refreshed": "2026-11-08T09:31:40+02:00",
+    "created": "2026-10-18T09:31:34+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/95cd4ie3mmac2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ax214yh20ilj3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/n0uk5734daaq3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/m057hpwj5rn1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/9vpu8jfbjye73-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/khjj8irpszsi-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8txotwpnd64m-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 310798787,
+    "slug": "fendt-209-s-2005",
+    "title": "Fendt 209 S",
+    "brand": "Fendt",
+    "category": "tractor",
+    "type": "",
+    "year": 2005,
+    "hours": 85,
+    "origin": "Italia",
+    "description": "Tractor Fendt, an de fabricație 2005. Motor Deutz, 4 cilindri cu răcire pe aer, 95 CP. Tiranți și priză de putere față, punte suspendată, aer condiționat. Cutie de viteze mecanică cu inversor. Recent importat din Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-209s-IDl24XF.html",
+    "refreshed": "2026-11-08T09:25:58+02:00",
+    "created": "2026-10-18T09:25:54+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/rhe94jax5dy42-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/32yoc7z2vbh6-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/j0j3edtz9goo2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dprea68tm7lw2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/73weyr4kq7rr3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1n851gugivy21-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 310775204,
+    "slug": "john-deere-6125r-2015",
+    "title": "John Deere 6125R",
+    "brand": "John Deere",
+    "category": "tractor",
+    "type": "",
+    "year": 2015,
+    "hours": 7280,
+    "origin": "Italia",
+    "description": "Tractor John Deere, an de fabricație 2015, 7.280 ore de funcționare. Motor turbo, 4 cilindri, 125 CP. Cutie PowerQuad, priză și tiranți față, încărcător frontal original John Deere (cu furci de baloți), cabină amortizată. Recent importat din Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/john-deere-6125r-IDl1YPi.html",
+    "refreshed": "2026-11-07T18:14:45+02:00",
+    "created": "2026-10-17T18:14:41+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8t18aqnv98q9-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/mvz63xktc1tz-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/44tehd6dsd3r-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1jgnt54bh8q03-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dv2rlc9rlwuo1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ktf3vkj4tz081-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xu6kx4lgto8q2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/0pvediji6lz83-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 304203631,
+    "slug": "mccormick-x4-80-xl-2020",
+    "title": "McCormick X4.80 XL",
+    "brand": "McCormick",
+    "category": "tractor",
+    "type": "viticol",
+    "year": 2020,
+    "hours": 5191,
+    "origin": "Italia",
+    "description": "Tractor viticol McCormick, an de fabricație 2020, 5.191 ore de funcționare. Motor Deutz turbo, 4 cilindri, 85 CP. Tiranți și priză față, cabină climatizată, cutie mecanică cu inversor, distribuitoare hidraulice manuale. Recent adus.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-viticol-mccormick-x4-80xl-IDkApgb.html",
+    "refreshed": "2026-11-07T18:09:40+02:00",
+    "created": "2026-05-20T17:57:11+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/tqh7f24s75ks-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ptesegjtqf281-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/wz6krs85ep2p2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/kmteyhal7x88-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/4wczorls8b0n1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/5idt0sdgiku93-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/6py9uos7cur52-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 309277921,
+    "slug": "merlo-34-10-2007",
+    "title": "Merlo 34.10",
+    "brand": "Merlo",
+    "category": "telescopic",
+    "type": "",
+    "year": 2007,
+    "hours": 5400,
+    "origin": "Italia",
+    "description": "Încărcător telescopic Merlo, an de fabricație 2007, 5.400 ore de funcționare. Sarcină de ridicare 3,4 tone, braț telescopic de 10 metri. Motor Deutz, 4 cilindri. Cu cupă și factură externă.",
+    "olxUrl": "https://www.olx.ro/d/oferta/telescopic-merlo-34-10-IDkWHjz.html",
+    "refreshed": "2026-11-07T18:09:33+02:00",
+    "created": "2026-09-12T15:15:50+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/gobhad8307j9-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/4ajrz1ul2mlc2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/w58ps8i0yjon1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/uovy377ltsd81-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/10cpwcfjzwrd2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/jupechizeztx1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/zfz9af0rrg0a1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/a1libvg6xzss-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/86bi1cvkuc8a3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bwokore1hzpf1-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-960.webp"
+          }
+        ]
+      },
+      {
+        "w": 960,
+        "h": 1707,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-960.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 309279297,
+    "slug": "fendt-718-vario-2021",
+    "title": "Fendt 718 Vario",
+    "brand": "Fendt",
+    "category": "tractor",
+    "type": "",
+    "year": 2021,
+    "hours": 4000,
+    "origin": "Italia",
+    "description": "Tractor Fendt, an de fabricație 2021, 4.000 ore de funcționare, unic proprietar în Italia. Motor Deutz, 6 cilindri, 195 CP, cutie Vario în parametri. Punte suspendată, tiranți față, cabină amortizată (perne de aer), climă, compresor. Recent adus din Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-718-vario-IDkWHFL.html",
+    "refreshed": "2026-11-07T18:09:22+02:00",
+    "created": "2026-09-12T15:48:09+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/jzginkaqo6mt1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/cn3s9qftc95e3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ft4wk0ysbf5q1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/f97d68tr2bk1-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/vl4tgzc9od1f3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/01cf6cu08po03-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/mkw2vjolkj662-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/3lil95xuui1n3-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "olxId": 309286736,
+    "slug": "fendt-415-vario-2010",
+    "title": "Fendt 415 Vario",
+    "brand": "Fendt",
+    "category": "tractor",
+    "type": "",
+    "year": 2010,
+    "hours": 8000,
+    "origin": "Italia",
+    "description": "Tractor Fendt, an de fabricație 2010, circa 8.000 ore. Motor Deutz, 4 cilindri, 150 CP. Aer condiționat, compresor, cutie Vario în parametri, punte suspendată, tiranți față. Recent importat din Italia.",
+    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-415-vario-IDkWJBK.html",
+    "refreshed": "2026-11-07T18:09:11+02:00",
+    "created": "2026-09-12T18:47:42+03:00",
+    "photoKeys": [
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/6g8mo4ivfl4l3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bfxmz4eoy57v2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/eygrbwhoiv4l2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8hnpjleke4pm-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/9dgkj4p2ihxz2-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/c1exvkjoadyo3-RO/image",
+      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xuikyqx5r7yo2-RO/image"
+    ],
+    "photos": [
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-1440.webp"
+          }
+        ]
+      },
+      {
+        "w": 1440,
+        "h": 1920,
+        "src": [
+          {
+            "w": 240,
+            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-240.webp"
+          },
+          {
+            "w": 480,
+            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-480.webp"
+          },
+          {
+            "w": 960,
+            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-960.webp"
+          },
+          {
+            "w": 1200,
+            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-1200.webp"
+          },
+          {
+            "w": 1440,
+            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-1440.webp"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "olxId": 307216774,
     "slug": "fendt-farmer-307-lsa-1988",
     "title": "Fendt Farmer 307 LSA",
@@ -1088,2122 +3204,6 @@
           {
             "w": 1440,
             "src": "assets/utilaje/massey-ferguson-7724-2019/7-a2caf092-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310805872,
-    "slug": "massey-ferguson-2230-2011",
-    "title": "Massey Ferguson 2230",
-    "brand": "Massey Ferguson",
-    "category": "tractor",
-    "type": "",
-    "year": 2011,
-    "hours": 3600,
-    "origin": "Franța",
-    "description": "Tractor Massey Ferguson 2230, fabricat în 2011. Motor Perkins, 4 cilindri, 80 CP. Carte RAR, aer condiționat, în condiții excelente.",
-    "olxUrl": "https://www.olx.ro/d/oferta/massey-ferguson-2230-IDl26NV.html",
-    "refreshed": "2026-11-01T12:18:32+02:00",
-    "created": "2026-10-18T12:18:26+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dkxt50f2zvds3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/fk5gv3rpzoum2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/wi5mi87chpjg1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/w9zhz2coccs83-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/zrg0y3l5q0pd-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ei3azqm1ktby2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/a1c9m8gi106z2-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/1-33da9fff-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/2-baa829d0-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/3-1b6f23bf-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/4-5fe91697-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/5-4db2ba36-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/6-e346ab77-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/massey-ferguson-2230-2011/7-80d2587d-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310799841,
-    "slug": "fendt-favorit-512-c-1997",
-    "title": "Fendt Favorit 512 C",
-    "brand": "Fendt",
-    "category": "tractor",
-    "type": "",
-    "year": 1997,
-    "hours": 9800,
-    "origin": "Italia",
-    "description": "Tractor Fendt, an de fabricație 1997. Motor MWM turbo, 6 cilindri, 125 CP. 9.800 ore de funcționare. Cutie mecanică cu inversor, punte suspendată. Foarte bine întreținut, import Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/fendt-favorit-512-c-IDl25eF.html",
-    "refreshed": "2026-11-01T09:57:28+02:00",
-    "created": "2026-10-18T09:57:24+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/tdsxfqjlyow03-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/i509kb4i8ztv3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ind559vaurtc2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/k2fvuqeulppt2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/3opfh3ar2doe-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bqytba2banfg3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/gro09ns7ad5t-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/oimqn244mkbk-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/1-8ce44be9-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/2-3ee2b798-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/3-2a4d341c-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/4-a8a02ba7-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/5-4506deea-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/6-a40440ae-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/7-9cf55b52-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-favorit-512-c-1997/8-4f928779-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310799217,
-    "slug": "mccormick-cx-85-2005",
-    "title": "McCormick CX 85",
-    "brand": "McCormick",
-    "category": "tractor",
-    "type": "",
-    "year": 2005,
-    "hours": 7500,
-    "origin": "Italia",
-    "description": "Tractor McCormick, an de fabricație 2005. Motor Perkins turbo, 4 cilindri, 95 CP. Încărcător frontal, cutie de viteze Case cu inversor. Foarte bine întreținut, import Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-mccormick-cx-85-IDl254B.html",
-    "refreshed": "2026-11-01T09:38:58+02:00",
-    "created": "2026-10-18T09:38:55+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/o7ucspfmyxkm1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1y5zpxmyliu83-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/2u7n8ib6d5l4-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bopu69e6gqtx1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xtt5dxa5j11y-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/pge9morrpr4u3-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/1-e6d1f801-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/2-36fe7f4d-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/3-2fef4c78-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1080,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/4-2b03a9ff-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/5-5c6531af-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-cx-85-2005/6-923896d1-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310798971,
-    "slug": "same-argon-75-f-2005",
-    "title": "Same Argon 75 F",
-    "brand": "Same",
-    "category": "tractor",
-    "type": "",
-    "year": 2005,
-    "hours": 4852,
-    "origin": "Italia",
-    "description": "Tractor Same, an de fabricație 2005. Motor de 4 cilindri cu răcire pe aer, 75 CP, 4x4. Cutie mecanică cu inversor. 4.800 ore de funcționare, folosit doar la deszăpeziri. Import Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-same-argon-75-f-IDl250D.html",
-    "refreshed": "2026-11-01T09:31:38+02:00",
-    "created": "2026-10-18T09:31:34+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/95cd4ie3mmac2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ax214yh20ilj3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/n0uk5734daaq3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/m057hpwj5rn1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/9vpu8jfbjye73-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/khjj8irpszsi-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8txotwpnd64m-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/1-9f221b44-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/2-fea3823b-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/3-34c4ffb7-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/4-f9e7cb1c-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/5-d3764bfe-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/6-7b38cf53-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/same-argon-75-f-2005/7-36a91228-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310798787,
-    "slug": "fendt-209-s-2005",
-    "title": "Fendt 209 S",
-    "brand": "Fendt",
-    "category": "tractor",
-    "type": "",
-    "year": 2005,
-    "hours": 85,
-    "origin": "Italia",
-    "description": "Tractor Fendt, an de fabricație 2005. Motor Deutz, 4 cilindri cu răcire pe aer, 95 CP. Tiranți și priză de putere față, punte suspendată, aer condiționat. Cutie de viteze mecanică cu inversor. Recent importat din Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-209s-IDl24XF.html",
-    "refreshed": "2026-11-01T09:25:57+02:00",
-    "created": "2026-10-18T09:25:54+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/rhe94jax5dy42-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/32yoc7z2vbh6-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/j0j3edtz9goo2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dprea68tm7lw2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/73weyr4kq7rr3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1n851gugivy21-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/1-95f52b2a-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/2-0b067afc-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/3-8afa1137-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/4-6425af1f-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/5-f2c52fcb-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-209-s-2005/6-cf4c6f63-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 310775204,
-    "slug": "john-deere-6125r-2015",
-    "title": "John Deere 6125R",
-    "brand": "John Deere",
-    "category": "tractor",
-    "type": "",
-    "year": 2015,
-    "hours": 7280,
-    "origin": "Italia",
-    "description": "Tractor John Deere, an de fabricație 2015, 7.280 ore de funcționare. Motor turbo, 4 cilindri, 125 CP. Cutie PowerQuad, priză și tiranți față, încărcător frontal original John Deere (cu furci de baloți), cabină amortizată. Recent importat din Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/john-deere-6125r-IDl1YPi.html",
-    "refreshed": "2026-10-31T18:14:47+02:00",
-    "created": "2026-10-17T18:14:41+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8t18aqnv98q9-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/mvz63xktc1tz-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/44tehd6dsd3r-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/1jgnt54bh8q03-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/dv2rlc9rlwuo1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ktf3vkj4tz081-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xu6kx4lgto8q2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/0pvediji6lz83-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/1-1efbd801-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/2-507926b1-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/3-b4b49581-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/4-21735ebf-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/5-82eb5e3c-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/6-fcc5fc06-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/7-69678269-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/john-deere-6125r-2015/8-7bf721d7-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 304203631,
-    "slug": "mccormick-x4-80-xl-2020",
-    "title": "McCormick X4.80 XL",
-    "brand": "McCormick",
-    "category": "tractor",
-    "type": "viticol",
-    "year": 2020,
-    "hours": 5191,
-    "origin": "Italia",
-    "description": "Tractor viticol McCormick, an de fabricație 2020, 5.191 ore de funcționare. Motor Deutz turbo, 4 cilindri, 85 CP. Tiranți și priză față, cabină climatizată, cutie mecanică cu inversor, distribuitoare hidraulice manuale. Recent adus.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-viticol-mccormick-x4-80xl-IDkApgb.html",
-    "refreshed": "2026-10-31T18:09:39+02:00",
-    "created": "2026-05-20T17:57:11+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/tqh7f24s75ks-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ptesegjtqf281-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/wz6krs85ep2p2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/kmteyhal7x88-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/4wczorls8b0n1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/5idt0sdgiku93-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/6py9uos7cur52-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/1-727707ed-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/2-aaf0587e-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/3-879882f4-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/4-69b20f8c-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/5-fe88476f-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/6-601a4821-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/mccormick-x4-80-xl-2020/7-5080c124-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 309277921,
-    "slug": "merlo-34-10-2007",
-    "title": "Merlo 34.10",
-    "brand": "Merlo",
-    "category": "telescopic",
-    "type": "",
-    "year": 2007,
-    "hours": 5400,
-    "origin": "Italia",
-    "description": "Încărcător telescopic Merlo, an de fabricație 2007, 5.400 ore de funcționare. Sarcină de ridicare 3,4 tone, braț telescopic de 10 metri. Motor Deutz, 4 cilindri. Cu cupă și factură externă.",
-    "olxUrl": "https://www.olx.ro/d/oferta/telescopic-merlo-34-10-IDkWHjz.html",
-    "refreshed": "2026-10-31T18:09:30+02:00",
-    "created": "2026-09-12T15:15:50+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/gobhad8307j9-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/4ajrz1ul2mlc2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/w58ps8i0yjon1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/uovy377ltsd81-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/10cpwcfjzwrd2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/jupechizeztx1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/zfz9af0rrg0a1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/a1libvg6xzss-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/86bi1cvkuc8a3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bwokore1hzpf1-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/1-c61699f4-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/merlo-34-10-2007/2-0954fa0b-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/3-056d5fd6-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/4-6e85da60-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/5-f5d31d39-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/6-2e09662d-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/7-b711abc5-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/8-3887b9ac-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/9-e6b48d53-960.webp"
-          }
-        ]
-      },
-      {
-        "w": 960,
-        "h": 1707,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/merlo-34-10-2007/10-ea44ab6b-960.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 309279297,
-    "slug": "fendt-718-vario-2021",
-    "title": "Fendt 718 Vario",
-    "brand": "Fendt",
-    "category": "tractor",
-    "type": "",
-    "year": 2021,
-    "hours": 4000,
-    "origin": "Italia",
-    "description": "Tractor Fendt, an de fabricație 2021, 4.000 ore de funcționare, unic proprietar în Italia. Motor Deutz, 6 cilindri, 195 CP, cutie Vario în parametri. Punte suspendată, tiranți față, cabină amortizată (perne de aer), climă, compresor. Recent adus din Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-718-vario-IDkWHFL.html",
-    "refreshed": "2026-10-31T18:09:22+02:00",
-    "created": "2026-09-12T15:48:09+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/jzginkaqo6mt1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/cn3s9qftc95e3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/ft4wk0ysbf5q1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/f97d68tr2bk1-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/vl4tgzc9od1f3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/01cf6cu08po03-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/mkw2vjolkj662-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/3lil95xuui1n3-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/1-82c10bea-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/2-104a2932-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/3-b849d9a2-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/4-3551c603-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/5-5d4ccd88-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/6-a0f38bd1-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/7-e26b19a0-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-718-vario-2021/8-46562265-1440.webp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "olxId": 309286736,
-    "slug": "fendt-415-vario-2010",
-    "title": "Fendt 415 Vario",
-    "brand": "Fendt",
-    "category": "tractor",
-    "type": "",
-    "year": 2010,
-    "hours": 8000,
-    "origin": "Italia",
-    "description": "Tractor Fendt, an de fabricație 2010, circa 8.000 ore. Motor Deutz, 4 cilindri, 150 CP. Aer condiționat, compresor, cutie Vario în parametri, punte suspendată, tiranți față. Recent importat din Italia.",
-    "olxUrl": "https://www.olx.ro/d/oferta/tractor-fendt-415-vario-IDkWJBK.html",
-    "refreshed": "2026-10-31T18:09:12+02:00",
-    "created": "2026-09-12T18:47:42+03:00",
-    "photoKeys": [
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/6g8mo4ivfl4l3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/bfxmz4eoy57v2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/eygrbwhoiv4l2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/8hnpjleke4pm-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/9dgkj4p2ihxz2-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/c1exvkjoadyo3-RO/image",
-      "https://frankfurt.apollo.olxcdn.com:443/v1/files/xuikyqx5r7yo2-RO/image"
-    ],
-    "photos": [
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/1-26631da5-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/2-cc70f4e2-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/3-1c4f5a57-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/4-5536aef5-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/5-d8ff36ec-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/6-0264ba9d-1440.webp"
-          }
-        ]
-      },
-      {
-        "w": 1440,
-        "h": 1920,
-        "src": [
-          {
-            "w": 240,
-            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-240.webp"
-          },
-          {
-            "w": 480,
-            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-480.webp"
-          },
-          {
-            "w": 960,
-            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-960.webp"
-          },
-          {
-            "w": 1200,
-            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-1200.webp"
-          },
-          {
-            "w": 1440,
-            "src": "assets/utilaje/fendt-415-vario-2010/7-8ce79c2d-1440.webp"
           }
         ]
       }
