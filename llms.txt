@@ -8,10 +8,15 @@
 - Program: Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00; duminică: închis
 - Prețurile nu sunt afișate pe site; se stabilesc la telefon. Stocul se actualizează din anunțurile OLX: https://compaia.olx.ro/home/
 
-## Stoc (15 utilaje, actualizat 8 noiembrie 2026)
+## Stoc (15 utilaje, actualizat 11 noiembrie 2026)
 
 ### Tractoare
 
+- [Fendt 820 Vario TMS, 2011](https://www.tractoaretecuci.ro/utilaje/fendt-820-vario-tms-2011): 7.500 ore, import Italia
+- [Fendt 930 Vario, 2008](https://www.tractoaretecuci.ro/utilaje/fendt-930-vario-2008): 8.503 ore, import Italia
+- [Fendt Farmer 309 Ci, 2009](https://www.tractoaretecuci.ro/utilaje/fendt-farmer-309-ci-2009): 4.500 ore, import Italia
+- [Massey Ferguson 7724, 2019](https://www.tractoaretecuci.ro/utilaje/massey-ferguson-7724-2019): 5.998 ore, import Italia
+- [Fendt Farmer 307 LSA, 1988](https://www.tractoaretecuci.ro/utilaje/fendt-farmer-307-lsa-1988): 5.600 ore, import Italia
 - [Massey Ferguson 2230, 2011](https://www.tractoaretecuci.ro/utilaje/massey-ferguson-2230-2011): 3.600 ore, import Franța
 - [Fendt Favorit 512 C, 1997](https://www.tractoaretecuci.ro/utilaje/fendt-favorit-512-c-1997): 9.800 ore, import Italia
 - [McCormick CX 85, 2005](https://www.tractoaretecuci.ro/utilaje/mccormick-cx-85-2005): 7.500 ore, import Italia
@@ -21,11 +26,6 @@
 - [McCormick X4.80 XL, 2020](https://www.tractoaretecuci.ro/utilaje/mccormick-x4-80-xl-2020): 5.191 ore, import Italia
 - [Fendt 718 Vario, 2021](https://www.tractoaretecuci.ro/utilaje/fendt-718-vario-2021): 4.000 ore, import Italia
 - [Fendt 415 Vario, 2010](https://www.tractoaretecuci.ro/utilaje/fendt-415-vario-2010): 8.000 ore, import Italia
-- [Fendt Farmer 307 LSA, 1988](https://www.tractoaretecuci.ro/utilaje/fendt-farmer-307-lsa-1988): 5.600 ore, import Italia
-- [Fendt 930 Vario, 2008](https://www.tractoaretecuci.ro/utilaje/fendt-930-vario-2008): 8.503 ore, import Italia
-- [Fendt 820 Vario TMS, 2011](https://www.tractoaretecuci.ro/utilaje/fendt-820-vario-tms-2011): 7.500 ore, import Italia
-- [Fendt Farmer 309 Ci, 2009](https://www.tractoaretecuci.ro/utilaje/fendt-farmer-309-ci-2009): 4.500 ore, import Italia
-- [Massey Ferguson 7724, 2019](https://www.tractoaretecuci.ro/utilaje/massey-ferguson-7724-2019): 5.998 ore, import Italia
 
 ### Încărcătoare telescopice
 
