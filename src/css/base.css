@@ -532,6 +532,14 @@ button:focus-visible{
   box-shadow:0 16px 40px rgba(0,0,0,.14);
   border-color:var(--eco-accent);
 }
+.brand-hero__partner{
+  margin:16px auto 0;
+  max-width:36ch;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.5;
+}
+.brand-hero__partner strong{color:var(--text);font-weight:600}
 
 /* =============================================================================
    LOADING STATE

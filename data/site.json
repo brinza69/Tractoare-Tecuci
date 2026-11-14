@@ -29,6 +29,12 @@
     { "label": "Sâmbătă", "days": ["Saturday"], "opens": "10:00", "closes": "14:00" }
   ],
   "closed": "Duminică: închis",
+  "partner": {
+    "_readme": "Producătorul pentru care firma e importator oficial (confirmat de proprietar). Date din registrul italian și de pe casella.it, 14.11.2026: P.IVA 00103940334, Loc. Cimafava, Cà Vezzeno 1/a–1/b, 29013 Carpaneto Piacentino (PC).",
+    "name": "Casella Macchine Agricole S.r.l.",
+    "place": "Carpaneto Piacentino, Italia",
+    "url": "https://casella.it/"
+  },
   "social": {
     "olx": "https://compaia.olx.ro/home/",
     "tiktok": "https://www.tiktok.com/@nicoletamirza6"

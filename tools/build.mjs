@@ -335,6 +335,9 @@ function fill(html, slots = {}) {
     .replace(/\{\{hoursHtml\}\}/g, `${site.hours.map((h) => `${h.label}: ${h.opens}–${h.closes}`).join('<br>')}<br>${esc(site.closed)}`)
     .replace(/\{\{policyVersion\}\}/g, site.policyVersion)
     .replace(/\{\{operator\}\}/g, operatorHtml)
+    .replace(/\{\{partnerName\}\}/g, esc(site.partner.name))
+    .replace(/\{\{partnerPlace\}\}/g, esc(site.partner.place))
+    .replace(/\{\{partnerUrl\}\}/g, esc(site.partner.url))
     .replace(/\{\{stockCount\}\}/g, String(products.length))
     .replace(/\{\{icon:([a-z]+)\}\}/g, (_, n) => icon(n))
     .replace(/<!-- @slot ([a-z0-9-]+) -->/g, (_, k) => {
@@ -755,6 +758,7 @@ function llms() {
 - Email: ${site.email}
 - Adresă: ${addressText}, ${site.address.postalCode}
 - Program: ${hoursText}; ${site.closed.toLowerCase()}
+- Importator oficial Casella; partener: ${site.partner.name} (${site.partner.place}), ${site.partner.url}
 - Prețurile nu sunt afișate pe site; se stabilesc la telefon. Stocul se actualizează din anunțurile OLX: ${site.social.olx}
 `;
   const short = `${head}
