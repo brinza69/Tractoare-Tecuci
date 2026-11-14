@@ -1,4 +1,8 @@
-# Handoff tractoaretecuci.ro (04.11.2026)
+# Handoff tractoaretecuci.ro (14.11.2026)
+
+## Actualizare 14.11.2026: ce mai trebuie de la proprietar
+
+„Acțiunile proprietarului” (mai jos) e reverificată pe 14.11 pe site-ul live, în cele 15 anunțuri OLX active (aceleași ca pe site) și pe fișa publică Google Maps. Pe scurt: datele firmei sunt în registrul ANAF, proprietarul doar confirmă; cele trei neclarități din anunțurile OLX sunt tot acolo; profilul Google are tot sâmbătă 09–12 și linkul fără UTM; imaginile de prezentare sunt de stoc sau generate. Lucrurile care nu depind de proprietar sunt separate, în „De făcut de administrator”.
 
 ## Actualizare 04.11.2026 (a doua): design și blog automat
 
@@ -110,17 +114,40 @@ node tools/qa.mjs              # 4 browsere × 5 lățimi (cu node tools/serve.m
 
 Textele paginilor sunt în `src/pages/`, stilurile în `src/css/`, iar telefonul, emailul, adresa, programul și ID-ul GA4 în `data/site.json`. HTML-ul de la rădăcină se generează: nu se editează direct. Graful graphify al codului e local în `graphify-out/` (`graphify update .` după schimbări).
 
-## Acțiunile proprietarului
+## Acțiunile proprietarului (verificat 14.11.2026)
 
-1. **Datele firmei** pentru Legea 365/2002: CUI și nr. Reg. Com. pentru II Mirza Nicoleta, în `data/site.json` → `company`. Blocul apare automat în subsol.
-2. **Google Business Profile:** spune-ne ce cont Google administrează profilul (sau adaugă contul Google al lui Alex ca administrator). Apoi, cu acordul tău: linkul site-ului devine `https://www.tractoaretecuci.ro/?utm_source=google&utm_medium=gbp` și programul de sâmbătă devine 10–14, ca pe site (acum profilul spune 09–12).
-3. **Search Console, în zilele următoare** (circa 10 cereri pe zi): Solicită indexarea pentru adresele marcate „de cerut” în tabelul de mai sus, apoi reinspectează adresele cerute pe 03.11; ce nu e încă pe Google primește încă o cerere.
-4. **Acces la statistici pentru proprietar (opțional):** GA4 → Administrare → Gestionarea accesului la proprietate → adaugă emailul lui, cu rolul Vizualizator sau Administrator.
-5. **De verificat în anunțurile OLX:** Fendt 209 S are 85 de ore în câmpul „Ore de lucru”; Massey Ferguson 7724 are anul 2019 în câmp și 2018 în text; la Merlo 34.10 textul spune „2025140 CP”.
-6. **Imaginile de prezentare** (servicii, despre noi, blog): dacă nu sunt poze proprii, trebuie marcate „Imagine ilustrativă”. Spune-ne care sunt.
-7. **Stocul automat:** rulează de pe acest PC (sarcina Windows, vezi „Stocul automat”). Opțional, varianta GitHub Actions, care nu depinde de PC.
-8. **Cloudflare (opțional):** `http://tractoaretecuci.ro` face 2 redirecționări până la `https://www.` (o regulă de redirect în Cloudflare le face una). Setarea „AI Crawl Control” blochează crawlerele de antrenare AI (GPTBot, ClaudeBot, Google-Extended); crawlerele de căutare AI au voie. E o alegere, nu o eroare.
-9. **Videoul din hero pe un iPhone:** de verificat (Safari cere răspuns 206 la video; domeniul live îl dă, adresa de test `pages.dev` nu).
+**Obligatoriu (Legea 365/2002, art. 5; GDPR, art. 13)**
+
+1. **Identificarea firmei.** Registrul ANAF, 14.11.2026: **MÎRZA NICOLETA ÎNTREPRINDERE INDIVIDUALĂ**, CUI **30248262**, Nr. Reg. Com. **F2012000543175**, sediu Str. Tecuciul Nou nr. 25, Tecuci, Galați; activă, plătitoare de TVA, CAEN 4661 (comerț cu ridicata al mașinilor agricole). Proprietarul confirmă doar că aceasta e firma care vinde utilajele. Apoi: `data/site.json` → `company` (`legalName` exact ca în registru, cu diacritice; `cui`; `regCom`), iar blocul apare în subsol și în JSON-LD. Tot atunci, în cod: politica de confidențialitate numește operatorul „Tractoare Tecuci”; trebuie numele firmei, CUI-ul și sediul.
+
+**Corectitudine (date greșite sau neclare pe site)**
+
+Anul și orele vin din câmpurile anunțului OLX; `data/products.overrides.json` nu le poate schimba. Corectura se face în anunț, iar sincronizarea o preia singură. Valorile de la punctele 2–4 sunt **de verificat**: nu se folosesc în articole până la răspuns.
+
+2. **Fendt 209 S:** câmpul „Ore de lucru” are 85, iar pe site titlul spune „85 ore”. Câte ore are de fapt?
+3. **Massey Ferguson 7724:** câmpul „An” are 2019, textul 2018. Dacă anul corect e 2018, adresa paginii se schimbă (`massey-ferguson-7724-2019` → `…-2018`): pune `"slug"` în overrides sau un redirect 301 în `_redirects`.
+4. **Merlo 34.10:** textul spune „motor Deutz 4 cilindri an de fabricație 2025140 CP”. Ce înseamnă (puterea motorului? motor nou din 2025?). Pe site e omis; răspunsul merge în descrierea din overrides.
+5. **Programul de sâmbătă:** pe site 10–14 (confirmat pe 02.11), pe Google Maps tot 09–12. Proprietarul îl corectează în profil sau dă acces (punctul 7).
+6. **Imaginile de prezentare nu sunt poze proprii:** servicii, despre noi, categorii, coperțile celor 9 articole și cele trei fotografii de lângă recenziile de pe prima pagină sunt imagini de stoc sau generate. Camionul Scania nu e al firmei, deși textul alternativ spune că transportă utilaje spre România. Nu așteaptă răspunsul proprietarului: se marchează „Imagine ilustrativă” sau se înlocuiesc, iar fotografiile de lângă recenzii se scot. Pozele proprii (punctul 9) le înlocuiesc când vin.
+
+**Acces la conturi**
+
+7. **Google Business Profile** („Tractoare Tecuci”, 4,6 stele din 10 recenzii la 14.11): niciun cont de pe acest calculator nu îl administrează. Proprietarul adaugă contul lui Alex ca administrator (profilul → Meniu → Manageri profil → Adaugă). Apoi: linkul `https://www.tractoaretecuci.ro/?utm_source=google&utm_medium=gbp` (acum fără UTM), sâmbătă 10–14, răspunsuri la recenzii, poze.
+
+**Opțional**
+
+8. **Statistici pentru proprietar:** o adresă Gmail a lui → GA4 → Administrare → Gestionarea accesului la proprietate, rol Vizualizator.
+9. **Poze proprii:** curtea cu utilaje, camionul sau platforma de transport, echipa, livrări la clienți (cu acordul lor). Merg în `assets/about/`, la servicii și în profilul Google.
+10. **Email pe domeniu** (de exemplu `contact@` pe domeniul site-ului, redirecționat gratuit prin Cloudflare Email Routing spre adresa actuală): doar dacă îl vrea. Apoi `data/site.json` → `email`.
+
+## De făcut de administrator
+
+- **Search Console:** indexarea pentru adresele „de cerut” din tabelul de mai sus, apoi reinspectarea celor cerute pe 03.11 (circa 10 cereri pe zi). Starea nu a fost reverificată pe 14.11.
+- **Blogul automat nu a publicat nimic:** până pe 14.11 `data/blog-plan.json` are 30 din 30 de subiecte `todo` și nu există niciun articol nou din 04.11, deși taskul rulează zilnic. De investigat.
+- **Ore rotunjite în descrieri:** la Same Argon 75 F și Fendt 930 Vario titlul arată orele din câmp (4.852, 8.503), iar descrierea din overrides numărul rotunjit din text (4.800, 8.500). Se scoate numărul din descriere sau se scrie „circa”.
+- **Stocul automat:** rulează de pe acest PC (sarcina Windows, vezi „Stocul automat”). Opțional, varianta GitHub Actions, care nu depinde de PC.
+- **Cloudflare (opțional):** `http://tractoaretecuci.ro` face tot 2 redirecționări până la `https://www.` (o regulă de redirect le face una). „AI Crawl Control” blochează în continuare crawlerele de antrenare AI (GPTBot, ClaudeBot, Google-Extended); crawlerele de căutare AI au voie. E o alegere, nu o eroare.
+- **Videoul din hero pe un iPhone:** de verificat (Safari cere răspuns 206 la video; domeniul live îl dă, adresa de test `pages.dev` nu).
 
 ## Starea Google
 
