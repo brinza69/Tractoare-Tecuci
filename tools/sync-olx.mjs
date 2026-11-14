@@ -1,7 +1,7 @@
 // Sync the stock with the OLX shop: data/products.json + photos in assets/utilaje/<slug>/.
 // Usage (from the repo root or tools/): node tools/sync-olx.mjs [--dry]
 // Reads only public pages. Prices are deliberately not stored (the site shows none).
-// Spelling fixes, titles and slugs per listing live in data/products.overrides.json (keyed by OLX id).
+// Spelling fixes, titles, slugs and owner-confirmed year/hours per listing live in data/products.overrides.json (keyed by OLX id).
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -115,8 +115,9 @@ for (const { a, ad, links } of plans) {
   const o = overrides[a.id] || {};
   const make = paramText(a, 'make');
   const brand = BRANDS[make.toLowerCase()] || make;
-  const year = Number(paramText(a, 'year')) || null;
-  const hours = Number(paramText(a, 'lifetime').replace(/\s/g, '')) || null;
+  // Year and hours come from the listing's fields; an override wins when the owner confirmed a different value.
+  const year = o.year ?? (Number(paramText(a, 'year')) || null);
+  const hours = o.hours ?? (Number(paramText(a, 'lifetime').replace(/\s/g, '')) || null);
   const rawTitle = a.title.replace(/^(tractor viticol|tractor|telescopic)\s+/i, '').trim();
   const title = o.title || rawTitle;
   const slug = o.slug || slugify(`${title} ${year || ''}`);

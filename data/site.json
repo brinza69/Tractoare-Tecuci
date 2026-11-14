@@ -5,9 +5,9 @@
   "description": "Tractoare și utilaje agricole second hand, importate din Europa (în principal din Italia), verificate și livrate în toată România. Sediu în Tecuci, județul Galați.",
   "company": {
     "_readme": "Datele pentru Legea 365/2002. Blocul de identificare apare în subsol doar când cui și regCom sunt completate.",
-    "legalName": "II Mirza Nicoleta",
-    "cui": "",
-    "regCom": ""
+    "legalName": "Mîrza Nicoleta Întreprindere Individuală",
+    "cui": "30248262",
+    "regCom": "F2012000543175"
   },
   "phone": "+40764199074",
   "phoneDisplay": "+40 764 199 074",
@@ -34,6 +34,6 @@
     "tiktok": "https://www.tiktok.com/@nicoletamirza6"
   },
   "ga4Id": "G-ZYBRN9TW7B",
-  "policyVersion": "03.11.2026",
+  "policyVersion": "14.11.2026",
   "anpcSal": "https://anpc.ro/ce-este-sal/"
 }

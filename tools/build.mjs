@@ -36,6 +36,8 @@ const addressText = `${site.address.street}, ${site.address.city}, județul ${si
 const wa = (text) => `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`;
 const ga4 = /^G-[A-Z0-9]+$/.test(site.ga4Id || '');
 const hasCompany = Boolean(site.company.cui && site.company.regCom);
+// Who runs the site, for the privacy policy and the terms (GDPR art. 13, Legea 365/2002 art. 5).
+const operatorHtml = `<strong>${esc(site.name)}</strong>${hasCompany ? ` (${esc(site.company.legalName)}, CUI ${esc(site.company.cui)}, Nr. Reg. Com. ${esc(site.company.regCom)})` : ''}`;
 
 // Icons: Font Awesome Free 7 (CC BY 4.0, https://fontawesome.com/license/free), inlined from the SVG files.
 const FA_DIR = join(ROOT, 'tools/node_modules/@fortawesome/fontawesome-free/svgs');
@@ -332,6 +334,7 @@ function fill(html, slots = {}) {
     .replace(/\{\{hours\}\}/g, esc(hoursText))
     .replace(/\{\{hoursHtml\}\}/g, `${site.hours.map((h) => `${h.label}: ${h.opens}–${h.closes}`).join('<br>')}<br>${esc(site.closed)}`)
     .replace(/\{\{policyVersion\}\}/g, site.policyVersion)
+    .replace(/\{\{operator\}\}/g, operatorHtml)
     .replace(/\{\{stockCount\}\}/g, String(products.length))
     .replace(/\{\{icon:([a-z]+)\}\}/g, (_, n) => icon(n))
     .replace(/<!-- @slot ([a-z0-9-]+) -->/g, (_, k) => {

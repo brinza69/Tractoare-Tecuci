@@ -1,5 +1,5 @@
 {
-  "_readme": "Corecturi pe anunțurile OLX, după ID-ul OLX: titlu (scrierea modelului), descriere (doar diacritice și ortografie, fără fapte noi), categorie. Se aplică la fiecare `node tools/sync-olx.mjs`. Un ID care nu mai e pe OLX se ignoră.",
+  "_readme": "Corecturi pe anunțurile OLX, după ID-ul OLX: titlu (scrierea modelului), descriere (doar diacritice și ortografie, fără fapte noi, în afară de cele confirmate de proprietar), categorie, iar `year` și `hours` doar când proprietarul a confirmat altă valoare decât câmpul din anunț (au prioritate față de OLX). Se aplică la fiecare `node tools/sync-olx.mjs`. Un ID care nu mai e pe OLX se ignoră.",
   "310805872": {
     "title": "Massey Ferguson 2230",
     "description": "Tractor Massey Ferguson 2230, fabricat în 2011. Motor Perkins, 4 cilindri, 80 CP. Carte RAR, aer condiționat, în condiții excelente."
@@ -18,6 +18,7 @@
   },
   "310798787": {
     "title": "Fendt 209 S",
+    "hours": 8500,
     "description": "Tractor Fendt, an de fabricație 2005. Motor Deutz, 4 cilindri cu răcire pe aer, 95 CP. Tiranți și priză de putere față, punte suspendată, aer condiționat. Cutie de viteze mecanică cu inversor. Recent importat din Italia."
   },
   "310775204": {
@@ -30,7 +31,7 @@
   },
   "309277921": {
     "title": "Merlo 34.10",
-    "description": "Încărcător telescopic Merlo, an de fabricație 2007, 5.400 ore de funcționare. Sarcină de ridicare 3,4 tone, braț telescopic de 10 metri. Motor Deutz, 4 cilindri. Cu cupă și factură externă."
+    "description": "Încărcător telescopic Merlo, an de fabricație 2007, 5.400 ore de funcționare. Sarcină de ridicare 3,4 tone, braț telescopic de 10 metri. Motor Deutz, 4 cilindri, 140 CP. Cu cupă și factură externă."
   },
   "309279297": {
     "title": "Fendt 718 Vario",
