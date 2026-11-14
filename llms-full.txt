@@ -259,6 +259,84 @@ Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00; duminică: închis. Tel
 
 ## Ghiduri
 
+### Fendt 718 Vario second hand: ce verifici la un exemplar folosit
+
+https://www.tractoaretecuci.ro/blog/fendt-718-vario-second-hand-ce-verifici
+
+La un Fendt 718 Vario second hand verifici, în această ordine: transmisia Vario (mers lin, fără smucituri, fără coduri de eroare), motorul Deutz împreună cu sistemul de tratare a gazelor (AdBlue și filtru de particule), hidraulica și ridicătorul, puntea față suspendată, cabina cu electronica ei și actele care confirmă anul și orele. Dacă una dintre ele nu poate fi probată la fața locului, amâni decizia până când poate fi.
+Ghidul de mai jos ia fiecare punct pe rând, cu ce faci concret la vizionare. Datele tehnice sunt cele publicate de producător pentru seria 700 Vario și cele din testul oficial OECD al modelului, verificate în noiembrie 2026.
+Ce fel de tractor este Fendt 718 Vario
+718 Vario este modelul de intrare în seria Fendt 700 Vario: un tractor cu motor în șase cilindri și transmisie continuă, folosit de obicei ca tractor principal într-o fermă mijlocie sau ca al doilea tractor într-una mare, la semănat, pregătirea patului germinativ, transport și lucrări cu priza de putere.
+Seria a trecut prin mai multe generații, iar între ele diferă cabina, cotiera și echiparea. Cifrele din tabel sunt cele din fișa tehnică Fendt pentru 700 Vario Gen6. La un exemplar anume, generația și nivelul de echipare se confirmă după seria de șasiu și după documente, nu după anul din anunț.
+CaracteristicăFendt 718 Vario (date producător, Gen6)
+Putere nominală ECE R 120133 kW / 181 CP
+Putere maximă ECE R 120138 kW / 188 CP
+Cilindree6.056 cm³, șase cilindri
+Cuplu maxim818 Nm la 1.500 rpm
+Tratarea gazelorSCR (AdBlue) și filtru de particule
+TransmisieVario ML 180, două game, până la 50 km/h
+Priză de putere spate540 / 540E / 1000 / 1000E
+Pompă hidraulică109 l/min standard, opțional 152 sau 193 l/min
+Forță de ridicare spate / față10.360 daN / 4.418 daN
+Rezervor motorină / AdBlue400 l / 38 l
+Masă proprie / masă maximă admisă7.790 kg / 14.000 kg
+În testul OECD făcut pe 718 Vario Gen6 în august 2021, puterea maximă măsurată la priza de putere a fost de 122,2 kW, adică aproximativ 166 CP. Diferența față de puterea motorului este normală: la priză ajunge ce rămâne după pierderile din transmisie și consumatorii auxiliari. Dacă într-un anunț găsești altă cifră de putere decât în fișa producătorului, întreabă după ce normă este dată și caut-o în documentele tractorului.
+Transmisia Vario: prima verificare, nu ultima
+Transmisia Vario combină o parte mecanică cu una hidrostatică și reglează viteza continuu, fără trepte. La un tractor folosit este componenta care merită cel mai mult timp, pentru că o reparație aici înseamnă service specializat. Dacă vrei să înțelegi mai întâi principiul, l-am explicat în articolul despre transmisia CVT față de Powershift.
+Proba de mers
+Pornește de pe loc foarte încet, apoi accelerează progresiv până la viteza de transport. Mersul trebuie să fie lin pe toată plaja, fără smucituri și fără ezitări.
+Încearcă ambele game de viteză și mersul înapoi, inclusiv schimbarea sensului cu inversorul.
+Ascultă transmisia la viteză constantă și sub sarcină: un șuierat ușor este obișnuit la o transmisie hidrostatică, un urlet care crește cu sarcina nu este.
+Oprește tractorul pe o pantă cu pedala de mers eliberată: trebuie să stea pe loc, fără să alunece.
+Verifică pe terminal dacă există coduri de eroare active sau memorate.
+Uleiul și istoricul
+Raportul de test notează că transmisia, hidraulica și puntea față folosesc același tip de ulei. Cere dovada schimburilor de ulei și de filtre la orele prevăzute în manualul tractorului. Uită-te sub tractor, la îmbinările carcasei și la semeringurile punților, după urme proaspete de ulei.
+Motorul Deutz, AdBlue și filtrul de particule
+Motorul este un Deutz în șase cilindri, de 6,1 litri, cu turbocompresor și intercooler. Pe evacuare are catalizator de oxidare, filtru de particule și sistem SCR cu AdBlue.
+Pornire la rece. Roagă vânzătorul să nu pornească tractorul înainte să ajungi. Un motor sănătos pornește prompt și se stabilizează la ralanti fără fum persistent.
+Scurgeri. Verifică baia de ulei, garnitura de chiulasă, zona turbinei și furtunurile de intercooler.
+Lichid de răcire. Trebuie să fie curat, fără urme de ulei, iar în vasul de expansiune să nu apară bule cu motorul cald.
+AdBlue. Uită-te la bușonul și la gura rezervorului: depunerile albe, cristalizate, arată scurgeri sau un sistem neglijat. În bord nu trebuie să fie avertizări legate de emisii.
+Filtrul de particule. Întreabă când a avut loc ultima regenerare și dacă a fost vreodată curățat sau înlocuit. Un tractor ținut mult la ralanti încarcă filtrul mai repede decât unul folosit la sarcină.
+Răcire. Radiatoarele trebuie să fie curate între lamele, iar ventilatorul să nu aibă joc.
+Hidraulica, ridicătorul și priza de putere
+Pompa cu debit variabil poate fi de 109, 152 sau 193 l/min, în funcție de echiparea de fabrică, iar numărul de distribuitoare diferă între nivelurile de echipare. Află ce pompă și câte distribuitoare are exemplarul la care te uiți, pentru că de asta depinde ce utilaje poți lucra cu el: o semănătoare pneumatică lată sau un încărcător frontal cer mai mult debit decât un plug.
+Ridică și coboară tiranții spate cu o greutate pe ei, apoi oprește motorul: brațele nu trebuie să coboare vizibil în câteva minute.
+Probează fiecare distribuitor în ambele sensuri și verifică cuplele rapide, să nu picure.
+Dacă tractorul are tiranți și priză de putere în față, probează-le separat.
+Cuplează priza de putere la fiecare turație disponibilă. Cuplarea trebuie să fie progresivă, fără zgomot metalic, iar arborele să nu aibă joc radial.
+Verifică bolțurile și rotulele tiranților, cârligul și bara de tracțiune: jocul mare arată lucru greu sau lipsă de ungere.
+Puntea față suspendată, frânele și anvelopele
+Suspensia punții față contează la transport și la lucrul cu viteză. Verifică dacă puntea urcă și coboară la comandă, dacă cilindrii suspensiei sunt uscați și dacă articulațiile nu au joc. Ridică puntea pe cric și mișcă roțile cu mâna, ca să simți pivoții și rulmenții.
+Frânele sunt cu discuri multiple în baie de ulei. La probă, tractorul trebuie să frâneze drept, cu pedalele cuplate, iar pedala să nu fie moale. Dacă exemplarul are compresor și instalație pneumatică pentru remorcă, urmărește cât de repede se încarcă și dacă pierde presiune cu motorul oprit.
+La anvelope contează uzura egală între stânga și dreapta și raportul corect între față și spate, important la un tractor cu tracțiune integrală. Fisurile din flancuri și reparațiile vechi se văd cel mai bine cu roțile bracate.
+Cabina, cotiera și electronica
+În cabină petreci toate orele de lucru, iar aici se află și cele mai multe comenzi electronice.
+Pornește terminalul și intră în fiecare meniu. Ecranul nu trebuie să aibă zone moarte sau linii.
+Probează joystickul, maneta în cruce a distribuitoarelor și toate tastele de pe cotieră.
+Verifică suspensia cabinei, aerul condiționat (să răcească în câteva minute), încălzirea, ștergătoarele și toate luminile de lucru.
+Compară uzura scaunului, a pedalelor și a volanului cu orele afișate. O cabină foarte tocită la un contor mic cere explicații.
+Dacă tractorul are pregătire pentru ghidare sau ISOBUS, întreabă ce este activat și ce licențe rămân pe tractor.
+Actele și orele de funcționare
+La un tractor relativ nou, hârtiile spun aproape la fel de mult ca proba. Cere:
+documentele de proveniență și de înmatriculare din țara de origine, cu seria de șasiu identică cu cea de pe plăcuța tractorului;
+istoricul de service: facturi sau fișe de lucru cu data și orele la fiecare intervenție;
+orele citite din terminal, comparate cu cele din ultimele documente de service;
+manualul de utilizare și lista echipărilor de fabrică, dacă există.
+Pentru pașii generali ai unei vizionări, valabili la orice marcă, vezi și ghidul nostru despre cum alegi un tractor second hand.
+Lista scurtă pentru vizionare
+Motor rece la sosire, pornire fără fum persistent.
+Niciun cod de eroare activ pe terminal.
+Mers lin de la zero la viteza de transport, în ambele game și în ambele sensuri.
+Tiranții țin sarcina cu motorul oprit.
+Toate distribuitoarele și toate turațiile prizei de putere probate.
+Suspensia punții față și a cabinei funcționează.
+Fără depuneri de AdBlue și fără avertizări de emisii.
+Seria de șasiu de pe plăcuță este cea din acte, iar orele se potrivesc cu istoricul.
+Fendt 718 Vario din stocul Tractoare Tecuci
+În curtea din Tecuci avem un Fendt 718 Vario din 2021, adus din Italia, cu 4.000 de ore de funcționare. Are punte față suspendată, tiranți față, cabină amortizată pe perne de aer, aer condiționat și compresor. Pe pagina lui găsești fotografiile, inclusiv cabina și cotiera.
+Poți face toate verificările de mai sus la fața locului. Pentru preț, programarea unei vizionări și transport, sună-ne sau scrie-ne din pagina de contact. Dacă 718 este prea mare sau prea mic pentru ferma ta, vezi și celelalte tractoare din stoc.
+
 ### Încărcătoare telescopice agricole: Ghid complet de alegere 2025
 
 https://www.tractoaretecuci.ro/blog/incarcatoare-telescopice-agricole-ghid
