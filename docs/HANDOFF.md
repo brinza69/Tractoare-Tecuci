@@ -4,6 +4,8 @@
 
 „Acțiunile proprietarului” (mai jos) e reverificată pe 14.11 pe site-ul live, în cele 15 anunțuri OLX active (aceleași ca pe site) și pe fișa publică Google Maps. Pe scurt: datele firmei sunt în registrul ANAF, proprietarul doar confirmă; cele trei neclarități din anunțurile OLX sunt tot acolo; profilul Google are tot sâmbătă 09–12 și linkul fără UTM; imaginile de prezentare sunt de stoc sau generate. Lucrurile care nu depind de proprietar sunt separate, în „De făcut de administrator”.
 
+**Răspunsuri primite pe 14.11 (prin Alex):** Fendt 209 S are 8.500 de ore (corectat pe site); Massey Ferguson 7724 rămâne 2019; Merlo 34.10 are 140 CP (trecut în descriere); sâmbăta rămâne 10–14; nici proprietarul nu are acces la profilul Google; are poze proprii. Datele firmei din registrul ANAF sunt confirmate și puse pe site: în subsol pe toate paginile, în JSON-LD și ca operator în confidențialitate și termeni (`{{operator}}`, versiunea politicii 14.11.2026). Fără răspuns: statisticile și emailul pe domeniu. `tools/sync-olx.mjs` acceptă acum `year` și `hours` în `data/products.overrides.json`, pentru valorile confirmate de proprietar care diferă de câmpurile din OLX.
+
 ## Actualizare 04.11.2026 (a doua): design și blog automat
 
 **Design** (commit c41721b; mai multe detalii în mesajul commit-ului):
@@ -118,26 +120,26 @@ Textele paginilor sunt în `src/pages/`, stilurile în `src/css/`, iar telefonul
 
 **Obligatoriu (Legea 365/2002, art. 5; GDPR, art. 13)**
 
-1. **Identificarea firmei.** Registrul ANAF, 14.11.2026: **MÎRZA NICOLETA ÎNTREPRINDERE INDIVIDUALĂ**, CUI **30248262**, Nr. Reg. Com. **F2012000543175**, sediu Str. Tecuciul Nou nr. 25, Tecuci, Galați; activă, plătitoare de TVA, CAEN 4661 (comerț cu ridicata al mașinilor agricole). Proprietarul confirmă doar că aceasta e firma care vinde utilajele. Apoi: `data/site.json` → `company` (`legalName` exact ca în registru, cu diacritice; `cui`; `regCom`), iar blocul apare în subsol și în JSON-LD. Tot atunci, în cod: politica de confidențialitate numește operatorul „Tractoare Tecuci”; trebuie numele firmei, CUI-ul și sediul.
+1. **Identificarea firmei** (rezolvat 14.11, confirmat prin Alex). Registrul ANAF, 14.11.2026: **MÎRZA NICOLETA ÎNTREPRINDERE INDIVIDUALĂ**, CUI **30248262**, Nr. Reg. Com. **F2012000543175**, sediu Str. Tecuciul Nou nr. 25, Tecuci, Galați; activă, plătitoare de TVA, CAEN 4661 (comerț cu ridicata al mașinilor agricole). Sunt în `data/site.json` → `company` și apar în subsol, în JSON-LD și, prin `{{operator}}`, în politica de confidențialitate și în termeni.
 
 **Corectitudine (date greșite sau neclare pe site)**
 
-Anul și orele vin din câmpurile anunțului OLX; `data/products.overrides.json` nu le poate schimba. Corectura se face în anunț, iar sincronizarea o preia singură. Valorile de la punctele 2–4 sunt **de verificat**: nu se folosesc în articole până la răspuns.
+Anul și orele vin din câmpurile anunțului OLX. Când proprietarul confirmă altă valoare, ea se trece în `data/products.overrides.json` (`year`, `hours`) și are prioritate față de OLX.
 
-2. **Fendt 209 S:** câmpul „Ore de lucru” are 85, iar pe site titlul spune „85 ore”. Câte ore are de fapt?
-3. **Massey Ferguson 7724:** câmpul „An” are 2019, textul 2018. Dacă anul corect e 2018, adresa paginii se schimbă (`massey-ferguson-7724-2019` → `…-2018`): pune `"slug"` în overrides sau un redirect 301 în `_redirects`.
-4. **Merlo 34.10:** textul spune „motor Deutz 4 cilindri an de fabricație 2025140 CP”. Ce înseamnă (puterea motorului? motor nou din 2025?). Pe site e omis; răspunsul merge în descrierea din overrides.
-5. **Programul de sâmbătă:** pe site 10–14 (confirmat pe 02.11), pe Google Maps tot 09–12. Proprietarul îl corectează în profil sau dă acces (punctul 7).
+2. **Fendt 209 S** (rezolvat 14.11): 8.500 de ore, în overrides (`hours`). Câmpul din OLX spune tot 85.
+3. **Massey Ferguson 7724** (rezolvat 14.11): rămâne 2019, ca în câmpul din OLX; textul anunțului spune 2018, dar descrierea de pe site nu conține anul.
+4. **Merlo 34.10** (rezolvat 14.11): 140 CP, trecut în descrierea din overrides. „2025” din textul anunțului rămâne neexplicat și nu apare pe site.
+5. **Programul de sâmbătă** (confirmat 14.11): 10–14. Pe Google Maps e tot 09–12 până se rezolvă accesul (punctul 7).
 6. **Imaginile de prezentare nu sunt poze proprii:** servicii, despre noi, categorii, coperțile celor 9 articole și cele trei fotografii de lângă recenziile de pe prima pagină sunt imagini de stoc sau generate. Camionul Scania nu e al firmei, deși textul alternativ spune că transportă utilaje spre România. Nu așteaptă răspunsul proprietarului: se marchează „Imagine ilustrativă” sau se înlocuiesc, iar fotografiile de lângă recenzii se scot. Pozele proprii (punctul 9) le înlocuiesc când vin.
 
 **Acces la conturi**
 
-7. **Google Business Profile** („Tractoare Tecuci”, 4,6 stele din 10 recenzii la 14.11): niciun cont de pe acest calculator nu îl administrează. Proprietarul adaugă contul lui Alex ca administrator (profilul → Meniu → Manageri profil → Adaugă). Apoi: linkul `https://www.tractoaretecuci.ro/?utm_source=google&utm_medium=gbp` (acum fără UTM), sâmbătă 10–14, răspunsuri la recenzii, poze.
+7. **Google Business Profile** („Tractoare Tecuci”, 4,6 stele din 10 recenzii la 14.11): nu îl administrează nici Alex, nici proprietarul (14.11). Pasul următor: proprietarul, cu contul Google pe care vrea să-l folosească, caută firma pe business.google.com și cere acces. Google întreabă administratorul actual, iar dacă acesta nu răspunde, îi oferă proprietarului verificarea. Apoi îl adaugă pe Alex ca administrator. Până atunci, programul de sâmbătă se poate propune din Google Maps („Sugerează o modificare”). După acces: linkul `https://www.tractoaretecuci.ro/?utm_source=google&utm_medium=gbp` (acum fără UTM), sâmbătă 10–14, răspunsuri la recenzii, poze.
 
 **Opțional**
 
 8. **Statistici pentru proprietar:** o adresă Gmail a lui → GA4 → Administrare → Gestionarea accesului la proprietate, rol Vizualizator.
-9. **Poze proprii:** curtea cu utilaje, camionul sau platforma de transport, echipa, livrări la clienți (cu acordul lor). Merg în `assets/about/`, la servicii și în profilul Google.
+9. **Poze proprii** (14.11: proprietarul are; de primit): curtea cu utilaje, camionul sau platforma de transport, echipa, livrări la clienți (cu acordul lor). Merg în `assets/about/`, la servicii și în profilul Google.
 10. **Email pe domeniu** (de exemplu `contact@` pe domeniul site-ului, redirecționat gratuit prin Cloudflare Email Routing spre adresa actuală): doar dacă îl vrea. Apoi `data/site.json` → `email`.
 
 ## De făcut de administrator
