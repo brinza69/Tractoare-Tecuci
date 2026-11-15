@@ -259,6 +259,61 @@ Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00; duminică: închis. Tel
 
 ## Ghiduri
 
+### Orele de funcționare la un tractor second hand
+
+https://www.tractoaretecuci.ro/blog/ore-functionare-tractor-second-hand
+
+Orele de funcționare ale unui tractor second hand arată cât a lucrat motorul, nu cât de bine a fost întreținut. Le citești corect în trei pași: afli ce fel de contor are tractorul (ore reale sau ore la turația nominală), împarți orele la vârsta tractorului ca să vezi utilizarea pe an și le compari cu istoricul de service și cu uzura din cabină. O cifră mică fără acte și fără uzură care să se potrivească nu valorează mai mult decât o cifră mare bine documentată.
+Mai jos găsești fiecare pas, cu exemple și cu datele de referință pe care le folosesc specialiștii în calculul costurilor cu utilajele. Sursele au fost verificate în noiembrie 2026.
+Ce măsoară contorul de ore la tractor
+Contorul de ore nu este peste tot un simplu ceas. Există două feluri de a număra, iar diferența contează când compari două tractoare.
+Ore la turația nominală
+La unele tractoare, mai ales la cele cu contor mecanic sau la modelele mai simple, contorul numără orele în funcție de turația motorului. Manualul unui tractor Kioti, de exemplu, spune că acesta arată orele lucrate la turația nominală a motorului. Asta înseamnă că o oră la ralanti adaugă mai puțin de o oră în contor, iar o oră la turație mare adaugă cam o oră întreagă. Un astfel de contor reflectă mai bine efortul motorului decât timpul petrecut cu cheia în contact.
+Ore reale de funcționare
+La majoritatea tractoarelor cu bord electronic, contorul numără timpul cât motorul a mers, indiferent de turație. Tractoarele moderne păstrează orele și în unitatea electronică de control a motorului, nu doar în bord. Ultima cifră a contorului arată de obicei zecimi de oră.
+Cum afli ce contor are tractorul la care te uiți: cauți în manualul de utilizare al modelului, la capitolul despre instrumentele de bord. Dacă manualul lipsește, întreabă un service al mărcii.
+Câte ore sunt multe la un tractor second hand
+Nu există un prag după care un tractor devine „prea vechi”. Există însă repere folosite în calculul costurilor cu utilajele. Universitatea de stat din Mississippi preia din standardul american ASABE D497 o durată de viață estimată de 12.000 de ore pentru tractoarele cu tracțiune pe două roți și 16.000 de ore pentru cele cu tracțiune integrală, iar în exemplele de calcul folosește 400 de ore de lucru pe an (Farm Machinery Cost Calculations, Mississippi State University Extension).
+Aceste cifre sunt medii folosite pentru buget și amortizare. Nu spun că un tractor se oprește la 12.000 de ore și nici că unul cu 4.000 de ore este sigur în stare bună. Ele te ajută să încadrezi un tractor: un exemplar cu tracțiune integrală la 8.000 de ore este, după acest reper, cam la jumătatea duratei estimate, nu la capătul ei.
+Calculul orelor pe an
+Împarte orele din contor la numărul de ani de la fabricație. Rezultatul îți spune cum a fost folosit tractorul și ce întrebări să pui.
+Ore pe an (aproximativ)Ce poate însemnaCe întrebi
+Sub 200Tractor folosit ocazional sau contor înlocuit ori defectA fost schimbat bordul? Există facturi cu orele notate?
+Între 300 și 600Utilizare obișnuită într-o fermăCe lucrări a făcut și la ce intervale s-au schimbat uleiurile?
+Peste 800Tractor principal, lucru intens sau transport multCe s-a reparat sau înlocuit până acum (ambreiaj, transmisie, pompă)?
+Exemplu: un tractor din 2010 cu 8.000 de ore are 16 ani, deci în medie 500 de ore pe an. Este o utilizare constantă, de tractor de lucru, apropiată de cele 400 de ore din exemplele de calcul de mai sus.
+Cum verifici dacă orele sunt reale
+Revista britanică Farmers Weekly atrage atenția că și contoarele analogice, și cele digitale pot fi date înapoi, iar modificarea poate fi făcută de un proprietar anterior, nu neapărat de cel care vinde acum (What to look for when buying a used tractor). De aceea nu te bazezi pe o singură sursă, ci pe mai multe care trebuie să spună același lucru.
+Bordul și unitatea de control
+Irish Farmers Journal a relatat cazul unui fermier care a cumpărat un tractor cu 6.300 de ore în bord. La prima revizie, mecanicul a citit unitatea electronică de control și a găsit 12.500 de ore: bordul fusese înlocuit cu unul de pe alt model (Irish Farmers Journal). La un tractor cu electronică, cere ca orele să fie citite și din unitatea de control, cu aparatul de diagnoză al unui service, și compară-le cu cele din bord.
+Actele de service
+Facturi sau fișe de lucru cu data și orele la fiecare intervenție. Orele trebuie să crească de la o factură la alta, în ritmul vârstei tractorului.
+Cartea de service ștampilată, dacă există. Farmers Weekly notează că este un semn bun, dar rar întâlnit.
+Filtre și piese originale montate, care arată o întreținere făcută la timp.
+Uzura care trebuie să se potrivească cu orele
+Pedalele: cauciucul tocit până la metal pe pedala de frână sau de ambreiaj nu se potrivește cu un contor mic.
+Volanul și manetele: lucioase, cu materialul ros în zonele de prindere.
+Scaunul: rupt sau înlocuit recent. Un scaun nou la un tractor cu ore puține merită o întrebare.
+Treapta și podeaua cabinei: tocite pe traseul de urcare.
+Șuruburile motorului și ale transmisiei: urmele de cheie pe capete arată că s-a desfăcut ceva. Întreabă ce, când și de ce.
+Ce contează mai mult decât numărul de ore
+Două tractoare cu aceleași ore pot fi în stări foarte diferite. Câteva lucruri spun mai mult decât cifra din bord:
+Felul lucrărilor. Orele de arat greu solicită altfel transmisia și motorul decât orele de transport sau de lucru cu încărcătorul frontal.
+Întreținerea. Uleiurile și filtrele schimbate la intervalele din manual contează mai mult decât câteva sute de ore în plus. Despre intervale am scris în articolul despre uleiuri și filtre la tractoare.
+Ralantiul îndelungat. Un tractor ținut mult timp pe loc cu motorul pornit adună ore fără să lucreze, iar la motoarele cu filtru de particule asta încarcă filtrul.
+Ce s-a reparat deja. Un ambreiaj sau o pompă hidraulică înlocuite, cu factură, pot face un tractor cu ore multe mai liniștitor decât unul cu ore puține și fără istoric.
+Starea la probă. Pornirea la rece, mersul transmisiei, hidraulica și scurgerile se verifică oricum, indiferent de contor. Pașii îi găsești în ghidul despre cum alegi un tractor second hand.
+Întrebări frecvente despre orele unui tractor
+Un tractor cu 10.000 de ore mai merită cumpărat?
+Poate, dacă are istoric de service și trece proba. Reperul ASABE de 16.000 de ore pentru tractoarele cu tracțiune integrală este o medie pentru calculul costurilor, nu o limită. Întreabă ce reparații mari s-au făcut și verifică dacă uzura se potrivește cu orele.
+Ce faci dacă bordul a fost schimbat?
+Cere documentul de la service care arată orele contorului vechi la data înlocuirii. Fără el, orele reale ale tractorului sunt cele din contorul vechi plus cele din cel nou, iar prima cifră nu o mai știe nimeni.
+Ore puține înseamnă un tractor mai bun?
+Nu neapărat. Un tractor stat mult poate avea garnituri uscate, furtunuri îmbătrânite și baterii slabe. Contează ca orele puține să fie explicate de acte și să se potrivească cu starea tractorului.
+Fendt 415 Vario cu circa 8.000 de ore, în stoc la Tecuci
+Un exemplu concret de citire a orelor: în curtea din Tecuci avem un Fendt 415 Vario din 2010, adus din Italia, cu circa 8.000 de ore. Are motor Deutz în patru cilindri, de 150 CP, transmisie Vario, punte față suspendată, tiranți față, aer condiționat și compresor. Pe pagina lui găsești fotografiile, inclusiv cabina, unde poți judeca singur uzura pedalelor, a volanului și a scaunului.
+Poți face la fața locului toate verificările din acest ghid. Pentru preț, programarea unei vizionări și transport, sună-ne sau scrie-ne din pagina de contact. Dacă vrei să compari mai multe tractoare după ore și an, vezi toate tractoarele din stoc.
+
 ### Fendt 718 Vario second hand: ce verifici la un exemplar folosit
 
 https://www.tractoaretecuci.ro/blog/fendt-718-vario-second-hand-ce-verifici
