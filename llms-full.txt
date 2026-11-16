@@ -259,6 +259,80 @@ Luni–Vineri 09:00–17:00 · Sâmbătă 10:00–14:00; duminică: închis. Tel
 
 ## Ghiduri
 
+### John Deere 6125R second hand: puncte tari și verificări
+
+https://www.tractoaretecuci.ro/blog/john-deere-6125r-second-hand-puncte-tari-verificari
+
+Un John Deere 6125R second hand este un tractor de 125 CP, cu motor de 4,5 litri în patru cilindri, ușor pentru puterea lui și potrivit pentru o fermă mijlocie sau ca al doilea tractor într-una mare: lucru cu încărcătorul frontal, semănat, erbicidat, transport și lucrări cu priza de putere. La vizionare verifici, în ordinea asta: motorul și filtrul de particule, cutia de viteze, hidraulica, încărcătorul frontal și echipările din față, apoi actele care confirmă anul și orele.
+Mai jos găsești datele tehnice ale modelului și, pentru fiecare punct, ce faci concret când ești lângă tractor. Datele vin din fișa TractorData pentru versiunea europeană și din testul DLG PowerMix făcut pe un 6125R în noiembrie 2012, ambele verificate în noiembrie 2026.
+Ce fel de tractor este John Deere 6125R
+6125R face parte din seria 6R și a fost construit la fabrica John Deere din Mannheim, Germania. TractorData listează versiunea europeană între 2012 și 2016. Producătorul a oferit trei transmisii: PowrQuad Plus, AutoQuad Plus și AutoPowr cu variație continuă, așa că la un exemplar anume prima întrebare este ce cutie are.
+CaracteristicăJohn Deere 6125R (versiunea europeană)
+MotorJohn Deere 4,5 l, 4 cilindri, turbo și intercooler
+Putere nominală93,2 kW / 125 CP la 2.100 rpm
+Putere maximă102,9 kW / 138 CP
+Cuplu maxim585 Nm la 1.600 rpm
+TransmisiiPowrQuad Plus sau AutoQuad Plus (24 înainte / 24 înapoi), AutoPowr IVT
+Priză de putere spate540 / 540E / 1000; în față, opțional, 1000
+HidraulicăLoad sensing, pompă de 79,9 l/min, opțional 121,5 l/min
+Forță de ridicare4.350 kg spate, 3.300 kg față (la capetele brațelor)
+Masă proprie5.470 kg
+Rezervor motorinăaproximativ 220 l
+Puncte tari
+Raport bun între putere și masă. La 5.470 kg, tractorul este destul de ușor pentru lucru cu încărcătorul și pe drum, iar cu balast poate trage utilaje mai grele. În testul DLG, masa maximă admisă dată de producător era de 9.500 kg.
+Rezervă de cuplu mare. DLG a măsurat o creștere a cuplului de 52%: când sarcina crește și turația scade, motorul trage în loc să se înece.
+Putere reală la priză. Exemplarul testat a dat 92,4 kW la priza de putere, iar cu funcția de boost 100,9 kW, adică aproximativ 137 CP.
+Echipare de tractor mare pe un tractor de 4 cilindri. Ridicătorul față, priza față și puntea față suspendată au fost oferite ca opțiuni, așa că un 6125R bine echipat poate lucra cu combinații de utilaje față-spate.
+Motorul și filtrul de particule
+Exemplarul testat de DLG avea norma de poluare Stage IIIB, cu recirculare răcită a gazelor de evacuare și filtru de particule cu regenerare activă, fără AdBlue. Producătorul indica în medie 35 de minute pentru o regenerare și cel mult 100 de ore între regenerări. Un tractor fabricat mai târziu poate avea altă echipare de emisii, așa că uită-te dacă are rezervor de AdBlue și citește norma de poluare din acte.
+Pornire la rece. Cere ca tractorul să nu fie pornit înainte să ajungi. Motorul trebuie să pornească prompt și să nu scoată fum persistent după câteva secunde.
+Regenerarea. Întreabă când a fost ultima și dacă filtrul a fost curățat sau înlocuit. Un tractor ținut mult la ralanti, de exemplu la încărcător, încarcă filtrul mai repede.
+Avertizări în bord. Nu trebuie să existe martori aprinși legați de motor sau de emisii.
+Scurgeri și răcire. Verifică zona turbinei, furtunurile de intercooler și radiatoarele, care trebuie să fie curate între lamele. Lichidul de răcire trebuie să fie fără urme de ulei.
+Cum interpretezi contorul la un tractor cu câteva mii de ore am explicat separat, în articolul despre orele de funcționare la un tractor second hand.
+Cutia PowrQuad Plus, hidraulica și priza de putere
+Proba cutiei
+PowrQuad Plus are 24 de trepte înainte și 24 înapoi, în 6 game; în interiorul unei game treptele se schimbă sub sarcină, fără ambreiaj. AutoQuad Plus are aceeași construcție, cu schimbare automată în interiorul gamei.
+Treci prin toate gamele, înainte și înapoi. Schimbarea între trepte trebuie să fie rapidă, fără smucituri și fără pauze lungi.
+Schimbă sensul de mers cu inversorul, la viteză mică, de mai multe ori: cuplarea trebuie să fie progresivă.
+Pe drum, ascultă cutia la viteză constantă. Un zgomot care crește cu sarcina cere explicații.
+Hidraulica
+Transmisia și hidraulica folosesc același ulei, iar DLG notează o capacitate de 73 de litri, din care 32 pot fi extrași pentru utilaje. Un ulei vechi sau de alt tip afectează deci și cutia, și hidraulica. Cere dovada schimburilor de ulei și de filtre, cu orele la care s-au făcut. Pentru intervale și tipuri de ulei, vezi și ghidul nostru despre uleiuri și filtre la tractoare.
+Ridică tiranții spate cu o greutate pe ei și oprește motorul: brațele nu trebuie să coboare vizibil în câteva minute.
+Probează fiecare distribuitor în ambele sensuri și verifică cuplele rapide, să nu picure.
+Află ce pompă are exemplarul. Debitul standard ajunge pentru plug, disc sau un încărcător frontal; o semănătoare pneumatică lată cere mai mult.
+Priza de putere
+Cuplează priza la fiecare turație disponibilă. Cuplarea trebuie să fie lină, fără zgomot metalic, iar arborele să nu aibă joc. Turația economică 540E este utilă la lucrări ușoare, cu motorul la turație mai mică.
+Încărcătorul frontal și echipările din față
+Un 6125R cu încărcător frontal este folosit de obicei mult în fermă, la baloți, furaje și gunoi de grajd. De aceea, încărcătorul se verifică la fel de atent ca tractorul.
+Bolțuri și bucșe. Ridică brațele la jumătate și mișcă unealta: jocul mare la articulații arată lucru intens fără ungere.
+Cadrul și consolele de prindere pe tractor. Caută fisuri, suduri refăcute și șuruburi lipsă.
+Cilindri. Tijele trebuie să fie fără rizuri, iar brațele cu sarcină să nu coboare singure.
+Puntea față. Un încărcător folosit mult solicită puntea. Ridică fața pe cric și verifică jocul în pivoți și în rulmenții roților.
+Ridicătorul și priza față. Probează-le separat de cele din spate.
+Dacă tractorul are cabină amortizată și punte față suspendată, verifică dacă suspensiile se mișcă și nu bat la capăt pe drum denivelat.
+Lista scurtă pentru vizionare
+Motor rece la sosire, pornire promptă, fără fum persistent.
+Fără martori aprinși și fără avertizări de emisii.
+Toate gamele cutiei probate, înainte și înapoi, plus inversorul.
+Tiranții țin sarcina cu motorul oprit.
+Toate distribuitoarele și toate turațiile prizei de putere probate.
+Încărcătorul fără joc mare în bolțuri și fără fisuri în cadru.
+Seria de șasiu de pe plăcuță este cea din acte, iar orele se potrivesc cu istoricul de service.
+Pentru pașii generali ai unei cumpărări, valabili la orice marcă, vezi și ghidul despre cum alegi un tractor second hand.
+Întrebări frecvente despre John Deere 6125R
+Câți cai putere are John Deere 6125R?
+125 CP putere nominală, după datele tehnice publicate. Puterea maximă este de 138 CP, iar în testul DLG exemplarul a dat la priza de putere 92,4 kW, respectiv 100,9 kW cu boost.
+Ce motor are John Deere 6125R?
+Un motor John Deere de 4,5 litri, în patru cilindri, cu turbocompresor și intercooler, fabricat de John Deere Power Systems.
+Ce cutie de viteze are?
+Depinde de exemplar: PowrQuad Plus sau AutoQuad Plus, ambele cu 24 de trepte înainte și 24 înapoi, sau AutoPowr cu variație continuă. Tipul se confirmă din acte și din comenzile din cabină.
+Este 6125R potrivit pentru arat?
+Da, pentru plugurile potrivite puterii lui, cu balast corect. În testul DLG, la arat cu sarcină maximă tractorul a lucrat la aproximativ 8 km/h cu 76 kW putere totală.
+John Deere 6125R din stocul Tractoare Tecuci
+În curtea din Tecuci avem un John Deere 6125R din 2015, recent importat din Italia, cu 7.280 de ore de funcționare. Are motor turbo în 4 cilindri de 125 CP, cutie PowerQuad, priză și tiranți față, încărcător frontal original John Deere cu furci de baloți și cabină amortizată. Pe pagina lui găsești fotografiile.
+Poți face toate verificările de mai sus la fața locului. Pentru preț, programarea unei vizionări și transport, sună-ne sau scrie-ne din pagina de contact. Dacă îți trebuie alt tractor, vezi celelalte tractoare din stoc.
+
 ### Orele de funcționare la un tractor second hand
 
 https://www.tractoaretecuci.ro/blog/ore-functionare-tractor-second-hand

@@ -208,7 +208,8 @@
   </url>
   <url>
     <loc>https://www.tractoaretecuci.ro/blog</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/john-deere-6125r-second-hand-puncte-tari-verificari.webp</image:loc></image:image>
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/ore-functionare-tractor-second-hand.webp</image:loc></image:image>
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/fendt-718-vario-second-hand-ce-verifici.webp</image:loc></image:image>
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-balotare-recoltare-fan-cultura-cereale-strujeni.webp</image:loc></image:image>
@@ -216,7 +217,11 @@
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/agricultura-moderna-vedere-drona-camp-cereale-romania.webp</image:loc></image:image>
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/productie-agricola-legume-proaspete-ferma-romaneasca.webp</image:loc></image:image>
     <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-puternic-lucrand-camp-productivitate-agricultura.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/tractor-plug-arat-teren-agricol-pregatire-sezon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tractoaretecuci.ro/blog/john-deere-6125r-second-hand-puncte-tari-verificari</loc>
+    <lastmod>2026-11-16</lastmod>
+    <image:image><image:loc>https://www.tractoaretecuci.ro/assets/posts/john-deere-6125r-second-hand-puncte-tari-verificari.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.tractoaretecuci.ro/blog/ore-functionare-tractor-second-hand</loc>
